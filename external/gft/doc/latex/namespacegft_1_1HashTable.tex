@@ -1,0 +1,71 @@
+\hypertarget{namespacegft_1_1HashTable}{}\doxysection{gft\+::Hash\+Table Namespace Reference}
+\label{namespacegft_1_1HashTable}\index{gft::HashTable@{gft::HashTable}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1HashTable_1_1sHashNode}{s\+Hash\+Node}}
+\begin{DoxyCompactList}\small\item\em A hashing table node. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$ \mbox{\hyperlink{namespacegft_1_1HashTable_a439bfedbdfe418c3aa4151d52c0003f4}{Create}} (int size)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1HashTable_a604b22ddc848bee795a75742dfd94024}{Destroy}} (\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$$\ast$ht)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1HashTable_afc29a4a9eae053de2e1e96a8cfdc4fc3}{Hash\+Position}} (\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$ht, char $\ast$key)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1HashTable_a52261fc21b4bfa9f8181da899d21867a}{Insert}} (\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$ht, char $\ast$key, void $\ast$value)
+\begin{DoxyCompactList}\small\item\em Insert the pair (key, value) in the hash table. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespacegft_1_1HashTable_aea090e527334c56cc1a4964ce2e73556}{Search}} (\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$ht, char $\ast$key)
+\begin{DoxyCompactList}\small\item\em Search for the value associated with a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1HashTable_a439bfedbdfe418c3aa4151d52c0003f4}\label{namespacegft_1_1HashTable_a439bfedbdfe418c3aa4151d52c0003f4}} 
+\index{gft::HashTable@{gft::HashTable}!Create@{Create}}
+\index{Create@{Create}!gft::HashTable@{gft::HashTable}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$ gft\+::\+Hash\+Table\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1HashTable_a604b22ddc848bee795a75742dfd94024}\label{namespacegft_1_1HashTable_a604b22ddc848bee795a75742dfd94024}} 
+\index{gft::HashTable@{gft::HashTable}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::HashTable@{gft::HashTable}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Hash\+Table\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$$\ast$}]{ht }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1HashTable_afc29a4a9eae053de2e1e96a8cfdc4fc3}\label{namespacegft_1_1HashTable_afc29a4a9eae053de2e1e96a8cfdc4fc3}} 
+\index{gft::HashTable@{gft::HashTable}!HashPosition@{HashPosition}}
+\index{HashPosition@{HashPosition}!gft::HashTable@{gft::HashTable}}
+\doxysubsubsection{\texorpdfstring{HashPosition()}{HashPosition()}}
+{\footnotesize\ttfamily int gft\+::\+Hash\+Table\+::\+Hash\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$}]{ht,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1HashTable_a52261fc21b4bfa9f8181da899d21867a}\label{namespacegft_1_1HashTable_a52261fc21b4bfa9f8181da899d21867a}} 
+\index{gft::HashTable@{gft::HashTable}!Insert@{Insert}}
+\index{Insert@{Insert}!gft::HashTable@{gft::HashTable}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void gft\+::\+Hash\+Table\+::\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$}]{ht,  }\item[{char $\ast$}]{key,  }\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Insert the pair (key, value) in the hash table. 
+
+\mbox{\Hypertarget{namespacegft_1_1HashTable_aea090e527334c56cc1a4964ce2e73556}\label{namespacegft_1_1HashTable_aea090e527334c56cc1a4964ce2e73556}} 
+\index{gft::HashTable@{gft::HashTable}!Search@{Search}}
+\index{Search@{Search}!gft::HashTable@{gft::HashTable}}
+\doxysubsubsection{\texorpdfstring{Search()}{Search()}}
+{\footnotesize\ttfamily void $\ast$ gft\+::\+Hash\+Table\+::\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1HashTable_1_1sHashTable}{s\+Hash\+Table}} $\ast$}]{ht,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Search for the value associated with a key. 
+

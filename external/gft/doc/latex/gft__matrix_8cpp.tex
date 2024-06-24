@@ -1,0 +1,65 @@
+\hypertarget{gft__matrix_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+matrix.cpp File Reference}
+\label{gft__matrix_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_matrix.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_matrix.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+matrix.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Matrix}{gft\+::\+Matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_ada76f24ab3c0dd7a660746ce59e6b14b}{gft\+::\+Matrix\+::\+Create}} (int ncols, int nrows)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a6a9bcd32c0b7a4ef78765e4831fd77dd}{gft\+::\+Matrix\+::\+Destroy}} (s\+Matrix $\ast$$\ast$mat)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a58a49d7fa88ff5fd52a1b3d02cd1866c}{gft\+::\+Matrix\+::\+Clone}} (s\+Matrix $\ast$mat)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_ac976186ff7956cae293cd3f28d74de85}{gft\+::\+Matrix\+::\+Copy}} (s\+Matrix $\ast$dest, s\+Matrix $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a9f3349c240f385c1c99e9fabc9a8eacb}{gft\+::\+Matrix\+::\+Print}} (s\+Matrix $\ast$M)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_ad7caeb4e9e525cc345f2aa4da0f235b3}{gft\+::\+Matrix\+::\+Print\+Dimension}} (s\+Matrix $\ast$M)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_abb1a5f39866c48f37f98dcadfddf3698}{gft\+::\+Matrix\+::\+Invert}} (s\+Matrix $\ast$A)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a5b9311f65c33c73a8e3d8755cdcdc4cc}{gft\+::\+Matrix\+::\+Get\+Trace}} (s\+Matrix $\ast$M)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_adbad71a9f3c02e4dcf2e59e34e4281b3}{gft\+::\+Matrix\+::\+Mult}} (s\+Matrix $\ast$A, s\+Matrix $\ast$B)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a3dcdab4f961f2a0d9ff68009246ac425}{gft\+::\+Matrix\+::\+Mult\+By\+Scalar}} (s\+Matrix $\ast$A, float k)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_afed744b8932f2b955f20fdac2fed7487}{gft\+::\+Matrix\+::\+Sub}} (s\+Matrix $\ast$A, s\+Matrix $\ast$B)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_acc673508fe4889a464a2b056627403be}{gft\+::\+Matrix\+::\+Add}} (s\+Matrix $\ast$A, s\+Matrix $\ast$B)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_af7ebc8bb5e202c0bdb608fbfddfe8059}{gft\+::\+Matrix\+::\+Transpose}} (s\+Matrix $\ast$A)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a6d21312f9d5defb6856df0fd7de6fa8a}{gft\+::\+Matrix\+::\+Compute\+Distance\+L2}} (s\+Matrix $\ast$Y, s\+Matrix $\ast$X)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_aeef3a3bb9c96b541fd085ed5d68ce9cd}{gft\+::\+Matrix\+::\+Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a4c6534598e7eacfb3cc4db4bafd8cb27}{gft\+::\+Matrix\+::\+Write}} (s\+Matrix $\ast$M, char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{namespacegft_1_1Matrix_af696fabdc8cd796424a7d9930716d98d}{gft\+::\+Matrix\+::\+Is\+Valid\+Entry}} (s\+Matrix $\ast$M, int i, int j)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a3fa94e2260bb3db602f763b69d200b8e}{gft\+::\+Matrix\+::\+Get\+Maximum\+Value}} (s\+Matrix $\ast$M)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a42ee99a65c858549556386bc4024ba80}{gft\+::\+Matrix\+::\+Get\+Minimum\+Value}} (s\+Matrix $\ast$M)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a2e6de16c516f8a2cc82a3f17a542338a}{gft\+::\+Matrix\+::\+Fill}} (s\+Matrix $\ast$M, float value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a67c9160aacfd419129c8640316701e35}{gft\+::\+Matrix\+::\+Change\+Value}} (s\+Matrix $\ast$M, float old\+\_\+value, float new\+\_\+value)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_ac39870815ea983e9c19ccdc36f5ce84e}{gft\+::\+Matrix\+::\+Convert2\+Image}} (s\+Matrix $\ast$M)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a85ef761041eff12db6d584c9d1fa2755}{gft\+::\+Matrix\+::\+Threshold}} (s\+Matrix $\ast$M, float lower, float higher)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a40655dc2a0854fc6839dc1cef7f96271}{gft\+::\+Matrix\+::\+Rotation\+Matrix3}} (int axis, float th)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a8cb0dd9b7e32a6e4072fdb0d02725fd1}{gft\+::\+Matrix\+::\+Translation\+Matrix3}} (float dx, float dy, float dz)
+\item 
+s\+Matrix $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a94894e12344c6cfc57cf6aadb4c59c5e}{gft\+::\+Matrix\+::\+Transform\+Voxel}} (s\+Matrix $\ast$m, Voxel v)
+\end{DoxyCompactItemize}

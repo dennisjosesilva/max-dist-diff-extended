@@ -1,0 +1,101 @@
+\hypertarget{namespacegft_1_1Image64}{}\doxysection{gft\+::Image64 Namespace Reference}
+\label{namespacegft_1_1Image64}\index{gft::Image64@{gft::Image64}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image64_a613056ae599a1c7c6075e6703614cba7}{Create}} (int ncols, int nrows)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image64_a8b51a2e0a395f98a594517b95c6ac7c3}{Destroy}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$$\ast$img)
+\item 
+\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image64_a7cfec96110cb0161881561d489a1cc08}{Convert\+To\+Image64}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image64_ab96e379ff822757f4537ac118348aa24}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image64_a95530d14ceb5d5d635029125c08e64f8}{Write}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$img, char $\ast$filename)
+\item 
+\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image64_ab8db61f79892e8a5469f06f77584c5c6}{Compute\+Integral\+Image}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$img)
+\item 
+long long \mbox{\hyperlink{namespacegft_1_1Image64_aab9b70f4f2426570095f974fe8901429}{Compute\+Sum}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$iimg, int x1, int y1, int x2, int y2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image64_aa01304cae4ec752b3eaa5cb3299662cf}{Compute\+Variance}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$img, int x1, int y1, int x2, int y2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image64_afe678c71062f52e7d9a2c4089babb0c7}{Compute\+Variance}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$iimg, \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$iimg2, int x1, int y1, int x2, int y2)
+\item 
+\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image64_aa3ffb2fb0c7a7c76f9494c2f80061618}{Squared}} (\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$img)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image64_a0448ee673757be9c0b7a77bc4f9b688c}{Get\+Pos\+Window\+Max\+Sum}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, int tam\+\_\+x, int tam\+\_\+y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Image64_ab8db61f79892e8a5469f06f77584c5c6}\label{namespacegft_1_1Image64_ab8db61f79892e8a5469f06f77584c5c6}} 
+\index{gft::Image64@{gft::Image64}!ComputeIntegralImage@{ComputeIntegralImage}}
+\index{ComputeIntegralImage@{ComputeIntegralImage}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{ComputeIntegralImage()}{ComputeIntegralImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ gft\+::\+Image64\+::\+Compute\+Integral\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_aab9b70f4f2426570095f974fe8901429}\label{namespacegft_1_1Image64_aab9b70f4f2426570095f974fe8901429}} 
+\index{gft::Image64@{gft::Image64}!ComputeSum@{ComputeSum}}
+\index{ComputeSum@{ComputeSum}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{ComputeSum()}{ComputeSum()}}
+{\footnotesize\ttfamily long long gft\+::\+Image64\+::\+Compute\+Sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{iimg,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_afe678c71062f52e7d9a2c4089babb0c7}\label{namespacegft_1_1Image64_afe678c71062f52e7d9a2c4089babb0c7}} 
+\index{gft::Image64@{gft::Image64}!ComputeVariance@{ComputeVariance}}
+\index{ComputeVariance@{ComputeVariance}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{ComputeVariance()}{ComputeVariance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image64\+::\+Compute\+Variance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{iimg,  }\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{iimg2,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_aa01304cae4ec752b3eaa5cb3299662cf}\label{namespacegft_1_1Image64_aa01304cae4ec752b3eaa5cb3299662cf}} 
+\index{gft::Image64@{gft::Image64}!ComputeVariance@{ComputeVariance}}
+\index{ComputeVariance@{ComputeVariance}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{ComputeVariance()}{ComputeVariance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image64\+::\+Compute\+Variance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{img,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_a7cfec96110cb0161881561d489a1cc08}\label{namespacegft_1_1Image64_a7cfec96110cb0161881561d489a1cc08}} 
+\index{gft::Image64@{gft::Image64}!ConvertToImage64@{ConvertToImage64}}
+\index{ConvertToImage64@{ConvertToImage64}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{ConvertToImage64()}{ConvertToImage64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ gft\+::\+Image64\+::\+Convert\+To\+Image64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_a613056ae599a1c7c6075e6703614cba7}\label{namespacegft_1_1Image64_a613056ae599a1c7c6075e6703614cba7}} 
+\index{gft::Image64@{gft::Image64}!Create@{Create}}
+\index{Create@{Create}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ gft\+::\+Image64\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{ncols,  }\item[{int}]{nrows }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_a8b51a2e0a395f98a594517b95c6ac7c3}\label{namespacegft_1_1Image64_a8b51a2e0a395f98a594517b95c6ac7c3}} 
+\index{gft::Image64@{gft::Image64}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Image64\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$$\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_a0448ee673757be9c0b7a77bc4f9b688c}\label{namespacegft_1_1Image64_a0448ee673757be9c0b7a77bc4f9b688c}} 
+\index{gft::Image64@{gft::Image64}!GetPosWindowMaxSum@{GetPosWindowMaxSum}}
+\index{GetPosWindowMaxSum@{GetPosWindowMaxSum}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{GetPosWindowMaxSum()}{GetPosWindowMaxSum()}}
+{\footnotesize\ttfamily int gft\+::\+Image64\+::\+Get\+Pos\+Window\+Max\+Sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{tam\+\_\+x,  }\item[{int}]{tam\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_ab96e379ff822757f4537ac118348aa24}\label{namespacegft_1_1Image64_ab96e379ff822757f4537ac118348aa24}} 
+\index{gft::Image64@{gft::Image64}!Read@{Read}}
+\index{Read@{Read}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ gft\+::\+Image64\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_aa3ffb2fb0c7a7c76f9494c2f80061618}\label{namespacegft_1_1Image64_aa3ffb2fb0c7a7c76f9494c2f80061618}} 
+\index{gft::Image64@{gft::Image64}!Squared@{Squared}}
+\index{Squared@{Squared}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{Squared()}{Squared()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$ gft\+::\+Image64\+::\+Squared (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image64_a95530d14ceb5d5d635029125c08e64f8}\label{namespacegft_1_1Image64_a95530d14ceb5d5d635029125c08e64f8}} 
+\index{gft::Image64@{gft::Image64}!Write@{Write}}
+\index{Write@{Write}!gft::Image64@{gft::Image64}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Image64\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image64_1_1sImage64}{s\+Image64}} $\ast$}]{img,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+

@@ -1,0 +1,212 @@
+\hypertarget{namespacegft_1_1PQueue32}{}\doxysection{gft\+::P\+Queue32 Namespace Reference}
+\label{namespacegft_1_1PQueue32}\index{gft::PQueue32@{gft::PQueue32}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQCircularQueue}{s\+P\+Q\+Circular\+Queue}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQDoublyLinkedLists}{s\+P\+Q\+Doubly\+Linked\+Lists}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQNode}{s\+P\+Q\+Node}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}}
+\begin{DoxyCompactList}\small\item\em Priority queue by Dial implemented as proposed by A.\+X. Falcao with circular and growing features. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1PQueue32_a878d8ff83a53fd794896b9ae3a1b1c51}{Create}} (int nbuckets, int nelems, int $\ast$value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_aaf58ab5b9fcef04bc17b9a560c124c3b}{Destroy}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$Q)
+\item 
+\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1PQueue32_ae1f48418ef33f75a17eb519d123c5bef}{Grow}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$Q, int nbuckets)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a427f05f9ffe161c1978fdfe46e0b3598}{Reset}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a09d6d394ee232c8265a23244c125f759}{Insert\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a1fc3bdc8d93a864720c93cb09b06bf8c}{Remove\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a960d8fdea0e2276cd8273cf935eb61eb}{Update\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$Q, int elem, int newvalue)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a4e54e851226bed14de97c9f4a9a47906}{Remove\+Min\+F\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a5f74102730063c30d82cfbd854dbbed6}{Remove\+Min\+L\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a9c722946603fd6d95b02dd872f3e7d28}{Remove\+Max\+F\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a37cc1d24332fef60f34a9ad33ab57625}{Remove\+Max\+L\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a09fa4bae49cf704b87e349a31a95782b}{Fast\+Insert\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_ae8032ea8f0f550f530f5e2ae30147d11}{Fast\+Insert\+Elem\+As\+First}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a8821d3bf8bd74d5d2c22baee1513814b}{Fast\+Remove\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1PQueue32_a06415eadd1e10b4645f014b2ecbdb934}{Fast\+Update\+Elem}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q, int elem, int newvalue)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a95716e08eee73ef9fabbac778b5113ed}{Fast\+Remove\+Min\+F\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a95f8b4263e1e7577979c81d93ba5e019}{Fast\+Get\+Min\+F\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_ad9c7121ba0778fca4fcf091c9a210c76}{Fast\+Get\+Min\+Val}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_ac54c5c64a26dc6cf0ba951679524462e}{Fast\+Get\+Max\+Val}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a96d5838df27fd518a4d964567b08cb1b}{Fast\+Remove\+Min\+L\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a7e29dfada651eda6ba299d0168c11dc5}{Fast\+Remove\+Max\+F\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1PQueue32_a8816e007e502ee4c31da075e21ff0bd0}{Fast\+Remove\+Max\+L\+I\+FO}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1PQueue32_a9c4eaf39c33977fb5e333952c492ce04}{Is\+Empty}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1PQueue32_a16490a65e0d7c7999d8ddf048dfd4f4d}{Is\+Full}} (\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$Q)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a878d8ff83a53fd794896b9ae3a1b1c51}\label{namespacegft_1_1PQueue32_a878d8ff83a53fd794896b9ae3a1b1c51}} 
+\index{gft::PQueue32@{gft::PQueue32}!Create@{Create}}
+\index{Create@{Create}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$ gft\+::\+P\+Queue32\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{nbuckets,  }\item[{int}]{nelems,  }\item[{int $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_aaf58ab5b9fcef04bc17b9a560c124c3b}\label{namespacegft_1_1PQueue32_aaf58ab5b9fcef04bc17b9a560c124c3b}} 
+\index{gft::PQueue32@{gft::PQueue32}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_ac54c5c64a26dc6cf0ba951679524462e}\label{namespacegft_1_1PQueue32_ac54c5c64a26dc6cf0ba951679524462e}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastGetMaxVal@{FastGetMaxVal}}
+\index{FastGetMaxVal@{FastGetMaxVal}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastGetMaxVal()}{FastGetMaxVal()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Get\+Max\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a95f8b4263e1e7577979c81d93ba5e019}\label{namespacegft_1_1PQueue32_a95f8b4263e1e7577979c81d93ba5e019}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastGetMinFIFO@{FastGetMinFIFO}}
+\index{FastGetMinFIFO@{FastGetMinFIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastGetMinFIFO()}{FastGetMinFIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Get\+Min\+F\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_ad9c7121ba0778fca4fcf091c9a210c76}\label{namespacegft_1_1PQueue32_ad9c7121ba0778fca4fcf091c9a210c76}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastGetMinVal@{FastGetMinVal}}
+\index{FastGetMinVal@{FastGetMinVal}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastGetMinVal()}{FastGetMinVal()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Get\+Min\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a09fa4bae49cf704b87e349a31a95782b}\label{namespacegft_1_1PQueue32_a09fa4bae49cf704b87e349a31a95782b}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastInsertElem@{FastInsertElem}}
+\index{FastInsertElem@{FastInsertElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastInsertElem()}{FastInsertElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Fast\+Insert\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_ae8032ea8f0f550f530f5e2ae30147d11}\label{namespacegft_1_1PQueue32_ae8032ea8f0f550f530f5e2ae30147d11}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastInsertElemAsFirst@{FastInsertElemAsFirst}}
+\index{FastInsertElemAsFirst@{FastInsertElemAsFirst}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastInsertElemAsFirst()}{FastInsertElemAsFirst()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Fast\+Insert\+Elem\+As\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a8821d3bf8bd74d5d2c22baee1513814b}\label{namespacegft_1_1PQueue32_a8821d3bf8bd74d5d2c22baee1513814b}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastRemoveElem@{FastRemoveElem}}
+\index{FastRemoveElem@{FastRemoveElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastRemoveElem()}{FastRemoveElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Fast\+Remove\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a7e29dfada651eda6ba299d0168c11dc5}\label{namespacegft_1_1PQueue32_a7e29dfada651eda6ba299d0168c11dc5}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastRemoveMaxFIFO@{FastRemoveMaxFIFO}}
+\index{FastRemoveMaxFIFO@{FastRemoveMaxFIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastRemoveMaxFIFO()}{FastRemoveMaxFIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Remove\+Max\+F\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a8816e007e502ee4c31da075e21ff0bd0}\label{namespacegft_1_1PQueue32_a8816e007e502ee4c31da075e21ff0bd0}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastRemoveMaxLIFO@{FastRemoveMaxLIFO}}
+\index{FastRemoveMaxLIFO@{FastRemoveMaxLIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastRemoveMaxLIFO()}{FastRemoveMaxLIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Remove\+Max\+L\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a95716e08eee73ef9fabbac778b5113ed}\label{namespacegft_1_1PQueue32_a95716e08eee73ef9fabbac778b5113ed}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastRemoveMinFIFO@{FastRemoveMinFIFO}}
+\index{FastRemoveMinFIFO@{FastRemoveMinFIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastRemoveMinFIFO()}{FastRemoveMinFIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Remove\+Min\+F\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a96d5838df27fd518a4d964567b08cb1b}\label{namespacegft_1_1PQueue32_a96d5838df27fd518a4d964567b08cb1b}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastRemoveMinLIFO@{FastRemoveMinLIFO}}
+\index{FastRemoveMinLIFO@{FastRemoveMinLIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastRemoveMinLIFO()}{FastRemoveMinLIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Fast\+Remove\+Min\+L\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a06415eadd1e10b4645f014b2ecbdb934}\label{namespacegft_1_1PQueue32_a06415eadd1e10b4645f014b2ecbdb934}} 
+\index{gft::PQueue32@{gft::PQueue32}!FastUpdateElem@{FastUpdateElem}}
+\index{FastUpdateElem@{FastUpdateElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{FastUpdateElem()}{FastUpdateElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Fast\+Update\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q,  }\item[{int}]{elem,  }\item[{int}]{newvalue }\end{DoxyParamCaption})}
+
+Faster version to be used when values are in fixed range \href{e.g., watershed transform}{\texttt{ 0, nbuckets-\/1}}. \mbox{\Hypertarget{namespacegft_1_1PQueue32_ae1f48418ef33f75a17eb519d123c5bef}\label{namespacegft_1_1PQueue32_ae1f48418ef33f75a17eb519d123c5bef}} 
+\index{gft::PQueue32@{gft::PQueue32}!Grow@{Grow}}
+\index{Grow@{Grow}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{Grow()}{Grow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$ gft\+::\+P\+Queue32\+::\+Grow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$}]{Q,  }\item[{int}]{nbuckets }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a09d6d394ee232c8265a23244c125f759}\label{namespacegft_1_1PQueue32_a09d6d394ee232c8265a23244c125f759}} 
+\index{gft::PQueue32@{gft::PQueue32}!InsertElem@{InsertElem}}
+\index{InsertElem@{InsertElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{InsertElem()}{InsertElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Insert\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$}]{Q,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a9c4eaf39c33977fb5e333952c492ce04}\label{namespacegft_1_1PQueue32_a9c4eaf39c33977fb5e333952c492ce04}} 
+\index{gft::PQueue32@{gft::PQueue32}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+P\+Queue32\+::\+Is\+Empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a16490a65e0d7c7999d8ddf048dfd4f4d}\label{namespacegft_1_1PQueue32_a16490a65e0d7c7999d8ddf048dfd4f4d}} 
+\index{gft::PQueue32@{gft::PQueue32}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{IsFull()}{IsFull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+P\+Queue32\+::\+Is\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a1fc3bdc8d93a864720c93cb09b06bf8c}\label{namespacegft_1_1PQueue32_a1fc3bdc8d93a864720c93cb09b06bf8c}} 
+\index{gft::PQueue32@{gft::PQueue32}!RemoveElem@{RemoveElem}}
+\index{RemoveElem@{RemoveElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{RemoveElem()}{RemoveElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Remove\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q,  }\item[{int}]{elem }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a9c722946603fd6d95b02dd872f3e7d28}\label{namespacegft_1_1PQueue32_a9c722946603fd6d95b02dd872f3e7d28}} 
+\index{gft::PQueue32@{gft::PQueue32}!RemoveMaxFIFO@{RemoveMaxFIFO}}
+\index{RemoveMaxFIFO@{RemoveMaxFIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{RemoveMaxFIFO()}{RemoveMaxFIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Remove\+Max\+F\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a37cc1d24332fef60f34a9ad33ab57625}\label{namespacegft_1_1PQueue32_a37cc1d24332fef60f34a9ad33ab57625}} 
+\index{gft::PQueue32@{gft::PQueue32}!RemoveMaxLIFO@{RemoveMaxLIFO}}
+\index{RemoveMaxLIFO@{RemoveMaxLIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{RemoveMaxLIFO()}{RemoveMaxLIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Remove\+Max\+L\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a4e54e851226bed14de97c9f4a9a47906}\label{namespacegft_1_1PQueue32_a4e54e851226bed14de97c9f4a9a47906}} 
+\index{gft::PQueue32@{gft::PQueue32}!RemoveMinFIFO@{RemoveMinFIFO}}
+\index{RemoveMinFIFO@{RemoveMinFIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{RemoveMinFIFO()}{RemoveMinFIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Remove\+Min\+F\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a5f74102730063c30d82cfbd854dbbed6}\label{namespacegft_1_1PQueue32_a5f74102730063c30d82cfbd854dbbed6}} 
+\index{gft::PQueue32@{gft::PQueue32}!RemoveMinLIFO@{RemoveMinLIFO}}
+\index{RemoveMinLIFO@{RemoveMinLIFO}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{RemoveMinLIFO()}{RemoveMinLIFO()}}
+{\footnotesize\ttfamily int gft\+::\+P\+Queue32\+::\+Remove\+Min\+L\+I\+FO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. \mbox{\Hypertarget{namespacegft_1_1PQueue32_a427f05f9ffe161c1978fdfe46e0b3598}\label{namespacegft_1_1PQueue32_a427f05f9ffe161c1978fdfe46e0b3598}} 
+\index{gft::PQueue32@{gft::PQueue32}!Reset@{Reset}}
+\index{Reset@{Reset}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1PQueue32_a960d8fdea0e2276cd8273cf935eb61eb}\label{namespacegft_1_1PQueue32_a960d8fdea0e2276cd8273cf935eb61eb}} 
+\index{gft::PQueue32@{gft::PQueue32}!UpdateElem@{UpdateElem}}
+\index{UpdateElem@{UpdateElem}!gft::PQueue32@{gft::PQueue32}}
+\doxysubsubsection{\texorpdfstring{UpdateElem()}{UpdateElem()}}
+{\footnotesize\ttfamily void gft\+::\+P\+Queue32\+::\+Update\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1PQueue32_1_1sPQueue32}{s\+P\+Queue32}} $\ast$$\ast$}]{Q,  }\item[{int}]{elem,  }\item[{int}]{newvalue }\end{DoxyParamCaption})}
+
+Generic version with circular and growing features. 

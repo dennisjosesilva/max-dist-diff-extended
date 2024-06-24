@@ -1,0 +1,51 @@
+\hypertarget{gft__scene8_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+scene8.cpp File Reference}
+\label{gft__scene8_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_scene8.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_scene8.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+scene8.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Scene8}{gft\+::\+Scene8}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_abbdf80f48f0723056c0c6266e3c5dfe9}{gft\+::\+Scene8\+::\+Create}} (int xsize, int ysize, int zsize)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a551befd7ee5ce82b54ba46b9948e0086}{gft\+::\+Scene8\+::\+Create}} (s\+Scene8 $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A constructor taking a reference scene as template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_a67002396181759d6376b0098ceb35243}{gft\+::\+Scene8\+::\+Destroy}} (s\+Scene8 $\ast$$\ast$scn)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a82954942fe64d07a88dc282cc3a0f512}{gft\+::\+Scene8\+::\+Clone}} (s\+Scene8 $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a0b2fb082b791a907941b71cd8cd5ea04}{gft\+::\+Scene8\+::\+Sub\+Scene}} (s\+Scene8 $\ast$scn, Voxel l, Voxel h)
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_ad0c5c16596f57bae2fd1379da18678de}{gft\+::\+Scene8\+::\+Sub\+Scene}} (s\+Scene8 $\ast$scn, int xl, int yl, int zl, int xh, int yh, int zh)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_a4db2da09f7a8e0a05a515e95dbdbb85e}{gft\+::\+Scene8\+::\+Copy}} (s\+Scene8 $\ast$dest, s\+Scene8 $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_a4387ec9d4f87df8e24fa004f6e50d549}{gft\+::\+Scene8\+::\+Copy}} (s\+Scene8 $\ast$dest, s\+Scene8 $\ast$src, Voxel v)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_a398bcc013e17d8befa00927541b911eb}{gft\+::\+Scene8\+::\+Fill}} (s\+Scene8 $\ast$scn, uchar value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_aed187bdf97c0a1feb8b0ae7e3d0d1957}{gft\+::\+Scene8\+::\+Write}} (s\+Scene8 $\ast$scn, char $\ast$filename)
+\item 
+uchar \mbox{\hyperlink{namespacegft_1_1Scene8_a58f487a2ece00703b1008b50fb292d9d}{gft\+::\+Scene8\+::\+Get\+Value\+\_\+nn}} (s\+Scene8 $\ast$scn, float x, float y, float z)
+\item 
+uchar \mbox{\hyperlink{namespacegft_1_1Scene8_a786c07e1b9428e0cba9708f88a233e0d}{gft\+::\+Scene8\+::\+Get\+Maximum\+Value}} (s\+Scene8 $\ast$scn)
+\item 
+uchar \mbox{\hyperlink{namespacegft_1_1Scene8_aacd742fe8eaccd48a6db67f398ffe124}{gft\+::\+Scene8\+::\+Get\+Minimum\+Value}} (s\+Scene8 $\ast$scn)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene8_a12af7b04ac437760f3e7ab3313320712}{gft\+::\+Scene8\+::\+M\+BB}} (s\+Scene8 $\ast$scn, Voxel $\ast$l, Voxel $\ast$h)
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a1c79a1d0a6a87c10b2b16644373a569c}{gft\+::\+Scene8\+::\+M\+BB}} (s\+Scene8 $\ast$scn)
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a033226bab6db8562715be2afb8496288}{gft\+::\+Scene8\+::\+Add\+Frame}} (s\+Scene8 $\ast$scn, int sz, uchar value)
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a85f1cd8a24ce9db060bce73052c807a7}{gft\+::\+Scene8\+::\+Rem\+Frame}} (s\+Scene8 $\ast$fscn, int sz)
+\item 
+s\+Scene32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_a04e95266a505cfc7806b113a966560ee}{gft\+::\+Scene8\+::\+Convert\+To32}} (s\+Scene8 $\ast$scn)
+\item 
+s\+Scene16 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene8_aa8854ce7c07d348b9d7d29ba4f58d352}{gft\+::\+Scene8\+::\+Convert\+To16}} (s\+Scene8 $\ast$scn)
+\end{DoxyCompactItemize}

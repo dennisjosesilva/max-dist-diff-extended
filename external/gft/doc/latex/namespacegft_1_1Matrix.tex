@@ -1,0 +1,226 @@
+\hypertarget{namespacegft_1_1Matrix}{}\doxysection{gft\+::Matrix Namespace Reference}
+\label{namespacegft_1_1Matrix}\index{gft::Matrix@{gft::Matrix}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_ada76f24ab3c0dd7a660746ce59e6b14b}{Create}} (int ncols, int nrows)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a6a9bcd32c0b7a4ef78765e4831fd77dd}{Destroy}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$$\ast$mat)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a58a49d7fa88ff5fd52a1b3d02cd1866c}{Clone}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$mat)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_ac976186ff7956cae293cd3f28d74de85}{Copy}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$dest, \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a9f3349c240f385c1c99e9fabc9a8eacb}{Print}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_ad7caeb4e9e525cc345f2aa4da0f235b3}{Print\+Dimension}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_abb1a5f39866c48f37f98dcadfddf3698}{Invert}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a5b9311f65c33c73a8e3d8755cdcdc4cc}{Get\+Trace}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_adbad71a9f3c02e4dcf2e59e34e4281b3}{Mult}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A, \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$B)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a3dcdab4f961f2a0d9ff68009246ac425}{Mult\+By\+Scalar}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A, float k)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_afed744b8932f2b955f20fdac2fed7487}{Sub}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A, \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$B)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_acc673508fe4889a464a2b056627403be}{Add}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A, \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$B)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_af7ebc8bb5e202c0bdb608fbfddfe8059}{Transpose}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$A)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a6d21312f9d5defb6856df0fd7de6fa8a}{Compute\+Distance\+L2}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$Y, \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$X)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_aeef3a3bb9c96b541fd085ed5d68ce9cd}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a4c6534598e7eacfb3cc4db4bafd8cb27}{Write}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M, char $\ast$filename)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Matrix_af696fabdc8cd796424a7d9930716d98d}{Is\+Valid\+Entry}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M, int i, int j)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a3fa94e2260bb3db602f763b69d200b8e}{Get\+Maximum\+Value}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Matrix_a42ee99a65c858549556386bc4024ba80}{Get\+Minimum\+Value}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a2e6de16c516f8a2cc82a3f17a542338a}{Fill}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M, float value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Matrix_a67c9160aacfd419129c8640316701e35}{Change\+Value}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M, float old\+\_\+value, float new\+\_\+value)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_ac39870815ea983e9c19ccdc36f5ce84e}{Convert2\+Image}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a85ef761041eff12db6d584c9d1fa2755}{Threshold}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$M, float lower, float higher)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a40655dc2a0854fc6839dc1cef7f96271}{Rotation\+Matrix3}} (int axis, float th)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a8cb0dd9b7e32a6e4072fdb0d02725fd1}{Translation\+Matrix3}} (float dx, float dy, float dz)
+\item 
+\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Matrix_a94894e12344c6cfc57cf6aadb4c59c5e}{Transform\+Voxel}} (\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$m, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Matrix_acc673508fe4889a464a2b056627403be}\label{namespacegft_1_1Matrix_acc673508fe4889a464a2b056627403be}} 
+\index{gft::Matrix@{gft::Matrix}!Add@{Add}}
+\index{Add@{Add}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{B }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a67c9160aacfd419129c8640316701e35}\label{namespacegft_1_1Matrix_a67c9160aacfd419129c8640316701e35}} 
+\index{gft::Matrix@{gft::Matrix}!ChangeValue@{ChangeValue}}
+\index{ChangeValue@{ChangeValue}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{ChangeValue()}{ChangeValue()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Change\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M,  }\item[{float}]{old\+\_\+value,  }\item[{float}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a58a49d7fa88ff5fd52a1b3d02cd1866c}\label{namespacegft_1_1Matrix_a58a49d7fa88ff5fd52a1b3d02cd1866c}} 
+\index{gft::Matrix@{gft::Matrix}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{mat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a6d21312f9d5defb6856df0fd7de6fa8a}\label{namespacegft_1_1Matrix_a6d21312f9d5defb6856df0fd7de6fa8a}} 
+\index{gft::Matrix@{gft::Matrix}!ComputeDistanceL2@{ComputeDistanceL2}}
+\index{ComputeDistanceL2@{ComputeDistanceL2}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{ComputeDistanceL2()}{ComputeDistanceL2()}}
+{\footnotesize\ttfamily float gft\+::\+Matrix\+::\+Compute\+Distance\+L2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{Y,  }\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{X }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_ac39870815ea983e9c19ccdc36f5ce84e}\label{namespacegft_1_1Matrix_ac39870815ea983e9c19ccdc36f5ce84e}} 
+\index{gft::Matrix@{gft::Matrix}!Convert2Image@{Convert2Image}}
+\index{Convert2Image@{Convert2Image}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Convert2Image()}{Convert2Image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Matrix\+::\+Convert2\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_ac976186ff7956cae293cd3f28d74de85}\label{namespacegft_1_1Matrix_ac976186ff7956cae293cd3f28d74de85}} 
+\index{gft::Matrix@{gft::Matrix}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{dest,  }\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_ada76f24ab3c0dd7a660746ce59e6b14b}\label{namespacegft_1_1Matrix_ada76f24ab3c0dd7a660746ce59e6b14b}} 
+\index{gft::Matrix@{gft::Matrix}!Create@{Create}}
+\index{Create@{Create}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{ncols,  }\item[{int}]{nrows }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a6a9bcd32c0b7a4ef78765e4831fd77dd}\label{namespacegft_1_1Matrix_a6a9bcd32c0b7a4ef78765e4831fd77dd}} 
+\index{gft::Matrix@{gft::Matrix}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$$\ast$}]{mat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a2e6de16c516f8a2cc82a3f17a542338a}\label{namespacegft_1_1Matrix_a2e6de16c516f8a2cc82a3f17a542338a}} 
+\index{gft::Matrix@{gft::Matrix}!Fill@{Fill}}
+\index{Fill@{Fill}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a3fa94e2260bb3db602f763b69d200b8e}\label{namespacegft_1_1Matrix_a3fa94e2260bb3db602f763b69d200b8e}} 
+\index{gft::Matrix@{gft::Matrix}!GetMaximumValue@{GetMaximumValue}}
+\index{GetMaximumValue@{GetMaximumValue}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{GetMaximumValue()}{GetMaximumValue()}}
+{\footnotesize\ttfamily float gft\+::\+Matrix\+::\+Get\+Maximum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a42ee99a65c858549556386bc4024ba80}\label{namespacegft_1_1Matrix_a42ee99a65c858549556386bc4024ba80}} 
+\index{gft::Matrix@{gft::Matrix}!GetMinimumValue@{GetMinimumValue}}
+\index{GetMinimumValue@{GetMinimumValue}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{GetMinimumValue()}{GetMinimumValue()}}
+{\footnotesize\ttfamily float gft\+::\+Matrix\+::\+Get\+Minimum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a5b9311f65c33c73a8e3d8755cdcdc4cc}\label{namespacegft_1_1Matrix_a5b9311f65c33c73a8e3d8755cdcdc4cc}} 
+\index{gft::Matrix@{gft::Matrix}!GetTrace@{GetTrace}}
+\index{GetTrace@{GetTrace}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{GetTrace()}{GetTrace()}}
+{\footnotesize\ttfamily float gft\+::\+Matrix\+::\+Get\+Trace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_abb1a5f39866c48f37f98dcadfddf3698}\label{namespacegft_1_1Matrix_abb1a5f39866c48f37f98dcadfddf3698}} 
+\index{gft::Matrix@{gft::Matrix}!Invert@{Invert}}
+\index{Invert@{Invert}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Invert()}{Invert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Invert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_af696fabdc8cd796424a7d9930716d98d}\label{namespacegft_1_1Matrix_af696fabdc8cd796424a7d9930716d98d}} 
+\index{gft::Matrix@{gft::Matrix}!IsValidEntry@{IsValidEntry}}
+\index{IsValidEntry@{IsValidEntry}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{IsValidEntry()}{IsValidEntry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Matrix\+::\+Is\+Valid\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_adbad71a9f3c02e4dcf2e59e34e4281b3}\label{namespacegft_1_1Matrix_adbad71a9f3c02e4dcf2e59e34e4281b3}} 
+\index{gft::Matrix@{gft::Matrix}!Mult@{Mult}}
+\index{Mult@{Mult}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Mult()}{Mult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{B }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a3dcdab4f961f2a0d9ff68009246ac425}\label{namespacegft_1_1Matrix_a3dcdab4f961f2a0d9ff68009246ac425}} 
+\index{gft::Matrix@{gft::Matrix}!MultByScalar@{MultByScalar}}
+\index{MultByScalar@{MultByScalar}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{MultByScalar()}{MultByScalar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Mult\+By\+Scalar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A,  }\item[{float}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a9f3349c240f385c1c99e9fabc9a8eacb}\label{namespacegft_1_1Matrix_a9f3349c240f385c1c99e9fabc9a8eacb}} 
+\index{gft::Matrix@{gft::Matrix}!Print@{Print}}
+\index{Print@{Print}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_ad7caeb4e9e525cc345f2aa4da0f235b3}\label{namespacegft_1_1Matrix_ad7caeb4e9e525cc345f2aa4da0f235b3}} 
+\index{gft::Matrix@{gft::Matrix}!PrintDimension@{PrintDimension}}
+\index{PrintDimension@{PrintDimension}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{PrintDimension()}{PrintDimension()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Print\+Dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_aeef3a3bb9c96b541fd085ed5d68ce9cd}\label{namespacegft_1_1Matrix_aeef3a3bb9c96b541fd085ed5d68ce9cd}} 
+\index{gft::Matrix@{gft::Matrix}!Read@{Read}}
+\index{Read@{Read}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a40655dc2a0854fc6839dc1cef7f96271}\label{namespacegft_1_1Matrix_a40655dc2a0854fc6839dc1cef7f96271}} 
+\index{gft::Matrix@{gft::Matrix}!RotationMatrix3@{RotationMatrix3}}
+\index{RotationMatrix3@{RotationMatrix3}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{RotationMatrix3()}{RotationMatrix3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Rotation\+Matrix3 (\begin{DoxyParamCaption}\item[{int}]{axis,  }\item[{float}]{th }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & an option (0-\/$>$x / 1-\/$>$y / 2-\/$>$z). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacegft_1_1Matrix_afed744b8932f2b955f20fdac2fed7487}\label{namespacegft_1_1Matrix_afed744b8932f2b955f20fdac2fed7487}} 
+\index{gft::Matrix@{gft::Matrix}!Sub@{Sub}}
+\index{Sub@{Sub}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Sub()}{Sub()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{B }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a85ef761041eff12db6d584c9d1fa2755}\label{namespacegft_1_1Matrix_a85ef761041eff12db6d584c9d1fa2755}} 
+\index{gft::Matrix@{gft::Matrix}!Threshold@{Threshold}}
+\index{Threshold@{Threshold}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Threshold()}{Threshold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Matrix\+::\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M,  }\item[{float}]{lower,  }\item[{float}]{higher }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a94894e12344c6cfc57cf6aadb4c59c5e}\label{namespacegft_1_1Matrix_a94894e12344c6cfc57cf6aadb4c59c5e}} 
+\index{gft::Matrix@{gft::Matrix}!TransformVoxel@{TransformVoxel}}
+\index{TransformVoxel@{TransformVoxel}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{TransformVoxel()}{TransformVoxel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Transform\+Voxel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a8cb0dd9b7e32a6e4072fdb0d02725fd1}\label{namespacegft_1_1Matrix_a8cb0dd9b7e32a6e4072fdb0d02725fd1}} 
+\index{gft::Matrix@{gft::Matrix}!TranslationMatrix3@{TranslationMatrix3}}
+\index{TranslationMatrix3@{TranslationMatrix3}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{TranslationMatrix3()}{TranslationMatrix3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Translation\+Matrix3 (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_af7ebc8bb5e202c0bdb608fbfddfe8059}\label{namespacegft_1_1Matrix_af7ebc8bb5e202c0bdb608fbfddfe8059}} 
+\index{gft::Matrix@{gft::Matrix}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Transpose()}{Transpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$ gft\+::\+Matrix\+::\+Transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Matrix_a4c6534598e7eacfb3cc4db4bafd8cb27}\label{namespacegft_1_1Matrix_a4c6534598e7eacfb3cc4db4bafd8cb27}} 
+\index{gft::Matrix@{gft::Matrix}!Write@{Write}}
+\index{Write@{Write}!gft::Matrix@{gft::Matrix}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Matrix\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Matrix_1_1sMatrix}{s\+Matrix}} $\ast$}]{M,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+

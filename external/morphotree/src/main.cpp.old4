@@ -1,0 +1,58 @@
+
+#include <iostream>
+#include <vector>
+// #include "morphotree/filtering/globalOptimiser/MinCPerimeterWithAbsError.hpp"
+
+#include "morphotree/attributes/topologicalHeightComputer.hpp"
+#include "morphotree/attributes/numberOfDescendantsComputer.hpp"
+#include "morphotree/attributes/boundingboxComputer.hpp"
+
+#include "morphotree/attributes/extinctionValues/ExtinctionValueLeavesComputer.hpp"
+#include "morphotree/attributes/extinctionValues/ExtinctionValueComputer.hpp"
+#include "morphotree/adjacency/adjacency8c.hpp"
+#include "morphotree/attributes/areaComputer.hpp"
+#include "morphotree/tree/mtree.hpp"
+#include "morphotree/core/io.hpp"
+
+#include "morphotree/filtering/extinctionFilter.hpp"
+
+
+namespace mt = morphotree;
+
+int main(int argc, char *argv[]) 
+{
+  using ValueType = mt::uint8;
+  using ExtinctionValueLeavesComputerType = mt::ExtinctionValueLeavesComputer<ValueType, mt::uint32>;
+  using ExtinctionValueComputerType = mt::ExtinctionValueComputer<ValueType, mt::uint32>;
+  using MTree = mt::MorphologicalTree<mt::uint8>;
+  using NodePtr = MTree::NodePtr;
+
+  std::vector<ValueType> f = {
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0,
+    0, 2, 4, 4, 4, 2, 4, 4, 4, 4, 2, 0,
+    0, 2, 4, 7, 4, 2, 4, 7, 7, 4, 2, 0,
+    0, 2, 4, 4, 4, 2, 4, 4, 4, 4, 2, 0,
+    0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 
+  };
+
+  mt::Box domain = mt::Box::fromSize(mt::UI32Point(12, 7));
+    
+  MTree tree = 
+    mt::buildMaxTree(f, std::make_shared<mt::Adjacency8C>(domain));
+
+
+  std::vector<mt::uint32> area = 
+    std::make_unique<mt::AreaComputer<mt::uint8>>()->computeAttribute(tree);
+
+  MTree tree_filtered = mt::extinctionFilter(tree, area, 1);
+
+  std::cout << "tree : number of nodes = " << tree.numberOfNodes() << std::endl;
+  std::cout << "filtered tree: number of nodes = " << tree_filtered.numberOfNodes() << std::endl;
+  std::vector<mt::uint8> f_filtered = tree_filtered.reconstructImage();
+
+  mt::printImageIntoConsoleWithCast<mt::int32>(f_filtered, domain);
+
+  return 0;
+}

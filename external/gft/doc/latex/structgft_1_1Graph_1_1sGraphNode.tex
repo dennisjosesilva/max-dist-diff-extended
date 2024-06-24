@@ -1,0 +1,65 @@
+\hypertarget{structgft_1_1Graph_1_1sGraphNode}{}\doxysection{gft\+::Graph\+::s\+Graph\+Node Struct Reference}
+\label{structgft_1_1Graph_1_1sGraphNode}\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+
+
+Structure representing a node of a generic graph.  
+
+
+
+
+{\ttfamily \#include $<$gft\+\_\+graph.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode_a1f883833e429346ab00ef08acd7ee16b}{outdegree}}
+\item 
+int \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode_a1cc8cdab095095d27ba0e95745994561}{arraysize}}
+\item 
+int \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode_aaaba1643aba9231d38c2da03bd7cdbe5}{id}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode_a21e942e9319c4bb4d9594841d0b9d8b8}{adj\+List}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode_a6b15c0e6add0d94b97c42aeee0983ee5}{Warcs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing a node of a generic graph. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structgft_1_1Graph_1_1sGraphNode_a21e942e9319c4bb4d9594841d0b9d8b8}\label{structgft_1_1Graph_1_1sGraphNode_a21e942e9319c4bb4d9594841d0b9d8b8}} 
+\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}!adjList@{adjList}}
+\index{adjList@{adjList}!gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+\doxysubsubsection{\texorpdfstring{adjList}{adjList}}
+{\footnotesize\ttfamily int$\ast$ gft\+::\+Graph\+::s\+Graph\+Node\+::adj\+List}
+
+Adjacency list (list of nodes that are adjacent to the given node) implemented as a dynamically allocated array with current length in use given by outdegree. \mbox{\Hypertarget{structgft_1_1Graph_1_1sGraphNode_a1cc8cdab095095d27ba0e95745994561}\label{structgft_1_1Graph_1_1sGraphNode_a1cc8cdab095095d27ba0e95745994561}} 
+\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}!arraysize@{arraysize}}
+\index{arraysize@{arraysize}!gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+\doxysubsubsection{\texorpdfstring{arraysize}{arraysize}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::s\+Graph\+Node\+::arraysize}
+
+The actual total allocated length of the array used to store the adjacency list. \mbox{\Hypertarget{structgft_1_1Graph_1_1sGraphNode_aaaba1643aba9231d38c2da03bd7cdbe5}\label{structgft_1_1Graph_1_1sGraphNode_aaaba1643aba9231d38c2da03bd7cdbe5}} 
+\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}!id@{id}}
+\index{id@{id}!gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::s\+Graph\+Node\+::id}
+
+\mbox{\Hypertarget{structgft_1_1Graph_1_1sGraphNode_a1f883833e429346ab00ef08acd7ee16b}\label{structgft_1_1Graph_1_1sGraphNode_a1f883833e429346ab00ef08acd7ee16b}} 
+\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}!outdegree@{outdegree}}
+\index{outdegree@{outdegree}!gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+\doxysubsubsection{\texorpdfstring{outdegree}{outdegree}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::s\+Graph\+Node\+::outdegree}
+
+The current number of adjacent nodes for the given node. \mbox{\Hypertarget{structgft_1_1Graph_1_1sGraphNode_a6b15c0e6add0d94b97c42aeee0983ee5}\label{structgft_1_1Graph_1_1sGraphNode_a6b15c0e6add0d94b97c42aeee0983ee5}} 
+\index{gft::Graph::sGraphNode@{gft::Graph::sGraphNode}!Warcs@{Warcs}}
+\index{Warcs@{Warcs}!gft::Graph::sGraphNode@{gft::Graph::sGraphNode}}
+\doxysubsubsection{\texorpdfstring{Warcs}{Warcs}}
+{\footnotesize\ttfamily int$\ast$ gft\+::\+Graph\+::s\+Graph\+Node\+::\+Warcs}
+
+The corresponding arc weights for the adjacency list. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pmiranda/programming/lib/gft/include/\mbox{\hyperlink{gft__graph_8h}{gft\+\_\+graph.\+h}}\end{DoxyCompactItemize}

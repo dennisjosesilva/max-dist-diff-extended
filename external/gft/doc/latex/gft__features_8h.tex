@@ -1,0 +1,104 @@
+\hypertarget{gft__features_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+features.h File Reference}
+\label{gft__features_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_features.h@{/home/pmiranda/programming/lib/gft/include/gft\_features.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage32f.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Features_1_1sFeatures}{gft\+::\+Features\+::s\+Features}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Features}{gft\+::\+Features}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gft__features_8h_a6a9e5ec30a69928eeb90d20fd982b367}{gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+L\+A\+B\+EL}}~0x000001
+\item 
+\#define \mbox{\hyperlink{gft__features_8h_a37b9e75658fd61cdf3e50dfe3633fd89}{gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+I\+N\+D\+EX}}~0x000002
+\item 
+\#define \mbox{\hyperlink{gft__features_8h_a3e098b62879b1e6df0454ff7d9c08ea3}{gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+FV}}~0x000004
+\item 
+\#define \mbox{\hyperlink{gft__features_8h_ab37c65a3eff5e49c6ed91279d1639709}{gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+D\+I\+ST}}~0x000008
+\item 
+\#define \mbox{\hyperlink{gft__features_8h_ac84f7b42ec830bf9c0b19d9a0a198b40}{gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+A\+LL}}~0x00000F
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Features\+::s\+Features \mbox{\hyperlink{namespacegft_a48aaae88d84ab4cbbc3779319b68c3b7}{gft\+::s\+Features}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a027257e8a0ca79f5d5c44f2ee0b2f31f}{gft\+::\+Features\+::\+Create}} (int n, int nfeats, int style)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a0d9f4266d7a1175d64b921eeb12f7fe0}{gft\+::\+Features\+::\+Clone}} (s\+Features $\ast$f)
+\item 
+void $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_afac8bb8f05108f68e32b82327c5e4d08}{gft\+::\+Features\+::\+Destroy}} (s\+Features $\ast$$\ast$f)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Features_a51255ff3f276e777128097e739a1b370}{gft\+::\+Features\+::\+Randomize}} (s\+Features $\ast$f)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Features_aa214ae12b21b8c669ebc9fce82a40aa9}{gft\+::\+Features\+::\+Resize}} (s\+Features $\ast$$\ast$f, int n)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_aed2cf2b103623766f6dffcc85b7e7754}{gft\+::\+Features\+::\+Remove\+Samples}} (s\+Features $\ast$$\ast$f, float rate)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a7ecb998e24bc0ce36fe3163b0aef5e2f}{gft\+::\+Features\+::\+Merge}} (s\+Features $\ast$f1, s\+Features $\ast$f2)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_ad641d31404bff5fffe0aafcba52426e2}{gft\+::\+Features\+::\+K\+NN}} (s\+Features $\ast$f, float $\ast$fv, int k)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Features_afc6601862921bea92cac2c7357e9f4c2}{gft\+::\+Features\+::\+K\+N\+N\+Mean\+Distance}} (s\+Features $\ast$f, float $\ast$fv, int k)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a5a762b791e79e137e800719af7a7d960}{gft\+::\+Features\+::\+Get\+Samples}} (s\+Image32 $\ast$img, int $\ast$S)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a06e262fc0ed62a3a3fea42d58d1947f5}{gft\+::\+Features\+::\+Get\+Samples}} (s\+C\+Image $\ast$cimg, int $\ast$S)
+\item 
+s\+Features $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_ac5f6a55e061e65b0514b6c0f11f1fca3}{gft\+::\+Features\+::\+Get\+Samples}} (s\+C\+Image32f $\ast$cimg, int $\ast$S)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a5130baeeddc2db6682070e2dc01a5c3a}{gft\+::\+Features\+::\+K\+N\+N\+Fuzzy\+Classification}} (s\+C\+Image $\ast$cimg, int $\ast$S\+\_\+obj, int $\ast$S\+\_\+bkg, float ds, int k, int maxsamples, int Pmax)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a9eeb078317a1763893299972e344d067}{gft\+::\+Features\+::\+K\+N\+N\+Fuzzy\+Classification}} (s\+Image32 $\ast$img, int $\ast$S\+\_\+obj, int $\ast$S\+\_\+bkg, float ds, int k, int maxsamples, int Pmax)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_ae6808fdb3eebe6aaca87af2c14b1a564}{gft\+::\+Features\+::\+K\+N\+N\+Fuzzy\+Classification}} (s\+C\+Image32f $\ast$cimg, int $\ast$S\+\_\+obj, int $\ast$S\+\_\+bkg, float ds, int k, int maxsamples, int Pmax)
+\item 
+s\+Image32f $\ast$ \mbox{\hyperlink{namespacegft_1_1Features_a274631639654a6f3f2c3e4e9d9ba473c}{gft\+::\+Features\+::\+K\+N\+N\+Mean\+Distance\+Map}} (s\+C\+Image32f $\ast$cimg, int $\ast$S, int k, int maxsamples)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gft__features_8h_ac84f7b42ec830bf9c0b19d9a0a198b40}\label{gft__features_8h_ac84f7b42ec830bf9c0b19d9a0a198b40}} 
+\index{gft\_features.h@{gft\_features.h}!gftFeature\_ALLOCALL@{gftFeature\_ALLOCALL}}
+\index{gftFeature\_ALLOCALL@{gftFeature\_ALLOCALL}!gft\_features.h@{gft\_features.h}}
+\doxysubsubsection{\texorpdfstring{gftFeature\_ALLOCALL}{gftFeature\_ALLOCALL}}
+{\footnotesize\ttfamily \#define gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+A\+LL~0x00000F}
+
+\mbox{\Hypertarget{gft__features_8h_ab37c65a3eff5e49c6ed91279d1639709}\label{gft__features_8h_ab37c65a3eff5e49c6ed91279d1639709}} 
+\index{gft\_features.h@{gft\_features.h}!gftFeature\_ALLOCDIST@{gftFeature\_ALLOCDIST}}
+\index{gftFeature\_ALLOCDIST@{gftFeature\_ALLOCDIST}!gft\_features.h@{gft\_features.h}}
+\doxysubsubsection{\texorpdfstring{gftFeature\_ALLOCDIST}{gftFeature\_ALLOCDIST}}
+{\footnotesize\ttfamily \#define gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+D\+I\+ST~0x000008}
+
+\mbox{\Hypertarget{gft__features_8h_a3e098b62879b1e6df0454ff7d9c08ea3}\label{gft__features_8h_a3e098b62879b1e6df0454ff7d9c08ea3}} 
+\index{gft\_features.h@{gft\_features.h}!gftFeature\_ALLOCFV@{gftFeature\_ALLOCFV}}
+\index{gftFeature\_ALLOCFV@{gftFeature\_ALLOCFV}!gft\_features.h@{gft\_features.h}}
+\doxysubsubsection{\texorpdfstring{gftFeature\_ALLOCFV}{gftFeature\_ALLOCFV}}
+{\footnotesize\ttfamily \#define gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+FV~0x000004}
+
+\mbox{\Hypertarget{gft__features_8h_a37b9e75658fd61cdf3e50dfe3633fd89}\label{gft__features_8h_a37b9e75658fd61cdf3e50dfe3633fd89}} 
+\index{gft\_features.h@{gft\_features.h}!gftFeature\_ALLOCINDEX@{gftFeature\_ALLOCINDEX}}
+\index{gftFeature\_ALLOCINDEX@{gftFeature\_ALLOCINDEX}!gft\_features.h@{gft\_features.h}}
+\doxysubsubsection{\texorpdfstring{gftFeature\_ALLOCINDEX}{gftFeature\_ALLOCINDEX}}
+{\footnotesize\ttfamily \#define gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+I\+N\+D\+EX~0x000002}
+
+\mbox{\Hypertarget{gft__features_8h_a6a9e5ec30a69928eeb90d20fd982b367}\label{gft__features_8h_a6a9e5ec30a69928eeb90d20fd982b367}} 
+\index{gft\_features.h@{gft\_features.h}!gftFeature\_ALLOCLABEL@{gftFeature\_ALLOCLABEL}}
+\index{gftFeature\_ALLOCLABEL@{gftFeature\_ALLOCLABEL}!gft\_features.h@{gft\_features.h}}
+\doxysubsubsection{\texorpdfstring{gftFeature\_ALLOCLABEL}{gftFeature\_ALLOCLABEL}}
+{\footnotesize\ttfamily \#define gft\+Feature\+\_\+\+A\+L\+L\+O\+C\+L\+A\+B\+EL~0x000001}
+

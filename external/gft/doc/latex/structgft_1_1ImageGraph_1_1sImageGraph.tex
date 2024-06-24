@@ -1,0 +1,75 @@
+\hypertarget{structgft_1_1ImageGraph_1_1sImageGraph}{}\doxysection{gft\+::Image\+Graph\+::s\+Image\+Graph Struct Reference}
+\label{structgft_1_1ImageGraph_1_1sImageGraph}\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+
+
+Structure representing a sparse graph of an image.  
+
+
+
+
+{\ttfamily \#include $<$gft\+\_\+imagegraph.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_a408a343ed1f87a8ea30a90bdaa25111b}{type}}
+\item 
+int \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_a218fce33d016f5da52980e6154efdea5}{Wmax}}
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_aac82de12983b1115c87ed8aa06e4cf6c}{n\+\_\+link}}
+\item 
+int \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_a6a1c60ceefac6e60147b29fe59045b18}{ncols}}
+\item 
+int \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_a81fa83c74ebd29ae24c31c506ba0d4ff}{nrows}}
+\item 
+\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$ \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph_a642b477806700ec44ec7b4feb12cf8bf}{A}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing a sparse graph of an image. 
+
+The data structure assumes that the nodes are the image pixels and the arcs are defined by an adjacency relation invariant to translation. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_a642b477806700ec44ec7b4feb12cf8bf}\label{structgft_1_1ImageGraph_1_1sImageGraph_a642b477806700ec44ec7b4feb12cf8bf}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!A@{A}}
+\index{A@{A}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}}$\ast$ gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::A}
+
+The adjacency relation of vertices in the graph. \mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_aac82de12983b1115c87ed8aa06e4cf6c}\label{structgft_1_1ImageGraph_1_1sImageGraph_aac82de12983b1115c87ed8aa06e4cf6c}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!n\_link@{n\_link}}
+\index{n\_link@{n\_link}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{n\_link}{n\_link}}
+{\footnotesize\ttfamily int$\ast$$\ast$ gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::n\+\_\+link}
+
+The array \textquotesingle{}n-\/link\textquotesingle{} stores the weights of arcs between pairs of neighboring pixels. \mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_a6a1c60ceefac6e60147b29fe59045b18}\label{structgft_1_1ImageGraph_1_1sImageGraph_a6a1c60ceefac6e60147b29fe59045b18}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!ncols@{ncols}}
+\index{ncols@{ncols}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{ncols}{ncols}}
+{\footnotesize\ttfamily int gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::ncols}
+
+The number of columns in the image. \mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_a81fa83c74ebd29ae24c31c506ba0d4ff}\label{structgft_1_1ImageGraph_1_1sImageGraph_a81fa83c74ebd29ae24c31c506ba0d4ff}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!nrows@{nrows}}
+\index{nrows@{nrows}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{nrows}{nrows}}
+{\footnotesize\ttfamily int gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::nrows}
+
+The number of rows in the image. \mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_a408a343ed1f87a8ea30a90bdaa25111b}\label{structgft_1_1ImageGraph_1_1sImageGraph_a408a343ed1f87a8ea30a90bdaa25111b}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!type@{type}}
+\index{type@{type}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::type}
+
+The type can be D\+I\+S\+S\+I\+M\+I\+L\+A\+R\+I\+TY or C\+A\+P\+A\+C\+I\+TY. \mbox{\Hypertarget{structgft_1_1ImageGraph_1_1sImageGraph_a218fce33d016f5da52980e6154efdea5}\label{structgft_1_1ImageGraph_1_1sImageGraph_a218fce33d016f5da52980e6154efdea5}} 
+\index{gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}!Wmax@{Wmax}}
+\index{Wmax@{Wmax}!gft::ImageGraph::sImageGraph@{gft::ImageGraph::sImageGraph}}
+\doxysubsubsection{\texorpdfstring{Wmax}{Wmax}}
+{\footnotesize\ttfamily int gft\+::\+Image\+Graph\+::s\+Image\+Graph\+::\+Wmax}
+
+The highest arc weight value. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pmiranda/programming/lib/gft/include/\mbox{\hyperlink{gft__imagegraph_8h}{gft\+\_\+imagegraph.\+h}}\end{DoxyCompactItemize}

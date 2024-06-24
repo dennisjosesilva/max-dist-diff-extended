@@ -1,0 +1,143 @@
+\hypertarget{gft__ift_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+ift.h File Reference}
+\label{gft__ift_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_ift.h@{/home/pmiranda/programming/lib/gft/include/gft\_ift.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+imagegraph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+pqueue32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+heap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+graph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+morphology.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+layeredgraph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+analysis.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+scene32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1ift}{gft\+::ift}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_a4feb62997da02ef8acceba54c38faddd}{gft\+::ift\+::\+S\+C\+\_\+\+Pred\+\_\+fsum}} (s\+Image\+Graph $\ast$sg, int $\ast$S, float power)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a4b09e8b2bebadcd8d7d9df80ecf34cb5}{gft\+::ift\+::\+S\+C\+\_\+\+I\+FT}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, s\+Image32 $\ast$P\+\_\+sum)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1ift_a0b11296ad831bf85435c5f7ffc9e7e50}{gft\+::ift\+::\+Get\+Energy\+\_\+\+Min}} (s\+Image\+Graph $\ast$sg, s\+Image32 $\ast$label, int lb)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1ift_a785cd6a902b661030165dfcf0ebfad97}{gft\+::ift\+::\+Get\+Energy\+\_\+\+Max}} (s\+Image\+Graph $\ast$sg, s\+Image32 $\ast$label, int lb)
+\item 
+long long \mbox{\hyperlink{namespacegft_1_1ift_a4ba5f42ab4d8c64b123dc961cc3eb4c3}{gft\+::ift\+::\+Get\+Energy\+\_\+\+Sum}} (s\+Image\+Graph $\ast$sg, s\+Image32 $\ast$label, int lb)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1ift_aba6a214dd9040e5d67b870973dd099d3}{gft\+::ift\+::\+Get\+Energy\+\_\+\+Min}} (s\+Graph $\ast$graph, int $\ast$label, int lb)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ab7c55c50b614c6de6ebfa5a89df2e695}{gft\+::ift\+::\+O\+R\+FC}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a40923a96d4d49299d1defa0b2abf01c4}{gft\+::ift\+::\+O\+I\+FT}} (s\+Image32 $\ast$W, s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$img, float per, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a176e9535ad020785109eaf026a2262a5}{gft\+::ift\+::\+O\+I\+FT}} (s\+Scene32 $\ast$W, s\+Adj\+Rel3 $\ast$A, s\+Scene32 $\ast$scn, float per, int $\ast$S, s\+Scene32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a905746eb7c4d01deb0075dd85d0bf671}{gft\+::ift\+::\+O\+I\+FT}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a46869fe148e1fcaeca255ca247eb39fc}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+Min\+Max}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, s\+Image32 $\ast$pred, s\+Image32 $\ast$value, int niter)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a69307c51a52fcd24f7d19e920a7fb1e4}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+Max\+Min}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, s\+Image32 $\ast$pred, s\+Image32 $\ast$value, int niter)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a38cc0c9b5532ed47e594b879fbb62f4a}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+T\+Z2\+Bkg}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a99d80a32c8357df85ff648c8ddc5512a}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+T\+Z2\+Obj}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_afdbe440f347cfba12fbfab186a64d0fb}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+TZ}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+bool \mbox{\hyperlink{namespacegft_1_1ift_a2fee5806e78d2dea33bbc01c29a0b176}{gft\+::ift\+::is\+O\+I\+FT}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$Slabel, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_aea59af8b9ef54d379a10abfa740b8662}{gft\+::ift\+::\+O\+I\+FT}} (s\+Graph $\ast$graph, s\+Graph $\ast$transpose, int $\ast$S, int $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_aa84de16f8a863efcad863b6cbebe7304}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+in}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ad0ac05b88dd4c52bdffa1853c68aa690}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+Heap}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a2e6c977e8c4aee8fda810ab2036df4b3}{gft\+::ift\+::\+O\+I\+F\+T\+\_\+\+Heap}} (s\+Graph $\ast$graph, s\+Graph $\ast$transpose, int $\ast$S, int $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a1ee0591ef1663fe3eaa6378556d165c2}{gft\+::ift\+::\+E\+O\+I\+FT}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_aea67f61ff544f6fa152a11aa0e3b7746}{gft\+::ift\+::\+E\+O\+I\+F\+T\+\_\+2}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_accac213c2ebce1b3fadbcfef12061aa0}{gft\+::ift\+::\+E\+O\+I\+FT}} (s\+Graph $\ast$graph, s\+Graph $\ast$transpose, int $\ast$S, int $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ab4c7bde266461e6d9e583767cde39a1e}{gft\+::ift\+::\+E\+O\+I\+F\+T\+\_\+\+Heap}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a3fdaac27c478b1b26833e8d41dec3dde}{gft\+::ift\+::\+E\+O\+I\+F\+T\+\_\+\+Heap\+\_\+2}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1ift_a029dbb2b3b0dbd6e8c09bd8526840b7d}{gft\+::ift\+::\+E\+O\+I\+F\+T\+\_\+\+Heap\+\_\+3}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a99af11f29916533b1d2b43726884fa30}{gft\+::ift\+::\+E\+O\+I\+F\+T\+\_\+\+Heap}} (s\+Graph $\ast$graph, s\+Graph $\ast$transpose, int $\ast$S, int $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_abe9cfd2bce8abc12985bbd2386d3058e}{gft\+::ift\+::\+I\+F\+T\+\_\+fmax}} (s\+Graph $\ast$graph, int $\ast$S, int $\ast$label, int $\ast$cost)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a65cc9a674045f92fb6eae65185b8210c}{gft\+::ift\+::\+I\+F\+T\+\_\+fmax\+\_\+\+Heap}} (s\+Graph $\ast$graph, int $\ast$S, int $\ast$label, float $\ast$cost)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a90200fd5930bb0a11af8f9b8cd81532e}{gft\+::ift\+::\+I\+F\+T\+\_\+fw}} (s\+Image\+Graph $\ast$g, int $\ast$S, s\+Image32 $\ast$label, s\+Image32 $\ast$cost, s\+Image32 $\ast$pred)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ac0cc2d305f8475f4113e570ec2707416}{gft\+::ift\+::\+I\+F\+T\+\_\+fw}} (s\+Graph $\ast$graph, int $\ast$S, int $\ast$label, int $\ast$cost)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a4a347c31f59f2e6f715ae7565a82f3a9}{gft\+::ift\+::\+I\+F\+T\+\_\+fw}} (s\+Graph $\ast$graph, int $\ast$S, int $\ast$label, int $\ast$cost, int $\ast$pred)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a23e3a36fc473abb18cba0fc6bf80f30b}{gft\+::ift\+::\+I\+F\+T\+\_\+fw\+\_\+\+Heap}} (s\+Graph $\ast$graph, int $\ast$S, int $\ast$label, float $\ast$cost, int $\ast$pred)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_ab53fc87486970bcd313e037673857e93}{gft\+::ift\+::\+Cost\+\_\+fmin}} (s\+Image\+Graph $\ast$sg, int $\ast$S, int lb, s\+Image32 $\ast$label)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_a277acd1034d19fbad6bb305c0778a687}{gft\+::ift\+::\+Cost\+\_\+fmax}} (s\+Image\+Graph $\ast$sg, int $\ast$S, int lb, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a6e7f05a60e7fee70192413dfeccf6337}{gft\+::ift\+::\+C\+O\+I\+FT}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_a185e6eee95deb0233db39b1d5c89a970}{gft\+::ift\+::\+B\+B\+\_\+\+Geodesic\+\_\+\+Cost}} (s\+Image32 $\ast$pred, s\+Adj\+Rel $\ast$A)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_ac50c7d73e8bea6032b7dd20088220560}{gft\+::ift\+::\+B\+B\+\_\+\+Crop\+Template}} (s\+Image32 $\ast$cost\+\_\+template, int $\ast$S, s\+Image32 $\ast$label, int lb)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a380081c75342a6503da4da63f8f55c51}{gft\+::ift\+::\+B\+B\+\_\+\+O\+I\+FT}} (s\+Image\+Graph $\ast$G, int $\ast$S, s\+Image32 $\ast$L, s\+Image32 $\ast$C, s\+Image32 $\ast$P, float delta)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a4d5800c6d3983bd4d34ac7eea9533b71}{gft\+::ift\+::\+R\+B\+B\+\_\+\+O\+I\+FT}} (s\+Image\+Graph $\ast$G, int $\ast$S, s\+Image32 $\ast$L, s\+Image32 $\ast$C, s\+Image32 $\ast$P, float delta)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_af4a65367e3698203034743984fa1481c}{gft\+::ift\+::\+Get\+Seeds\+By\+Label}} (int $\ast$S, s\+Image32 $\ast$label, int lb)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_ad485803f8c80cf85b823da135dc51109}{gft\+::ift\+::\+Get\+All\+Internal\+Seeds\+By\+Label}} (int $\ast$S, s\+Image32 $\ast$label, int lb, int $\ast$hr, int nlayers)
+\item 
+s\+Image\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_a74d3c009116125aff43857d703de5074}{gft\+::ift\+::\+Get\+Polarity\+Graph}} (s\+Image\+Graph $\ast$graph, s\+C\+Image $\ast$cimg, s\+Image32 $\ast$img, int pol)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a41e80fbb14eb892bcafccdd4e3723ab4}{gft\+::ift\+::\+H\+L\+\_\+\+O\+I\+FT}} (s\+Image\+Graph $\ast$graph, s\+C\+Image $\ast$cimg, s\+Image32 $\ast$img, float radius, char $\ast$hierarchy, int $\ast$S, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a685f1bad984cef653fbccebe4da2cb22}{gft\+::ift\+::\+H\+L\+\_\+\+O\+I\+FT}} (s\+Layered\+Graph $\ast$lg, int Wmax, int $\ast$S, int $\ast$L, int $\ast$hr)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a70e80fbdb94bee3bb6c2c0250f1025e4}{gft\+::ift\+::\+H\+L\+\_\+\+O\+I\+F\+T\+\_\+2}} (s\+Layered\+Graph $\ast$lg, int Wmax, int $\ast$S, int $\ast$L, int $\ast$hr)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ac789e4c2c99b40704623ffba1ae3a9fe}{gft\+::ift\+::\+I\+F\+T\+\_\+fpeak}} (s\+Image32 $\ast$grad, s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a6acac7b031b3e67c258224369aa81d1b}{gft\+::ift\+::\+I\+F\+T\+\_\+fwv}} (s\+Image32 $\ast$grad, s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$label)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a90115e2ef1057316e039f8c6d3cf81db}{gft\+::ift\+::\+Relax\+Mobj}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+float $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_aa7243400cbd1b2193c8a9bedcbba8fcf}{gft\+::ift\+::\+O\+Relax\+\_\+dual}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+float $\ast$ \mbox{\hyperlink{namespacegft_1_1ift_a9590db831f3cae62f91bd272cbe3a7e2}{gft\+::ift\+::\+Relax\+\_\+dual}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a9c72fd805649aee1536b59d3456f71b7}{gft\+::ift\+::\+Relax}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ad6cfe1bc99865f31efecb1aa68f5a625}{gft\+::ift\+::\+O\+Relax\+\_\+1}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_af4fdc30852a5cd80921da18e516fba5b}{gft\+::ift\+::\+O\+Relax}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a1b3afa664878ecf5cd3f83c923d4e8ab}{gft\+::ift\+::\+O\+Relax\+\_\+i}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a65898647f7500ab0a1ecc409199bd370}{gft\+::ift\+::\+O\+Relax\+\_\+s}} (s\+Image\+Graph $\ast$sg, int $\ast$S, s\+Image32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_a74008c43d205aaebe903902407c68fb3}{gft\+::ift\+::\+O\+Relax\+\_\+1}} (s\+Scene32 $\ast$W, s\+Adj\+Rel3 $\ast$A, s\+Scene32 $\ast$scn, float per, int $\ast$S, s\+Scene32 $\ast$label, int ntimes)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ift_ad559750a2e891e3e829d451c780e66bc}{gft\+::ift\+::\+G\+G\+C\+\_\+maxmin}} (s\+Image\+Graph $\ast$graph, s\+C\+Image $\ast$cimg, s\+Image32 $\ast$img, int method, float power\+\_\+geodesic, float delta, float theta\+\_\+hedgehog, float R, int postproc, int niterations, int conn, int pol, int shapepriors, int costtemplate, int $\ast$S, s\+Image32 $\ast$label)
+\end{DoxyCompactItemize}

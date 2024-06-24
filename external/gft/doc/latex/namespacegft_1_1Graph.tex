@@ -1,0 +1,611 @@
+\hypertarget{namespacegft_1_1Graph}{}\doxysection{gft\+::Graph Namespace Reference}
+\label{namespacegft_1_1Graph}\index{gft::Graph@{gft::Graph}}
+
+
+Common definitions and functions to manipulate a generic graph.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1__Arc}{\+\_\+\+Arc}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1sClusteringTree}{s\+Clustering\+Tree}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}}
+\begin{DoxyCompactList}\small\item\em Structure representing a generic graph. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1sGraphNode}{s\+Graph\+Node}}
+\begin{DoxyCompactList}\small\item\em Structure representing a node of a generic graph. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Graph_1_1__Arc}{gft\+::\+Graph\+::\+\_\+\+Arc}} \mbox{\hyperlink{namespacegft_1_1Graph_a17347266af75e9831568a651ad12789d}{Arc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a272f7e63d4781fefce61826a3de83df1}{Create}} (int nnodes, int outdegree, int $\ast$Wnodes)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a20a46b600a0312493990c04c2abf739b}{Clone}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a0eea77de6a8bf8bee7fad8a1ae2c493d}{Clone}} (\mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$sg)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_af00144e2e8d89f95c49ce35278cc9cba}{Transpose}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Computes the transpose of a directed graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a1424723b4324c4c28473a44475877946}{Destroy}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$graph)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_aeee8840d87c366d6f96c1d15e03238a8}{Get\+Number\+Of\+Arcs}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Returns the total number of arcs in the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_adda5be1319dacad7e7cebce5290c714a}{Get\+Arc\+Weight}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Returns the weight of the arc (src, dest) in the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a96417df73ce75882bfd9c7aa3a52989a}{Get\+Arc\+Index}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Returns the index of a given arc (src, dest) in the adjacency list of src. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a39a6788d49e786706d6c812538d6a6db}{Add\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an edge to an undirected graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a3e3a06475b1a4a9ee3119c711ad90c74}{Add\+Directed\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an arc to a directed graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a1a974738e405ef1130a6cd15134898f8}{Update\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an edge of the undirected graph. The edge is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aebd1b27647c6eb3a1396da01691c7a44}{Update\+Directed\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an arc of the graph. The arc is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_ac5a36dd01f1f5f0ddb36f44090824d4d}{Update\+Directed\+Edge\+If\+Higher}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an arc of the graph only if the new value is higher. The arc is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a75f44fac1fd983ba9603c35301760a54}{Add\+Directed\+Edge\+If\+Nonexistent}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an arc to a directed graph only if it is an unrepeated arc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a2e12c34e9b3d1d184509834cfa40c754}{Remove\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Removes an edge from the undirected graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_ad8942999644c55262929948f4d08e111}{Remove\+Directed\+Edge}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Removes an arc from the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a9d58e276c7bf78744c3abefe12d73acf}{Get\+Maximum\+Arc}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Returns the value of the highest arc weight of the graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aac002ec9ff9ec5f12e6b4604321d29c4}{Change\+Weight}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int old\+\_\+val, int new\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Replaces a given arc weight with a new value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a8576123bb6d3407ec0649dcbb9594830}{Pow}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int power, int max)
+\begin{DoxyCompactList}\small\item\em Applies an increasing transformation to the arc weights to enhance their differences. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a93be76a0f122f9607e4d8f70ebd2ead5}{Tarjan\+\_\+aux}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int $\ast$index, int $\ast$lowlink, int $\ast$label, int i, int id, int $\ast$lb)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a6a5cd350206d6db42925e9e6c483fcda}{Tarjan}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a9c83f37c96a8cd1b2df804b9eddb6aa5}{Tarjan}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int p)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_af7673f91399ae7a7b417bc8df87f9c06}{Tarjan}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int $\ast$V, int n)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a889112da0e6fbb580a3d1066d6abdd01}{Change\+Type}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, int type)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a5cab6cbf014d198072188de1044b587a}{Hedgehog\+Digraph}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$cost, float theta, float r)
+\begin{DoxyCompactList}\small\item\em Adds/updates the arc weights to incorporate the Hedgehog shape constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a9da34653d40a056baca227fc09aae5b8}{Local\+Band\+Reduction}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$graph, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$cost, int delta)
+\begin{DoxyCompactList}\small\item\em Computes the transitive reduction of a D\+AG representing the Local Band constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aec12baef9677806c6726c08f42f77f3e}{Local\+Band\+Constraint}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$cost, int delta, float r)
+\begin{DoxyCompactList}\small\item\em Adds/updates the arc weights to incorporate the Local Band shape constraint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_ad33bfcbef33276480328ef15ab44b0a1}{R\+AG}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a4d2d0889bd1ab8c270769bd48d263f16}{R\+AG}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, int c1, int c2, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a2c52e322800f6937fff8247faa5f8954}{R\+A\+G\+\_\+lab}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a3ac00f2b1d2f8d860e395a1e71f722ae}{R\+A\+G\+\_\+lab\+\_\+3}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, int c1, int c2, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a7fa3c09036b2c22a7ad28ee66666817f}{R\+AG}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aeeccffac6856a1a2822ca007b9f4c3ca}{R\+AG}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aecb33bbc3a2b18d70ad1788ff62a9f50}{R\+AG}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, float polarity, float curvature\+\_\+R)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a3c74062a7869f9f30d59cbef8fac3dd7}{R\+AG}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a8218e49f4a54487ad40e10640b91a2eb}{R\+AG}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aef9e31f38910046add408901646b7415}{Draw\+R\+AG}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, float r, float w, float h)
+\begin{DoxyCompactList}\small\item\em Generates a drawing for viewing a provided R\+AG. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aa70a444158d54c9134d926e9daa44d66}{Split}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$G, int $\ast$label, int lb)
+\begin{DoxyCompactList}\small\item\em Splits the graph into two graphs according to a labeling provided. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a313d17083d4ea346ad4eacd8e7da2aab}{Divisive\+Clustering\+By\+M\+ST}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int c)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a8366a929ca1c037880741e48244a469d}{Get\+Node\+Index}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int id)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a1efea0aafe1710d1bb9c943b8dbe79dc}{Compute\+D\+C\+Csize}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int energy, int p)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aabe8d45713472722657182510f819323}{Compute\+Enegy\+Map\+\_\+\+U\+O\+I\+FT}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$spixels, \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a1fe9cad6a1985701b9aa6abbfc3ecbf1}{Divisive\+Clustering\+By\+O\+I\+FT}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int c)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_adf2637bc64a575694195da23458be211}{Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int c)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a5d656f318f796b52e4881788e633c626}{I\+F\+T\+\_\+fw\+T\+\_\+dcc}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graph, \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$graphT, int $\ast$S, int $\ast$label, int $\ast$cost)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aa282b09f02885bf0959ee7586c8106e6}{Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+3}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int c)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a6a440099b8093f323a0f0731d8f0a2ea}{Find\+Merger}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$MH, int s, \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, int $\ast$oift\+\_\+label, int energy)
+\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a309990ab60d8d14161d964040046e678}{Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G)
+\item 
+\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a14a01e9e0288e9b70ff4931fa1359813}{Divisive\+Clustering\+By\+O\+I\+FT}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a840102c2294407be8adec39fb3057245}{Write\+Merge\+History}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$MH, int n, char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a06031bf28bd661c252dc71a38aea3dd5}{Union}} (int $\ast$R, int $\ast$rp, int rq, int $\ast$N)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_ab1625af4fd362e36cbe9c4c16244e46f}{Find}} (int $\ast$R, int p)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_acfaa8cd1a4f69ace40c8c13a7c157f11}{Clustering\+By\+M\+S\+T2}} (\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$G, float k)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common definitions and functions to manipulate a generic graph. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Graph_a17347266af75e9831568a651ad12789d}\label{namespacegft_1_1Graph_a17347266af75e9831568a651ad12789d}} 
+\index{gft::Graph@{gft::Graph}!Arc@{Arc}}
+\index{Arc@{Arc}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Arc}{Arc}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgft_1_1Graph_1_1__Arc}{gft\+::\+Graph\+::\+\_\+\+Arc}} \mbox{\hyperlink{namespacegft_1_1Graph_a17347266af75e9831568a651ad12789d}{gft\+::\+Graph\+::\+Arc}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Graph_a3e3a06475b1a4a9ee3119c711ad90c74}\label{namespacegft_1_1Graph_a3e3a06475b1a4a9ee3119c711ad90c74}} 
+\index{gft::Graph@{gft::Graph}!AddDirectedEdge@{AddDirectedEdge}}
+\index{AddDirectedEdge@{AddDirectedEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{AddDirectedEdge()}{AddDirectedEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Add\+Directed\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Adds an arc to a directed graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a75f44fac1fd983ba9603c35301760a54}\label{namespacegft_1_1Graph_a75f44fac1fd983ba9603c35301760a54}} 
+\index{gft::Graph@{gft::Graph}!AddDirectedEdgeIfNonexistent@{AddDirectedEdgeIfNonexistent}}
+\index{AddDirectedEdgeIfNonexistent@{AddDirectedEdgeIfNonexistent}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{AddDirectedEdgeIfNonexistent()}{AddDirectedEdgeIfNonexistent()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Add\+Directed\+Edge\+If\+Nonexistent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Adds an arc to a directed graph only if it is an unrepeated arc. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a39a6788d49e786706d6c812538d6a6db}\label{namespacegft_1_1Graph_a39a6788d49e786706d6c812538d6a6db}} 
+\index{gft::Graph@{gft::Graph}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Adds an edge to an undirected graph. 
+
+Since undirected graphs are internally represented as symmetric graphs, this function adds two arcs (src, dest) and (dest, src) to the graph. \mbox{\Hypertarget{namespacegft_1_1Graph_a889112da0e6fbb580a3d1066d6abdd01}\label{namespacegft_1_1Graph_a889112da0e6fbb580a3d1066d6abdd01}} 
+\index{gft::Graph@{gft::Graph}!ChangeType@{ChangeType}}
+\index{ChangeType@{ChangeType}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{ChangeType()}{ChangeType()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Change\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aac002ec9ff9ec5f12e6b4604321d29c4}\label{namespacegft_1_1Graph_aac002ec9ff9ec5f12e6b4604321d29c4}} 
+\index{gft::Graph@{gft::Graph}!ChangeWeight@{ChangeWeight}}
+\index{ChangeWeight@{ChangeWeight}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{ChangeWeight()}{ChangeWeight()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Change\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{old\+\_\+val,  }\item[{int}]{new\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+Replaces a given arc weight with a new value. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a20a46b600a0312493990c04c2abf739b}\label{namespacegft_1_1Graph_a20a46b600a0312493990c04c2abf739b}} 
+\index{gft::Graph@{gft::Graph}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a0eea77de6a8bf8bee7fad8a1ae2c493d}\label{namespacegft_1_1Graph_a0eea77de6a8bf8bee7fad8a1ae2c493d}} 
+\index{gft::Graph@{gft::Graph}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_acfaa8cd1a4f69ace40c8c13a7c157f11}\label{namespacegft_1_1Graph_acfaa8cd1a4f69ace40c8c13a7c157f11}} 
+\index{gft::Graph@{gft::Graph}!ClusteringByMST2@{ClusteringByMST2}}
+\index{ClusteringByMST2@{ClusteringByMST2}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{ClusteringByMST2()}{ClusteringByMST2()}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Clustering\+By\+M\+S\+T2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{float}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a1efea0aafe1710d1bb9c943b8dbe79dc}\label{namespacegft_1_1Graph_a1efea0aafe1710d1bb9c943b8dbe79dc}} 
+\index{gft::Graph@{gft::Graph}!ComputeDCCsize@{ComputeDCCsize}}
+\index{ComputeDCCsize@{ComputeDCCsize}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{ComputeDCCsize()}{ComputeDCCsize()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Compute\+D\+C\+Csize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{energy,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aabe8d45713472722657182510f819323}\label{namespacegft_1_1Graph_aabe8d45713472722657182510f819323}} 
+\index{gft::Graph@{gft::Graph}!ComputeEnegyMap\_UOIFT@{ComputeEnegyMap\_UOIFT}}
+\index{ComputeEnegyMap\_UOIFT@{ComputeEnegyMap\_UOIFT}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{ComputeEnegyMap\_UOIFT()}{ComputeEnegyMap\_UOIFT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$ gft\+::\+Graph\+::\+Compute\+Enegy\+Map\+\_\+\+U\+O\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$}]{spixels,  }\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a272f7e63d4781fefce61826a3de83df1}\label{namespacegft_1_1Graph_a272f7e63d4781fefce61826a3de83df1}} 
+\index{gft::Graph@{gft::Graph}!Create@{Create}}
+\index{Create@{Create}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{nnodes,  }\item[{int}]{outdegree,  }\item[{int $\ast$}]{Wnodes }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A utility function that creates a graph of \textquotesingle{}nnodes\textquotesingle{} vertices. \mbox{\Hypertarget{namespacegft_1_1Graph_a1424723b4324c4c28473a44475877946}\label{namespacegft_1_1Graph_a1424723b4324c4c28473a44475877946}} 
+\index{gft::Graph@{gft::Graph}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a313d17083d4ea346ad4eacd8e7da2aab}\label{namespacegft_1_1Graph_a313d17083d4ea346ad4eacd8e7da2aab}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByMST@{DivisiveClusteringByMST}}
+\index{DivisiveClusteringByMST@{DivisiveClusteringByMST}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByMST()}{DivisiveClusteringByMST()}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+M\+ST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a14a01e9e0288e9b70ff4931fa1359813}\label{namespacegft_1_1Graph_a14a01e9e0288e9b70ff4931fa1359813}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByOIFT@{DivisiveClusteringByOIFT}}
+\index{DivisiveClusteringByOIFT@{DivisiveClusteringByOIFT}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByOIFT()}{DivisiveClusteringByOIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a1fe9cad6a1985701b9aa6abbfc3ecbf1}\label{namespacegft_1_1Graph_a1fe9cad6a1985701b9aa6abbfc3ecbf1}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByOIFT@{DivisiveClusteringByOIFT}}
+\index{DivisiveClusteringByOIFT@{DivisiveClusteringByOIFT}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByOIFT()}{DivisiveClusteringByOIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a309990ab60d8d14161d964040046e678}\label{namespacegft_1_1Graph_a309990ab60d8d14161d964040046e678}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByOIFT\_2@{DivisiveClusteringByOIFT\_2}}
+\index{DivisiveClusteringByOIFT\_2@{DivisiveClusteringByOIFT\_2}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByOIFT\_2()}{DivisiveClusteringByOIFT\_2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_adf2637bc64a575694195da23458be211}\label{namespacegft_1_1Graph_adf2637bc64a575694195da23458be211}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByOIFT\_2@{DivisiveClusteringByOIFT\_2}}
+\index{DivisiveClusteringByOIFT\_2@{DivisiveClusteringByOIFT\_2}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByOIFT\_2()}{DivisiveClusteringByOIFT\_2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aa282b09f02885bf0959ee7586c8106e6}\label{namespacegft_1_1Graph_aa282b09f02885bf0959ee7586c8106e6}} 
+\index{gft::Graph@{gft::Graph}!DivisiveClusteringByOIFT\_3@{DivisiveClusteringByOIFT\_3}}
+\index{DivisiveClusteringByOIFT\_3@{DivisiveClusteringByOIFT\_3}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DivisiveClusteringByOIFT\_3()}{DivisiveClusteringByOIFT\_3()}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aef9e31f38910046add408901646b7415}\label{namespacegft_1_1Graph_aef9e31f38910046add408901646b7415}} 
+\index{gft::Graph@{gft::Graph}!DrawRAG@{DrawRAG}}
+\index{DrawRAG@{DrawRAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{DrawRAG()}{DrawRAG()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$ gft\+::\+Graph\+::\+Draw\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{float}]{r,  }\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+Generates a drawing for viewing a provided R\+AG. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_ab1625af4fd362e36cbe9c4c16244e46f}\label{namespacegft_1_1Graph_ab1625af4fd362e36cbe9c4c16244e46f}} 
+\index{gft::Graph@{gft::Graph}!Find@{Find}}
+\index{Find@{Find}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Find (\begin{DoxyParamCaption}\item[{int $\ast$}]{R,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a6a440099b8093f323a0f0731d8f0a2ea}\label{namespacegft_1_1Graph_a6a440099b8093f323a0f0731d8f0a2ea}} 
+\index{gft::Graph@{gft::Graph}!FindMerger@{FindMerger}}
+\index{FindMerger@{FindMerger}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{FindMerger()}{FindMerger()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Find\+Merger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$}]{MH,  }\item[{int}]{s,  }\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int $\ast$}]{oift\+\_\+label,  }\item[{int}]{energy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a96417df73ce75882bfd9c7aa3a52989a}\label{namespacegft_1_1Graph_a96417df73ce75882bfd9c7aa3a52989a}} 
+\index{gft::Graph@{gft::Graph}!GetArcIndex@{GetArcIndex}}
+\index{GetArcIndex@{GetArcIndex}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{GetArcIndex()}{GetArcIndex()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Get\+Arc\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Returns the index of a given arc (src, dest) in the adjacency list of src. 
+
+Warning\+: This index may be affected by the removal of other arcs, becoming inconsistent in future operations. \mbox{\Hypertarget{namespacegft_1_1Graph_adda5be1319dacad7e7cebce5290c714a}\label{namespacegft_1_1Graph_adda5be1319dacad7e7cebce5290c714a}} 
+\index{gft::Graph@{gft::Graph}!GetArcWeight@{GetArcWeight}}
+\index{GetArcWeight@{GetArcWeight}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{GetArcWeight()}{GetArcWeight()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Get\+Arc\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Returns the weight of the arc (src, dest) in the graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a9d58e276c7bf78744c3abefe12d73acf}\label{namespacegft_1_1Graph_a9d58e276c7bf78744c3abefe12d73acf}} 
+\index{gft::Graph@{gft::Graph}!GetMaximumArc@{GetMaximumArc}}
+\index{GetMaximumArc@{GetMaximumArc}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{GetMaximumArc()}{GetMaximumArc()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Get\+Maximum\+Arc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Returns the value of the highest arc weight of the graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a8366a929ca1c037880741e48244a469d}\label{namespacegft_1_1Graph_a8366a929ca1c037880741e48244a469d}} 
+\index{gft::Graph@{gft::Graph}!GetNodeIndex@{GetNodeIndex}}
+\index{GetNodeIndex@{GetNodeIndex}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{GetNodeIndex()}{GetNodeIndex()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Get\+Node\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{G,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aeee8840d87c366d6f96c1d15e03238a8}\label{namespacegft_1_1Graph_aeee8840d87c366d6f96c1d15e03238a8}} 
+\index{gft::Graph@{gft::Graph}!GetNumberOfArcs@{GetNumberOfArcs}}
+\index{GetNumberOfArcs@{GetNumberOfArcs}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfArcs()}{GetNumberOfArcs()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Get\+Number\+Of\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Returns the total number of arcs in the graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a5cab6cbf014d198072188de1044b587a}\label{namespacegft_1_1Graph_a5cab6cbf014d198072188de1044b587a}} 
+\index{gft::Graph@{gft::Graph}!HedgehogDigraph@{HedgehogDigraph}}
+\index{HedgehogDigraph@{HedgehogDigraph}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{HedgehogDigraph()}{HedgehogDigraph()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Hedgehog\+Digraph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{cost,  }\item[{float}]{theta,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Adds/updates the arc weights to incorporate the Hedgehog shape constraint. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a5d656f318f796b52e4881788e633c626}\label{namespacegft_1_1Graph_a5d656f318f796b52e4881788e633c626}} 
+\index{gft::Graph@{gft::Graph}!IFT\_fwT\_dcc@{IFT\_fwT\_dcc}}
+\index{IFT\_fwT\_dcc@{IFT\_fwT\_dcc}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{IFT\_fwT\_dcc()}{IFT\_fwT\_dcc()}}
+{\footnotesize\ttfamily int$\ast$ gft\+::\+Graph\+::\+I\+F\+T\+\_\+fw\+T\+\_\+dcc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graphT,  }\item[{int $\ast$}]{S,  }\item[{int $\ast$}]{label,  }\item[{int $\ast$}]{cost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aec12baef9677806c6726c08f42f77f3e}\label{namespacegft_1_1Graph_aec12baef9677806c6726c08f42f77f3e}} 
+\index{gft::Graph@{gft::Graph}!LocalBandConstraint@{LocalBandConstraint}}
+\index{LocalBandConstraint@{LocalBandConstraint}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{LocalBandConstraint()}{LocalBandConstraint()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Local\+Band\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{cost,  }\item[{int}]{delta,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Adds/updates the arc weights to incorporate the Local Band shape constraint. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a9da34653d40a056baca227fc09aae5b8}\label{namespacegft_1_1Graph_a9da34653d40a056baca227fc09aae5b8}} 
+\index{gft::Graph@{gft::Graph}!LocalBandReduction@{LocalBandReduction}}
+\index{LocalBandReduction@{LocalBandReduction}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{LocalBandReduction()}{LocalBandReduction()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Local\+Band\+Reduction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$}]{graph,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{cost,  }\item[{int}]{delta }\end{DoxyParamCaption})}
+
+
+
+Computes the transitive reduction of a D\+AG representing the Local Band constraint. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a8576123bb6d3407ec0649dcbb9594830}\label{namespacegft_1_1Graph_a8576123bb6d3407ec0649dcbb9594830}} 
+\index{gft::Graph@{gft::Graph}!Pow@{Pow}}
+\index{Pow@{Pow}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Pow()}{Pow()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{power,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Applies an increasing transformation to the arc weights to enhance their differences. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_ad33bfcbef33276480328ef15ab44b0a1}\label{namespacegft_1_1Graph_ad33bfcbef33276480328ef15ab44b0a1}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a4d2d0889bd1ab8c270769bd48d263f16}\label{namespacegft_1_1Graph_a4d2d0889bd1ab8c270769bd48d263f16}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{int}]{c1,  }\item[{int}]{c2,  }\item[{float}]{polarity }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a7fa3c09036b2c22a7ad28ee66666817f}\label{namespacegft_1_1Graph_a7fa3c09036b2c22a7ad28ee66666817f}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aeeccffac6856a1a2822ca007b9f4c3ca}\label{namespacegft_1_1Graph_aeeccffac6856a1a2822ca007b9f4c3ca}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{float}]{polarity }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aecb33bbc3a2b18d70ad1788ff62a9f50}\label{namespacegft_1_1Graph_aecb33bbc3a2b18d70ad1788ff62a9f50}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{float}]{polarity,  }\item[{float}]{curvature\+\_\+R }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a3c74062a7869f9f30d59cbef8fac3dd7}\label{namespacegft_1_1Graph_a3c74062a7869f9f30d59cbef8fac3dd7}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a8218e49f4a54487ad40e10640b91a2eb}\label{namespacegft_1_1Graph_a8218e49f4a54487ad40e10640b91a2eb}} 
+\index{gft::Graph@{gft::Graph}!RAG@{RAG}}
+\index{RAG@{RAG}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG()}{RAG()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+AG (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label,  }\item[{float}]{polarity }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a2c52e322800f6937fff8247faa5f8954}\label{namespacegft_1_1Graph_a2c52e322800f6937fff8247faa5f8954}} 
+\index{gft::Graph@{gft::Graph}!RAG\_lab@{RAG\_lab}}
+\index{RAG\_lab@{RAG\_lab}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG\_lab()}{RAG\_lab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+A\+G\+\_\+lab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a3ac00f2b1d2f8d860e395a1e71f722ae}\label{namespacegft_1_1Graph_a3ac00f2b1d2f8d860e395a1e71f722ae}} 
+\index{gft::Graph@{gft::Graph}!RAG\_lab\_3@{RAG\_lab\_3}}
+\index{RAG\_lab\_3@{RAG\_lab\_3}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RAG\_lab\_3()}{RAG\_lab\_3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+R\+A\+G\+\_\+lab\+\_\+3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{int}]{c1,  }\item[{int}]{c2,  }\item[{float}]{polarity }\end{DoxyParamCaption})}
+
+
+
+Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_ad8942999644c55262929948f4d08e111}\label{namespacegft_1_1Graph_ad8942999644c55262929948f4d08e111}} 
+\index{gft::Graph@{gft::Graph}!RemoveDirectedEdge@{RemoveDirectedEdge}}
+\index{RemoveDirectedEdge@{RemoveDirectedEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RemoveDirectedEdge()}{RemoveDirectedEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Remove\+Directed\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Removes an arc from the graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a2e12c34e9b3d1d184509834cfa40c754}\label{namespacegft_1_1Graph_a2e12c34e9b3d1d184509834cfa40c754}} 
+\index{gft::Graph@{gft::Graph}!RemoveEdge@{RemoveEdge}}
+\index{RemoveEdge@{RemoveEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{RemoveEdge()}{RemoveEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Remove\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Removes an edge from the undirected graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aa70a444158d54c9134d926e9daa44d66}\label{namespacegft_1_1Graph_aa70a444158d54c9134d926e9daa44d66}} 
+\index{gft::Graph@{gft::Graph}!Split@{Split}}
+\index{Split@{Split}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Split()}{Split()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+Split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$$\ast$}]{G,  }\item[{int $\ast$}]{label,  }\item[{int}]{lb }\end{DoxyParamCaption})}
+
+
+
+Splits the graph into two graphs according to a labeling provided. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a6a5cd350206d6db42925e9e6c483fcda}\label{namespacegft_1_1Graph_a6a5cd350206d6db42925e9e6c483fcda}} 
+\index{gft::Graph@{gft::Graph}!Tarjan@{Tarjan}}
+\index{Tarjan@{Tarjan}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Tarjan()}{Tarjan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Tarjan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Computes the Tarjan\textquotesingle{}s algorithm. 
+
+Tarjan\textquotesingle{}s algorithm is a procedure for finding strongly connected components of a directed graph. \mbox{\Hypertarget{namespacegft_1_1Graph_af7673f91399ae7a7b417bc8df87f9c06}\label{namespacegft_1_1Graph_af7673f91399ae7a7b417bc8df87f9c06}} 
+\index{gft::Graph@{gft::Graph}!Tarjan@{Tarjan}}
+\index{Tarjan@{Tarjan}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Tarjan()}{Tarjan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Tarjan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int $\ast$}]{V,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Computes the Tarjan\textquotesingle{}s algorithm. 
+
+Tarjan\textquotesingle{}s algorithm is a procedure for finding strongly connected components of a directed graph. \mbox{\Hypertarget{namespacegft_1_1Graph_a9c83f37c96a8cd1b2df804b9eddb6aa5}\label{namespacegft_1_1Graph_a9c83f37c96a8cd1b2df804b9eddb6aa5}} 
+\index{gft::Graph@{gft::Graph}!Tarjan@{Tarjan}}
+\index{Tarjan@{Tarjan}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Tarjan()}{Tarjan()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Graph\+::\+Tarjan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Computes the Tarjan\textquotesingle{}s algorithm. 
+
+Tarjan\textquotesingle{}s algorithm is a procedure for finding strongly connected components of a directed graph. \mbox{\Hypertarget{namespacegft_1_1Graph_a93be76a0f122f9607e4d8f70ebd2ead5}\label{namespacegft_1_1Graph_a93be76a0f122f9607e4d8f70ebd2ead5}} 
+\index{gft::Graph@{gft::Graph}!Tarjan\_aux@{Tarjan\_aux}}
+\index{Tarjan\_aux@{Tarjan\_aux}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Tarjan\_aux()}{Tarjan\_aux()}}
+{\footnotesize\ttfamily int gft\+::\+Graph\+::\+Tarjan\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int $\ast$}]{index,  }\item[{int $\ast$}]{lowlink,  }\item[{int $\ast$}]{label,  }\item[{int}]{i,  }\item[{int}]{id,  }\item[{int $\ast$}]{lb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_af00144e2e8d89f95c49ce35278cc9cba}\label{namespacegft_1_1Graph_af00144e2e8d89f95c49ce35278cc9cba}} 
+\index{gft::Graph@{gft::Graph}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Transpose()}{Transpose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$ gft\+::\+Graph\+::\+Transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Computes the transpose of a directed graph. 
+
+Transpose of a directed graph G is another directed graph on the same set of vertices with all of the arcs reversed compared to the orientation of the corresponding arcs in G. That is, if G contains an arc (u, v) then the transpose of G contains an arc (v, u) and vice versa. \mbox{\Hypertarget{namespacegft_1_1Graph_a06031bf28bd661c252dc71a38aea3dd5}\label{namespacegft_1_1Graph_a06031bf28bd661c252dc71a38aea3dd5}} 
+\index{gft::Graph@{gft::Graph}!Union@{Union}}
+\index{Union@{Union}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{Union()}{Union()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Union (\begin{DoxyParamCaption}\item[{int $\ast$}]{R,  }\item[{int $\ast$}]{rp,  }\item[{int}]{rq,  }\item[{int $\ast$}]{N }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_aebd1b27647c6eb3a1396da01691c7a44}\label{namespacegft_1_1Graph_aebd1b27647c6eb3a1396da01691c7a44}} 
+\index{gft::Graph@{gft::Graph}!UpdateDirectedEdge@{UpdateDirectedEdge}}
+\index{UpdateDirectedEdge@{UpdateDirectedEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{UpdateDirectedEdge()}{UpdateDirectedEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Update\+Directed\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Updates the weight of an arc of the graph. The arc is created if it does not exist. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_ac5a36dd01f1f5f0ddb36f44090824d4d}\label{namespacegft_1_1Graph_ac5a36dd01f1f5f0ddb36f44090824d4d}} 
+\index{gft::Graph@{gft::Graph}!UpdateDirectedEdgeIfHigher@{UpdateDirectedEdgeIfHigher}}
+\index{UpdateDirectedEdgeIfHigher@{UpdateDirectedEdgeIfHigher}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{UpdateDirectedEdgeIfHigher()}{UpdateDirectedEdgeIfHigher()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Update\+Directed\+Edge\+If\+Higher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Updates the weight of an arc of the graph only if the new value is higher. The arc is created if it does not exist. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a1a974738e405ef1130a6cd15134898f8}\label{namespacegft_1_1Graph_a1a974738e405ef1130a6cd15134898f8}} 
+\index{gft::Graph@{gft::Graph}!UpdateEdge@{UpdateEdge}}
+\index{UpdateEdge@{UpdateEdge}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{UpdateEdge()}{UpdateEdge()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Update\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sGraph}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{src,  }\item[{int}]{dest,  }\item[{int}]{w }\end{DoxyParamCaption})}
+
+
+
+Updates the weight of an edge of the undirected graph. The edge is created if it does not exist. 
+
+\mbox{\Hypertarget{namespacegft_1_1Graph_a840102c2294407be8adec39fb3057245}\label{namespacegft_1_1Graph_a840102c2294407be8adec39fb3057245}} 
+\index{gft::Graph@{gft::Graph}!WriteMergeHistory@{WriteMergeHistory}}
+\index{WriteMergeHistory@{WriteMergeHistory}!gft::Graph@{gft::Graph}}
+\doxysubsubsection{\texorpdfstring{WriteMergeHistory()}{WriteMergeHistory()}}
+{\footnotesize\ttfamily void gft\+::\+Graph\+::\+Write\+Merge\+History (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Graph_1_1sMergeHistory}{s\+Merge\+History}} $\ast$}]{MH,  }\item[{int}]{n,  }\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+

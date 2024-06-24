@@ -1,0 +1,53 @@
+\hypertarget{gft__scene64f_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+scene64f.cpp File Reference}
+\label{gft__scene64f_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_scene64f.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_scene64f.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+scene64f.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Scene64f}{gft\+::\+Scene64f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a86a0fa44fa201d5c14492b0e3c90aeeb}{gft\+::\+Scene64f\+::\+Create}} (int xsize, int ysize, int zsize)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a36ed3596dbe44802467a459e7c54825d}{gft\+::\+Scene64f\+::\+Create}} (s\+Scene64f $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A constructor taking a reference scene as template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_a691056dfe3a55f0d0e7e3f1262eb8ce9}{gft\+::\+Scene64f\+::\+Destroy}} (s\+Scene64f $\ast$$\ast$scn)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a459c23b84b78dc6f554d605f1e5f052e}{gft\+::\+Scene64f\+::\+Clone}} (s\+Scene64f $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_ada2af899f5449ee7bf6cd9be7ecf5749}{gft\+::\+Scene64f\+::\+Sub\+Scene}} (s\+Scene64f $\ast$scn, Voxel l, Voxel h)
+\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a6f2afab14800ae314b78a3dc76f492bb}{gft\+::\+Scene64f\+::\+Sub\+Scene}} (s\+Scene64f $\ast$scn, int xl, int yl, int zl, int xh, int yh, int zh)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_ae1509db125b35be9f8dacbade6fa4eaa}{gft\+::\+Scene64f\+::\+Copy}} (s\+Scene64f $\ast$dest, s\+Scene64f $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_a563043fd7cc3c81845f67a71fde10016}{gft\+::\+Scene64f\+::\+Copy}} (s\+Scene64f $\ast$dest, s\+Scene64f $\ast$src, Voxel v)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_a3c0a71d9f356735ff85ff4c66e0d20fe}{gft\+::\+Scene64f\+::\+Fill}} (s\+Scene64f $\ast$scn, double value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_a9d076b463f758526211f8f2641c6a605}{gft\+::\+Scene64f\+::\+Write}} (s\+Scene64f $\ast$scn, char $\ast$filename)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene64f_aed7894f362cc9c3c78859f8ea1305b7a}{gft\+::\+Scene64f\+::\+Get\+Value\+\_\+trilinear}} (s\+Scene64f $\ast$scn, float x, float y, float z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene64f_a912b9bc5a50ee019eb425ec83f9e3aec}{gft\+::\+Scene64f\+::\+Get\+Value\+\_\+nn}} (s\+Scene64f $\ast$scn, float x, float y, float z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene64f_a9c28872738fd0b061e77cd6624513a20}{gft\+::\+Scene64f\+::\+Get\+Maximum\+Value}} (s\+Scene64f $\ast$scn)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene64f_a193710e604065dc4feea9ff2b106dd54}{gft\+::\+Scene64f\+::\+Get\+Minimum\+Value}} (s\+Scene64f $\ast$scn)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene64f_aff96c16a69f8df6088b2649c495af9f0}{gft\+::\+Scene64f\+::\+M\+BB}} (s\+Scene64f $\ast$scn, Voxel $\ast$l, Voxel $\ast$h)
+\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a59be685e68cfee7d29b7a565bbec594a}{gft\+::\+Scene64f\+::\+M\+BB}} (s\+Scene64f $\ast$scn)
+\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_af8cdd427c06db846582b56a892ed73db}{gft\+::\+Scene64f\+::\+Add\+Frame}} (s\+Scene64f $\ast$scn, int sz, double value)
+\item 
+s\+Scene64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_ae344519b5e808ceaee52ceed7133a9fc}{gft\+::\+Scene64f\+::\+Rem\+Frame}} (s\+Scene64f $\ast$fscn, int sz)
+\item 
+s\+Scene16 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a4db85671d094e9ab9321e4d327fd11f8}{gft\+::\+Scene64f\+::\+Convert\+To16}} (s\+Scene64f $\ast$scn)
+\item 
+s\+Scene8 $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene64f_a540a5f76904ac574f22b1d39a833bf75}{gft\+::\+Scene64f\+::\+Convert\+To8}} (s\+Scene64f $\ast$scn)
+\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{namespacegft_1_1RegionCloud3}{}\doxysection{gft\+::Region\+Cloud3 Namespace Reference}
+\label{namespacegft_1_1RegionCloud3}\index{gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_a2278636af10a56d46ea6ee9ce53348bb}{By\+Label\+List}} (\mbox{\hyperlink{namespacegft_a2fa482119f6267ae4dbd79bb2c78c7f5}{s\+File\+List}} $\ast$L)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1RegionCloud3_ab2c72c6172494cd73817c0a76bf4123f}{Destroy}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$$\ast$rcloud)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1RegionCloud3_ad2055d0a539493037ce5285cc2ff0a99}{Get\+Voxel\+Size}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud, float $\ast$dx, float $\ast$dy, float $\ast$dz)
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_abd0f0214e8884bd0fe55cf2252beac12}{Subsampling}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud)
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_a41d6bf44e6c2b3d1accb97d839a58d90}{Linear\+Interp}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud, float dx, float dy, float dz)
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_a2facef2cb4a9484f5dbb4d8acfcc50b9}{Gaussian\+Blur}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud)
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_af5851e8eb002b98d303bf6f69552e1ea}{Change\+Orientation\+To\+L\+PS}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud, char $\ast$ori)
+\item 
+\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1RegionCloud3_a84adf93ac6c41e140b398afd145a6830}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1RegionCloud3_ab8dca3d67efcb15364221697a25682fb}{Write}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud, char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1RegionCloud3_a150345b0da51ba9ddafdd427719d279c}{Remove\+Elem}} (\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$rcloud, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_a2278636af10a56d46ea6ee9ce53348bb}\label{namespacegft_1_1RegionCloud3_a2278636af10a56d46ea6ee9ce53348bb}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!ByLabelList@{ByLabelList}}
+\index{ByLabelList@{ByLabelList}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{ByLabelList()}{ByLabelList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+By\+Label\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a2fa482119f6267ae4dbd79bb2c78c7f5}{s\+File\+List}} $\ast$}]{L }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_af5851e8eb002b98d303bf6f69552e1ea}\label{namespacegft_1_1RegionCloud3_af5851e8eb002b98d303bf6f69552e1ea}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!ChangeOrientationToLPS@{ChangeOrientationToLPS}}
+\index{ChangeOrientationToLPS@{ChangeOrientationToLPS}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{ChangeOrientationToLPS()}{ChangeOrientationToLPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+Change\+Orientation\+To\+L\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud,  }\item[{char $\ast$}]{ori }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_ab2c72c6172494cd73817c0a76bf4123f}\label{namespacegft_1_1RegionCloud3_ab2c72c6172494cd73817c0a76bf4123f}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Region\+Cloud3\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$$\ast$}]{rcloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_a2facef2cb4a9484f5dbb4d8acfcc50b9}\label{namespacegft_1_1RegionCloud3_a2facef2cb4a9484f5dbb4d8acfcc50b9}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!GaussianBlur@{GaussianBlur}}
+\index{GaussianBlur@{GaussianBlur}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{GaussianBlur()}{GaussianBlur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+Gaussian\+Blur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_ad2055d0a539493037ce5285cc2ff0a99}\label{namespacegft_1_1RegionCloud3_ad2055d0a539493037ce5285cc2ff0a99}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!GetVoxelSize@{GetVoxelSize}}
+\index{GetVoxelSize@{GetVoxelSize}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{GetVoxelSize()}{GetVoxelSize()}}
+{\footnotesize\ttfamily void gft\+::\+Region\+Cloud3\+::\+Get\+Voxel\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud,  }\item[{float $\ast$}]{dx,  }\item[{float $\ast$}]{dy,  }\item[{float $\ast$}]{dz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_a41d6bf44e6c2b3d1accb97d839a58d90}\label{namespacegft_1_1RegionCloud3_a41d6bf44e6c2b3d1accb97d839a58d90}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!LinearInterp@{LinearInterp}}
+\index{LinearInterp@{LinearInterp}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{LinearInterp()}{LinearInterp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+Linear\+Interp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud,  }\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_a84adf93ac6c41e140b398afd145a6830}\label{namespacegft_1_1RegionCloud3_a84adf93ac6c41e140b398afd145a6830}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!Read@{Read}}
+\index{Read@{Read}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_a150345b0da51ba9ddafdd427719d279c}\label{namespacegft_1_1RegionCloud3_a150345b0da51ba9ddafdd427719d279c}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!RemoveElem@{RemoveElem}}
+\index{RemoveElem@{RemoveElem}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{RemoveElem()}{RemoveElem()}}
+{\footnotesize\ttfamily void gft\+::\+Region\+Cloud3\+::\+Remove\+Elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_abd0f0214e8884bd0fe55cf2252beac12}\label{namespacegft_1_1RegionCloud3_abd0f0214e8884bd0fe55cf2252beac12}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!Subsampling@{Subsampling}}
+\index{Subsampling@{Subsampling}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{Subsampling()}{Subsampling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$ gft\+::\+Region\+Cloud3\+::\+Subsampling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1RegionCloud3_ab8dca3d67efcb15364221697a25682fb}\label{namespacegft_1_1RegionCloud3_ab8dca3d67efcb15364221697a25682fb}} 
+\index{gft::RegionCloud3@{gft::RegionCloud3}!Write@{Write}}
+\index{Write@{Write}!gft::RegionCloud3@{gft::RegionCloud3}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Region\+Cloud3\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1RegionCloud3_1_1sRegionCloud3}{s\+Region\+Cloud3}} $\ast$}]{rcloud,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+

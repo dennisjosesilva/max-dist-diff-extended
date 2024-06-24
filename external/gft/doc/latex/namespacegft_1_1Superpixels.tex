@@ -1,0 +1,545 @@
+\hypertarget{namespacegft_1_1Superpixels}{}\doxysection{gft\+::Superpixels Namespace Reference}
+\label{namespacegft_1_1Superpixels}\index{gft::Superpixels@{gft::Superpixels}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature}{\+\_\+feature}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature3D}{\+\_\+feature3D}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__spixelseed}{\+\_\+spixelseed}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__svoxelseed}{\+\_\+svoxelseed}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1sFeature}{s\+Feature}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1sFeature3D}{s\+Feature3D}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature}{gft\+::\+Superpixels\+::\+\_\+feature}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a4d07af6889fc60f8bdec3caf4a0ab692}{Feature}}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__spixelseed}{gft\+::\+Superpixels\+::\+\_\+spixelseed}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature3D}{gft\+::\+Superpixels\+::\+\_\+feature3D}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a95ade0d0d42539e849b200a38312a04b}{Feature3D}}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__svoxelseed}{gft\+::\+Superpixels\+::\+\_\+svoxelseed}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a03b5841f462be9611888537016a71a54}{Color\+Squared\+Distance}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_afd6148ff19c8957df524eec8b1d4550f}{Last\+Color\+Squared\+Distance}} (const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_adbb3df34b79ada770c1f0a33bacf4682}{Last\+Spatial\+Squared\+Distance}} (const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_adfe0f55dd260d7c671987e0947c2ba78}{remove\+Sub\+Tree}} (int q\+\_\+in, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$P, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$pred, float $\ast$cost, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a29b3ae7f100306439b5fe7ac0be9d9ca}{Run\+S\+Pixels\+By\+I\+FT}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$P, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$pred, float $\ast$cost, float alpha, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_aeb70f8a911c7754be1770f78b88f273c}{Run\+S\+Pixels\+By\+D\+I\+FT}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$P, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$pred, float $\ast$cost, float alpha, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a830f6d4f4ac2852440af13f878292baf}{Weighted\+Distance\+Measure}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} seed, int i, int j, float m, float S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a7b687d71e1ca187deb2fd7d4579c0f74}{Move2\+Lower\+Gradient}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$grad, int $\ast$j, int $\ast$i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ab0a01e542e7af27d9b34ae297f8e5d13}{Postprocessing\+\_\+\+CC}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a179b7f670a333a96fd28294676124b59}{Postprocessing}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a8eb9362f2a61220cb72318779af14a54}{Get\+S\+Pixels\+Seeds}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$grad, int k, int $\ast$nseeds)
+\item 
+\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a9f422cbbc485edf1063707490497ec8d}{Get\+S\+Pixels\+Seeds\+Hexagon}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$grad, int k, int $\ast$nseeds)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a8de143fccea544efc43891cad9b45a41}{I\+F\+T\+\_\+\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} colored, int k, float alpha, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a6b3dbf982a5ef5693ebacb868b3006c8}{I\+F\+T\+\_\+\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, int k, float alpha, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a3363801c7a9f2abbd4b3c25404bd5e3e}{I\+F\+T\+\_\+\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, int k, float alpha, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a9b2873f73b3d9021d9f38a3277f2e12e}{Update\+S\+Pixels\+Seeds}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$pred, \mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$P, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$seeds, int nseeds, int inside)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a4d7aba2b7dfebf5bc5a82ada19a11ddc}{my\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} colored, int k, float m)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a9283764fa39825fc826970b62629a7ab}{my\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, int k, float m)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_af9a28da679f77d63fb358b800cd42010}{my\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, int k, float m)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Superpixels_a80b09a1a1bdb6a066b1fd54d4bbe5c30}{Get\+Number\+Of\+Super\+Pixels}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$label)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a4b088f1f321433932eb7d71c25869936}{Feature\+Squared\+Distance}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_af7d88d1b7a848338207f3d1f9162f2e6}{Last\+Feature\+Squared\+Distance}} (const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a953c8ce2829352a4b43aedbb7e429c97}{Last\+Spatial\+Squared\+Distance}} (const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ae6dc641a4f556b5b823b6c19fcfe16f6}{remove\+Sub\+Tree3}} (int q\+\_\+in, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$P, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$pred, float $\ast$cost, \mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_afcd0ae0f5a9af2698f8a627adfbc7d78}{Run\+S\+Voxels\+By\+I\+FT}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$V, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$pred, float $\ast$cost, float alpha, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_acf9c45f8e97c2135c18be206e7827e21}{Run\+S\+Voxels\+By\+D\+I\+FT}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label, \mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$Q, \mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$V, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$pred, float $\ast$cost, float alpha, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a88f63aff6c72c27f73100328e0058d5d}{I\+F\+T\+\_\+\+S\+L\+IC}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, int k, float alpha, float err\+\_\+df, float err\+\_\+ds, int it\+Max)
+\item 
+\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a46edc364b1a0ca1e7bcdf5f34dfd4a24}{Get\+S\+Voxels\+Seeds}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, int k, int $\ast$nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a857d3176caa64334a0a96a15c0773e39}{Update\+S\+Voxels\+Seeds}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$label, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$pred, \mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$V, \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$seeds, int nseeds, int inside)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_ab0e4ff256254c0d80d62eaa4f2fb4e0d}{Color\+Squared\+Distance}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_aa259934da0a17f0026c37e72d3cfbcef}{Last\+Color\+Squared\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a7f75bfbb2efc017c6e13021aafa0952b}{Last\+Spatial\+Squared\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a12e2c00aa1c632ec9e6514bd8a44cd1c}{remove\+Sub\+Tree}} (int q\+\_\+in, gft\+::\+Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{gft\+::\+Heap\+::\+Heap}} $\ast$Q, gft\+::\+Image32\+::\+Image32 $\ast$pred, float $\ast$cost, gft\+::\+Adj\+Rel\+::\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a3a911a878c7f5bfe9be5c0250b1620d2}{Run\+S\+Pixels\+By\+I\+FT}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$Q, Image32\+::\+Image32 $\ast$pred, float $\ast$cost, float alpha, float beta, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a0acb04b2bcfb0eceedb62b761838add0}{Weighted\+Distance\+Measure}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed, int i, int j, float m, float S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_af0ca322549815761864a393152dc7a1b}{Move2\+Lower\+Gradient}} (Image32\+::\+Image32 $\ast$grad, int $\ast$j, int $\ast$i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ae15ced1dd51285afbbd37abce6acb2bb}{Postprocessing\+\_\+\+CC}} (Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a7bcebd8e9f4373fd3ed101c1dfa57e95}{Postprocessing}} (Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aa6fd314db2748138fddc151c6dacbc64}{Get\+S\+Pixels\+Seeds}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$grad, int k, int $\ast$nseeds)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a23859ef963d5634c3f325996c7d452c0}{I\+F\+T\+\_\+\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} colored, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a897eb8fc837f4a2c6d5f1bdad09f50d7}{I\+F\+T\+\_\+\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a2c353987ae764d4d17c941c0bc722a33}{I\+F\+T\+\_\+\+S\+L\+IC}} (Image32\+::\+Image32 $\ast$img, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a006576832a9282accf25036d5028501c}{Update\+S\+Pixels\+Seeds}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$$\ast$seeds, int nseeds, int inside)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_ac95c33548e0bb14fb57143f967865844}{my\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} colored, int k, float m)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a77576397c9513d3fe2b174baae2486b5}{my\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, int k, float m)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a10ac77335ce4331abc011ddb4a706bc3}{my\+S\+L\+IC}} (Image32\+::\+Image32 $\ast$img, int k, float m)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Superpixels_a1703337b9bc12a45f9cd5a37de93423d}{Get\+Number\+Of\+Super\+Pixels}} (Image32\+::\+Image32 $\ast$label)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a15e13e501652d95c72fb78560637e524}{Feature\+Distance}} (Scene32\+::\+Scene32 $\ast$scn, \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_af33cdbe1592d2c254638adab87c4edeb}{Last\+Feature\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a778e4f5145076747de74b7586caaa303}{Last\+Spatial\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a6f273656cae3aa38888e9aa9e256456c}{Run\+S\+Voxels\+By\+I\+FT}} (Scene32\+::\+Scene32 $\ast$scn, Scene32\+::\+Scene32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$Q, Scene32\+::\+Scene32 $\ast$pred, float $\ast$cost, float alpha, float beta, \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+Scene32\+::\+Scene32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aee6f4aaaca496458917618bce54986bb}{I\+F\+T\+\_\+\+S\+L\+IC}} (Scene32\+::\+Scene32 $\ast$scn, int k, float alpha, float beta, float err\+\_\+df, float err\+\_\+ds, int it\+Max)
+\item 
+\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aafff435ecb9aea5c730030ce81ecf147}{Get\+S\+Voxels\+Seeds}} (Scene32\+::\+Scene32 $\ast$scn, int k, int $\ast$nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_adab115e313727452b76776d3e7328f69}{Update\+S\+Voxels\+Seeds}} (Scene32\+::\+Scene32 $\ast$scn, Scene32\+::\+Scene32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$$\ast$seeds, int nseeds, int inside)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ad1ed23e21ca3a8c6006f164db60e775c}{remove\+Sub\+Tree}} (int q\+\_\+in, gft\+::\+Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{gft\+::\+Heap\+::\+Heap}} $\ast$Q, Adj\+Rel\+::\+Adj\+Pxl $\ast$P, gft\+::\+Image32\+::\+Image32 $\ast$pred, float $\ast$cost, gft\+::\+Adj\+Rel\+::\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a49b65ced597a714999f95a4c7e47f57d}{Run\+S\+Pixels\+By\+I\+FT}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$Q, Adj\+Rel\+::\+Adj\+Rel $\ast$A, Adj\+Rel\+::\+Adj\+Pxl $\ast$P, Image32\+::\+Image32 $\ast$pred, float $\ast$cost, float alpha, float beta, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_ad2d8ee6bead63861f64401eb041fb953}{Color\+Distance}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a8a638b9e6b03e39e9803fdffdd3c58c8}{Last\+Color\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a1e100b5da3ce49ff31b5ff72aa15a0b4}{Last\+Spatial\+Distance}} (\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ae3c8d60253b39360ebed37b1ce9bbcc7}{Run\+S\+Pixels\+By\+I\+FT}} (Image32\+::\+Image32 $\ast$grad, C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$Q, Adj\+Rel\+::\+Adj\+Rel $\ast$A, Adj\+Rel\+::\+Adj\+Pxl $\ast$P, Image32\+::\+Image32 $\ast$pred, float $\ast$cost, float alpha, float beta, \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$seeds, int nseeds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a4d07af6889fc60f8bdec3caf4a0ab692}\label{namespacegft_1_1Superpixels_a4d07af6889fc60f8bdec3caf4a0ab692}} 
+\index{gft::Superpixels@{gft::Superpixels}!Feature@{Feature}}
+\index{Feature@{Feature}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Feature}{Feature}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature}{gft\+::\+Superpixels\+::\+\_\+feature}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a4d07af6889fc60f8bdec3caf4a0ab692}{gft\+::\+Superpixels\+::\+Feature}}}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a95ade0d0d42539e849b200a38312a04b}\label{namespacegft_1_1Superpixels_a95ade0d0d42539e849b200a38312a04b}} 
+\index{gft::Superpixels@{gft::Superpixels}!Feature3D@{Feature3D}}
+\index{Feature3D@{Feature3D}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Feature3D}{Feature3D}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__feature3D}{gft\+::\+Superpixels\+::\+\_\+feature3D}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a95ade0d0d42539e849b200a38312a04b}{gft\+::\+Superpixels\+::\+Feature3D}}}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}\label{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}} 
+\index{gft::Superpixels@{gft::Superpixels}!SPixelSeed@{SPixelSeed}}
+\index{SPixelSeed@{SPixelSeed}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{SPixelSeed}{SPixelSeed}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__spixelseed}{gft\+::\+Superpixels\+::\+\_\+spixelseed}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{gft\+::\+Superpixels\+::\+S\+Pixel\+Seed}}}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}\label{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}} 
+\index{gft::Superpixels@{gft::Superpixels}!SVoxelSeed@{SVoxelSeed}}
+\index{SVoxelSeed@{SVoxelSeed}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{SVoxelSeed}{SVoxelSeed}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgft_1_1Superpixels_1_1__svoxelseed}{gft\+::\+Superpixels\+::\+\_\+svoxelseed}} \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{gft\+::\+Superpixels\+::\+S\+Voxel\+Seed}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ad2d8ee6bead63861f64401eb041fb953}\label{namespacegft_1_1Superpixels_ad2d8ee6bead63861f64401eb041fb953}} 
+\index{gft::Superpixels@{gft::Superpixels}!ColorDistance@{ColorDistance}}
+\index{ColorDistance@{ColorDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{ColorDistance()}{ColorDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Color\+Distance (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ab0e4ff256254c0d80d62eaa4f2fb4e0d}\label{namespacegft_1_1Superpixels_ab0e4ff256254c0d80d62eaa4f2fb4e0d}} 
+\index{gft::Superpixels@{gft::Superpixels}!ColorSquaredDistance@{ColorSquaredDistance}}
+\index{ColorSquaredDistance@{ColorSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{ColorSquaredDistance()}{ColorSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Color\+Squared\+Distance (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a03b5841f462be9611888537016a71a54}\label{namespacegft_1_1Superpixels_a03b5841f462be9611888537016a71a54}} 
+\index{gft::Superpixels@{gft::Superpixels}!ColorSquaredDistance@{ColorSquaredDistance}}
+\index{ColorSquaredDistance@{ColorSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{ColorSquaredDistance()}{ColorSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Color\+Squared\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&}]{seed,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a15e13e501652d95c72fb78560637e524}\label{namespacegft_1_1Superpixels_a15e13e501652d95c72fb78560637e524}} 
+\index{gft::Superpixels@{gft::Superpixels}!FeatureDistance@{FeatureDistance}}
+\index{FeatureDistance@{FeatureDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{FeatureDistance()}{FeatureDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Feature\+Distance (\begin{DoxyParamCaption}\item[{Scene32\+::\+Scene32 $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}}}]{seed,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a4b088f1f321433932eb7d71c25869936}\label{namespacegft_1_1Superpixels_a4b088f1f321433932eb7d71c25869936}} 
+\index{gft::Superpixels@{gft::Superpixels}!FeatureSquaredDistance@{FeatureSquaredDistance}}
+\index{FeatureSquaredDistance@{FeatureSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{FeatureSquaredDistance()}{FeatureSquaredDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Feature\+Squared\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&}]{seed,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a1703337b9bc12a45f9cd5a37de93423d}\label{namespacegft_1_1Superpixels_a1703337b9bc12a45f9cd5a37de93423d}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetNumberOfSuperPixels@{GetNumberOfSuperPixels}}
+\index{GetNumberOfSuperPixels@{GetNumberOfSuperPixels}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfSuperPixels()}{GetNumberOfSuperPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int gft\+::\+Superpixels\+::\+Get\+Number\+Of\+Super\+Pixels (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a80b09a1a1bdb6a066b1fd54d4bbe5c30}\label{namespacegft_1_1Superpixels_a80b09a1a1bdb6a066b1fd54d4bbe5c30}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetNumberOfSuperPixels@{GetNumberOfSuperPixels}}
+\index{GetNumberOfSuperPixels@{GetNumberOfSuperPixels}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfSuperPixels()}{GetNumberOfSuperPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int gft\+::\+Superpixels\+::\+Get\+Number\+Of\+Super\+Pixels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_aa6fd314db2748138fddc151c6dacbc64}\label{namespacegft_1_1Superpixels_aa6fd314db2748138fddc151c6dacbc64}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetSPixelsSeeds@{GetSPixelsSeeds}}
+\index{GetSPixelsSeeds@{GetSPixelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetSPixelsSeeds()}{GetSPixelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$ gft\+::\+Superpixels\+::\+Get\+S\+Pixels\+Seeds (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{Image32\+::\+Image32 $\ast$}]{grad,  }\item[{int}]{k,  }\item[{int $\ast$}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a8eb9362f2a61220cb72318779af14a54}\label{namespacegft_1_1Superpixels_a8eb9362f2a61220cb72318779af14a54}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetSPixelsSeeds@{GetSPixelsSeeds}}
+\index{GetSPixelsSeeds@{GetSPixelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetSPixelsSeeds()}{GetSPixelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$ gft\+::\+Superpixels\+::\+Get\+S\+Pixels\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{grad,  }\item[{int}]{k,  }\item[{int $\ast$}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a9f422cbbc485edf1063707490497ec8d}\label{namespacegft_1_1Superpixels_a9f422cbbc485edf1063707490497ec8d}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetSPixelsSeedsHexagon@{GetSPixelsSeedsHexagon}}
+\index{GetSPixelsSeedsHexagon@{GetSPixelsSeedsHexagon}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetSPixelsSeedsHexagon()}{GetSPixelsSeedsHexagon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$ gft\+::\+Superpixels\+::\+Get\+S\+Pixels\+Seeds\+Hexagon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{grad,  }\item[{int}]{k,  }\item[{int $\ast$}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_aafff435ecb9aea5c730030ce81ecf147}\label{namespacegft_1_1Superpixels_aafff435ecb9aea5c730030ce81ecf147}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetSVoxelsSeeds@{GetSVoxelsSeeds}}
+\index{GetSVoxelsSeeds@{GetSVoxelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetSVoxelsSeeds()}{GetSVoxelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$ gft\+::\+Superpixels\+::\+Get\+S\+Voxels\+Seeds (\begin{DoxyParamCaption}\item[{Scene32\+::\+Scene32 $\ast$}]{scn,  }\item[{int}]{k,  }\item[{int $\ast$}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a46edc364b1a0ca1e7bcdf5f34dfd4a24}\label{namespacegft_1_1Superpixels_a46edc364b1a0ca1e7bcdf5f34dfd4a24}} 
+\index{gft::Superpixels@{gft::Superpixels}!GetSVoxelsSeeds@{GetSVoxelsSeeds}}
+\index{GetSVoxelsSeeds@{GetSVoxelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{GetSVoxelsSeeds()}{GetSVoxelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$ gft\+::\+Superpixels\+::\+Get\+S\+Voxels\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{int}]{k,  }\item[{int $\ast$}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a23859ef963d5634c3f325996c7d452c0}\label{namespacegft_1_1Superpixels_a23859ef963d5634c3f325996c7d452c0}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{colored,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a897eb8fc837f4a2c6d5f1bdad09f50d7}\label{namespacegft_1_1Superpixels_a897eb8fc837f4a2c6d5f1bdad09f50d7}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a2c353987ae764d4d17c941c0bc722a33}\label{namespacegft_1_1Superpixels_a2c353987ae764d4d17c941c0bc722a33}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{img,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_aee6f4aaaca496458917618bce54986bb}\label{namespacegft_1_1Superpixels_aee6f4aaaca496458917618bce54986bb}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily Scene32\+::\+Scene32 $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{Scene32\+::\+Scene32 $\ast$}]{scn,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{float}]{err\+\_\+df,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a8de143fccea544efc43891cad9b45a41}\label{namespacegft_1_1Superpixels_a8de143fccea544efc43891cad9b45a41}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}}$\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{colored,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a6b3dbf982a5ef5693ebacb868b3006c8}\label{namespacegft_1_1Superpixels_a6b3dbf982a5ef5693ebacb868b3006c8}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a3363801c7a9f2abbd4b3c25404bd5e3e}\label{namespacegft_1_1Superpixels_a3363801c7a9f2abbd4b3c25404bd5e3e}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{err\+\_\+dc,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a88f63aff6c72c27f73100328e0058d5d}\label{namespacegft_1_1Superpixels_a88f63aff6c72c27f73100328e0058d5d}} 
+\index{gft::Superpixels@{gft::Superpixels}!IFT\_SLIC@{IFT\_SLIC}}
+\index{IFT\_SLIC@{IFT\_SLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{IFT\_SLIC()}{IFT\_SLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$ gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{int}]{k,  }\item[{float}]{alpha,  }\item[{float}]{err\+\_\+df,  }\item[{float}]{err\+\_\+ds,  }\item[{int}]{it\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a8a638b9e6b03e39e9803fdffdd3c58c8}\label{namespacegft_1_1Superpixels_a8a638b9e6b03e39e9803fdffdd3c58c8}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastColorDistance@{LastColorDistance}}
+\index{LastColorDistance@{LastColorDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastColorDistance()}{LastColorDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Color\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_afd6148ff19c8957df524eec8b1d4550f}\label{namespacegft_1_1Superpixels_afd6148ff19c8957df524eec8b1d4550f}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastColorSquaredDistance@{LastColorSquaredDistance}}
+\index{LastColorSquaredDistance@{LastColorSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastColorSquaredDistance()}{LastColorSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Color\+Squared\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_aa259934da0a17f0026c37e72d3cfbcef}\label{namespacegft_1_1Superpixels_aa259934da0a17f0026c37e72d3cfbcef}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastColorSquaredDistance@{LastColorSquaredDistance}}
+\index{LastColorSquaredDistance@{LastColorSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastColorSquaredDistance()}{LastColorSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Color\+Squared\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_af33cdbe1592d2c254638adab87c4edeb}\label{namespacegft_1_1Superpixels_af33cdbe1592d2c254638adab87c4edeb}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastFeatureDistance@{LastFeatureDistance}}
+\index{LastFeatureDistance@{LastFeatureDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastFeatureDistance()}{LastFeatureDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Feature\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_af7d88d1b7a848338207f3d1f9162f2e6}\label{namespacegft_1_1Superpixels_af7d88d1b7a848338207f3d1f9162f2e6}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastFeatureSquaredDistance@{LastFeatureSquaredDistance}}
+\index{LastFeatureSquaredDistance@{LastFeatureSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastFeatureSquaredDistance()}{LastFeatureSquaredDistance()}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Feature\+Squared\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a1e100b5da3ce49ff31b5ff72aa15a0b4}\label{namespacegft_1_1Superpixels_a1e100b5da3ce49ff31b5ff72aa15a0b4}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastSpatialDistance@{LastSpatialDistance}}
+\index{LastSpatialDistance@{LastSpatialDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastSpatialDistance()}{LastSpatialDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Spatial\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a778e4f5145076747de74b7586caaa303}\label{namespacegft_1_1Superpixels_a778e4f5145076747de74b7586caaa303}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastSpatialDistance@{LastSpatialDistance}}
+\index{LastSpatialDistance@{LastSpatialDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastSpatialDistance()}{LastSpatialDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Spatial\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_adbb3df34b79ada770c1f0a33bacf4682}\label{namespacegft_1_1Superpixels_adbb3df34b79ada770c1f0a33bacf4682}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastSpatialSquaredDistance@{LastSpatialSquaredDistance}}
+\index{LastSpatialSquaredDistance@{LastSpatialSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastSpatialSquaredDistance()}{LastSpatialSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Spatial\+Squared\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} \&}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a953c8ce2829352a4b43aedbb7e429c97}\label{namespacegft_1_1Superpixels_a953c8ce2829352a4b43aedbb7e429c97}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastSpatialSquaredDistance@{LastSpatialSquaredDistance}}
+\index{LastSpatialSquaredDistance@{LastSpatialSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastSpatialSquaredDistance()}{LastSpatialSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Spatial\+Squared\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} \&}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a7f75bfbb2efc017c6e13021aafa0952b}\label{namespacegft_1_1Superpixels_a7f75bfbb2efc017c6e13021aafa0952b}} 
+\index{gft::Superpixels@{gft::Superpixels}!LastSpatialSquaredDistance@{LastSpatialSquaredDistance}}
+\index{LastSpatialSquaredDistance@{LastSpatialSquaredDistance}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{LastSpatialSquaredDistance()}{LastSpatialSquaredDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Last\+Spatial\+Squared\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_af0ca322549815761864a393152dc7a1b}\label{namespacegft_1_1Superpixels_af0ca322549815761864a393152dc7a1b}} 
+\index{gft::Superpixels@{gft::Superpixels}!Move2LowerGradient@{Move2LowerGradient}}
+\index{Move2LowerGradient@{Move2LowerGradient}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Move2LowerGradient()}{Move2LowerGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Move2\+Lower\+Gradient (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{grad,  }\item[{int $\ast$}]{j,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a7b687d71e1ca187deb2fd7d4579c0f74}\label{namespacegft_1_1Superpixels_a7b687d71e1ca187deb2fd7d4579c0f74}} 
+\index{gft::Superpixels@{gft::Superpixels}!Move2LowerGradient@{Move2LowerGradient}}
+\index{Move2LowerGradient@{Move2LowerGradient}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Move2LowerGradient()}{Move2LowerGradient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Move2\+Lower\+Gradient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{grad,  }\item[{int $\ast$}]{j,  }\item[{int $\ast$}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ac95c33548e0bb14fb57143f967865844}\label{namespacegft_1_1Superpixels_ac95c33548e0bb14fb57143f967865844}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{colored,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a77576397c9513d3fe2b174baae2486b5}\label{namespacegft_1_1Superpixels_a77576397c9513d3fe2b174baae2486b5}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a10ac77335ce4331abc011ddb4a706bc3}\label{namespacegft_1_1Superpixels_a10ac77335ce4331abc011ddb4a706bc3}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Image32\+::\+Image32 $\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{img,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a4d7aba2b7dfebf5bc5a82ada19a11ddc}\label{namespacegft_1_1Superpixels_a4d7aba2b7dfebf5bc5a82ada19a11ddc}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}}$\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{colored,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a9283764fa39825fc826970b62629a7ab}\label{namespacegft_1_1Superpixels_a9283764fa39825fc826970b62629a7ab}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_af9a28da679f77d63fb358b800cd42010}\label{namespacegft_1_1Superpixels_af9a28da679f77d63fb358b800cd42010}} 
+\index{gft::Superpixels@{gft::Superpixels}!mySLIC@{mySLIC}}
+\index{mySLIC@{mySLIC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{mySLIC()}{mySLIC()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Superpixels\+::my\+S\+L\+IC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{k,  }\item[{float}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a7bcebd8e9f4373fd3ed101c1dfa57e95}\label{namespacegft_1_1Superpixels_a7bcebd8e9f4373fd3ed101c1dfa57e95}} 
+\index{gft::Superpixels@{gft::Superpixels}!Postprocessing@{Postprocessing}}
+\index{Postprocessing@{Postprocessing}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Postprocessing()}{Postprocessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Postprocessing (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a179b7f670a333a96fd28294676124b59}\label{namespacegft_1_1Superpixels_a179b7f670a333a96fd28294676124b59}} 
+\index{gft::Superpixels@{gft::Superpixels}!Postprocessing@{Postprocessing}}
+\index{Postprocessing@{Postprocessing}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Postprocessing()}{Postprocessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Postprocessing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ae15ced1dd51285afbbd37abce6acb2bb}\label{namespacegft_1_1Superpixels_ae15ced1dd51285afbbd37abce6acb2bb}} 
+\index{gft::Superpixels@{gft::Superpixels}!Postprocessing\_CC@{Postprocessing\_CC}}
+\index{Postprocessing\_CC@{Postprocessing\_CC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Postprocessing\_CC()}{Postprocessing\_CC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Postprocessing\+\_\+\+CC (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ab0a01e542e7af27d9b34ae297f8e5d13}\label{namespacegft_1_1Superpixels_ab0a01e542e7af27d9b34ae297f8e5d13}} 
+\index{gft::Superpixels@{gft::Superpixels}!Postprocessing\_CC@{Postprocessing\_CC}}
+\index{Postprocessing\_CC@{Postprocessing\_CC}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{Postprocessing\_CC()}{Postprocessing\_CC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Postprocessing\+\_\+\+CC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ad1ed23e21ca3a8c6006f164db60e775c}\label{namespacegft_1_1Superpixels_ad1ed23e21ca3a8c6006f164db60e775c}} 
+\index{gft::Superpixels@{gft::Superpixels}!removeSubTree@{removeSubTree}}
+\index{removeSubTree@{removeSubTree}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{removeSubTree()}{removeSubTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::remove\+Sub\+Tree (\begin{DoxyParamCaption}\item[{int}]{q\+\_\+in,  }\item[{gft\+::\+Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{gft\+::\+Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{Adj\+Rel\+::\+Adj\+Pxl $\ast$}]{P,  }\item[{gft\+::\+Image32\+::\+Image32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{gft\+::\+Adj\+Rel\+::\+Adj\+Rel $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a12e2c00aa1c632ec9e6514bd8a44cd1c}\label{namespacegft_1_1Superpixels_a12e2c00aa1c632ec9e6514bd8a44cd1c}} 
+\index{gft::Superpixels@{gft::Superpixels}!removeSubTree@{removeSubTree}}
+\index{removeSubTree@{removeSubTree}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{removeSubTree()}{removeSubTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::remove\+Sub\+Tree (\begin{DoxyParamCaption}\item[{int}]{q\+\_\+in,  }\item[{gft\+::\+Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{gft\+::\+Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{gft\+::\+Image32\+::\+Image32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{gft\+::\+Adj\+Rel\+::\+Adj\+Rel $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_adfe0f55dd260d7c671987e0947c2ba78}\label{namespacegft_1_1Superpixels_adfe0f55dd260d7c671987e0947c2ba78}} 
+\index{gft::Superpixels@{gft::Superpixels}!removeSubTree@{removeSubTree}}
+\index{removeSubTree@{removeSubTree}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{removeSubTree()}{removeSubTree()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::remove\+Sub\+Tree (\begin{DoxyParamCaption}\item[{int}]{q\+\_\+in,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$}]{P,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ae6dc641a4f556b5b823b6c19fcfe16f6}\label{namespacegft_1_1Superpixels_ae6dc641a4f556b5b823b6c19fcfe16f6}} 
+\index{gft::Superpixels@{gft::Superpixels}!removeSubTree3@{removeSubTree3}}
+\index{removeSubTree3@{removeSubTree3}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{removeSubTree3()}{removeSubTree3()}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::remove\+Sub\+Tree3 (\begin{DoxyParamCaption}\item[{int}]{q\+\_\+in,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$}]{P,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{\mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_aeb70f8a911c7754be1770f78b88f273c}\label{namespacegft_1_1Superpixels_aeb70f8a911c7754be1770f78b88f273c}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSPixelsByDIFT@{RunSPixelsByDIFT}}
+\index{RunSPixelsByDIFT@{RunSPixelsByDIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSPixelsByDIFT()}{RunSPixelsByDIFT()}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+D\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$}]{P,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a49b65ced597a714999f95a4c7e47f57d}\label{namespacegft_1_1Superpixels_a49b65ced597a714999f95a4c7e47f57d}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSPixelsByIFT@{RunSPixelsByIFT}}
+\index{RunSPixelsByIFT@{RunSPixelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSPixelsByIFT()}{RunSPixelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{Adj\+Rel\+::\+Adj\+Rel $\ast$}]{A,  }\item[{Adj\+Rel\+::\+Adj\+Pxl $\ast$}]{P,  }\item[{Image32\+::\+Image32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a3a911a878c7f5bfe9be5c0250b1620d2}\label{namespacegft_1_1Superpixels_a3a911a878c7f5bfe9be5c0250b1620d2}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSPixelsByIFT@{RunSPixelsByIFT}}
+\index{RunSPixelsByIFT@{RunSPixelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSPixelsByIFT()}{RunSPixelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{Image32\+::\+Image32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_ae3c8d60253b39360ebed37b1ce9bbcc7}\label{namespacegft_1_1Superpixels_ae3c8d60253b39360ebed37b1ce9bbcc7}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSPixelsByIFT@{RunSPixelsByIFT}}
+\index{RunSPixelsByIFT@{RunSPixelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSPixelsByIFT()}{RunSPixelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{Image32\+::\+Image32 $\ast$}]{grad,  }\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{Adj\+Rel\+::\+Adj\+Rel $\ast$}]{A,  }\item[{Adj\+Rel\+::\+Adj\+Pxl $\ast$}]{P,  }\item[{Image32\+::\+Image32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a29b3ae7f100306439b5fe7ac0be9d9ca}\label{namespacegft_1_1Superpixels_a29b3ae7f100306439b5fe7ac0be9d9ca}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSPixelsByIFT@{RunSPixelsByIFT}}
+\index{RunSPixelsByIFT@{RunSPixelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSPixelsByIFT()}{RunSPixelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$}]{P,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_acf9c45f8e97c2135c18be206e7827e21}\label{namespacegft_1_1Superpixels_acf9c45f8e97c2135c18be206e7827e21}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSVoxelsByDIFT@{RunSVoxelsByDIFT}}
+\index{RunSVoxelsByDIFT@{RunSVoxelsByDIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSVoxelsByDIFT()}{RunSVoxelsByDIFT()}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Voxels\+By\+D\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$}]{V,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a6f273656cae3aa38888e9aa9e256456c}\label{namespacegft_1_1Superpixels_a6f273656cae3aa38888e9aa9e256456c}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSVoxelsByIFT@{RunSVoxelsByIFT}}
+\index{RunSVoxelsByIFT@{RunSVoxelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSVoxelsByIFT()}{RunSVoxelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Voxels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{Scene32\+::\+Scene32 $\ast$}]{scn,  }\item[{Scene32\+::\+Scene32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{Heap\+::\+Heap}} $\ast$}]{Q,  }\item[{Scene32\+::\+Scene32 $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_afcd0ae0f5a9af2698f8a627adfbc7d78}\label{namespacegft_1_1Superpixels_afcd0ae0f5a9af2698f8a627adfbc7d78}} 
+\index{gft::Superpixels@{gft::Superpixels}!RunSVoxelsByIFT@{RunSVoxelsByIFT}}
+\index{RunSVoxelsByIFT@{RunSVoxelsByIFT}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{RunSVoxelsByIFT()}{RunSVoxelsByIFT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Run\+S\+Voxels\+By\+I\+FT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ac25741c595e9cda95b7d815cece6e074}{s\+Heap}} $\ast$}]{Q,  }\item[{\mbox{\hyperlink{namespacegft_a716c65d235d5ed47827a4bdbfd3330de}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$}]{V,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{pred,  }\item[{float $\ast$}]{cost,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a006576832a9282accf25036d5028501c}\label{namespacegft_1_1Superpixels_a006576832a9282accf25036d5028501c}} 
+\index{gft::Superpixels@{gft::Superpixels}!UpdateSPixelsSeeds@{UpdateSPixelsSeeds}}
+\index{UpdateSPixelsSeeds@{UpdateSPixelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{UpdateSPixelsSeeds()}{UpdateSPixelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Update\+S\+Pixels\+Seeds (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{Image32\+::\+Image32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}} $\ast$$\ast$}]{seeds,  }\item[{int}]{nseeds,  }\item[{int}]{inside }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a9b2873f73b3d9021d9f38a3277f2e12e}\label{namespacegft_1_1Superpixels_a9b2873f73b3d9021d9f38a3277f2e12e}} 
+\index{gft::Superpixels@{gft::Superpixels}!UpdateSPixelsSeeds@{UpdateSPixelsSeeds}}
+\index{UpdateSPixelsSeeds@{UpdateSPixelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{UpdateSPixelsSeeds()}{UpdateSPixelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Update\+S\+Pixels\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{pred,  }\item[{\mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{s\+Adj\+Pxl}} $\ast$}]{P,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds,  }\item[{int}]{inside }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_adab115e313727452b76776d3e7328f69}\label{namespacegft_1_1Superpixels_adab115e313727452b76776d3e7328f69}} 
+\index{gft::Superpixels@{gft::Superpixels}!UpdateSVoxelsSeeds@{UpdateSVoxelsSeeds}}
+\index{UpdateSVoxelsSeeds@{UpdateSVoxelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{UpdateSVoxelsSeeds()}{UpdateSVoxelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Update\+S\+Voxels\+Seeds (\begin{DoxyParamCaption}\item[{Scene32\+::\+Scene32 $\ast$}]{scn,  }\item[{Scene32\+::\+Scene32 $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a2cfc6e413aae4963df38122d165e2587}{S\+Voxel\+Seed}} $\ast$$\ast$}]{seeds,  }\item[{int}]{nseeds,  }\item[{int}]{inside }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a857d3176caa64334a0a96a15c0773e39}\label{namespacegft_1_1Superpixels_a857d3176caa64334a0a96a15c0773e39}} 
+\index{gft::Superpixels@{gft::Superpixels}!UpdateSVoxelsSeeds@{UpdateSVoxelsSeeds}}
+\index{UpdateSVoxelsSeeds@{UpdateSVoxelsSeeds}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{UpdateSVoxelsSeeds()}{UpdateSVoxelsSeeds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Superpixels\+::\+Update\+S\+Voxels\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{pred,  }\item[{\mbox{\hyperlink{namespacegft_a22381d7a6a48bb6cb82cb116928dcb18}{s\+Adj\+Vxl}} $\ast$}]{V,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSVoxelSeed}{s\+S\+Voxel\+Seed}} $\ast$}]{seeds,  }\item[{int}]{nseeds,  }\item[{int}]{inside }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a0acb04b2bcfb0eceedb62b761838add0}\label{namespacegft_1_1Superpixels_a0acb04b2bcfb0eceedb62b761838add0}} 
+\index{gft::Superpixels@{gft::Superpixels}!WeightedDistanceMeasure@{WeightedDistanceMeasure}}
+\index{WeightedDistanceMeasure@{WeightedDistanceMeasure}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{WeightedDistanceMeasure()}{WeightedDistanceMeasure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Weighted\+Distance\+Measure (\begin{DoxyParamCaption}\item[{C\+Image\+::\+C\+Image $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{namespacegft_1_1Superpixels_a080588e6a7c428f6d8e8ad070df8aa8f}{S\+Pixel\+Seed}}}]{seed,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{float}]{m,  }\item[{float}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Superpixels_a830f6d4f4ac2852440af13f878292baf}\label{namespacegft_1_1Superpixels_a830f6d4f4ac2852440af13f878292baf}} 
+\index{gft::Superpixels@{gft::Superpixels}!WeightedDistanceMeasure@{WeightedDistanceMeasure}}
+\index{WeightedDistanceMeasure@{WeightedDistanceMeasure}!gft::Superpixels@{gft::Superpixels}}
+\doxysubsubsection{\texorpdfstring{WeightedDistanceMeasure()}{WeightedDistanceMeasure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Superpixels\+::\+Weighted\+Distance\+Measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg\+\_\+lab,  }\item[{\mbox{\hyperlink{structgft_1_1Superpixels_1_1sSPixelSeed}{s\+S\+Pixel\+Seed}}}]{seed,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{float}]{m,  }\item[{float}]{S }\end{DoxyParamCaption})}
+

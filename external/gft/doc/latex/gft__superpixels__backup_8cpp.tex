@@ -1,0 +1,64 @@
+\hypertarget{gft__superpixels__backup_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+superpixels\+\_\+backup.cpp File Reference}
+\label{gft__superpixels__backup_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_superpixels\_backup.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_superpixels\_backup.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+superpixels.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Superpixels}{gft\+::\+Superpixels}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_ab0e4ff256254c0d80d62eaa4f2fb4e0d}{gft\+::\+Superpixels\+::\+Color\+Squared\+Distance}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, S\+Pixel\+Seed seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_aa259934da0a17f0026c37e72d3cfbcef}{gft\+::\+Superpixels\+::\+Last\+Color\+Squared\+Distance}} (S\+Pixel\+Seed seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a7f75bfbb2efc017c6e13021aafa0952b}{gft\+::\+Superpixels\+::\+Last\+Spatial\+Squared\+Distance}} (S\+Pixel\+Seed seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a12e2c00aa1c632ec9e6514bd8a44cd1c}{gft\+::\+Superpixels\+::remove\+Sub\+Tree}} (int q\+\_\+in, gft\+::\+Image32\+::\+Image32 $\ast$label, \mbox{\hyperlink{namespacegft_1_1Heap_a6d0d24cc4c8c774c6df9b2a3ee54b383}{gft\+::\+Heap\+::\+Heap}} $\ast$Q, gft\+::\+Image32\+::\+Image32 $\ast$pred, float $\ast$cost, gft\+::\+Adj\+Rel\+::\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a3a911a878c7f5bfe9be5c0250b1620d2}{gft\+::\+Superpixels\+::\+Run\+S\+Pixels\+By\+I\+FT}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, Heap\+::\+Heap $\ast$Q, Image32\+::\+Image32 $\ast$pred, float $\ast$cost, float alpha, float beta, S\+Pixel\+Seed $\ast$seeds, int nseeds)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a0acb04b2bcfb0eceedb62b761838add0}{gft\+::\+Superpixels\+::\+Weighted\+Distance\+Measure}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, S\+Pixel\+Seed seed, int i, int j, float m, float S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_af0ca322549815761864a393152dc7a1b}{gft\+::\+Superpixels\+::\+Move2\+Lower\+Gradient}} (Image32\+::\+Image32 $\ast$grad, int $\ast$j, int $\ast$i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_ae15ced1dd51285afbbd37abce6acb2bb}{gft\+::\+Superpixels\+::\+Postprocessing\+\_\+\+CC}} (Image32\+::\+Image32 $\ast$label, S\+Pixel\+Seed $\ast$seeds, int nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a7bcebd8e9f4373fd3ed101c1dfa57e95}{gft\+::\+Superpixels\+::\+Postprocessing}} (Image32\+::\+Image32 $\ast$label, S\+Pixel\+Seed $\ast$seeds, int nseeds)
+\item 
+S\+Pixel\+Seed $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aa6fd314db2748138fddc151c6dacbc64}{gft\+::\+Superpixels\+::\+Get\+S\+Pixels\+Seeds}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$grad, int k, int $\ast$nseeds)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a23859ef963d5634c3f325996c7d452c0}{gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, bool colored, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a897eb8fc837f4a2c6d5f1bdad09f50d7}{gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a2c353987ae764d4d17c941c0bc722a33}{gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC}} (Image32\+::\+Image32 $\ast$img, int k, float alpha, float beta, float err\+\_\+dc, float err\+\_\+ds, int it\+Max)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a006576832a9282accf25036d5028501c}{gft\+::\+Superpixels\+::\+Update\+S\+Pixels\+Seeds}} (C\+Image\+::\+C\+Image $\ast$cimg\+\_\+lab, Image32\+::\+Image32 $\ast$label, S\+Pixel\+Seed $\ast$$\ast$seeds, int nseeds, int inside)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_ac95c33548e0bb14fb57143f967865844}{gft\+::\+Superpixels\+::my\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, bool colored, int k, float m)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a77576397c9513d3fe2b174baae2486b5}{gft\+::\+Superpixels\+::my\+S\+L\+IC}} (C\+Image\+::\+C\+Image $\ast$cimg, int k, float m)
+\item 
+Image32\+::\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_a10ac77335ce4331abc011ddb4a706bc3}{gft\+::\+Superpixels\+::my\+S\+L\+IC}} (Image32\+::\+Image32 $\ast$img, int k, float m)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Superpixels_a1703337b9bc12a45f9cd5a37de93423d}{gft\+::\+Superpixels\+::\+Get\+Number\+Of\+Super\+Pixels}} (Image32\+::\+Image32 $\ast$label)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a15e13e501652d95c72fb78560637e524}{gft\+::\+Superpixels\+::\+Feature\+Distance}} (Scene32\+::\+Scene32 $\ast$scn, S\+Voxel\+Seed seed, int q)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_af33cdbe1592d2c254638adab87c4edeb}{gft\+::\+Superpixels\+::\+Last\+Feature\+Distance}} (S\+Voxel\+Seed seed)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Superpixels_a778e4f5145076747de74b7586caaa303}{gft\+::\+Superpixels\+::\+Last\+Spatial\+Distance}} (S\+Voxel\+Seed seed)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_a6f273656cae3aa38888e9aa9e256456c}{gft\+::\+Superpixels\+::\+Run\+S\+Voxels\+By\+I\+FT}} (Scene32\+::\+Scene32 $\ast$scn, Scene32\+::\+Scene32 $\ast$label, Heap\+::\+Heap $\ast$Q, Scene32\+::\+Scene32 $\ast$pred, float $\ast$cost, float alpha, float beta, S\+Voxel\+Seed $\ast$seeds, int nseeds)
+\item 
+Scene32\+::\+Scene32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aee6f4aaaca496458917618bce54986bb}{gft\+::\+Superpixels\+::\+I\+F\+T\+\_\+\+S\+L\+IC}} (Scene32\+::\+Scene32 $\ast$scn, int k, float alpha, float beta, float err\+\_\+df, float err\+\_\+ds, int it\+Max)
+\item 
+S\+Voxel\+Seed $\ast$ \mbox{\hyperlink{namespacegft_1_1Superpixels_aafff435ecb9aea5c730030ce81ecf147}{gft\+::\+Superpixels\+::\+Get\+S\+Voxels\+Seeds}} (Scene32\+::\+Scene32 $\ast$scn, int k, int $\ast$nseeds)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Superpixels_adab115e313727452b76776d3e7328f69}{gft\+::\+Superpixels\+::\+Update\+S\+Voxels\+Seeds}} (Scene32\+::\+Scene32 $\ast$scn, Scene32\+::\+Scene32 $\ast$label, S\+Voxel\+Seed $\ast$$\ast$seeds, int nseeds, int inside)
+\end{DoxyCompactItemize}

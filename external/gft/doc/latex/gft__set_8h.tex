@@ -1,0 +1,63 @@
+\hypertarget{gft__set_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+set.h File Reference}
+\label{gft__set_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_set.h@{/home/pmiranda/programming/lib/gft/include/gft\_set.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+bmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Set_1_1sSet}{gft\+::\+Set\+::s\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Set}{gft\+::\+Set}}
+\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1CImage}{gft\+::\+C\+Image}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a color image, providing three samples (color channels) for each pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Set\+::s\+Set \mbox{\hyperlink{namespacegft_a00890b71e66ba53e434a9e49abfa6455}{gft\+::s\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Set $\ast$ \mbox{\hyperlink{namespacegft_1_1Set_a73af4e950f4154638306d4f4494cf8f7}{gft\+::\+Set\+::\+Create}} ()
+\item 
+s\+Set $\ast$ \mbox{\hyperlink{namespacegft_1_1Set_a6634b3d64fadf9926d2224b77a7b8bdd}{gft\+::\+Set\+::\+Create}} (s\+Image32 $\ast$bin, s\+Adj\+Rel $\ast$A)
+\item 
+s\+Set $\ast$ \mbox{\hyperlink{namespacegft_1_1Set_a651b7b048bec0a9e6cb49f5a83403ca2}{gft\+::\+Set\+::\+Create}} (s\+Image32 $\ast$img)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Set_adfb13649e34688241fe5020e155a09cc}{gft\+::\+Set\+::\+Destroy}} (s\+Set $\ast$$\ast$S)
+\item 
+s\+Set $\ast$ \mbox{\hyperlink{namespacegft_1_1Set_ac2aecc98169441d871a023bbbf40e00c}{gft\+::\+Set\+::\+Clone}} (s\+Set $\ast$S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Set_aff5abdc61f087f61842608044d1344a7}{gft\+::\+Set\+::\+Insert}} (s\+Set $\ast$$\ast$S, int elem)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Set_a63fece6cf0655fc8cb79c2456409e0c0}{gft\+::\+Set\+::\+Remove}} (s\+Set $\ast$$\ast$S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Set_ad64eadb365dc92191866b85fab800122}{gft\+::\+Set\+::\+Remove\+Elem}} (s\+Set $\ast$$\ast$S, int elem)
+\item 
+bool \mbox{\hyperlink{namespacegft_1_1Set_a0d76e9bee3b632248edd22b8c6e22ec3}{gft\+::\+Set\+::\+Is\+In\+Set}} (s\+Set $\ast$S, int elem)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Set_a32408e19a9bfd561195b0b1d920b6904}{gft\+::\+Set\+::\+Minimum\+Value}} (s\+Set $\ast$S)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Set_a459982179cf76da91632eaacf50b5198}{gft\+::\+Set\+::\+Maximum\+Value}} (s\+Set $\ast$S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Set_af0e9b7efe6fb94aa2e0410be4b995a1d}{gft\+::\+Set\+::\+Convert2\+Disjoint\+Sets}} (s\+Set $\ast$$\ast$S1, s\+Set $\ast$$\ast$S2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Set_a728fbfe93da9b08d89e530dffe8aef66}{gft\+::\+Set\+::\+Get\+N\+Elems}} (s\+Set $\ast$S)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Set_ac006c390644535cd6578bc7735634ee0}{gft\+::\+Set\+::\+Merge}} (s\+Set $\ast$$\ast$S, s\+Set $\ast$$\ast$T)
+\begin{DoxyCompactList}\small\item\em Merge two sets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_ab4c203d4acefe04c57916f951d4caaac}{gft\+::\+Image32\+::\+Draw\+Set}} (s\+Image32 $\ast$img, s\+Set $\ast$S, int value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_aaeee3021961471b87826bba185921d4c}{gft\+::\+C\+Image\+::\+Draw\+Set}} (s\+C\+Image $\ast$cimg, s\+Set $\ast$S, int color)
+\end{DoxyCompactItemize}

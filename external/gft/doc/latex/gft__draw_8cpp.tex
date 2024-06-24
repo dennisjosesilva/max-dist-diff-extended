@@ -1,0 +1,55 @@
+\hypertarget{gft__draw_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+draw.cpp File Reference}
+\label{gft__draw_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_draw.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_draw.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+draw.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1CImage}{gft\+::\+C\+Image}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a color image, providing three samples (color channels) for each pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aadca434e44e44d100adc472875785eb7}{gft\+::\+Image32\+::\+Draw\+Rectangle}} (s\+Image32 $\ast$img, int x1, int y1, int x2, int y2, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_ab24fdb34396b4a5aa12e5007b4ebf257}{gft\+::\+Image32\+::\+Draw\+Line\+D\+DA}} (s\+Image32 $\ast$img, int x1, int y1, int xn, int yn, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aa9ed385e226188a95773de0e50e67275}{gft\+::\+Image32\+::\+Draw\+Circle}} (s\+Image32 $\ast$img, int x1, int y1, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aec3205858a118e0b3ba39c33df6422bf}{gft\+::\+Image32\+::\+Draw\+Triangle}} (s\+Image32 $\ast$img, int xA, int yA, int xB, int yB, int xC, int yC, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a3fb600b76673c7a6228c932bc79ef223}{gft\+::\+Image32\+::\+Draw\+Triangle}} (s\+Image32 $\ast$img, int A, int B, int C, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a9c52dfc25ae90e3b229f95a7e6286050}{gft\+::\+Image32\+::\+Draw\+Line}} (s\+Image32 $\ast$img, int xA, int yA, int xB, int yB, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aaf52ac598d29dc41d419da5c63830649}{gft\+::\+Image32\+::\+Draw\+Line}} (s\+Image32 $\ast$img, int A, int B, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a1612f4df07592e1f68a29efd13eef196}{gft\+::\+Image32\+::\+Draw\+Arrow}} (s\+Image32 $\ast$img, int xA, int yA, int xB, int yB, float r, float w, float h, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a65dd33f213979a13d8d401cb19431b2c}{gft\+::\+Image32\+::\+Draw\+Arrow}} (s\+Image32 $\ast$img, int A, int B, float r, float w, float h, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_add7a3f5b403897a8a2b449cc0b1740eb}{gft\+::\+Image32\+::\+Flood\+Fill}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A, int P, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a6bd73e1d089b90a26b16b117701eda71}{gft\+::\+C\+Image\+::\+Draw\+Rectangle}} (s\+C\+Image $\ast$cimg, int x1, int y1, int x2, int y2, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a3039f4cdc8f4484dc009d9e3bfbe0f26}{gft\+::\+C\+Image\+::\+Draw\+Line\+D\+DA}} (s\+C\+Image $\ast$cimg, int x1, int y1, int xn, int yn, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a0bbe4310a1cd2baa0fc54dfad5990627}{gft\+::\+C\+Image\+::\+Draw\+Circle}} (s\+C\+Image $\ast$cimg, int x1, int y1, float r, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_ae1c64036346311e58f010bd0f3e50c8f}{gft\+::\+C\+Image\+::\+Draw\+Triangle}} (s\+C\+Image $\ast$cimg, int xA, int yA, int xB, int yB, int xC, int yC, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a2bb29566f532d51ebacc73c6c30b65d3}{gft\+::\+C\+Image\+::\+Draw\+Triangle}} (s\+C\+Image $\ast$cimg, int A, int B, int C, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_ab2cc1a9d5cba5c1121098471dc207581}{gft\+::\+C\+Image\+::\+Draw\+Line}} (s\+C\+Image $\ast$cimg, int A, int B, float r, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a021023a2301e154096b8128f19593d57}{gft\+::\+C\+Image\+::\+Draw\+Line}} (s\+C\+Image $\ast$cimg, int xA, int yA, int xB, int yB, float r, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a8e2390a2abd6a39818a91ab753c1e2f1}{gft\+::\+C\+Image\+::\+Draw\+Arrow}} (s\+C\+Image $\ast$cimg, int A, int B, float r, float w, float h, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a70941edba6849cd82d7513378a28dd28}{gft\+::\+C\+Image\+::\+Draw\+Arrow}} (s\+C\+Image $\ast$cimg, int xA, int yA, int xB, int yB, float r, float w, float h, int color)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_a3f27ef705a219091f04845e955f43f1d}{gft\+::\+C\+Image\+::\+Flood\+Fill}} (s\+C\+Image $\ast$cimg, s\+Adj\+Rel $\ast$A, int P, int color)
+\end{DoxyCompactItemize}
