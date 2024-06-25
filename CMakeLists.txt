@@ -28,7 +28,7 @@ find_package(OpenMP REQUIRED)
 find_package(Threads REQUIRED)
 find_package(ZLIB REQUIRED)
 
-# Exemplos do professor Paulo
+# Exemplos do Professor Paulo
 add_executable(dtmt src/dtmt.cpp)
 target_link_libraries(dtmt
   gft 
@@ -180,3 +180,17 @@ target_link_libraries(check_implementations
   Threads::Threads
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
+
+
+# test_temp 
+add_executable(test_temp 
+  src/test_temp.cpp
+  src/morphology/Adjacency.cpp
+  src/morphology/ErosionSerial.cpp)
+
+  target_link_libraries(test_temp
+    morphotree
+    gft
+    Threads::Threads
+    ZLIB::ZLIB
+    OpenMP::OpenMP_CXX)

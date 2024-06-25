@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <iomanip>
 
 namespace morphotree
 {
@@ -26,9 +27,9 @@ namespace morphotree
   {
     for (int y = domain.top(); y <= domain.bottom(); y++) {
       for (int x = domain.left(); x < domain.right(); x++) {
-        std::cout << f[domain.pointToIndex(x, y)] << " ";
+        std::cout << std::setw(4) << f[domain.pointToIndex(x, y)] << " ";
       }
-      std:: cout << f[domain.pointToIndex(domain.right(), y)] << "\n"; 
+      std:: cout << std::setw(4) << f[domain.pointToIndex(domain.right(), y)] << "\n"; 
     }
   }
 
@@ -37,9 +38,9 @@ namespace morphotree
   {
     for (int y = domain.top(); y <= domain.bottom(); y++) {
       for (int x = domain.left(); x < domain.right(); x++) {
-        std::cout << static_cast<Cast>(f[domain.pointToIndex(x, y)]) << " ";
+        std::cout << std::setw(4) << static_cast<Cast>(f[domain.pointToIndex(x, y)]) << " ";
       }
-      std:: cout << static_cast<Cast>(f[domain.pointToIndex(domain.right(), y)]) << "\n"; 
+      std:: cout << std::setw(4) << static_cast<Cast>(f[domain.pointToIndex(domain.right(), y)]) << "\n"; 
     }
   }
 
