@@ -186,7 +186,8 @@ target_link_libraries(check_implementations
 add_executable(test_temp 
   src/test_temp.cpp
   src/morphology/Adjacency.cpp
-  src/morphology/ErosionSerial.cpp)
+  src/morphology/ErosionSerial.cpp
+  src/contour/IncrementalContourSerial.cpp)
 
   target_link_libraries(test_temp
     morphotree
