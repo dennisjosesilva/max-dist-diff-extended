@@ -4,7 +4,7 @@
 #include <morphotree/tree/mtree.hpp>
 #include <morphotree/adjacency/adjacency8c.hpp>
 
-#include <MaxDistComputer.hpp>
+#include <MaxDist/MaxDistComputer.hpp>
 
 #include <iostream>
 #include <sstream>

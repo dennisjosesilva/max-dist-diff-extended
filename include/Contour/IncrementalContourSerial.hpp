@@ -1,5 +1,5 @@
-#include <morphology/Adjacency.hpp>
-#include <morphology/ErosionSerial.hpp>
+#include <Morphology/Adjacency.hpp>
+#include <Morphology/ErosionSerial.hpp>
 #include <morphotree/core/box.hpp>
 #include <morphotree/tree/mtree.hpp>
 #include <unordered_set>

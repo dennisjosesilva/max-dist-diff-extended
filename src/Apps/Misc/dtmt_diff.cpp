@@ -3,7 +3,7 @@
 
 #include "gft.h"
 
-#include "edt_diff.hpp"
+#include <MaxDist/edt_diff.hpp>
 
 
 gft::sImage32 *ReadAnyImage(char *file){

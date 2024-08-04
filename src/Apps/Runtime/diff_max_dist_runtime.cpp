@@ -4,7 +4,7 @@
 #include <morphotree/tree/ct_builder.hpp>
 #include <morphotree/tree/mtree.hpp>
 
-#include <MaxDistComputer.hpp>
+#include <MaxDist/MaxDistComputer.hpp>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>

@@ -6,12 +6,12 @@
 #include <morphotree/adjacency/adjacency8c.hpp>
 #include <morphotree/attributes/extinctionValues/ExtinctionValueLeavesComputer.hpp>
 #include <morphotree/attributes/areaComputer.hpp>
+#include <morphotree/attributes/volumeComputer.hpp>
 #include <morphotree/filtering/extinctionFilter.hpp>
 
 #include <iostream>
-#include <limits>
 
-#include <MaxDistComputer.hpp>
+#include <MaxDist/MaxDistComputer.hpp>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
@@ -20,56 +20,6 @@
 #include <stb_image_write.h>
 
 //#define APPDEBUG
-
-
-// Height Attribute Computer
-namespace mt = morphotree;
-template<class ValueType>
-class HeightComputer : public mt::AttributeComputer<ValueType, ValueType>
-{
-public:
-  using AttrType = ValueType;
-  using TreeType = typename mt::AttributeComputer<ValueType, ValueType>::TreeType;
-  using NodePtr = typename TreeType::NodePtr;
-
-  std::vector<ValueType> initAttributes(const TreeType &tree) override;
-  void computeInitialValue(std::vector<ValueType> &attr, NodePtr node) override;
-  void mergeToParent(std::vector<ValueType> &attr, NodePtr node, NodePtr parent) override;
-  void finaliseComputation(std::vector<ValueType> &attr, NodePtr node) override;
-
-private:
-  std::vector<ValueType> highest_;
-};
-
-template<class ValueType>
-std::vector<ValueType> HeightComputer<ValueType>::initAttributes(
-  const HeightComputer<ValueType>::TreeType &tree)
-{
-  highest_.resize(tree.numberOfNodes(), std::numeric_limits<ValueType>::min());
-  return std::vector<ValueType>(tree.numberOfNodes(), 
-    std::numeric_limits<ValueType>::min());
-}
-
-template<class ValueType>
-void HeightComputer<ValueType>::computeInitialValue(std::vector<ValueType> &attr,
-  NodePtr node)
-{
-  highest_[node->id()] = std::max(highest_[node->id()], node->level());  
-}
-
-template<class ValueType>
-void HeightComputer<ValueType>::mergeToParent(std::vector<ValueType> &attr, 
-  NodePtr node, NodePtr parent)
-{
-  highest_[parent->id()] = std::max(highest_[parent->id()], highest_[node->id()]);
-}
-
-template<class ValueType>
-void HeightComputer<ValueType>::finaliseComputation(std::vector<ValueType> &attr,
-  NodePtr node)
-{
-  attr[node->id()] = highest_[node->id()] - node->level();
-}
 
 int main(int argc, char *argv[])
 {
@@ -85,6 +35,7 @@ int main(int argc, char *argv[])
   using morphotree::buildMaxTree;
   using morphotree::AreaComputer;
   using morphotree::ExtinctionValueLeavesComputer;
+  using morphotree::VolumeComputer;
   using NodePtr = MorphologicalTree<uint8>::NodePtr;
   using ExtinctionValueComputer = ExtinctionValueLeavesComputer<uint8, uint32>;
   using ExtinctionValueMapType = typename ExtinctionValueComputer::MapType;
@@ -97,7 +48,7 @@ int main(int argc, char *argv[])
   // check number of arguments from the command call
   if (argc < 4) {
     std::cerr << "usage error!\n";
-    std::cerr << "usage: extinction_filter_max_dist <image> <out_img> <area> [nleaves] \n";
+    std::cerr << "usage: extinction_filter_volume <image> <out_img> <area> [nleaves] \n";
     return -1;
   }
 
@@ -137,19 +88,18 @@ int main(int argc, char *argv[])
   });
 
   // Extinction value
-  //std::vector<uint32> maxDist = AreaComputer<uint8>().computeAttribute(maxtree);
-  std::vector<uint8> heightExt = HeightComputer<uint8>().computeAttribute(maxtree);
+  std::vector<float> volume = VolumeComputer<uint8>().computeAttribute(maxtree);
   
   #ifdef APPDEBUG
     //print extinction value 
-    ExtinctionValueMapType extVals = ExtinctionValueComputer().compute(maxtree, heightExt);
+    ExtinctionValueMapType extVals = ExtinctionValueComputer().compute(maxtree, areaExt);
     for (auto& leafVal : extVals) {
-      std::cout << "height[" << leafVal.first << "] = " << leafVal.second << "\n";
+      std::cout << "areaExt[" << leafVal.first << "] = " << leafVal.second << "\n";
     }
   #endif
 
   // perform extinction filter
-  iextinctionFilter(maxtree, heightExt, nleaves);
+  iextinctionFilter(maxtree, volume, nleaves);
 
   std::cout << "FILTER\n";
   std::cout << "Number of nodes: " << maxtree.numberOfNodes() << std::endl;

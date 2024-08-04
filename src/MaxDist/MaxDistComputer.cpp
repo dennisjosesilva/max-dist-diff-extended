@@ -1,4 +1,4 @@
-#include "MaxDistComputer.hpp"
+#include <MaxDist/MaxDistComputer.hpp>
 
 #include <unordered_set>
 #include <unordered_map>
@@ -6,7 +6,7 @@
 #include <morphotree/adjacency/adjacency.hpp>
 #include <morphotree/adjacency/adjacency4c.hpp>
 
-#include <edt_diff.hpp>
+#include <MaxDist/edt_diff.hpp>
 
 #include <iostream>
 

@@ -1,5 +1,5 @@
-#include <NonDiffMaxDistComputer.hpp>
-#include <edt.hpp>
+#include <MaxDist/NonDiffMaxDistComputer.hpp>
+#include <MaxDist/edt.hpp>
 
 NonDiffMaxDistComputer::NonDiffMaxDistComputer(
   const Box &domain, const std::vector<uint8> &f)

@@ -1,6 +1,6 @@
 #include <morphotree/tree/mtree.hpp>
 #include <morphotree/adjacency/adjacency8c.hpp>
-#include <BasicAttributeComputer.hpp>
+#include <Attributes/BasicAttributeComputer.hpp>
 
 #include <iostream>
 #include <string>

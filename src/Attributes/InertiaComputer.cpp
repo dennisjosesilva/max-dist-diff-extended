@@ -1,4 +1,4 @@
-#include <InertiaComputer.hpp>
+#include <Attributes/InertiaComputer.hpp>
 #include <algorithm>
 #include <cmath>
 

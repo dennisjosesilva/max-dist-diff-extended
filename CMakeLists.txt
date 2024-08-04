@@ -29,7 +29,7 @@ find_package(Threads REQUIRED)
 find_package(ZLIB REQUIRED)
 
 # Exemplos do Professor Paulo
-add_executable(dtmt src/dtmt.cpp)
+add_executable(dtmt src/Apps/Misc/dtmt.cpp)
 target_link_libraries(dtmt
   gft 
   Threads::Threads
@@ -37,7 +37,7 @@ target_link_libraries(dtmt
   OpenMP::OpenMP_CXX)
 
 
-add_executable(dtmt_diff src/dtmt_diff.cpp)
+add_executable(dtmt_diff src/Apps/Misc/dtmt_diff.cpp)
 target_link_libraries(dtmt_diff
     gft 
     Threads::Threads
@@ -46,8 +46,8 @@ target_link_libraries(dtmt_diff
 
 # Extinction filters
 add_executable(extinction_filter_max_dist 
-  src/extinction_filter_max_dist.cpp
-  src/MaxDistComputer.cpp)
+  src/Apps/Filters/extinction_filter_max_dist.cpp
+  src/MaxDist/MaxDistComputer.cpp)
 
 target_link_libraries(extinction_filter_max_dist
   morphotree
@@ -57,8 +57,8 @@ target_link_libraries(extinction_filter_max_dist
   OpenMP::OpenMP_CXX)
 
 add_executable(extinction_filter_area 
-  src/extinction_filter_area.cpp
-  src/MaxDistComputer.cpp)
+  src/Apps/Filters/extinction_filter_area.cpp
+  src/MaxDist/MaxDistComputer.cpp)
 
 target_link_libraries(extinction_filter_area
   morphotree
@@ -69,8 +69,8 @@ target_link_libraries(extinction_filter_area
 
 
 add_executable(extinction_filter_volume 
-  src/extinction_filter_volume.cpp
-  src/MaxDistComputer.cpp)
+  src/Apps/Filters/extinction_filter_volume.cpp
+  src/MaxDist/MaxDistComputer.cpp)
 
 target_link_libraries(extinction_filter_volume
   morphotree
@@ -80,8 +80,8 @@ target_link_libraries(extinction_filter_volume
   OpenMP::OpenMP_CXX)
 
 add_executable(extinction_filter_height 
-  src/extinction_filter_height.cpp
-  src/MaxDistComputer.cpp)
+  src/Apps/Filters/extinction_filter_height.cpp
+  src/MaxDist/MaxDistComputer.cpp)
 
 target_link_libraries(extinction_filter_height
   morphotree
@@ -91,8 +91,8 @@ target_link_libraries(extinction_filter_height
   OpenMP::OpenMP_CXX)
 
 add_executable(extinction_filter_inertia 
-  src/extinction_filter_inertia.cpp
-  src/InertiaComputer.cpp)
+  src/Apps/Filters/extinction_filter_inertia.cpp
+  src/Attributes/InertiaComputer.cpp)
 
 target_link_libraries(extinction_filter_inertia
   morphotree
@@ -103,8 +103,8 @@ target_link_libraries(extinction_filter_inertia
 
 # display maximum distance attribute.
 add_executable(max_dist_attr_disp 
-  src/MaxDistComputer.cpp
-  src/max_dist_attr_disp.cpp)
+  src/MaxDist/MaxDistComputer.cpp
+  src/Apps/Displays/max_dist_attr_disp.cpp)
   
 target_link_libraries(max_dist_attr_disp
   morphotree
@@ -114,8 +114,8 @@ target_link_libraries(max_dist_attr_disp
   OpenMP::OpenMP_CXX)
 
 add_executable(ultimate_maxDist_open 
-src/MaxDistComputer.cpp
-src/ultimate_maxDist_open.cpp)
+src/MaxDist/MaxDistComputer.cpp
+src/Apps/Filters/ultimate_maxDist_open.cpp)
 
 target_link_libraries(ultimate_maxDist_open
 morphotree
@@ -127,8 +127,8 @@ OpenMP::OpenMP_CXX)
 
 # Direct filter
 add_executable(direct_filter 
-  src/BasicAttributeComputer.cpp
-  src/direct_filter.cpp)
+  src/Attributes/BasicAttributeComputer.cpp
+  src/Apps/Filters/direct_filter.cpp)
   
 target_link_libraries(direct_filter
   morphotree  
@@ -136,8 +136,8 @@ target_link_libraries(direct_filter
 
 # basic attr display
 add_executable(basic_attr_disp 
-  src/BasicAttributeComputer.cpp
-  src/basic_attr_disp.cpp)
+  src/Attributes/BasicAttributeComputer.cpp
+  src/Apps/Displays/basic_attr_disp.cpp)
   
 target_link_libraries(basic_attr_disp
   morphotree  
@@ -146,8 +146,8 @@ target_link_libraries(basic_attr_disp
 
 # runtime computations
 add_executable(diff_max_dist_runtime 
-  src/MaxDistComputer.cpp
-  src/diff_max_dist_runtime.cpp)
+  src/MaxDist/MaxDistComputer.cpp
+  src/Apps/Runtime/diff_max_dist_runtime.cpp)
   
 target_link_libraries(diff_max_dist_runtime
   morphotree
@@ -158,8 +158,8 @@ target_link_libraries(diff_max_dist_runtime
 
 # runtime computations
 add_executable(non_diff_max_dist_runtime 
-  src/NonDiffMaxDistComputer.cpp
-  src/non_diff_max_dist_runtime.cpp)
+  src/MaxDist/NonDiffMaxDistComputer.cpp
+  src/Apps/Runtime/non_diff_max_dist_runtime.cpp)
   
 target_link_libraries(non_diff_max_dist_runtime
   morphotree
@@ -170,9 +170,9 @@ target_link_libraries(non_diff_max_dist_runtime
 
 # Checking
 add_executable(check_implementations 
-  src/NonDiffMaxDistComputer.cpp
-  src/MaxDistComputer.cpp
-  src/check_implementations.cpp)
+  src/MaxDist/NonDiffMaxDistComputer.cpp
+  src/MaxDist/MaxDistComputer.cpp
+  src/Apps/Checking/check_implementations.cpp)
   
 target_link_libraries(check_implementations
   morphotree
@@ -185,9 +185,9 @@ target_link_libraries(check_implementations
 # test_temp 
 add_executable(test_temp 
   src/test_temp.cpp
-  src/morphology/Adjacency.cpp
-  src/morphology/ErosionSerial.cpp
-  src/contour/IncrementalContourSerial.cpp)
+  src/Morphology/Adjacency.cpp
+  src/Morphology/ErosionSerial.cpp
+  src/Contour/IncrementalContourSerial.cpp)
 
   target_link_libraries(test_temp
     morphotree

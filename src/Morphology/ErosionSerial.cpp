@@ -1,4 +1,4 @@
-#include <morphology/ErosionSerial.hpp>
+#include <Morphology/ErosionSerial.hpp>
 
 const int ErosionSerial::OUT_OF_DOMAIN_VALUE = -1;
 

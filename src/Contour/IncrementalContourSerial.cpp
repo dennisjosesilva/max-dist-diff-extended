@@ -1,4 +1,4 @@
-#include <contour/IncrementalContourSerial.hpp>
+#include <Contour/IncrementalContourSerial.hpp>
 
 
 IncrementalContourSerial::IncrementalContourSerial(const Box &domain,

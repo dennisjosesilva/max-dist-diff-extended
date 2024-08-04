@@ -3,7 +3,8 @@
 #include <morphotree/core/box.hpp>
 #include <vector>
 #include <functional>
-#include <morphology/Adjacency.hpp>
+
+#include <Morphology/Adjacency.hpp>
 
 class ErosionSerial 
 {

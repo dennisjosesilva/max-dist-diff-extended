@@ -1,11 +1,12 @@
-#include <morphology/Adjacency.hpp>
-#include <morphology/ErosionSerial.hpp>
 #include <morphotree/core/box.hpp>
 #include <morphotree/core/io.hpp>
 #include <morphotree/tree/ct_builder.hpp>
 #include <morphotree/adjacency/adjacency8c.hpp>
 
-#include <contour/IncrementalContourSerial.hpp>
+#include <Morphology/Adjacency.hpp>
+#include <Morphology/ErosionSerial.hpp>
+
+#include <Contour/IncrementalContourSerial.hpp>
 #include <iostream>
 
 #include <sstream>

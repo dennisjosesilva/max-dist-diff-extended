@@ -1,4 +1,4 @@
-#include <morphology/Adjacency.hpp>
+#include <Morphology/Adjacency.hpp>
 
 
 // -------------------------------------------------
