@@ -1,5 +1,7 @@
 #include <Morphology/ErosionSerial.hpp>
 
+#include <omp.h>
+
 const int ErosionSerial::OUT_OF_DOMAIN_VALUE = -1;
 
 ErosionSerial::ErosionSerial(const Box& domain, const std::vector<uint8> &f)
@@ -10,7 +12,7 @@ std::vector<int> ErosionSerial::compute(Adj adj) const
 {
   using morphotree::I32Point;
   std::vector<int> f_eroded(domain_.numberOfPoints());
-  
+    
   for (uint32 pidx = 0; pidx < domain_.numberOfPoints(); pidx++) {
     int minValue = f_[pidx];
 
