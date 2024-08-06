@@ -226,3 +226,20 @@ target_link_libraries(check_diff_edt_opt
   Threads::Threads
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
+
+
+# max_dist_opt checking
+add_executable(check_diff_edt_opt_parallel
+  src/Apps/Checking/check_diff_edt_opt_parallel.cpp
+  src/Morphology/Adjacency.cpp
+  src/Morphology/ErosionParallel.cpp  
+  src/MaxDist/edt_diff.cpp
+  src/MaxDist/MaxDistComputerOptParallel.cpp
+  src/MaxDist/MaxDistComputer.cpp)
+
+target_link_libraries(check_diff_edt_opt_parallel
+morphotree
+gft
+Threads::Threads
+ZLIB::ZLIB
+OpenMP::OpenMP_CXX)

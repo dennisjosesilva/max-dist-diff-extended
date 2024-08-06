@@ -1,7 +1,5 @@
 #include <Morphology/ErosionSerial.hpp>
 
-#include <omp.h>
-
 const int ErosionSerial::OUT_OF_DOMAIN_VALUE = -1;
 
 ErosionSerial::ErosionSerial(const Box& domain, const std::vector<uint8> &f)
