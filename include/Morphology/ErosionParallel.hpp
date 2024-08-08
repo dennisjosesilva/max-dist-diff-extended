@@ -18,7 +18,6 @@ namespace SE
   };
 }
 
-
 class ErosionParallel
 {
 public:  
@@ -36,7 +35,6 @@ private:
   const std::vector<uint8> &f_;
   const Box &domain_;
 };
-
 
 std::vector<int> erodeParallel(
   const morphotree::Box &domain,

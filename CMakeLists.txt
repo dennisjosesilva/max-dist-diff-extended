@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.20)
 
 project(EDT)
 
@@ -238,8 +238,33 @@ add_executable(check_diff_edt_opt_parallel
   src/MaxDist/MaxDistComputer.cpp)
 
 target_link_libraries(check_diff_edt_opt_parallel
-morphotree
-gft
-Threads::Threads
-ZLIB::ZLIB
-OpenMP::OpenMP_CXX)
+  morphotree
+  gft
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+
+find_package(CUDA)
+if(CUDA_FOUND)
+  enable_language(CUDA)
+
+  # max_dist_opt gpu
+  add_executable(check_diff_edt_opt_gpu
+    src/Apps/Checking/check_diff_edt_opt_gpu.cpp
+    src/Morphology/Adjacency.cpp
+    src/Morphology/ErosionGPU.cu  
+    src/MaxDist/edt_diff.cpp
+    src/MaxDist/MaxDistComputerOptGPU.cpp
+    src/MaxDist/MaxDistComputer.cpp)
+
+  target_link_libraries(check_diff_edt_opt_gpu
+  morphotree
+  gft
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+  
+  set_target_properties(check_diff_edt_opt_gpu PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+  set_target_properties(check_diff_edt_opt_gpu PROPERTIES CUDA_ARCHITECTURES "35;50;72")
+
+endif()

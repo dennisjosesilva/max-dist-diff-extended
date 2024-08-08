@@ -51,7 +51,8 @@
     "cinttypes": "cpp",
     "typeinfo": "cpp",
     "bit": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "cstring": "cpp"
   },
   "cSpell.words": [
     "APPDEBUG",
