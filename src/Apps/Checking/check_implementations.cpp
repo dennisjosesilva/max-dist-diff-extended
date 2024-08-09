@@ -10,7 +10,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
-#define APPDEBUG
+// #define APPDEBUG
 
 #ifdef APPDEBUG
   #include <fstream>
