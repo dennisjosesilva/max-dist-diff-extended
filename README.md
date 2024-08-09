@@ -73,12 +73,31 @@ message if there is no mismatch. The application list is:
 
    If the `input_image_path` is set, the program computes the maximum EDT value for each node of the 
    component tree of the image stored in `input_image_path` using the optimised differential EDT 
-   (using erosion) and the reconstruction-based EDT value. If there is a mismatch, it prints the
-   node id and the mismatched values. Otherwise, it prints a successful checking message. 
+   (using erosion) and the reconstruction-based EDT value. If there is a mismatch, it prints the 
+   node ID and the mismatched values. Otherwise, it prints a successful checking message. 
    If the `input_image_path` is not set, the program computes the maximum EDT value using 
    the optimised differential EDT (using erosion) and the reconstruction-based EDT value of 
-   a simple image and print the binary nodes and the distance value in the console.
+   a simple image and prints the binary nodes and the distance value in the console.
 
+* **check_diff_edt_parallel**
+   ```shell
+   $ ./check_diff_edt_parallel [input_image_path]
+   ```
+
+   * `[input_image_path]`: path to the image where the maximum EDT value will be computed.
+
+   The same as the `check_diff_edt_opt`, but the optimised maximum differential EDT value 
+   approach uses a parallel implementation (OpenMP).
+
+* **check_diff_edt_gpu**
+   ```shell
+   $ ./check_diff_edt_gpu [input_image_path]
+   ```
+
+   * `[input_image_path]`: path to the image where the maximum EDT value will be computed.
+
+   The same as the `check_diff_edt_opt`, but the optimised maximum differential EDT value 
+   approach uses a GPU-based parallel implementation (CUDA).
 
 # Runtime
 
