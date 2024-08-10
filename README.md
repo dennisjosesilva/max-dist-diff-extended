@@ -99,6 +99,40 @@ message if there is no mismatch. The application list is:
    The same as the `check_diff_edt_opt`, but the optimised maximum differential EDT value 
    approach uses a GPU-based parallel implementation (CUDA).
 
+
+## Display
+
+The applications in this category display the values of attributes in the console or 
+on a csv file for each node of the component tree of the input image.
+
+* **basic_attr_disp**
+   ```shell
+   $ ./basic_attr_disp <input_image_path> <csv_out>
+   ```
+   * `<input_image_path>`: path to the image where the attributes will be computed.
+   * `<csv_out>`: path to the csv file where the values of the attribute will be recorded.
+
+   The program builds the max-tree of the input image and incrementally computes: 
+   area, volume, level, mean level, variance level, width, height, rectangularity, ratio 
+   width and height, moment 02, moment 20, moment 11, inertia, orientation, length of 
+   major axis, length of minor axis, eccentricity, and compactness. The values of the attributes
+   are stored in a csv.
+   
+* **max_dist_attr_disp**
+   ```shell
+   $ ./max_dist_attr_disp <input_image_path> <out_dir>
+   ```
+
+   * `<input_image_path>`: path to the image where maximum EDT value will be computed.
+   * `<out_dir>`: path to a directory to store the binary image of the nodes.
+
+   The program computes the max-tree of the input image and displays the value of 
+   the attribute in the console. If the symbol `ONLY_ATTRIBUTE_VALUE` is not define
+   the program also stores the binary image of each node of the max-tree in the 
+   output directory.
+
+## Filters
+
 # Runtime
 
 A Google Colab page containing the analysis of the run-time files is available in this [link](https://colab.research.google.com/drive/18Kyx5M83iL1TQoti4BIih4t4DJyD72Gg?usp=drive_link).
