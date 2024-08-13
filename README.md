@@ -133,7 +133,141 @@ on a csv file for each node of the component tree of the input image.
 
 ## Filters
 
-# Runtime
+The applications in this category receive an input greyscale image and output the 
+filtered image. The filter operation is based on attributes and component trees.
+
+* **direct_filter**
+   ```shell
+   $ ./direct_filter <input_image_path> <output_image_path> <attr> <op> <value>
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`: Path for the output (filtered image in png)
+   * `<attr>`: Name of the attribute: 
+      * `area`
+      * `volume`
+      * `level`
+      * `mean_level`
+      * `level_variance`
+      * `box_width`
+      * `box_height`
+      * `rectangularity`
+      * `ration`
+      * `moment20`
+      * `moment02`
+      * `inertia`
+      * `orientation`
+      * `length_major_axis`
+      * `length_minor_axis`
+      * `eccentricity`
+      * `compactness`
+   * `<op>`: Operation - use 'g' for greater than, 'l' for lower than, or '=' to equal to
+   * `<value>`: threshold value
+
+The program applies a direct filter in `<input_image_path>`  by keeping only nodes that 
+have value og `<attr>` less than or greater than (`<op>`) a `<value>`.
+
+* **extiction_filter_area**
+   ```shell 
+      $ ./extinction_filter_area <input_image_path> <output_image_path> <area> [nleaves]
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`:  Path for the output image path
+   * `<area>`: area threshold value for a pre-processing area filter, use 0 to skip the pre-processing.
+   * `[nleaves]`: number of leaves kept of the extinction value filter (default: 15).
+
+The program runs an area opening filter as a pre-processing step (if `<area>` is greater than zero). Then, 
+the program performs an **area extinction value filter** by keeping `[nleaves]` leaves and stores the filtered 
+image in `<output_image_path>`.
+
+* **extiction_filter_height**
+   ```shell 
+      $ ./extinction_filter_height <input_image_path> <output_image_path> <area> [nleaves]
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`:  Path for the output image path
+   * `<area>`: area threshold value for a pre-processing area filter, use 0 to skip the pre-processing.
+   * `[nleaves]`: number of leaves kept of the extinction value filter (default: 15).
+
+The program runs an area opening filter as a pre-processing step (if `<area>` is greater than zero). Then, 
+the program performs an **height extinction value filter** by keeping `[nleaves]` leaves and stores the filtered 
+image in `<output_image_path>`.
+
+* **extinction_filter_inertia**
+   ```shell
+      $ ./extiction_filter_inertia <input_image_path> <output_image_path> <area> [nleaves]
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`:  Path for the output image path
+   * `<area>`: area threshold value for a pre-processing area filter, use 0 to skip the pre-processing.
+   * `[nleaves]`: number of leaves kept of the extinction value filter (default: 15).
+
+The program runs an area opening filter as a pre-processing step (if `<area>` is greater than zero). Then, 
+the program performs an **inertia extinction value filter** by keeping `[nleaves]` leaves and stores the filtered 
+image in `<output_image_path>`.
+
+
+* **extinction_filter_max_dist**
+   ```shell
+      $ ./extiction_filter_max_dist <input_image_path> <output_image_path> <area> [nleaves]
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`:  Path for the output image path
+   * `<area>`: area threshold value for a pre-processing area filter, use 0 to skip the pre-processing.
+   * `[nleaves]`: number of leaves kept of the extinction value filter (default: 15).
+
+The program runs an area opening filter as a pre-processing step (if `<area>` is greater than zero). Then, 
+the program performs an **maximum distance transform extinction value filter** by keeping `[nleaves]` leaves 
+and stores the filtered image in `<output_image_path>`.
+
+* **extinction_filter_volume**
+   ```shell
+      $ ./extiction_filter_volume <input_image_path> <output_image_path> <area> [nleaves]
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`:  Path for the output image path
+   * `<area>`: area threshold value for a pre-processing area filter, use 0 to skip the pre-processing.
+   * `[nleaves]`: number of leaves kept of the extinction value filter (default: 15).
+
+The program runs an area opening filter as a pre-processing step (if `<area>` is greater than zero). Then, 
+the program performs an **volume extinction value filter** by keeping `[nleaves]` leaves and stores the filtered 
+image in `<output_image_path>`.
+
+* **ultimate_maxDist_open**
+   ```shell
+      $ ./ultimate_maxDist_open <input_image_path> <output_image_path> <maxCriterion>
+   ```
+   * `<input_image_path>`: Path for the input image
+   * `<output_image_path>`: Path for the output image path
+   * `<maxCriterion>`: Maximum criterion used for ultimate opening
+
+The program runs an ultimate opening filter for the max-tree of the `<input_image_path>` and outputs 
+the images `<output_image_path>`_maxConstrast.png and `<ouput_image_path>`_associated.png with the
+maximum contrast and residues associated with the computed ultimate opening.
+
+## Runtime
+
+The programs of this category measure the runtime of for computing the maximum distance transform value using 
+the differential and the non-differential approaches.
+
+* **diff_max_dist_runtime**
+```shell
+   $ ./diff_max_dist_runtime <input_image_path>
+```
+   * `<input_image_path>`: Path for the input image
+
+The program measures the runtime for computing the maximum distance transform value for the `<input_image_path>` 
+using the DIFT and incremental contour computation.
+
+* **non_diff_max_dist_runtime**
+   ```shell
+      $ ./non_diff_max_dist_runtime <input_image_path>
+   ```
+   * `<input_image_path>`: Path for the input image
+
+The program measures the runtime for computing the maximum distance transform value for the `<input_image_path>` 
+using the IFT and node reconstruction operations.
+
+# Runtime Analysis
 
 A Google Colab page containing the analysis of the run-time files is available in this [link](https://colab.research.google.com/drive/18Kyx5M83iL1TQoti4BIih4t4DJyD72Gg?usp=drive_link).
 
