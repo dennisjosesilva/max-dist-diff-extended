@@ -1,6 +1,7 @@
 #include <morphotree/tree/mtree.hpp>
 #include <morphotree/adjacency/adjacency8c.hpp>
 #include <Attributes/BasicAttributeComputer.hpp>
+#include <MaxDist/MaxDistComputer.hpp>
 
 #include <iostream>
 #include <string>
@@ -39,7 +40,8 @@ void help()
             << "\t\tlength_major_axis,\n"
             << "\t\tlength_minor_axis,\n"
             << "\t\teccentricity,\n"
-            << "\t\tcompactness.\n"
+            << "\t\tcompactness,\n"
+            << "\t\tmaxDist.\n"
             << "\t<op>: (char) Operation - use 'g' for greater than, 'l' for lower than, or '=' to equals to\n"
             << "\t<value>: (float) threshold value \n";
 }
@@ -98,103 +100,111 @@ int main(int argc, char *argv[])
   std::cout << "number of nodes: " << tree.numberOfNodes() << "\n";
   std::cout << "===== performing filter =======" << "\n";
 
-  // compute attributes
-  std::vector<BasicAttributes> attrs = computeBasicAttributes(domain, f, tree);
-
+  
   // perform filter
-  if (attr == "area") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].area(), thresholdValue);
-    });  
-  }
-  else if (attr == "volume") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].volume(), thresholdValue);
-    });  
-  }
-  else if (attr == "level") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].level(), thresholdValue);
-    });  
-  }
-  else if (attr == "mean_level") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].meanLevel(), thresholdValue);
-    });  
-  }
-  else if (attr == "level_variance") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].varianceLevel(), thresholdValue);
-    });  
-  }
-  else if (attr == "box_width") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].width(), thresholdValue);
-    });  
-  }
-  else if (attr == "box_height") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].height(), thresholdValue);
-    });  
-  }
-  else if (attr == "rectangularity") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].rectangularity(), thresholdValue);
-    });  
-  }
-  else if (attr == "ratioWH") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].ratioWH(), thresholdValue);
-    });  
-  }
-  else if (attr == "moment20") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].moment20(), thresholdValue);
-    });  
-  }
-  else if (attr == "moment02") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].moment02(), thresholdValue);
-    });  
-  }
-  else if (attr == "moment11") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].moment11(), thresholdValue);
-    });  
-  }
-  else if (attr == "inertia") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].inertia(), thresholdValue);
-    });  
-  }
-  else if (attr == "orientation") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].orientation(), thresholdValue);
-    });  
-  }
-  else if (attr == "length_major_axis") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].lenMajorAxis(), thresholdValue);
-    });  
-  }
-  else if (attr == "length_minor_axis") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].lenMinorAxis(), thresholdValue);
-    });  
-  }
-  else if (attr == "eccentricity") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].eccentricity(), thresholdValue);
-    });  
-  }
-  else if (attr == "compactness") {
-    tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
-      return op(attrs[node->id()].compactness(), thresholdValue);
-    });  
-  }
-  else {
-    std::cerr << "ERROR. invalid attribute: " << attr << "\n";
-    return -1;
+  if(attr == "maxDist"){
+      std::vector<uint32> maxDist = computeMaxDistanceAttribute(domain, f, tree);
+      tree.idirectFilter([&op, &maxDist, thresholdValue](NodePtr node) { 
+        return op(maxDist[node->id()], thresholdValue);
+      });
+  }else{
+    // compute attributes
+    std::vector<BasicAttributes> attrs = computeBasicAttributes(domain, f, tree);
+
+    if (attr == "area") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].area(), thresholdValue);
+      });  
+    }
+    else if (attr == "volume") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].volume(), thresholdValue);
+      });  
+    }
+    else if (attr == "level") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].level(), thresholdValue);
+      });  
+    }
+    else if (attr == "mean_level") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].meanLevel(), thresholdValue);
+      });  
+    }
+    else if (attr == "level_variance") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].varianceLevel(), thresholdValue);
+      });  
+    }
+    else if (attr == "box_width") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].width(), thresholdValue);
+      });  
+    }
+    else if (attr == "box_height") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].height(), thresholdValue);
+      });  
+    }
+    else if (attr == "rectangularity") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].rectangularity(), thresholdValue);
+      });  
+    }
+    else if (attr == "ratioWH") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].ratioWH(), thresholdValue);
+      });  
+    }
+    else if (attr == "moment20") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].moment20(), thresholdValue);
+      });  
+    }
+    else if (attr == "moment02") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].moment02(), thresholdValue);
+      });  
+    }
+    else if (attr == "moment11") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].moment11(), thresholdValue);
+      });  
+    }
+    else if (attr == "inertia") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].inertia(), thresholdValue);
+      });  
+    }
+    else if (attr == "orientation") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].orientation(), thresholdValue);
+      });  
+    }
+    else if (attr == "length_major_axis") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].lenMajorAxis(), thresholdValue);
+      });  
+    }
+    else if (attr == "length_minor_axis") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].lenMinorAxis(), thresholdValue);
+      });  
+    }
+    else if (attr == "eccentricity") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].eccentricity(), thresholdValue);
+      });  
+    }
+    else if (attr == "compactness") {
+      tree.idirectFilter([&op, &attrs, thresholdValue](NodePtr node) { 
+        return op(attrs[node->id()].compactness(), thresholdValue);
+      });  
+    }
+    else {
+      std::cerr << "ERROR. invalid attribute: " << attr << "\n";
+      return -1;
+    }
   }
 
   std::cout << "number of nodes after filter: " << tree.numberOfNodes() << "\n";

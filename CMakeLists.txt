@@ -139,10 +139,15 @@ OpenMP::OpenMP_CXX)
 # Direct filter
 add_executable(direct_filter 
   src/Attributes/BasicAttributeComputer.cpp
+  src/MaxDist/edt_diff.cpp 
+  src/MaxDist/MaxDistComputer.cpp
   src/Apps/Filters/direct_filter.cpp)
   
 target_link_libraries(direct_filter
   morphotree  
+  gft 
+  Threads::Threads
+  ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
 
 # basic attr display
