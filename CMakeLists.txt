@@ -268,3 +268,32 @@ if(CUDA_FOUND)
   set_target_properties(check_diff_edt_opt_gpu PROPERTIES CUDA_ARCHITECTURES "35;50;72")
 
 endif()
+
+
+option(NO_EDTInspector_BUILD "If ON, it will skip building EDTInspector and its Graphics dependency")
+if(NOT NO_EDTInspector_BUILD)
+
+find_package(OpenGL REQUIRED)
+
+add_subdirectory(external/glfw)
+include_directories(
+  external/glad/include 
+  external/imgui-docking external/imgui-docking/backends)
+
+SET(GRAPHICS_DEP_SRC 
+  external/imgui-docking/backends/imgui_impl_opengl3.cpp
+  external/imgui-docking/backends/imgui_impl_glfw.cpp
+  external/imgui-docking/imgui_demo.cpp  
+  external/imgui-docking/imgui_draw.cpp
+  external/imgui-docking/imgui_tables.cpp
+  external/imgui-docking/imgui_widgets.cpp
+  external/imgui-docking/imgui.cpp
+  external/glad/src/glad.c)
+
+add_executable(EDTInspector 
+  src/Apps/EDTInspector/main.cpp 
+  ${GRAPHICS_DEP_SRC})
+
+target_link_libraries(EDTInspector glfw)
+
+endif()
