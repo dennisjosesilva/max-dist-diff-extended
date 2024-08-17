@@ -39,8 +39,11 @@ int main(int argc, char *argv[])
   if (argc < 4) {
     std::cerr << "usage error!\n";
     std::cerr << "usage: ultimate_alongation_open <image> <out_img> <maxCriterion>\n";
+    std::cerr << "usage: ultimate_alongation_open <image> <out_img> <maxCriterion> <delta_mser> <attr_name_mser> \n";
     return -1;
   }
+  
+
   // read image
   int width, height, nchannels;
   uint8 *data = stbi_load(argv[1], &width, &height, &nchannels, 1);
@@ -70,10 +73,29 @@ int main(int argc, char *argv[])
   std::cout << "computeMaxDistanceAttribute [OK] " << maxCriterion << std::endl;
 
   maxCriterion = std::stoi(argv[3]);
-  UltimateAttributeOpening uao(maxtree, maxCriterion, maxDist);
-  std::vector<uint8> imgMaxConstrast = uao.getMaxConstrastImage();
-  std::vector<uint8> imgRGBAssociated = uao.getAssociatedColorImage();
-	std::cout << "computeUAO [OK]" << std::endl;	
+  std::vector<uint8> imgMaxConstrast;
+  std::vector<uint8> imgRGBAssociated;
+	UltimateAttributeOpening uao(maxtree, maxDist);
+  if(argc > 4) {
+    int deltaMSER = std::stoi(argv[4]);
+    std::string attr_name{argv[5]};
+    if(attr_name == "area"){
+        std::vector<uint32> attr_area = AreaComputer<uint8>().computeAttribute(maxtree);
+        uao.execute(maxCriterion, deltaMSER, attr_area, attr_area[0]/2);
+    }else if(attr_name == "maxDist"){
+      uao.execute(maxCriterion, deltaMSER, maxDist, maxCriterion);
+    }
+    else{
+      std::cout << "attr_mser not implemented " << std::endl;	
+      return 0;
+    }
+  }else{
+    uao.execute(maxCriterion);
+  }
+	
+  imgMaxConstrast = uao.getMaxConstrastImage();
+  imgRGBAssociated = uao.getAssociatedColorImage();
+  std::cout << "computeUAO [OK]" << std::endl;	
   
   std::string s(argv[2]);
   s = s.substr(s.find_last_of("/")+1);
