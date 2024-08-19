@@ -278,7 +278,8 @@ find_package(OpenGL REQUIRED)
 add_subdirectory(external/glfw)
 include_directories(
   external/glad/include 
-  external/imgui-docking external/imgui-docking/backends)
+  external/imgui-docking external/imgui-docking/backends
+  external/imgInspect)
 
 SET(GRAPHICS_DEP_SRC 
   external/imgui-docking/backends/imgui_impl_opengl3.cpp
@@ -292,6 +293,7 @@ SET(GRAPHICS_DEP_SRC
 
 add_executable(EDTInspector 
   src/Apps/EDTInspector/main.cpp 
+  src/Apps/EDTInspector/Texture.cpp
   ${GRAPHICS_DEP_SRC})
 
 target_link_libraries(EDTInspector glfw)

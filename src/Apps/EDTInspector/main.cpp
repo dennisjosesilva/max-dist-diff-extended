@@ -8,6 +8,7 @@
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
 
+#include <Vis/EDTInspector/Textute.hpp>
 
 #include <iostream>
 
@@ -33,12 +34,13 @@ int main()
   
   // Make the window's context current
   glfwMakeContextCurrent(window);
+   glfwSwapInterval(1); // Enable vsync
 
   // Load OpenGL Functions using GLAD
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
     std::cerr << "Failed to initialize OpenGL Context";
     return -1;
-  }
+  }  
 
   // Initialise ImGUI
   IMGUI_CHECKVERSION();
@@ -53,6 +55,14 @@ int main()
   ImGui_ImplOpenGL3_Init(glsl_version);
 
 
+  Texture textures[] = {
+    Texture{"../dat/Nedved.png"},
+    // Texture{"../dat/synthetic.png"},
+    Texture{"../dat/lena.pgm"}  
+  };
+
+  int currIndex = 0;
+
   // Loop until the user closes the window
   while (!glfwWindowShouldClose(window))
   {    
@@ -66,14 +76,29 @@ int main()
 
     // ImGUI Body (where things are create)
     {
-      ImGui::Begin("Another Window");
-      ImGui::Text("Hello from another window");
+      ImGui::Begin("Loading image");
+      ImGui::Text("Loading Image from a texture");
+      
+      if (ImGui::Button("Swap Image")) {
+        currIndex = (currIndex + 1) % 2;        
+        textures[currIndex].bind();        
+      }
+
+
+      ImGui::Image((void*)(intptr_t)textures[currIndex].id(), 
+        ImVec2(textures[currIndex].width(), textures[currIndex].height()),
+        ImVec2(0.0f, 0.0f), ImVec2(1.0f, 1.0f));
+
       ImGui::End();
     }
 
     // ImGUI Render in the screen.
     ImGui::Render();
-
+    
+    int displayWidth, displayHeight;
+    glfwGetFramebufferSize(window, &displayWidth, &displayHeight);
+    glViewport(0, 0, displayWidth, displayHeight);
+    
     // Render here
     glClear(GL_COLOR_BUFFER_BIT);
 
