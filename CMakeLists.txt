@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(EDT)
 
+
 set(CMAKE_CXX_STANDARD 14)
 
 find_package(OpenMP)
@@ -273,3 +274,45 @@ if(CUDA_FOUND)
   set_target_properties(check_diff_edt_opt_gpu PROPERTIES CUDA_ARCHITECTURES "35;50;72")
 
 endif()
+
+
+
+include(FetchContent)
+
+set(FETCHCONTENT_QUIET FALSE)
+
+FetchContent_Declare(
+   pybind11
+    URL https://github.com/pybind/pybind11/archive/v2.3.0.tar.gz
+    )
+
+FetchContent_GetProperties(pybind11)
+
+if(NOT pybind11_POPULATED)
+    FetchContent_Populate(pybind11)
+    add_subdirectory(${pybind11_SOURCE_DIR} ${pybind11_BINARY_DIR})
+endif()
+
+
+pybind11_add_module(pythonApps 
+  src/Python/pythonApps.cpp
+  src/MaxDist/edt_diff.cpp 
+  src/MaxDist/MaxDistComputer.cpp
+  src/Apps/Filters/ultimate_maxDist_open.cpp
+)
+
+target_link_libraries(pythonApps PUBLIC
+  morphotree
+  gft 
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX
+)
+
+install(TARGETS pythonApps
+  COMPONENT python
+  LIBRARY DESTINATION "${PYTHON_LIBRARY_DIR}"
+  )
+
+
+
