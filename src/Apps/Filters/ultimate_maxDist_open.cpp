@@ -20,6 +20,9 @@
 
 #define APPDEBUG
 
+
+
+
 int main(int argc, char *argv[])
 {
   // import morphotree types
@@ -73,9 +76,7 @@ int main(int argc, char *argv[])
   std::cout << "computeMaxDistanceAttribute [OK] " << maxCriterion << std::endl;
 
   maxCriterion = std::stoi(argv[3]);
-  std::vector<uint8> imgMaxConstrast;
-  std::vector<uint8> imgRGBAssociated;
-	UltimateAttributeOpening uao(maxtree, maxDist);
+  UltimateAttributeOpening uao(maxtree, maxDist);
   if(argc > 4) {
     int deltaMSER = std::stoi(argv[4]);
     std::string attr_name{argv[5]};
@@ -93,8 +94,8 @@ int main(int argc, char *argv[])
     uao.execute(maxCriterion);
   }
 	
-  imgMaxConstrast = uao.getMaxConstrastImage();
-  imgRGBAssociated = uao.getAssociatedColorImage();
+  std::vector<uint8> imgMaxConstrast = uao.getMaxConstrastImage();
+  std::vector<uint8> imgRGBAssociated = uao.getAssociatedColorImage();
   std::cout << "computeUAO [OK]" << std::endl;	
   
   std::string s(argv[2]);

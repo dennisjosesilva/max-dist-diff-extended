@@ -298,7 +298,8 @@ pybind11_add_module(pythonApps
   src/Python/pythonApps.cpp
   src/MaxDist/edt_diff.cpp 
   src/MaxDist/MaxDistComputer.cpp
-  src/Apps/Filters/ultimate_maxDist_open.cpp
+  src/Attributes/InertiaComputer.cpp
+  src/Attributes/BasicAttributeComputer.cpp
 )
 
 target_link_libraries(pythonApps PUBLIC
