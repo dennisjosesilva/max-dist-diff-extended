@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(EDT)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -276,44 +277,56 @@ if(CUDA_FOUND)
 endif()
 
 
+option(PYTHON_APPS "Include Python application wrapper" OFF)
 
-include(FetchContent)
+if(PYTHON_APPS)
 
-set(FETCHCONTENT_QUIET FALSE)
+  include(FetchContent)
+  set(PYTHON_APPS_DESTINATION 
+    "${PYTHON_LIBRARY_DIR}"    
+    CACHE STRING 
+    "Set the destination folder for generating python_apps library")
 
-FetchContent_Declare(
-   pybind11
-    URL https://github.com/pybind/pybind11/archive/v2.3.0.tar.gz
+  set(FETCHCONTENT_QUIET FALSE)
+
+  FetchContent_Declare(
+    pybind11
+      URL https://github.com/pybind/pybind11/archive/v2.3.0.tar.gz
+      )
+
+  FetchContent_GetProperties(pybind11)
+
+  if(NOT pybind11_POPULATED)
+      FetchContent_Populate(pybind11)
+      add_subdirectory(${pybind11_SOURCE_DIR} ${pybind11_BINARY_DIR})
+  endif()
+
+
+  pybind11_add_module(pythonApps 
+    src/Python/pythonApps.cpp
+    src/MaxDist/edt_diff.cpp 
+    src/MaxDist/MaxDistComputer.cpp
+    src/Attributes/InertiaComputer.cpp
+    src/Attributes/BasicAttributeComputer.cpp
+  )
+
+  target_link_libraries(pythonApps PUBLIC
+    morphotree
+    gft 
+    Threads::Threads
+    ZLIB::ZLIB
+    OpenMP::OpenMP_CXX
+  )
+
+  
+  install(TARGETS pythonApps
+    COMPONENT python
+    LIBRARY DESTINATION "${PYTHON_DESTINATION_DIR}"
     )
-
-FetchContent_GetProperties(pybind11)
-
-if(NOT pybind11_POPULATED)
-    FetchContent_Populate(pybind11)
-    add_subdirectory(${pybind11_SOURCE_DIR} ${pybind11_BINARY_DIR})
+  
+  
 endif()
 
-
-pybind11_add_module(pythonApps 
-  src/Python/pythonApps.cpp
-  src/MaxDist/edt_diff.cpp 
-  src/MaxDist/MaxDistComputer.cpp
-  src/Attributes/InertiaComputer.cpp
-  src/Attributes/BasicAttributeComputer.cpp
-)
-
-target_link_libraries(pythonApps PUBLIC
-  morphotree
-  gft 
-  Threads::Threads
-  ZLIB::ZLIB
-  OpenMP::OpenMP_CXX
-)
-
-install(TARGETS pythonApps
-  COMPONENT python
-  LIBRARY DESTINATION "${PYTHON_LIBRARY_DIR}"
-  )
 
 
 
