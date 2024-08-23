@@ -252,5 +252,6 @@ pyrightconfig.json
 
 output/**
 debug/**
+python_apps/**
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,cmake,python,visualstudiocode
