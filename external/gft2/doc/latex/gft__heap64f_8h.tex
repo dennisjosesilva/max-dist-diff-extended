@@ -1,0 +1,59 @@
+\hypertarget{gft__heap64f_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+heap64f.h File Reference}
+\label{gft__heap64f_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_heap64f.h@{/home/pmiranda/programming/lib/gft/include/gft\_heap64f.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+gpqueue\+\_\+by\+\_\+\+Falcao.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+heap.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Heap64f_1_1sHeap64f}{gft\+::\+Heap64f\+::s\+Heap64f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Heap64f}{gft\+::\+Heap64f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Heap64f\+::s\+Heap64f \mbox{\hyperlink{namespacegft_a615804dd69534a7ec41c94e55661e185}{gft\+::s\+Heap64f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap64f_aa1bdfa57fcdb451971c266f07da1d6d5}{gft\+::\+Heap64f\+::\+Is\+Full}} (s\+Heap64f $\ast$H)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap64f_a3bbf921dd5ddddc5c7ca42f890adb87c}{gft\+::\+Heap64f\+::\+Is\+Empty}} (s\+Heap64f $\ast$H)
+\item 
+s\+Heap64f $\ast$ \mbox{\hyperlink{namespacegft_1_1Heap64f_ad8fafa1e6aaf70a1b6bfc230259a68bf}{gft\+::\+Heap64f\+::\+Create}} (int n, double $\ast$cost)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a4b4b88f40f6707a97dfe039896da4e86}{gft\+::\+Heap64f\+::\+Destroy}} (s\+Heap64f $\ast$$\ast$H)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a1c731e9eb99ac5b91aff2fab381e7406}{gft\+::\+Heap64f\+::\+Insert\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a87099d1a39d43376839a794c2e6c091a}{gft\+::\+Heap64f\+::\+Insert\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_aa41e7374c8f63ab8c577b39da899ec83}{gft\+::\+Heap64f\+::\+Remove\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int $\ast$pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_afcbf356b110c626be25d93f8bf1efa40}{gft\+::\+Heap64f\+::\+Remove\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int $\ast$pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a6e415666eb67d273d621e8bb20939d41}{gft\+::\+Heap64f\+::\+Update\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int p, double value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_abe84c1f52541384901ad4a467159458a}{gft\+::\+Heap64f\+::\+Update\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int p, double value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a805e24edc87c72d81d60ab1cad00b8f0}{gft\+::\+Heap64f\+::\+Go\+Up\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a958f83b4f5c35c1c5e75af6075520f8d}{gft\+::\+Heap64f\+::\+Go\+Up\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_aacd9520c42136c37dd867d3f70dcbc0e}{gft\+::\+Heap64f\+::\+Go\+Down\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_ac7214c4852b0c716d2997ac96b8c364a}{gft\+::\+Heap64f\+::\+Go\+Down\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a2f15f2d5522252fac6f86223035a8847}{gft\+::\+Heap64f\+::\+Reset}} (s\+Heap64f $\ast$H)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a6ba92b3c3e07a31df121ff42206dca00}{gft\+::\+Heap64f\+::\+Delete\+\_\+\+Max\+Policy}} (s\+Heap64f $\ast$H, int pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap64f_a9c54619fb63b39ec3adf07c13cec3c44}{gft\+::\+Heap64f\+::\+Delete\+\_\+\+Min\+Policy}} (s\+Heap64f $\ast$H, int pixel)
+\end{DoxyCompactItemize}

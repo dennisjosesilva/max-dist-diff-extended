@@ -1,0 +1,81 @@
+\hypertarget{gft__adjrel_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+adjrel.h File Reference}
+\label{gft__adjrel_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_adjrel.h@{/home/pmiranda/programming/lib/gft/include/gft\_adjrel.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1AdjRel_1_1sAdjRel}{gft\+::\+Adj\+Rel\+::s\+Adj\+Rel}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1AdjRel_1_1sAdjPxl}{gft\+::\+Adj\+Rel\+::s\+Adj\+Pxl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1AdjRel}{gft\+::\+Adj\+Rel}}
+\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1CImage}{gft\+::\+C\+Image}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a color image, providing three samples (color channels) for each pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Adj\+Rel\+::s\+Adj\+Pxl \mbox{\hyperlink{namespacegft_a28783f3e41d271b61375867264cb8154}{gft\+::s\+Adj\+Pxl}}
+\item 
+typedef Adj\+Rel\+::s\+Adj\+Rel \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{gft\+::s\+Adj\+Rel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_ad28ea20c1941a74998ab94ca34cdd487}{gft\+::\+Adj\+Rel\+::\+Create}} (int n)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel_af3363bb37b93ab3ed6242187b91f7d72}{gft\+::\+Adj\+Rel\+::\+Destroy}} (s\+Adj\+Rel $\ast$$\ast$A)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_ac439b09257c8bcd3d73268e99bb1370b}{gft\+::\+Adj\+Rel\+::\+Clone}} (s\+Adj\+Rel $\ast$A)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_ad9b16a8d263871626c2c89ee2b93d0d4}{gft\+::\+Adj\+Rel\+::\+Neighborhood\+\_\+4}} ()
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a622e474e09c0fe2967583802ec18772b}{gft\+::\+Adj\+Rel\+::\+Neighborhood\+\_\+8}} ()
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a67f9dcd9bdf1b86ff76a6d60b8a18dbb}{gft\+::\+Adj\+Rel\+::\+Neighborhood\+\_\+8\+\_\+counterclockwise}} ()
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a7579f3496b21abe552592a0be0620f97}{gft\+::\+Adj\+Rel\+::\+Neighborhood\+\_\+8\+\_\+clockwise}} ()
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a0530f91cd8c3eb3608438a7f57c0a9f7}{gft\+::\+Adj\+Rel\+::\+Circular}} (float r)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a5b57b808eeb3b5ae06435600a4b3bc32}{gft\+::\+Adj\+Rel\+::\+Box}} (int ncols, int nrows)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1AdjRel_a6143176a4e798b40ce3de00d0cc45486}{gft\+::\+Adj\+Rel\+::\+Get\+Frame\+Size}} (s\+Adj\+Rel $\ast$A)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a15205ff76989abd383f85c5887df4c25}{gft\+::\+Adj\+Rel\+::\+Inverse\+Indexes}} (s\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel_a256e0451143f118d016ebc45552e1a32}{gft\+::\+Adj\+Rel\+::\+Mult}} (s\+Adj\+Rel $\ast$A, int val)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a77821612b520b627d82ad32f89b439d2}{gft\+::\+Adj\+Rel\+::\+Right\+Side}} (s\+Adj\+Rel $\ast$A)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a7b2577b5eba2a6b6dede1893bed30e74}{gft\+::\+Adj\+Rel\+::\+Left\+Side}} (s\+Adj\+Rel $\ast$A)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_af802752a9f2b9d3977d0f966a6b05ec2}{gft\+::\+Adj\+Rel\+::\+Right\+Side8}} (s\+Adj\+Rel $\ast$A)
+\item 
+s\+Adj\+Rel $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_aa255274484ac755d2ffdade724d5d7d4}{gft\+::\+Adj\+Rel\+::\+Left\+Side8}} (s\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel_a27d400c2f9eee77008a39f4eabac8062}{gft\+::\+Adj\+Rel\+::\+Reduce2\+Boundary}} (s\+Adj\+Rel $\ast$$\ast$A, float r)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a44aa5c2791dcebd2486c3cdb1f130437}{gft\+::\+Image32\+::\+Render}} (s\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a5da40380457af242e5e73cba9bd30c99}{gft\+::\+Image32\+::\+Draw\+Adj\+Rel}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A, int p, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CImage_aa056b34cd88d09498ef4ddd9f2586937}{gft\+::\+C\+Image\+::\+Draw\+Adj\+Rel}} (s\+C\+Image $\ast$cimg, s\+Adj\+Rel $\ast$A, int p, int color)
+\item 
+s\+Adj\+Pxl $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_ad3f01db343bbcb7ccfee857353ddb83d}{gft\+::\+Adj\+Rel\+::\+Adj\+Pixels}} (s\+Adj\+Rel $\ast$A, int ncols)
+\item 
+s\+Adj\+Pxl $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_a1739096cc9563cf84c724c070cb2f0c8}{gft\+::\+Adj\+Rel\+::\+Adj\+Pixels}} (s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$img)
+\item 
+s\+Adj\+Pxl $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel_acca794a7b84f4cd0d5db7a503c3f252a}{gft\+::\+Adj\+Rel\+::\+Adj\+Pixels}} (s\+Adj\+Rel $\ast$A, s\+C\+Image $\ast$cimg)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel_acb6ac3f943c9e59daff9a25309e591ef}{gft\+::\+Adj\+Rel\+::\+Destroy\+Adj\+Pxl}} (s\+Adj\+Pxl $\ast$$\ast$N)
+\end{DoxyCompactItemize}

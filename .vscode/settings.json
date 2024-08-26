@@ -52,7 +52,10 @@
     "typeinfo": "cpp",
     "bit": "cpp",
     "iomanip": "cpp",
-    "cstring": "cpp"
+    "cstring": "cpp",
+    "regex": "cpp",
+    "variant": "cpp",
+    "valarray": "cpp"
   },
   "cSpell.words": [
     "APPDEBUG",

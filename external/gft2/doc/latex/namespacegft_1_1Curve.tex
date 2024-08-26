@@ -1,0 +1,118 @@
+\hypertarget{namespacegft_1_1Curve}{}\doxysection{gft\+::Curve Namespace Reference}
+\label{namespacegft_1_1Curve}\index{gft::Curve@{gft::Curve}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Curve_a5480089b1700de82c60ec0c80b6bd4c5}{Create}} (int n)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Curve_a3b119630c07ef9df57ec1073d7dcf17a}{Destroy}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$$\ast$curve)
+\item 
+\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Curve_aa114d48ecd66e13ec77e90c4d20e3527}{Clone}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Curve_a6976ad99ec2feed1b1b02ff96c4a2581}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Curve_a88a7968a37e68948d0c3fc1b1e7cd202}{Write}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve, char $\ast$filename)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Curve_a094d8561283f7d7f8f3e81ad5cb43a07}{Lower\+Percentage}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve, float perc)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Curve_a02fd60c6ea1f8dbd882f615b1573d6a6}{Higher\+Percentage}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve, float perc)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Curve_a25a89c5979ad01b6aa7c3dad39f5051c}{Median}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Curve_a849c95705a623f8bde7b9549c10f093f}{Otsu}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Curve_a5da12a945c1288c8abc4b135b300305f}{Normalize}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Curve_a22494088801c97e0c2537855f173b6d5}{Normalizeinplace}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Curve_a5378ecdfe23ef2b78aebcdc1ce8aae16}{Sort}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Curve_a20add70529f6292b98272086df7ba7a9}{Invert\+XY}} (\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$curve)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Curve_aa114d48ecd66e13ec77e90c4d20e3527}\label{namespacegft_1_1Curve_aa114d48ecd66e13ec77e90c4d20e3527}} 
+\index{gft::Curve@{gft::Curve}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ gft\+::\+Curve\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a5480089b1700de82c60ec0c80b6bd4c5}\label{namespacegft_1_1Curve_a5480089b1700de82c60ec0c80b6bd4c5}} 
+\index{gft::Curve@{gft::Curve}!Create@{Create}}
+\index{Create@{Create}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ gft\+::\+Curve\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a3b119630c07ef9df57ec1073d7dcf17a}\label{namespacegft_1_1Curve_a3b119630c07ef9df57ec1073d7dcf17a}} 
+\index{gft::Curve@{gft::Curve}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Curve\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$$\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a02fd60c6ea1f8dbd882f615b1573d6a6}\label{namespacegft_1_1Curve_a02fd60c6ea1f8dbd882f615b1573d6a6}} 
+\index{gft::Curve@{gft::Curve}!HigherPercentage@{HigherPercentage}}
+\index{HigherPercentage@{HigherPercentage}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{HigherPercentage()}{HigherPercentage()}}
+{\footnotesize\ttfamily int gft\+::\+Curve\+::\+Higher\+Percentage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve,  }\item[{float}]{perc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a20add70529f6292b98272086df7ba7a9}\label{namespacegft_1_1Curve_a20add70529f6292b98272086df7ba7a9}} 
+\index{gft::Curve@{gft::Curve}!InvertXY@{InvertXY}}
+\index{InvertXY@{InvertXY}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{InvertXY()}{InvertXY()}}
+{\footnotesize\ttfamily void gft\+::\+Curve\+::\+Invert\+XY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a094d8561283f7d7f8f3e81ad5cb43a07}\label{namespacegft_1_1Curve_a094d8561283f7d7f8f3e81ad5cb43a07}} 
+\index{gft::Curve@{gft::Curve}!LowerPercentage@{LowerPercentage}}
+\index{LowerPercentage@{LowerPercentage}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{LowerPercentage()}{LowerPercentage()}}
+{\footnotesize\ttfamily int gft\+::\+Curve\+::\+Lower\+Percentage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve,  }\item[{float}]{perc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a25a89c5979ad01b6aa7c3dad39f5051c}\label{namespacegft_1_1Curve_a25a89c5979ad01b6aa7c3dad39f5051c}} 
+\index{gft::Curve@{gft::Curve}!Median@{Median}}
+\index{Median@{Median}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Median()}{Median()}}
+{\footnotesize\ttfamily int gft\+::\+Curve\+::\+Median (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a5da12a945c1288c8abc4b135b300305f}\label{namespacegft_1_1Curve_a5da12a945c1288c8abc4b135b300305f}} 
+\index{gft::Curve@{gft::Curve}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ gft\+::\+Curve\+::\+Normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a22494088801c97e0c2537855f173b6d5}\label{namespacegft_1_1Curve_a22494088801c97e0c2537855f173b6d5}} 
+\index{gft::Curve@{gft::Curve}!Normalizeinplace@{Normalizeinplace}}
+\index{Normalizeinplace@{Normalizeinplace}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Normalizeinplace()}{Normalizeinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Curve\+::\+Normalizeinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a849c95705a623f8bde7b9549c10f093f}\label{namespacegft_1_1Curve_a849c95705a623f8bde7b9549c10f093f}} 
+\index{gft::Curve@{gft::Curve}!Otsu@{Otsu}}
+\index{Otsu@{Otsu}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Otsu()}{Otsu()}}
+{\footnotesize\ttfamily int gft\+::\+Curve\+::\+Otsu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a6976ad99ec2feed1b1b02ff96c4a2581}\label{namespacegft_1_1Curve_a6976ad99ec2feed1b1b02ff96c4a2581}} 
+\index{gft::Curve@{gft::Curve}!Read@{Read}}
+\index{Read@{Read}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$ gft\+::\+Curve\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Compatible with Gnuplot. \mbox{\Hypertarget{namespacegft_1_1Curve_a5378ecdfe23ef2b78aebcdc1ce8aae16}\label{namespacegft_1_1Curve_a5378ecdfe23ef2b78aebcdc1ce8aae16}} 
+\index{gft::Curve@{gft::Curve}!Sort@{Sort}}
+\index{Sort@{Sort}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}}
+{\footnotesize\ttfamily void gft\+::\+Curve\+::\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Curve_a88a7968a37e68948d0c3fc1b1e7cd202}\label{namespacegft_1_1Curve_a88a7968a37e68948d0c3fc1b1e7cd202}} 
+\index{gft::Curve@{gft::Curve}!Write@{Write}}
+\index{Write@{Write}!gft::Curve@{gft::Curve}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Curve\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Curve_1_1sCurve}{s\+Curve}} $\ast$}]{curve,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Compatible with Gnuplot. 

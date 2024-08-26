@@ -1,0 +1,441 @@
+\hypertarget{namespacegft_1_1Scene}{}\doxysection{gft\+::Scene Namespace Reference}
+\label{namespacegft_1_1Scene}\index{gft::Scene@{gft::Scene}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_af2b74399f988256795fd8bf56667ba5f}{Histogram}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int binwidth)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a5c1bba8a02d1499d47c5349218a7016d}{Linear\+Stretchinplace}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int omin, int omax, int nmin, int nmax)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a22b669b3bbd11f0d05702001dd9693eb}{Linear\+Stretch}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int omin, int omax, int nmin, int nmax)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac29f1fe89210bf2bc4a671f5a96d8904}{Create}} (int xsize, int ysize, int zsize, int nbits, \mbox{\hyperlink{gft__scene_8h_aff9f098ca5c194977bd33369499b22ed}{gft\+\_\+\+Scene\+Type}} type)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a2c9a71bfbd5178348dc83b1bbee149e0}{Create}} (int xsize, int ysize, int zsize, int nbits)
+\begin{DoxyCompactList}\small\item\em A constructor for integer data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac5078815007205ee9ab533b91fcc742e}{Create}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A constructor taking a reference scene as template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a3e18ead4e4ff257181477b8fa0cad27c}{Destroy}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$$\ast$scn)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_af54b1de3c4dd5e3a616397b23179c943}{Copy}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$dest, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ab0be295fe4a4edbaf4c277fbad11b3dc}{Copy}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$dest, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$src, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a88ebe2057f8c57457bcaa46736aaead9}{Clone}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ab6d0c5fcea5151bb13a21b9eca482436}{Sub\+Scene}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} l, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} h)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ad2a2897e1c28b93685dec3099b55e992}{Sub\+Scene}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int xl, int yl, int zl, int xh, int yh, int zh)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ad6e61aab6e8e362b73931b4328ff2c67}{Fill}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int value)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a628c6366563468507e64d2d555f291d0}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a6de5a183890a21a13bb83d83d2881ac4}{Write}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a70677d271d06f54fc2c73453e430705b}{Set\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p, int value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a7bf6456a9ddca88454ac492c593048bb}{Set\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p, double value)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a5465abcab72cf7dd0c98d9dc245bd9bb}{Get\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_abd086f019a265a5e8dc4b25e2eb12cae}{Get\+Value64f}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_aa949c6e755fa429f1214322a73abc180}{Get\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_afe7ab4c86448aec7af3d5773ee883a47}{Get\+Value64f}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a0056a718a4f34d00459fc220409a0f76}{Get\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int x, int y, int z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_a2c747d002a6d997efcd14d0d651411ff}{Get\+Value64f}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int x, int y, int z)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a74841c74f6877d388d76b3ff30ac88c9}{Get\+Value\+\_\+nn}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, float x, float y, float z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_a003b37ad711f0a270640131911d77fe0}{Get\+Value64f\+\_\+nn}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, float x, float y, float z)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a95d899a3ddf2a2bc3b56eebcdd429077}{Get\+Number\+Of\+Voxels}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_afb88f5e34171692afb8cb48b1aac6616}{Get\+AddressX}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a05ed44ba88a05dfd26927daceb366ae7}{Get\+AddressY}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a4a282b77d47beffc17735aa7ef86856a}{Get\+AddressZ}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_ace273ac7dd6f81cb76cea6da64f0a00b}{Get\+Voxel\+Address}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a96fb4e38feae513ead1776132a7374d6}{Get\+Voxel\+Address}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int x, int y, int z)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Scene_a59570a8b9f37fa4c3288a737ef9c9d53}{Is\+Valid\+Voxel}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int x, int y, int z)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Scene_a76a21194c25d5f38a8b7ff3940ab143e}{Is\+Valid\+Voxel}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_aa82da2294dbe2e4cc862a27b0d6d809a}{Get\+Maximum\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a372ffce32a260d451f9948246e1e021e}{Get\+Minimum\+Value}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac7848211e36708277dd9123960e663db}{M\+BB}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ad587ac9ca3e3ede1c9af70ae27aab6b1}{M\+BB}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} $\ast$l, \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} $\ast$h)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a0159f7a637edc9a9beb8edf518f86158}{Add\+Frame}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int sz, int value)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a91a5cbb21833317bf0535c47ba70927b}{Rem\+Frame}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$fscn, int sz)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a912efee71609ed40d21a653e05847525}{Sub}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a761775f071cbc43bdf006c7a65c5f47f}{Subinplace}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a7149f9e5cdb5d1b7b9d312f3758ce962}{Add}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a9d7562cb14f3f45c79d9db79fb75f7be}{Add}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_adf778aeda5dd45b0a9cf4e14403c6fdf}{Addinplace}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_aa865059f76c9efed179dba74e5999d6c}{Mult}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a89d3608ee32e7f3cd4d0349f8ec48b79}{Or}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ac0208a845689b26ca704076c6baba89f}{Orinplace}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ae87675bd9aa92119c25c7dd9fccb6884}{And}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a1b5d361a4d296ddbb6e2c9ce7e40e97d}{X\+Or}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn1, \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn2)
+\item 
+\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a4b2c4d6797307111ef6f76baa415110d}{Complement}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn)
+\item 
+\mbox{\hyperlink{namespacegft_a9ee12bc034a9f57ff04acec3f876b497}{s\+Scene8}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_adc9f32f5306c738a7eb1c9ce60e47663}{Threshold}} (\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$scn, int lower, int higher)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Scene_a9d7562cb14f3f45c79d9db79fb75f7be}\label{namespacegft_1_1Scene_a9d7562cb14f3f45c79d9db79fb75f7be}} 
+\index{gft::Scene@{gft::Scene}!Add@{Add}}
+\index{Add@{Add}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a7149f9e5cdb5d1b7b9d312f3758ce962}\label{namespacegft_1_1Scene_a7149f9e5cdb5d1b7b9d312f3758ce962}} 
+\index{gft::Scene@{gft::Scene}!Add@{Add}}
+\index{Add@{Add}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a0159f7a637edc9a9beb8edf518f86158}\label{namespacegft_1_1Scene_a0159f7a637edc9a9beb8edf518f86158}} 
+\index{gft::Scene@{gft::Scene}!AddFrame@{AddFrame}}
+\index{AddFrame@{AddFrame}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{AddFrame()}{AddFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Add\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{sz,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_adf778aeda5dd45b0a9cf4e14403c6fdf}\label{namespacegft_1_1Scene_adf778aeda5dd45b0a9cf4e14403c6fdf}} 
+\index{gft::Scene@{gft::Scene}!Addinplace@{Addinplace}}
+\index{Addinplace@{Addinplace}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Addinplace()}{Addinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Addinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+Inplace version. \mbox{\Hypertarget{namespacegft_1_1Scene_ae87675bd9aa92119c25c7dd9fccb6884}\label{namespacegft_1_1Scene_ae87675bd9aa92119c25c7dd9fccb6884}} 
+\index{gft::Scene@{gft::Scene}!And@{And}}
+\index{And@{And}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{And()}{And()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+And (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a88ebe2057f8c57457bcaa46736aaead9}\label{namespacegft_1_1Scene_a88ebe2057f8c57457bcaa46736aaead9}} 
+\index{gft::Scene@{gft::Scene}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a4b2c4d6797307111ef6f76baa415110d}\label{namespacegft_1_1Scene_a4b2c4d6797307111ef6f76baa415110d}} 
+\index{gft::Scene@{gft::Scene}!Complement@{Complement}}
+\index{Complement@{Complement}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Complement()}{Complement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Complement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_af54b1de3c4dd5e3a616397b23179c943}\label{namespacegft_1_1Scene_af54b1de3c4dd5e3a616397b23179c943}} 
+\index{gft::Scene@{gft::Scene}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{dest,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ab0be295fe4a4edbaf4c277fbad11b3dc}\label{namespacegft_1_1Scene_ab0be295fe4a4edbaf4c277fbad11b3dc}} 
+\index{gft::Scene@{gft::Scene}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{dest,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{src,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a2c9a71bfbd5178348dc83b1bbee149e0}\label{namespacegft_1_1Scene_a2c9a71bfbd5178348dc83b1bbee149e0}} 
+\index{gft::Scene@{gft::Scene}!Create@{Create}}
+\index{Create@{Create}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{xsize,  }\item[{int}]{ysize,  }\item[{int}]{zsize,  }\item[{int}]{nbits }\end{DoxyParamCaption})}
+
+
+
+A constructor for integer data. 
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ac29f1fe89210bf2bc4a671f5a96d8904}\label{namespacegft_1_1Scene_ac29f1fe89210bf2bc4a671f5a96d8904}} 
+\index{gft::Scene@{gft::Scene}!Create@{Create}}
+\index{Create@{Create}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{xsize,  }\item[{int}]{ysize,  }\item[{int}]{zsize,  }\item[{int}]{nbits,  }\item[{\mbox{\hyperlink{gft__scene_8h_aff9f098ca5c194977bd33369499b22ed}{gft\+\_\+\+Scene\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ac5078815007205ee9ab533b91fcc742e}\label{namespacegft_1_1Scene_ac5078815007205ee9ab533b91fcc742e}} 
+\index{gft::Scene@{gft::Scene}!Create@{Create}}
+\index{Create@{Create}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+
+
+A constructor taking a reference scene as template. 
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a3e18ead4e4ff257181477b8fa0cad27c}\label{namespacegft_1_1Scene_a3e18ead4e4ff257181477b8fa0cad27c}} 
+\index{gft::Scene@{gft::Scene}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$$\ast$}]{scn }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ad6e61aab6e8e362b73931b4328ff2c67}\label{namespacegft_1_1Scene_ad6e61aab6e8e362b73931b4328ff2c67}} 
+\index{gft::Scene@{gft::Scene}!Fill@{Fill}}
+\index{Fill@{Fill}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_afb88f5e34171692afb8cb48b1aac6616}\label{namespacegft_1_1Scene_afb88f5e34171692afb8cb48b1aac6616}} 
+\index{gft::Scene@{gft::Scene}!GetAddressX@{GetAddressX}}
+\index{GetAddressX@{GetAddressX}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetAddressX()}{GetAddressX()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+AddressX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a05ed44ba88a05dfd26927daceb366ae7}\label{namespacegft_1_1Scene_a05ed44ba88a05dfd26927daceb366ae7}} 
+\index{gft::Scene@{gft::Scene}!GetAddressY@{GetAddressY}}
+\index{GetAddressY@{GetAddressY}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetAddressY()}{GetAddressY()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+AddressY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a4a282b77d47beffc17735aa7ef86856a}\label{namespacegft_1_1Scene_a4a282b77d47beffc17735aa7ef86856a}} 
+\index{gft::Scene@{gft::Scene}!GetAddressZ@{GetAddressZ}}
+\index{GetAddressZ@{GetAddressZ}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetAddressZ()}{GetAddressZ()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+AddressZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_aa82da2294dbe2e4cc862a27b0d6d809a}\label{namespacegft_1_1Scene_aa82da2294dbe2e4cc862a27b0d6d809a}} 
+\index{gft::Scene@{gft::Scene}!GetMaximumValue@{GetMaximumValue}}
+\index{GetMaximumValue@{GetMaximumValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetMaximumValue()}{GetMaximumValue()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Maximum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a372ffce32a260d451f9948246e1e021e}\label{namespacegft_1_1Scene_a372ffce32a260d451f9948246e1e021e}} 
+\index{gft::Scene@{gft::Scene}!GetMinimumValue@{GetMinimumValue}}
+\index{GetMinimumValue@{GetMinimumValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetMinimumValue()}{GetMinimumValue()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Minimum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a95d899a3ddf2a2bc3b56eebcdd429077}\label{namespacegft_1_1Scene_a95d899a3ddf2a2bc3b56eebcdd429077}} 
+\index{gft::Scene@{gft::Scene}!GetNumberOfVoxels@{GetNumberOfVoxels}}
+\index{GetNumberOfVoxels@{GetNumberOfVoxels}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfVoxels()}{GetNumberOfVoxels()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Number\+Of\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_aa949c6e755fa429f1214322a73abc180}\label{namespacegft_1_1Scene_aa949c6e755fa429f1214322a73abc180}} 
+\index{gft::Scene@{gft::Scene}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a0056a718a4f34d00459fc220409a0f76}\label{namespacegft_1_1Scene_a0056a718a4f34d00459fc220409a0f76}} 
+\index{gft::Scene@{gft::Scene}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a5465abcab72cf7dd0c98d9dc245bd9bb}\label{namespacegft_1_1Scene_a5465abcab72cf7dd0c98d9dc245bd9bb}} 
+\index{gft::Scene@{gft::Scene}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_afe7ab4c86448aec7af3d5773ee883a47}\label{namespacegft_1_1Scene_afe7ab4c86448aec7af3d5773ee883a47}} 
+\index{gft::Scene@{gft::Scene}!GetValue64f@{GetValue64f}}
+\index{GetValue64f@{GetValue64f}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue64f()}{GetValue64f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double gft\+::\+Scene\+::\+Get\+Value64f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a2c747d002a6d997efcd14d0d651411ff}\label{namespacegft_1_1Scene_a2c747d002a6d997efcd14d0d651411ff}} 
+\index{gft::Scene@{gft::Scene}!GetValue64f@{GetValue64f}}
+\index{GetValue64f@{GetValue64f}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue64f()}{GetValue64f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double gft\+::\+Scene\+::\+Get\+Value64f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_abd086f019a265a5e8dc4b25e2eb12cae}\label{namespacegft_1_1Scene_abd086f019a265a5e8dc4b25e2eb12cae}} 
+\index{gft::Scene@{gft::Scene}!GetValue64f@{GetValue64f}}
+\index{GetValue64f@{GetValue64f}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue64f()}{GetValue64f()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double gft\+::\+Scene\+::\+Get\+Value64f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a003b37ad711f0a270640131911d77fe0}\label{namespacegft_1_1Scene_a003b37ad711f0a270640131911d77fe0}} 
+\index{gft::Scene@{gft::Scene}!GetValue64f\_nn@{GetValue64f\_nn}}
+\index{GetValue64f\_nn@{GetValue64f\_nn}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue64f\_nn()}{GetValue64f\_nn()}}
+{\footnotesize\ttfamily double gft\+::\+Scene\+::\+Get\+Value64f\+\_\+nn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a74841c74f6877d388d76b3ff30ac88c9}\label{namespacegft_1_1Scene_a74841c74f6877d388d76b3ff30ac88c9}} 
+\index{gft::Scene@{gft::Scene}!GetValue\_nn@{GetValue\_nn}}
+\index{GetValue\_nn@{GetValue\_nn}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetValue\_nn()}{GetValue\_nn()}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Value\+\_\+nn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a96fb4e38feae513ead1776132a7374d6}\label{namespacegft_1_1Scene_a96fb4e38feae513ead1776132a7374d6}} 
+\index{gft::Scene@{gft::Scene}!GetVoxelAddress@{GetVoxelAddress}}
+\index{GetVoxelAddress@{GetVoxelAddress}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetVoxelAddress()}{GetVoxelAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Voxel\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ace273ac7dd6f81cb76cea6da64f0a00b}\label{namespacegft_1_1Scene_ace273ac7dd6f81cb76cea6da64f0a00b}} 
+\index{gft::Scene@{gft::Scene}!GetVoxelAddress@{GetVoxelAddress}}
+\index{GetVoxelAddress@{GetVoxelAddress}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{GetVoxelAddress()}{GetVoxelAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int gft\+::\+Scene\+::\+Get\+Voxel\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_af2b74399f988256795fd8bf56667ba5f}\label{namespacegft_1_1Scene_af2b74399f988256795fd8bf56667ba5f}} 
+\index{gft::Scene@{gft::Scene}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ gft\+::\+Scene\+::\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{binwidth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a59570a8b9f37fa4c3288a737ef9c9d53}\label{namespacegft_1_1Scene_a59570a8b9f37fa4c3288a737ef9c9d53}} 
+\index{gft::Scene@{gft::Scene}!IsValidVoxel@{IsValidVoxel}}
+\index{IsValidVoxel@{IsValidVoxel}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{IsValidVoxel()}{IsValidVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Scene\+::\+Is\+Valid\+Voxel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a76a21194c25d5f38a8b7ff3940ab143e}\label{namespacegft_1_1Scene_a76a21194c25d5f38a8b7ff3940ab143e}} 
+\index{gft::Scene@{gft::Scene}!IsValidVoxel@{IsValidVoxel}}
+\index{IsValidVoxel@{IsValidVoxel}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{IsValidVoxel()}{IsValidVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Scene\+::\+Is\+Valid\+Voxel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a22b669b3bbd11f0d05702001dd9693eb}\label{namespacegft_1_1Scene_a22b669b3bbd11f0d05702001dd9693eb}} 
+\index{gft::Scene@{gft::Scene}!LinearStretch@{LinearStretch}}
+\index{LinearStretch@{LinearStretch}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{LinearStretch()}{LinearStretch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Linear\+Stretch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{omin,  }\item[{int}]{omax,  }\item[{int}]{nmin,  }\item[{int}]{nmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a5c1bba8a02d1499d47c5349218a7016d}\label{namespacegft_1_1Scene_a5c1bba8a02d1499d47c5349218a7016d}} 
+\index{gft::Scene@{gft::Scene}!LinearStretchinplace@{LinearStretchinplace}}
+\index{LinearStretchinplace@{LinearStretchinplace}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{LinearStretchinplace()}{LinearStretchinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Linear\+Stretchinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{omin,  }\item[{int}]{omax,  }\item[{int}]{nmin,  }\item[{int}]{nmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ac7848211e36708277dd9123960e663db}\label{namespacegft_1_1Scene_ac7848211e36708277dd9123960e663db}} 
+\index{gft::Scene@{gft::Scene}!MBB@{MBB}}
+\index{MBB@{MBB}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{MBB()}{MBB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+M\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ad587ac9ca3e3ede1c9af70ae27aab6b1}\label{namespacegft_1_1Scene_ad587ac9ca3e3ede1c9af70ae27aab6b1}} 
+\index{gft::Scene@{gft::Scene}!MBB@{MBB}}
+\index{MBB@{MBB}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{MBB()}{MBB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+M\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} $\ast$}]{l,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_aa865059f76c9efed179dba74e5999d6c}\label{namespacegft_1_1Scene_aa865059f76c9efed179dba74e5999d6c}} 
+\index{gft::Scene@{gft::Scene}!Mult@{Mult}}
+\index{Mult@{Mult}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Mult()}{Mult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a89d3608ee32e7f3cd4d0349f8ec48b79}\label{namespacegft_1_1Scene_a89d3608ee32e7f3cd4d0349f8ec48b79}} 
+\index{gft::Scene@{gft::Scene}!Or@{Or}}
+\index{Or@{Or}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Or()}{Or()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Or (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ac0208a845689b26ca704076c6baba89f}\label{namespacegft_1_1Scene_ac0208a845689b26ca704076c6baba89f}} 
+\index{gft::Scene@{gft::Scene}!Orinplace@{Orinplace}}
+\index{Orinplace@{Orinplace}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Orinplace()}{Orinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Orinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+Inplace version. \mbox{\Hypertarget{namespacegft_1_1Scene_a628c6366563468507e64d2d555f291d0}\label{namespacegft_1_1Scene_a628c6366563468507e64d2d555f291d0}} 
+\index{gft::Scene@{gft::Scene}!Read@{Read}}
+\index{Read@{Read}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a91a5cbb21833317bf0535c47ba70927b}\label{namespacegft_1_1Scene_a91a5cbb21833317bf0535c47ba70927b}} 
+\index{gft::Scene@{gft::Scene}!RemFrame@{RemFrame}}
+\index{RemFrame@{RemFrame}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{RemFrame()}{RemFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Rem\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{fscn,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a7bf6456a9ddca88454ac492c593048bb}\label{namespacegft_1_1Scene_a7bf6456a9ddca88454ac492c593048bb}} 
+\index{gft::Scene@{gft::Scene}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a70677d271d06f54fc2c73453e430705b}\label{namespacegft_1_1Scene_a70677d271d06f54fc2c73453e430705b}} 
+\index{gft::Scene@{gft::Scene}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{p,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a912efee71609ed40d21a653e05847525}\label{namespacegft_1_1Scene_a912efee71609ed40d21a653e05847525}} 
+\index{gft::Scene@{gft::Scene}!Sub@{Sub}}
+\index{Sub@{Sub}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Sub()}{Sub()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a761775f071cbc43bdf006c7a65c5f47f}\label{namespacegft_1_1Scene_a761775f071cbc43bdf006c7a65c5f47f}} 
+\index{gft::Scene@{gft::Scene}!Subinplace@{Subinplace}}
+\index{Subinplace@{Subinplace}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Subinplace()}{Subinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Subinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+
+Inplace version. \mbox{\Hypertarget{namespacegft_1_1Scene_ad2a2897e1c28b93685dec3099b55e992}\label{namespacegft_1_1Scene_ad2a2897e1c28b93685dec3099b55e992}} 
+\index{gft::Scene@{gft::Scene}!SubScene@{SubScene}}
+\index{SubScene@{SubScene}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{SubScene()}{SubScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Sub\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{xl,  }\item[{int}]{yl,  }\item[{int}]{zl,  }\item[{int}]{xh,  }\item[{int}]{yh,  }\item[{int}]{zh }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_ab6d0c5fcea5151bb13a21b9eca482436}\label{namespacegft_1_1Scene_ab6d0c5fcea5151bb13a21b9eca482436}} 
+\index{gft::Scene@{gft::Scene}!SubScene@{SubScene}}
+\index{SubScene@{SubScene}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{SubScene()}{SubScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+Sub\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{l,  }\item[{\mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{Voxel}}}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_adc9f32f5306c738a7eb1c9ce60e47663}\label{namespacegft_1_1Scene_adc9f32f5306c738a7eb1c9ce60e47663}} 
+\index{gft::Scene@{gft::Scene}!Threshold@{Threshold}}
+\index{Threshold@{Threshold}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Threshold()}{Threshold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9ee12bc034a9f57ff04acec3f876b497}{s\+Scene8}} $\ast$ gft\+::\+Scene\+::\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{int}]{lower,  }\item[{int}]{higher }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a6de5a183890a21a13bb83d83d2881ac4}\label{namespacegft_1_1Scene_a6de5a183890a21a13bb83d83d2881ac4}} 
+\index{gft::Scene@{gft::Scene}!Write@{Write}}
+\index{Write@{Write}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Scene\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Scene_a1b5d361a4d296ddbb6e2c9ce7e40e97d}\label{namespacegft_1_1Scene_a1b5d361a4d296ddbb6e2c9ce7e40e97d}} 
+\index{gft::Scene@{gft::Scene}!XOr@{XOr}}
+\index{XOr@{XOr}!gft::Scene@{gft::Scene}}
+\doxysubsubsection{\texorpdfstring{XOr()}{XOr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$ gft\+::\+Scene\+::\+X\+Or (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn1,  }\item[{\mbox{\hyperlink{structgft_1_1Scene_1_1sScene}{s\+Scene}} $\ast$}]{scn2 }\end{DoxyParamCaption})}
+

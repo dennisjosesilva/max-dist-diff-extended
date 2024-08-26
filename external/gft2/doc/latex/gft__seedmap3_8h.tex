@@ -1,0 +1,49 @@
+\hypertarget{gft__seedmap3_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+seedmap3.h File Reference}
+\label{gft__seedmap3_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_seedmap3.h@{/home/pmiranda/programming/lib/gft/include/gft\_seedmap3.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+scene.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjregion3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+segmentation3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+fuzzycloud3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+gradient3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+analysis3.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1AdjSeedmap3_1_1sAdjSeedmap3}{gft\+::\+Adj\+Seedmap3\+::s\+Adj\+Seedmap3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3}{gft\+::\+Adj\+Seedmap3}}
+\begin{DoxyCompactList}\small\item\em Data structures for fast accessing seed pixels of a fuzzy model (e.\+g., C\+SM). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Adj\+Seedmap3\+::s\+Adj\+Seedmap3 \mbox{\hyperlink{namespacegft_a9d10989cccf24b8fe9871037faa16750}{gft\+::s\+Adj\+Seedmap3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Adj\+Seedmap3 $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a4e94e80323c722662852e90c97712672}{gft\+::\+Adj\+Seedmap3\+::\+Create}} (int nobjs)
+\item 
+s\+Adj\+Seedmap3 $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_aca0f910e01423fbdd1ac7d9d193a23ba}{gft\+::\+Adj\+Seedmap3\+::\+Create}} (s\+Region\+Cloud3 $\ast$rcloud)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_aa17488c6dc52c3b389f1cfe6d4ea4f34}{gft\+::\+Adj\+Seedmap3\+::\+Destroy}} (s\+Adj\+Seedmap3 $\ast$$\ast$asmap)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_af1782609ccf37a30498b0b71c4fb6efa}{gft\+::\+Adj\+Seedmap3\+::\+Draw\+Object}} (s\+Scene8 $\ast$scn, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l, uchar val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a36b523f19aa7d04b0e6038c8a7dd63b8}{gft\+::\+Adj\+Seedmap3\+::\+Draw\+Obj\+Border}} (s\+Scene8 $\ast$scn, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l, uchar val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a9229f09062be46b2011746fbeb481dbe}{gft\+::\+Adj\+Seedmap3\+::\+Draw\+Bkg\+Border}} (s\+Scene8 $\ast$scn, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l, uchar val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a908c8b7bea9c0867fd9fa29b6a6124ca}{gft\+::\+Adj\+Seedmap3\+::\+Draw\+Uncertainty}} (s\+Scene8 $\ast$scn, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l, uchar val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a462772786737d0992ddc8c3da69ae613}{gft\+::\+Adj\+Seedmap3\+::\+Copy\+Uncertainty}} (s\+Scene8 $\ast$dest, s\+Scene8 $\ast$src, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_a52aabe48b13350b84f13750a00a853d7}{gft\+::\+Adj\+Seedmap3\+::\+Add\+Uncertainty}} (s\+Scene8 $\ast$dest, s\+Scene8 $\ast$src, s\+Adj\+Seedmap3 $\ast$asmap, Voxel u, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjSeedmap3_acacc46f7bcd5146075835058377fae9e}{gft\+::\+Adj\+Seedmap3\+::\+Cloud\+Arc\+Weight}} (s\+Scene16 $\ast$arcw, s\+Scene16 $\ast$wobj, s\+Gradient3 $\ast$grad, Voxel u, s\+Border\+Cloud3 $\ast$bcloud, s\+Adj\+Seedmap3 $\ast$asmap, int l, float w)
+\end{DoxyCompactItemize}

@@ -1,0 +1,296 @@
+\hypertarget{gft__common_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+common.h File Reference}
+\label{gft__common_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_common.h@{/home/pmiranda/programming/lib/gft/include/gft\_common.h}}
+
+
+Header file for common definitions and function prototypes.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+{\ttfamily \#include $<$xmmintrin.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{uniongft_1_1__voxel}{gft\+::\+\_\+voxel}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1__pixel}{gft\+::\+\_\+pixel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a53f274963f4ee4586f05278c32a1fd07}{M\+S\+G1}}~\char`\"{}Cannot allocate memory space\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a9affb724a6a5ef8064f4b4299e0062e9}{M\+S\+G2}}~\char`\"{}Cannot open file\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_acce559efe63c30861e87a127aa0987ef}{M\+S\+G3}}~\char`\"{}Invalid option\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a0244235a999d8bc7d5486f20d7d22ff7}{M\+S\+G4}}~\char`\"{}Could not locate nifti header\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a014bf5d427c76a29909cb4fe359d7395}{M\+S\+G5}}~\char`\"{}Nifti-\/1 data type not supported\char`\"{}
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+1415926536
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a86d4434206a75506f1ba5f0ab74d92c6}{I\+N\+T\+E\+R\+I\+OR}}~0
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_ae8a6b5cbf51ab11f460c1bd92089e573}{E\+X\+T\+E\+R\+I\+OR}}~1
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a85ddca800985505ab1036cf0d1be748b}{B\+O\+TH}}~2
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a87b537f5fa5c109d3c05c13d6b18f382}{W\+H\+I\+TE}}~0
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_ae5f70677050eecd8909e0248e07b9e73}{G\+R\+AY}}~1
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a7b3b25cba33b07c303f3060fe41887f6}{B\+L\+A\+CK}}~2
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a263efce0e5cda1d387a1a43f94715445}{N\+IL}}~-\/1
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_ad740ac3e6aec81148cd0a55423bdd4e2}{I\+N\+C\+R\+E\+A\+S\+I\+NG}}~1
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a519e79c95bbab9bffe79f1f0a5da5f4a}{D\+E\+C\+R\+E\+A\+S\+I\+NG}}~0
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a374328334281d6863559da9b44f127e0}{Epsilon}}~1E-\/05
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{M\+AX}}(x,  y)~(((x) $>$ (y))?(x)\+:(y))
+\begin{DoxyCompactList}\small\item\em A macro that returns the maximum of {\itshape x} and {\itshape y}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gft__common_8h_a74e75242132eaabbc1c512488a135926}{M\+IN}}(x,  y)~(((x) $<$ (y))?(x)\+:(y))
+\begin{DoxyCompactList}\small\item\em A macro that returns the minimum of {\itshape x} and {\itshape y}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gft__common_8h_acd66e8cacf954c3bc3bba81d09425a12}{R\+O\+U\+ND}}(x)~((x $<$ 0)?(int)(x-\/0.\+5)\+:(int)(x+0.\+5))
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_a8c5ff70b6b28cd0157c50a22406f92c4}{S\+I\+GN}}(x)~((x $>$= 0)?1\+:-\/1)
+\item 
+\#define \mbox{\hyperlink{gft__common_8h_aa1cf70a99e21bc2032e8867c6cafbb43}{S\+Q\+U\+A\+RE}}(x)~((x)$\ast$(x))
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{namespacegft_a46216ea11b673fe8800c5666be2e5cc1}{gft\+::boolean}} \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{gft\+::bool}}
+\item 
+typedef unsigned short \mbox{\hyperlink{namespacegft_a878518cf75338c097e2c8e9b10bfb00d}{gft\+::ushort}}
+\item 
+typedef unsigned int \mbox{\hyperlink{namespacegft_a4582b4dfe448021d46b76a75fb47799b}{gft\+::uint}}
+\item 
+typedef unsigned char \mbox{\hyperlink{namespacegft_a6411e297d5ac5aa9b91a37da00952197}{gft\+::uchar}}
+\item 
+typedef struct timeval \mbox{\hyperlink{namespacegft_af9c336df27e94c088477837089de57cf}{gft\+::timer}}
+\item 
+typedef float \mbox{\hyperlink{namespacegft_aefb7835e45e071d47ff9320a4015ad8f}{gft\+::v4sf}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespacegft_1_1Vector}{Vector}} of four single floats. \end{DoxyCompactList}\item 
+typedef int \mbox{\hyperlink{namespacegft_aba3889d81ba015326f093206316745b7}{gft\+::v4si}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespacegft_1_1Vector}{Vector}} of four single integers. \end{DoxyCompactList}\item 
+typedef uchar \mbox{\hyperlink{namespacegft_a8f84989647cef28b9a4861e651c0efd1}{gft\+::v8qi}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespacegft_1_1Vector}{Vector}} of eight unsigned 8-\/bit integers. \end{DoxyCompactList}\item 
+typedef uchar \mbox{\hyperlink{namespacegft_a146b2cce4e032edc85e179b693dbe5f7}{gft\+::v16qi}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespacegft_1_1Vector}{Vector}} of sixteen unsigned 8-\/bit integers. \end{DoxyCompactList}\item 
+typedef ushort \mbox{\hyperlink{namespacegft_ad8aa1dd830c817ab1974c6e4c1b28226}{gft\+::v8hi}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespacegft_1_1Vector}{Vector}} of eight unsigned short integers. \end{DoxyCompactList}\item 
+typedef union \mbox{\hyperlink{uniongft_1_1__voxel}{gft\+::\+\_\+voxel}} \mbox{\hyperlink{namespacegft_a87e2a8851b8385ca7b7e25407a1e7efe}{gft\+::\+Voxel}}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1__pixel}{gft\+::\+\_\+pixel}} \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{gft\+::\+Pixel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacegft_a46216ea11b673fe8800c5666be2e5cc1}{gft\+::boolean}} \{ \mbox{\hyperlink{namespacegft_a46216ea11b673fe8800c5666be2e5cc1af62c5372f4ab27de64940152597e29d9}{gft\+::false}}, 
+\mbox{\hyperlink{namespacegft_a46216ea11b673fe8800c5666be2e5cc1a67a7a3b7b088c1b0b77620ff2eeb9fc3}{gft\+::true}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{namespacegft_a5fdaa35ca4fb5b361349ad65df62f18d}{gft\+::\+Alloc\+Char\+Array}} (int n)
+\item 
+uchar $\ast$ \mbox{\hyperlink{namespacegft_a5019091af40bed4374b6017283935371}{gft\+::\+Alloc\+U\+Char\+Array}} (int n)
+\begin{DoxyCompactList}\small\item\em It allocates 1D array of n characters. \end{DoxyCompactList}\item 
+ushort $\ast$ \mbox{\hyperlink{namespacegft_a9092559de6e55ef73ff423a7e384fa31}{gft\+::\+Alloc\+U\+Short\+Array}} (int n)
+\begin{DoxyCompactList}\small\item\em It allocates 1D array of n ushorts. \end{DoxyCompactList}\item 
+uint $\ast$ \mbox{\hyperlink{namespacegft_a0b0afae6601a53d7ae797e9e84ea2943}{gft\+::\+Alloc\+U\+Int\+Array}} (int n)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_a0819a428b865b1c9f6195c43bf7a1a06}{gft\+::\+Alloc\+Int\+Array}} (int n)
+\begin{DoxyCompactList}\small\item\em It allocates 1D array of n integers. \end{DoxyCompactList}\item 
+long long $\ast$ \mbox{\hyperlink{namespacegft_ac82be672c582c21f8cc3f46e3c421e9e}{gft\+::\+Alloc\+Long\+Long\+Array}} (int n)
+\begin{DoxyCompactList}\small\item\em It allocates 1D array of n long long integers. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{namespacegft_ac12cfe531311299124dee663341b144d}{gft\+::\+Alloc\+Float\+Array}} (int n)
+\begin{DoxyCompactList}\small\item\em It allocates 1D array of n floats. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{namespacegft_a7453f28bdf7db9da89f2da7844195889}{gft\+::\+Alloc\+Double\+Array}} (int n)
+\item 
+void \mbox{\hyperlink{namespacegft_a0f2a6bffb189beb38a7bcdc962a0a2c5}{gft\+::\+Free\+Int\+Array}} (int $\ast$$\ast$a)
+\item 
+void \mbox{\hyperlink{namespacegft_a5ec687d5e4384d55db997b3a66b852e7}{gft\+::\+Free\+Float\+Array}} (float $\ast$$\ast$a)
+\item 
+void \mbox{\hyperlink{namespacegft_a498eb3abbc8089dc91d54a8932d4c585}{gft\+::\+Free\+Double\+Array}} (double $\ast$$\ast$a)
+\item 
+void \mbox{\hyperlink{namespacegft_abaf22a3821bbe3380cfd60ae79996c27}{gft\+::\+Free\+U\+Char\+Array}} (uchar $\ast$$\ast$a)
+\item 
+void \mbox{\hyperlink{namespacegft_aecdfb988241698a836ad3e2977b962cb}{gft\+::\+Free\+U\+Short\+Array}} (ushort $\ast$$\ast$a)
+\item 
+void \mbox{\hyperlink{namespacegft_a050094eb54bca97db90240d02835595c}{gft\+::\+Error}} (char $\ast$msg, char $\ast$func)
+\begin{DoxyCompactList}\small\item\em It prints error message and exits the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_af1dd4eab5a649fc5a6b9d2c180bfca8c}{gft\+::\+Warning}} (char $\ast$msg, char $\ast$func)
+\begin{DoxyCompactList}\small\item\em It prints warning message and leaves the routine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_a51ce532a81292eb9a58459c4acafd8ca}{gft\+::\+Swap\+Int}} (int $\ast$a, int $\ast$b)
+\begin{DoxyCompactList}\small\item\em It changes content between a and b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_aa39bacf88e058b9f282868abec0a73f7}{gft\+::\+Swap\+Float}} (float $\ast$a, float $\ast$b)
+\begin{DoxyCompactList}\small\item\em It changes content between a and b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_acb616184b19a85d20c201ddee209e954}{gft\+::\+N\+C\+Fgets}} (char $\ast$s, int m, F\+I\+LE $\ast$f)
+\item 
+int \mbox{\hyperlink{namespacegft_a9523e27c2d0a7b2186f024d9cd218a04}{gft\+::\+Random\+Integer}} (int low, int high)
+\item 
+void \mbox{\hyperlink{namespacegft_ae6903c75090e0a316cae6f37ade10cf2}{gft\+::\+Random\+Seed}} ()
+\item 
+int \mbox{\hyperlink{namespacegft_a62a37187113bb92a63478f1343e7fafb}{gft\+::\+Integer\+Normalize}} (int value, int omin, int omax, int nmin, int nmax)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for common definitions and function prototypes. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gft__common_8h_a7b3b25cba33b07c303f3060fe41887f6}\label{gft__common_8h_a7b3b25cba33b07c303f3060fe41887f6}} 
+\index{gft\_common.h@{gft\_common.h}!BLACK@{BLACK}}
+\index{BLACK@{BLACK}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{BLACK}{BLACK}}
+{\footnotesize\ttfamily \#define B\+L\+A\+CK~2}
+
+\mbox{\Hypertarget{gft__common_8h_a85ddca800985505ab1036cf0d1be748b}\label{gft__common_8h_a85ddca800985505ab1036cf0d1be748b}} 
+\index{gft\_common.h@{gft\_common.h}!BOTH@{BOTH}}
+\index{BOTH@{BOTH}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{BOTH}{BOTH}}
+{\footnotesize\ttfamily \#define B\+O\+TH~2}
+
+\mbox{\Hypertarget{gft__common_8h_a519e79c95bbab9bffe79f1f0a5da5f4a}\label{gft__common_8h_a519e79c95bbab9bffe79f1f0a5da5f4a}} 
+\index{gft\_common.h@{gft\_common.h}!DECREASING@{DECREASING}}
+\index{DECREASING@{DECREASING}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{DECREASING}{DECREASING}}
+{\footnotesize\ttfamily \#define D\+E\+C\+R\+E\+A\+S\+I\+NG~0}
+
+\mbox{\Hypertarget{gft__common_8h_a374328334281d6863559da9b44f127e0}\label{gft__common_8h_a374328334281d6863559da9b44f127e0}} 
+\index{gft\_common.h@{gft\_common.h}!Epsilon@{Epsilon}}
+\index{Epsilon@{Epsilon}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{Epsilon}{Epsilon}}
+{\footnotesize\ttfamily \#define Epsilon~1E-\/05}
+
+\mbox{\Hypertarget{gft__common_8h_ae8a6b5cbf51ab11f460c1bd92089e573}\label{gft__common_8h_ae8a6b5cbf51ab11f460c1bd92089e573}} 
+\index{gft\_common.h@{gft\_common.h}!EXTERIOR@{EXTERIOR}}
+\index{EXTERIOR@{EXTERIOR}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{EXTERIOR}{EXTERIOR}}
+{\footnotesize\ttfamily \#define E\+X\+T\+E\+R\+I\+OR~1}
+
+\mbox{\Hypertarget{gft__common_8h_ae5f70677050eecd8909e0248e07b9e73}\label{gft__common_8h_ae5f70677050eecd8909e0248e07b9e73}} 
+\index{gft\_common.h@{gft\_common.h}!GRAY@{GRAY}}
+\index{GRAY@{GRAY}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{GRAY}{GRAY}}
+{\footnotesize\ttfamily \#define G\+R\+AY~1}
+
+\mbox{\Hypertarget{gft__common_8h_ad740ac3e6aec81148cd0a55423bdd4e2}\label{gft__common_8h_ad740ac3e6aec81148cd0a55423bdd4e2}} 
+\index{gft\_common.h@{gft\_common.h}!INCREASING@{INCREASING}}
+\index{INCREASING@{INCREASING}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{INCREASING}{INCREASING}}
+{\footnotesize\ttfamily \#define I\+N\+C\+R\+E\+A\+S\+I\+NG~1}
+
+\mbox{\Hypertarget{gft__common_8h_a86d4434206a75506f1ba5f0ab74d92c6}\label{gft__common_8h_a86d4434206a75506f1ba5f0ab74d92c6}} 
+\index{gft\_common.h@{gft\_common.h}!INTERIOR@{INTERIOR}}
+\index{INTERIOR@{INTERIOR}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{INTERIOR}{INTERIOR}}
+{\footnotesize\ttfamily \#define I\+N\+T\+E\+R\+I\+OR~0}
+
+\mbox{\Hypertarget{gft__common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}\label{gft__common_8h_aacc3ee1a7f283f8ef65cea31f4436a95}} 
+\index{gft\_common.h@{gft\_common.h}!MAX@{MAX}}
+\index{MAX@{MAX}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define M\+AX(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((x) $>$ (y))?(x)\+:(y))}
+
+
+
+A macro that returns the maximum of {\itshape x} and {\itshape y}. 
+
+\mbox{\Hypertarget{gft__common_8h_a74e75242132eaabbc1c512488a135926}\label{gft__common_8h_a74e75242132eaabbc1c512488a135926}} 
+\index{gft\_common.h@{gft\_common.h}!MIN@{MIN}}
+\index{MIN@{MIN}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(((x) $<$ (y))?(x)\+:(y))}
+
+
+
+A macro that returns the minimum of {\itshape x} and {\itshape y}. 
+
+\mbox{\Hypertarget{gft__common_8h_a53f274963f4ee4586f05278c32a1fd07}\label{gft__common_8h_a53f274963f4ee4586f05278c32a1fd07}} 
+\index{gft\_common.h@{gft\_common.h}!MSG1@{MSG1}}
+\index{MSG1@{MSG1}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MSG1}{MSG1}}
+{\footnotesize\ttfamily \#define M\+S\+G1~\char`\"{}Cannot allocate memory space\char`\"{}}
+
+\mbox{\Hypertarget{gft__common_8h_a9affb724a6a5ef8064f4b4299e0062e9}\label{gft__common_8h_a9affb724a6a5ef8064f4b4299e0062e9}} 
+\index{gft\_common.h@{gft\_common.h}!MSG2@{MSG2}}
+\index{MSG2@{MSG2}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MSG2}{MSG2}}
+{\footnotesize\ttfamily \#define M\+S\+G2~\char`\"{}Cannot open file\char`\"{}}
+
+\mbox{\Hypertarget{gft__common_8h_acce559efe63c30861e87a127aa0987ef}\label{gft__common_8h_acce559efe63c30861e87a127aa0987ef}} 
+\index{gft\_common.h@{gft\_common.h}!MSG3@{MSG3}}
+\index{MSG3@{MSG3}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MSG3}{MSG3}}
+{\footnotesize\ttfamily \#define M\+S\+G3~\char`\"{}Invalid option\char`\"{}}
+
+\mbox{\Hypertarget{gft__common_8h_a0244235a999d8bc7d5486f20d7d22ff7}\label{gft__common_8h_a0244235a999d8bc7d5486f20d7d22ff7}} 
+\index{gft\_common.h@{gft\_common.h}!MSG4@{MSG4}}
+\index{MSG4@{MSG4}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MSG4}{MSG4}}
+{\footnotesize\ttfamily \#define M\+S\+G4~\char`\"{}Could not locate nifti header\char`\"{}}
+
+\mbox{\Hypertarget{gft__common_8h_a014bf5d427c76a29909cb4fe359d7395}\label{gft__common_8h_a014bf5d427c76a29909cb4fe359d7395}} 
+\index{gft\_common.h@{gft\_common.h}!MSG5@{MSG5}}
+\index{MSG5@{MSG5}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{MSG5}{MSG5}}
+{\footnotesize\ttfamily \#define M\+S\+G5~\char`\"{}Nifti-\/1 data type not supported\char`\"{}}
+
+\mbox{\Hypertarget{gft__common_8h_a263efce0e5cda1d387a1a43f94715445}\label{gft__common_8h_a263efce0e5cda1d387a1a43f94715445}} 
+\index{gft\_common.h@{gft\_common.h}!NIL@{NIL}}
+\index{NIL@{NIL}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{NIL}{NIL}}
+{\footnotesize\ttfamily \#define N\+IL~-\/1}
+
+\mbox{\Hypertarget{gft__common_8h_a598a3330b3c21701223ee0ca14316eca}\label{gft__common_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\index{gft\_common.h@{gft\_common.h}!PI@{PI}}
+\index{PI@{PI}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+1415926536}
+
+\mbox{\Hypertarget{gft__common_8h_acd66e8cacf954c3bc3bba81d09425a12}\label{gft__common_8h_acd66e8cacf954c3bc3bba81d09425a12}} 
+\index{gft\_common.h@{gft\_common.h}!ROUND@{ROUND}}
+\index{ROUND@{ROUND}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{ROUND}{ROUND}}
+{\footnotesize\ttfamily \#define R\+O\+U\+ND(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x $<$ 0)?(int)(x-\/0.\+5)\+:(int)(x+0.\+5))}
+
+\mbox{\Hypertarget{gft__common_8h_a8c5ff70b6b28cd0157c50a22406f92c4}\label{gft__common_8h_a8c5ff70b6b28cd0157c50a22406f92c4}} 
+\index{gft\_common.h@{gft\_common.h}!SIGN@{SIGN}}
+\index{SIGN@{SIGN}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{SIGN}{SIGN}}
+{\footnotesize\ttfamily \#define S\+I\+GN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x $>$= 0)?1\+:-\/1)}
+
+\mbox{\Hypertarget{gft__common_8h_aa1cf70a99e21bc2032e8867c6cafbb43}\label{gft__common_8h_aa1cf70a99e21bc2032e8867c6cafbb43}} 
+\index{gft\_common.h@{gft\_common.h}!SQUARE@{SQUARE}}
+\index{SQUARE@{SQUARE}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{SQUARE}{SQUARE}}
+{\footnotesize\ttfamily \#define S\+Q\+U\+A\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x)$\ast$(x))}
+
+\mbox{\Hypertarget{gft__common_8h_a87b537f5fa5c109d3c05c13d6b18f382}\label{gft__common_8h_a87b537f5fa5c109d3c05c13d6b18f382}} 
+\index{gft\_common.h@{gft\_common.h}!WHITE@{WHITE}}
+\index{WHITE@{WHITE}!gft\_common.h@{gft\_common.h}}
+\doxysubsubsection{\texorpdfstring{WHITE}{WHITE}}
+{\footnotesize\ttfamily \#define W\+H\+I\+TE~0}
+

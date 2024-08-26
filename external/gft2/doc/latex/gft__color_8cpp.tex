@@ -1,0 +1,59 @@
+\hypertarget{gft__color_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+color.cpp File Reference}
+\label{gft__color_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_color.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_color.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+color.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Color}{gft\+::\+Color}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate color spaces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gft__color_8cpp_a4b2be9444edc95c9a93d62919933abd7}{G\+M\+AX}}(a,  b,  c)~(((a$>$=b)\&\&(a$>$=c))?a\+:((b$>$c)?b\+:c))
+\item 
+\#define \mbox{\hyperlink{gft__color_8cpp_a7e6dc2af56cfebb04099f4f3374e77c0}{G\+M\+IN}}(a,  b,  c)~(((a$<$=b)\&\&(a$<$=c))?a\+:((b$<$c)?b\+:c))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a19ef9035b82efa1054a288eb74ad31b2}{gft\+::\+Color\+::\+R\+G\+B2\+Y\+Cb\+Cr}} (int v)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to Y\+Cb\+Cr color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_ac4657f5e13a1085573ed19bcd20c0ed6}{gft\+::\+Color\+::\+Y\+Cb\+Cr2\+R\+GB}} (int v)
+\begin{DoxyCompactList}\small\item\em Converts the color from the Y\+Cb\+Cr color space to R\+GB color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a41b5a3a9b4d326bee9a05ad926ab4550}{gft\+::\+Color\+::\+Triplet}} (int a, int b, int c)
+\begin{DoxyCompactList}\small\item\em Converts a color to hexadecimal format (a hex triplet). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacegft_1_1Color_ae7c8792c126c210858319973714665ec}{gft\+::\+Color\+::f}} (const double \&t)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Color_aa0ab1533752e9e96d22a2a57aebc9b55}{gft\+::\+Color\+::f}} (const float \&t)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Color_aa9a8c47dbdc07143c9df5c5b367307f5}{gft\+::\+Color\+::\+R\+G\+B2\+Lab}} (const int \&R, const int \&G, const int \&B, double \&l, double \&a, double \&b)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Color_a85ecf1ebc7cb4706563a265faf877ccc}{gft\+::\+Color\+::\+R\+G\+B2\+Lab}} (const int \&R, const int \&G, const int \&B, float \&l, float \&a, float \&b)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. \end{DoxyCompactList}\item 
+s\+Color\+H\+SV \mbox{\hyperlink{namespacegft_1_1Color_addc3980bbdeb2c5d8b3917ed3028f074}{gft\+::\+Color\+::\+R\+G\+B2\+H\+SV}} (s\+Color\+R\+GB rgb)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to H\+SV color space. \end{DoxyCompactList}\item 
+s\+Color\+R\+GB \mbox{\hyperlink{namespacegft_1_1Color_a89d88de980728c9f4573051ddc81ca66}{gft\+::\+Color\+::\+H\+S\+V2\+R\+GB}} (s\+Color\+H\+SV hsv)
+\begin{DoxyCompactList}\small\item\em Converts the color from the H\+SV color space to R\+GB color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_ae1dbc17ee7768e9aab95ec17344ec48f}{gft\+::\+Color\+::\+Random\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a612de38492398daab8686cd0923e34b5}{gft\+::\+Color\+::\+Merge\+R\+GB}} (int a, int b, float ratio)
+\begin{DoxyCompactList}\small\item\em Merges two colors in R\+G\+B-\/space using (1-\/ratio) of a and ratio of b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a349d1aeaabdb98ddb5a23e816ab5e049}{gft\+::\+Color\+::\+Inverse}} (int c)
+\begin{DoxyCompactList}\small\item\em Inverts the given color, where red is reversed to cyan, green is reversed to magenta and blue is reversed to yellow, and vice versa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gft__color_8cpp_a4b2be9444edc95c9a93d62919933abd7}\label{gft__color_8cpp_a4b2be9444edc95c9a93d62919933abd7}} 
+\index{gft\_color.cpp@{gft\_color.cpp}!GMAX@{GMAX}}
+\index{GMAX@{GMAX}!gft\_color.cpp@{gft\_color.cpp}}
+\doxysubsubsection{\texorpdfstring{GMAX}{GMAX}}
+{\footnotesize\ttfamily \#define G\+M\+AX(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c }\end{DoxyParamCaption})~(((a$>$=b)\&\&(a$>$=c))?a\+:((b$>$c)?b\+:c))}
+
+\mbox{\Hypertarget{gft__color_8cpp_a7e6dc2af56cfebb04099f4f3374e77c0}\label{gft__color_8cpp_a7e6dc2af56cfebb04099f4f3374e77c0}} 
+\index{gft\_color.cpp@{gft\_color.cpp}!GMIN@{GMIN}}
+\index{GMIN@{GMIN}!gft\_color.cpp@{gft\_color.cpp}}
+\doxysubsubsection{\texorpdfstring{GMIN}{GMIN}}
+{\footnotesize\ttfamily \#define G\+M\+IN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c }\end{DoxyParamCaption})~(((a$<$=b)\&\&(a$<$=c))?a\+:((b$<$c)?b\+:c))}
+

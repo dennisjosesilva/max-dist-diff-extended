@@ -1,0 +1,85 @@
+\hypertarget{gft__scene_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+scene.cpp File Reference}
+\label{gft__scene_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_scene.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_scene.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+scene.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Scene}{gft\+::\+Scene}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac29f1fe89210bf2bc4a671f5a96d8904}{gft\+::\+Scene\+::\+Create}} (int xsize, int ysize, int zsize, int nbits, \mbox{\hyperlink{gft__scene_8h_aff9f098ca5c194977bd33369499b22ed}{gft\+\_\+\+Scene\+Type}} type)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a2c9a71bfbd5178348dc83b1bbee149e0}{gft\+::\+Scene\+::\+Create}} (int xsize, int ysize, int zsize, int nbits)
+\begin{DoxyCompactList}\small\item\em A constructor for integer data. \end{DoxyCompactList}\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac5078815007205ee9ab533b91fcc742e}{gft\+::\+Scene\+::\+Create}} (s\+Scene $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A constructor taking a reference scene as template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a3e18ead4e4ff257181477b8fa0cad27c}{gft\+::\+Scene\+::\+Destroy}} (s\+Scene $\ast$$\ast$scn)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_af54b1de3c4dd5e3a616397b23179c943}{gft\+::\+Scene\+::\+Copy}} (s\+Scene $\ast$dest, s\+Scene $\ast$src)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ab0be295fe4a4edbaf4c277fbad11b3dc}{gft\+::\+Scene\+::\+Copy}} (s\+Scene $\ast$dest, s\+Scene $\ast$src, Voxel v)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a88ebe2057f8c57457bcaa46736aaead9}{gft\+::\+Scene\+::\+Clone}} (s\+Scene $\ast$scn)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ab6d0c5fcea5151bb13a21b9eca482436}{gft\+::\+Scene\+::\+Sub\+Scene}} (s\+Scene $\ast$scn, Voxel l, Voxel h)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ad2a2897e1c28b93685dec3099b55e992}{gft\+::\+Scene\+::\+Sub\+Scene}} (s\+Scene $\ast$scn, int xl, int yl, int zl, int xh, int yh, int zh)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ad6e61aab6e8e362b73931b4328ff2c67}{gft\+::\+Scene\+::\+Fill}} (s\+Scene $\ast$scn, int value)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a628c6366563468507e64d2d555f291d0}{gft\+::\+Scene\+::\+Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a6de5a183890a21a13bb83d83d2881ac4}{gft\+::\+Scene\+::\+Write}} (s\+Scene $\ast$scn, char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a70677d271d06f54fc2c73453e430705b}{gft\+::\+Scene\+::\+Set\+Value}} (s\+Scene $\ast$scn, int p, int value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_a7bf6456a9ddca88454ac492c593048bb}{gft\+::\+Scene\+::\+Set\+Value}} (s\+Scene $\ast$scn, int p, double value)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a5465abcab72cf7dd0c98d9dc245bd9bb}{gft\+::\+Scene\+::\+Get\+Value}} (s\+Scene $\ast$scn, Voxel v)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_abd086f019a265a5e8dc4b25e2eb12cae}{gft\+::\+Scene\+::\+Get\+Value64f}} (s\+Scene $\ast$scn, Voxel v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_aa949c6e755fa429f1214322a73abc180}{gft\+::\+Scene\+::\+Get\+Value}} (s\+Scene $\ast$scn, int p)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_afe7ab4c86448aec7af3d5773ee883a47}{gft\+::\+Scene\+::\+Get\+Value64f}} (s\+Scene $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a0056a718a4f34d00459fc220409a0f76}{gft\+::\+Scene\+::\+Get\+Value}} (s\+Scene $\ast$scn, int x, int y, int z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_a2c747d002a6d997efcd14d0d651411ff}{gft\+::\+Scene\+::\+Get\+Value64f}} (s\+Scene $\ast$scn, int x, int y, int z)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a74841c74f6877d388d76b3ff30ac88c9}{gft\+::\+Scene\+::\+Get\+Value\+\_\+nn}} (s\+Scene $\ast$scn, float x, float y, float z)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene_a003b37ad711f0a270640131911d77fe0}{gft\+::\+Scene\+::\+Get\+Value64f\+\_\+nn}} (s\+Scene $\ast$scn, float x, float y, float z)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a95d899a3ddf2a2bc3b56eebcdd429077}{gft\+::\+Scene\+::\+Get\+Number\+Of\+Voxels}} (s\+Scene $\ast$scn)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_afb88f5e34171692afb8cb48b1aac6616}{gft\+::\+Scene\+::\+Get\+AddressX}} (s\+Scene $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a05ed44ba88a05dfd26927daceb366ae7}{gft\+::\+Scene\+::\+Get\+AddressY}} (s\+Scene $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a4a282b77d47beffc17735aa7ef86856a}{gft\+::\+Scene\+::\+Get\+AddressZ}} (s\+Scene $\ast$scn, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_ace273ac7dd6f81cb76cea6da64f0a00b}{gft\+::\+Scene\+::\+Get\+Voxel\+Address}} (s\+Scene $\ast$scn, Voxel v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a96fb4e38feae513ead1776132a7374d6}{gft\+::\+Scene\+::\+Get\+Voxel\+Address}} (s\+Scene $\ast$scn, int x, int y, int z)
+\item 
+bool \mbox{\hyperlink{namespacegft_1_1Scene_a59570a8b9f37fa4c3288a737ef9c9d53}{gft\+::\+Scene\+::\+Is\+Valid\+Voxel}} (s\+Scene $\ast$scn, int x, int y, int z)
+\item 
+bool \mbox{\hyperlink{namespacegft_1_1Scene_a76a21194c25d5f38a8b7ff3940ab143e}{gft\+::\+Scene\+::\+Is\+Valid\+Voxel}} (s\+Scene $\ast$scn, Voxel v)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_aa82da2294dbe2e4cc862a27b0d6d809a}{gft\+::\+Scene\+::\+Get\+Maximum\+Value}} (s\+Scene $\ast$scn)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Scene_a372ffce32a260d451f9948246e1e021e}{gft\+::\+Scene\+::\+Get\+Minimum\+Value}} (s\+Scene $\ast$scn)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_ac7848211e36708277dd9123960e663db}{gft\+::\+Scene\+::\+M\+BB}} (s\+Scene $\ast$scn)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Scene_ad587ac9ca3e3ede1c9af70ae27aab6b1}{gft\+::\+Scene\+::\+M\+BB}} (s\+Scene $\ast$scn, Voxel $\ast$l, Voxel $\ast$h)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a0159f7a637edc9a9beb8edf518f86158}{gft\+::\+Scene\+::\+Add\+Frame}} (s\+Scene $\ast$scn, int sz, int value)
+\item 
+s\+Scene $\ast$ \mbox{\hyperlink{namespacegft_1_1Scene_a91a5cbb21833317bf0535c47ba70927b}{gft\+::\+Scene\+::\+Rem\+Frame}} (s\+Scene $\ast$fscn, int sz)
+\end{DoxyCompactItemize}

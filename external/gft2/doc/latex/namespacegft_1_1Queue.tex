@@ -1,0 +1,72 @@
+\hypertarget{namespacegft_1_1Queue}{}\doxysection{gft\+::Queue Namespace Reference}
+\label{namespacegft_1_1Queue}\index{gft::Queue@{gft::Queue}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}}
+\begin{DoxyCompactList}\small\item\em F\+I\+FO \mbox{\hyperlink{namespacegft_1_1Queue}{Queue}} with circular and growing features. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Queue_a30bd39fa30c475cec0cfe06d55155968}{Create}} (int nbuckets)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Queue_a0125a451797742573cf2c8b3cfe9af45}{Destroy}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$$\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Queue_a021da42f97dec22618ad958755d7d16d}{Push}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$Q, int p)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Queue_aea0c2f84aa6e2674961d060d33acba8f}{Pop}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Queue_a1134c9e7acebf6c407b35adc058341d8}{Reset}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$Q)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Queue_ab88ce920de6e36a5a609795f074a2489}{Is\+Empty}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$Q)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Queue_a06cfa595554324b91bb761f9c1f57aae}{Is\+Full}} (\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$Q)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Queue_a30bd39fa30c475cec0cfe06d55155968}\label{namespacegft_1_1Queue_a30bd39fa30c475cec0cfe06d55155968}} 
+\index{gft::Queue@{gft::Queue}!Create@{Create}}
+\index{Create@{Create}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$ gft\+::\+Queue\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{nbuckets }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Queue_a0125a451797742573cf2c8b3cfe9af45}\label{namespacegft_1_1Queue_a0125a451797742573cf2c8b3cfe9af45}} 
+\index{gft::Queue@{gft::Queue}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Queue\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$$\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Queue_ab88ce920de6e36a5a609795f074a2489}\label{namespacegft_1_1Queue_ab88ce920de6e36a5a609795f074a2489}} 
+\index{gft::Queue@{gft::Queue}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Queue\+::\+Is\+Empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Queue_a06cfa595554324b91bb761f9c1f57aae}\label{namespacegft_1_1Queue_a06cfa595554324b91bb761f9c1f57aae}} 
+\index{gft::Queue@{gft::Queue}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{IsFull()}{IsFull()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Queue\+::\+Is\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Queue_aea0c2f84aa6e2674961d060d33acba8f}\label{namespacegft_1_1Queue_aea0c2f84aa6e2674961d060d33acba8f}} 
+\index{gft::Queue@{gft::Queue}!Pop@{Pop}}
+\index{Pop@{Pop}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily int gft\+::\+Queue\+::\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$}]{Q }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Returns N\+IL if empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacegft_1_1Queue_a021da42f97dec22618ad958755d7d16d}\label{namespacegft_1_1Queue_a021da42f97dec22618ad958755d7d16d}} 
+\index{gft::Queue@{gft::Queue}!Push@{Push}}
+\index{Push@{Push}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily void gft\+::\+Queue\+::\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$}]{Q,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Queue_a1134c9e7acebf6c407b35adc058341d8}\label{namespacegft_1_1Queue_a1134c9e7acebf6c407b35adc058341d8}} 
+\index{gft::Queue@{gft::Queue}!Reset@{Reset}}
+\index{Reset@{Reset}!gft::Queue@{gft::Queue}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void gft\+::\+Queue\+::\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Queue_1_1sQueue}{s\+Queue}} $\ast$}]{Q }\end{DoxyParamCaption})}
+

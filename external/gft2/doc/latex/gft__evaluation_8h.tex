@@ -1,0 +1,64 @@
+\hypertarget{gft__evaluation_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+evaluation.h File Reference}
+\label{gft__evaluation_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_evaluation.h@{/home/pmiranda/programming/lib/gft/include/gft\_evaluation.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32f.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+scene32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+analysis.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32f}{gft\+::\+Image32f}}
+\item 
+ \mbox{\hyperlink{namespacegft_1_1Scene32}{gft\+::\+Scene32}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a3ff6f03b9597a7bd1d746f6518b75231}{gft\+::\+Image32\+::\+Dice\+Similarity}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_abe4b982689b311c1f436ee5f2608433c}{gft\+::\+Image32\+::\+Dice\+Similarity}} (s\+Image32 $\ast$trimap, s\+Image32 $\ast$mask, int ignoredval)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_aa2f9f3fefa7ae2605f5b9436e0f2f876}{gft\+::\+Image32\+::\+Jaccard\+Similarity}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a8ccb207dc8b4973f59ae4fbcc57dcdaf}{gft\+::\+Image32\+::\+Jaccard\+Similarity}} (s\+Image32 $\ast$trimap, s\+Image32 $\ast$mask, int ignoredval)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_ae79ae16b13b16d7bc7a75ffe4b9166ef}{gft\+::\+Image32\+::\+Fuzzy\+Jaccard\+Similarity}} (s\+Image32 $\ast$prob1, s\+Image32 $\ast$prob2, int Pmax1, int Pmax2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a19f097eb52802b3c8bebe6a8519cf7dd}{gft\+::\+Image32\+::\+Error\+Rate\+Within\+Bounding\+Box}} (s\+Image32 $\ast$trimap, s\+Image32 $\ast$mask, int ignoredval, int xmin, int ymin, int xmax, int ymax)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a7bbf087bdf414fb9681bf07747031592}{gft\+::\+Image32\+::\+General\+Balanced\+Jaccard}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_aa33d8912aba238ee6e1f662a4511f625}{gft\+::\+Image32\+::\+General\+Balanced\+Jaccard}} (s\+Image32 $\ast$trimap, s\+Image32 $\ast$mask, int ignoredval)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a3e814c25e35d6002c2170c04ba0f89d3}{gft\+::\+Image32\+::\+Assess\+TP}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ac70e038a7c34f871e3322292e2cb27dc}{gft\+::\+Image32\+::\+Assess\+FN}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ab72839e5b5223313ffbc346cf0b253d9}{gft\+::\+Image32\+::\+Assess\+FP}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ab2f1e801ed25bc7d767a035d47edcccc}{gft\+::\+Image32\+::\+Assess\+TN}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab5656db728cf4b0430acdc6fba984d2b}{gft\+::\+Image32\+::\+Get\+Obj\+Error}} (s\+Image32 $\ast$gtruth, s\+Image32 $\ast$mask)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a6becb60d37ad5b5b89c88bf856588db1}{gft\+::\+Image32\+::\+Get\+Bkg\+Error}} (s\+Image32 $\ast$gtruth, s\+Image32 $\ast$mask)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_ae25a2923372fc39f164bd00f10c3fb83}{gft\+::\+Image32\+::\+Boundary\+Error}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a1df4d49917e7a014e253d01258f88a90}{gft\+::\+Image32\+::\+Boundary\+FP}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a8d09dbd37327a67c04e1d81911d65ef1}{gft\+::\+Image32\+::\+Boundary\+FN}} (s\+Image32 $\ast$mask1, s\+Image32 $\ast$mask2)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_a7c5b851b251d04b9167cce983562140a}{gft\+::\+Image32\+::\+Sharpness}} (s\+Image32 $\ast$prob, int Pmax)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_ac70a825ed7409b0439e0e3ac01a6881d}{gft\+::\+Image32\+::\+Sharpness}} (s\+Image32 $\ast$prob, s\+Image32 $\ast$mask, int Pmax)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32f_a45b89f2890ee068d9b5e9555b8675360}{gft\+::\+Image32f\+::\+Sharpness}} (s\+Image32f $\ast$prob)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Scene32_adc2c42554e942dfdbd4a6650d2a57f24}{gft\+::\+Scene32\+::\+Dice\+Similarity}} (s\+Scene32 $\ast$mask1, s\+Scene32 $\ast$mask2)
+\end{DoxyCompactItemize}

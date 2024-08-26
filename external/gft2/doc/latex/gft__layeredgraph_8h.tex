@@ -1,0 +1,48 @@
+\hypertarget{gft__layeredgraph_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+layeredgraph.h File Reference}
+\label{gft__layeredgraph_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_layeredgraph.h@{/home/pmiranda/programming/lib/gft/include/gft\_layeredgraph.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+graph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+imagegraph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+scene32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel3.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{gft\+::\+Layered\+Graph\+::s\+Layered\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1LayeredGraph}{gft\+::\+Layered\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Layered\+Graph\+::s\+Layered\+Graph \mbox{\hyperlink{namespacegft_a9f72095319ada196c7924744228efcc5}{gft\+::s\+Layered\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Layered\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1LayeredGraph_adec070c2c62d23c843485c7d4fea46a0}{gft\+::\+Layered\+Graph\+::\+Create}} (int nlayers, int nnodesperlayer)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a3517b51300eb400e63b788721fd1f97d}{gft\+::\+Layered\+Graph\+::\+Destroy}} (s\+Layered\+Graph $\ast$$\ast$lg)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_ae32fe5cf9b756b9fa1d01208def0a3e1}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, s\+Image\+Graph $\ast$sg, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a45f20895323b714267f2a6d57e033fb0}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, int ncols, float w, float r)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_aae33c39ec7f0703fec69719065a1748a}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, s\+Scene32 $\ast$sw, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a6d593459fdc4c4e0f4d969fb404f22c1}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, s\+Scene32 $\ast$sw, s\+Scene32 $\ast$scn, int pol, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a22ccc2a5f578c163223c76f66a4c7bd8}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, s\+Scene32 $\ast$scn, float w, float r)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a23bec478de9a51c096976d52ca7d340d}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, s\+Graph $\ast$g, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a876bbfa753617358e6567753c47b719c}{gft\+::\+Layered\+Graph\+::\+Set\+Arcs}} (s\+Layered\+Graph $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, float w)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a6257e11f8b888f6bb7c73136865cc8e3}{gft\+::\+Layered\+Graph\+::\+Transpose\+Layer}} (s\+Layered\+Graph $\ast$lg, int l)
+\end{DoxyCompactItemize}

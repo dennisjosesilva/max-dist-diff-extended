@@ -1,0 +1,149 @@
+\hypertarget{namespacegft_1_1FileList}{}\doxysection{gft\+::File\+List Namespace Reference}
+\label{namespacegft_1_1FileList}\index{gft::FileList@{gft::FileList}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$ \mbox{\hyperlink{namespacegft_1_1FileList_aa4675e9cff1079a49c5eaaa6110a0b59}{Create}} (int cap)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a13f2811579f56a7efaa3cf7a0fadd743}{Destroy}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$$\ast$L)
+\item 
+\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$ \mbox{\hyperlink{namespacegft_1_1FileList_a1828bdda0b7f15acaf1bb799dabf986d}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a02cbcb0f2205764d728c128fdad5cd3f}{Write}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a9177293edfd6a8f9b7fe4a8e852a9efa}{Add\+File}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, char $\ast$file)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacegft_1_1FileList_ab7e6ff39dce5430852e820a26783be6b}{Get\+File}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, int index)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1FileList_aaa75dc4748cb7419c54e9617f83f1f68}{Has\+File}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_ae4da22a2ad7e595e6a9195525c2d0f03}{Add\+Files\+In\+Dir}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, char $\ast$dir)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_aa3bd90af6527247957d93e1acdb69061}{Add\+Files\+In\+Dir\+Rec}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, char $\ast$dir)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_af5ac1faba05291da0872f72511d5002c}{Randomize}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a65da864fca96a1f6d592cb4e7bd48f92}{Resize}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L, int n)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_ab752e1f8f7ae1a2f22364b9cba12e170}{Trim2\+Size}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_ad138ded8036c214bb765c7e9a0b7f86c}{Delete\+Files\+In\+File\+List}} (\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$L)
+\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1FileList_a37b07eed572939d85c33b19caeed0638}{File\+Exists}} (char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_aea89ca0e145504b2ab029759f3a86a78}{Remove\+File\+Extension}} (char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a7a4c89d2abe8c90a900b6c6a02b3f35f}{Remove\+File\+Directory}} (char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1FileList_a8c3697e7b43be661e2e354bd261cd3d9}{Merge\+Relative\+Path}} (char $\ast$dir, char $\ast$rel)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1FileList_a9177293edfd6a8f9b7fe4a8e852a9efa}\label{namespacegft_1_1FileList_a9177293edfd6a8f9b7fe4a8e852a9efa}} 
+\index{gft::FileList@{gft::FileList}!AddFile@{AddFile}}
+\index{AddFile@{AddFile}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{AddFile()}{AddFile()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Add\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_ae4da22a2ad7e595e6a9195525c2d0f03}\label{namespacegft_1_1FileList_ae4da22a2ad7e595e6a9195525c2d0f03}} 
+\index{gft::FileList@{gft::FileList}!AddFilesInDir@{AddFilesInDir}}
+\index{AddFilesInDir@{AddFilesInDir}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{AddFilesInDir()}{AddFilesInDir()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Add\+Files\+In\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{char $\ast$}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_aa3bd90af6527247957d93e1acdb69061}\label{namespacegft_1_1FileList_aa3bd90af6527247957d93e1acdb69061}} 
+\index{gft::FileList@{gft::FileList}!AddFilesInDirRec@{AddFilesInDirRec}}
+\index{AddFilesInDirRec@{AddFilesInDirRec}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{AddFilesInDirRec()}{AddFilesInDirRec()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Add\+Files\+In\+Dir\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{char $\ast$}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_aa4675e9cff1079a49c5eaaa6110a0b59}\label{namespacegft_1_1FileList_aa4675e9cff1079a49c5eaaa6110a0b59}} 
+\index{gft::FileList@{gft::FileList}!Create@{Create}}
+\index{Create@{Create}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$ gft\+::\+File\+List\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_ad138ded8036c214bb765c7e9a0b7f86c}\label{namespacegft_1_1FileList_ad138ded8036c214bb765c7e9a0b7f86c}} 
+\index{gft::FileList@{gft::FileList}!DeleteFilesInFileList@{DeleteFilesInFileList}}
+\index{DeleteFilesInFileList@{DeleteFilesInFileList}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{DeleteFilesInFileList()}{DeleteFilesInFileList()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Delete\+Files\+In\+File\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a13f2811579f56a7efaa3cf7a0fadd743}\label{namespacegft_1_1FileList_a13f2811579f56a7efaa3cf7a0fadd743}} 
+\index{gft::FileList@{gft::FileList}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$$\ast$}]{L }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a37b07eed572939d85c33b19caeed0638}\label{namespacegft_1_1FileList_a37b07eed572939d85c33b19caeed0638}} 
+\index{gft::FileList@{gft::FileList}!FileExists@{FileExists}}
+\index{FileExists@{FileExists}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{FileExists()}{FileExists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+File\+List\+::\+File\+Exists (\begin{DoxyParamCaption}\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_ab7e6ff39dce5430852e820a26783be6b}\label{namespacegft_1_1FileList_ab7e6ff39dce5430852e820a26783be6b}} 
+\index{gft::FileList@{gft::FileList}!GetFile@{GetFile}}
+\index{GetFile@{GetFile}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{GetFile()}{GetFile()}}
+{\footnotesize\ttfamily char $\ast$ gft\+::\+File\+List\+::\+Get\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_aaa75dc4748cb7419c54e9617f83f1f68}\label{namespacegft_1_1FileList_aaa75dc4748cb7419c54e9617f83f1f68}} 
+\index{gft::FileList@{gft::FileList}!HasFile@{HasFile}}
+\index{HasFile@{HasFile}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{HasFile()}{HasFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+File\+List\+::\+Has\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a8c3697e7b43be661e2e354bd261cd3d9}\label{namespacegft_1_1FileList_a8c3697e7b43be661e2e354bd261cd3d9}} 
+\index{gft::FileList@{gft::FileList}!MergeRelativePath@{MergeRelativePath}}
+\index{MergeRelativePath@{MergeRelativePath}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{MergeRelativePath()}{MergeRelativePath()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Merge\+Relative\+Path (\begin{DoxyParamCaption}\item[{char $\ast$}]{dir,  }\item[{char $\ast$}]{rel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_af5ac1faba05291da0872f72511d5002c}\label{namespacegft_1_1FileList_af5ac1faba05291da0872f72511d5002c}} 
+\index{gft::FileList@{gft::FileList}!Randomize@{Randomize}}
+\index{Randomize@{Randomize}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Randomize()}{Randomize()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Randomize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a1828bdda0b7f15acaf1bb799dabf986d}\label{namespacegft_1_1FileList_a1828bdda0b7f15acaf1bb799dabf986d}} 
+\index{gft::FileList@{gft::FileList}!Read@{Read}}
+\index{Read@{Read}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$ gft\+::\+File\+List\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a7a4c89d2abe8c90a900b6c6a02b3f35f}\label{namespacegft_1_1FileList_a7a4c89d2abe8c90a900b6c6a02b3f35f}} 
+\index{gft::FileList@{gft::FileList}!RemoveFileDirectory@{RemoveFileDirectory}}
+\index{RemoveFileDirectory@{RemoveFileDirectory}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{RemoveFileDirectory()}{RemoveFileDirectory()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Remove\+File\+Directory (\begin{DoxyParamCaption}\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_aea89ca0e145504b2ab029759f3a86a78}\label{namespacegft_1_1FileList_aea89ca0e145504b2ab029759f3a86a78}} 
+\index{gft::FileList@{gft::FileList}!RemoveFileExtension@{RemoveFileExtension}}
+\index{RemoveFileExtension@{RemoveFileExtension}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{RemoveFileExtension()}{RemoveFileExtension()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Remove\+File\+Extension (\begin{DoxyParamCaption}\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a65da864fca96a1f6d592cb4e7bd48f92}\label{namespacegft_1_1FileList_a65da864fca96a1f6d592cb4e7bd48f92}} 
+\index{gft::FileList@{gft::FileList}!Resize@{Resize}}
+\index{Resize@{Resize}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_ab752e1f8f7ae1a2f22364b9cba12e170}\label{namespacegft_1_1FileList_ab752e1f8f7ae1a2f22364b9cba12e170}} 
+\index{gft::FileList@{gft::FileList}!Trim2Size@{Trim2Size}}
+\index{Trim2Size@{Trim2Size}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Trim2Size()}{Trim2Size()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Trim2\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1FileList_a02cbcb0f2205764d728c128fdad5cd3f}\label{namespacegft_1_1FileList_a02cbcb0f2205764d728c128fdad5cd3f}} 
+\index{gft::FileList@{gft::FileList}!Write@{Write}}
+\index{Write@{Write}!gft::FileList@{gft::FileList}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+File\+List\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1FileList_1_1sFileList}{s\+File\+List}} $\ast$}]{L,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+

@@ -1,0 +1,209 @@
+\hypertarget{namespacegft_1_1AdjRel3}{}\doxysection{gft\+::Adj\+Rel3 Namespace Reference}
+\label{namespacegft_1_1AdjRel3}\index{gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}}
+\item 
+union \mbox{\hyperlink{uniongft_1_1AdjRel3_1_1sDisplacement3}{s\+Displacement3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a1de7af54c7af8bdaf3e806a1cefeea00}{Create}} (int n)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_a997f16e56df5eeca34fc80080fbd7f3e}{Destroy}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$$\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a80d4fe443dd8369a3c327f22b47160f0}{Clone}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a47da3d734d38b7c915170ceaa8866aca}{Spheric}} (float r)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a1aaf1aaa521c96cbf0cbd801678d6e10}{Ellipsoid}} (float rx, float ry, float rz)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_af1b2dc8556f7f655d57285767c35b7aa}{Spherical\+Shell}} (float inner\+\_\+radius, float outer\+\_\+radius)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_ad5e00ba9d66068711e41ab12a4143e4f}{Box}} (int xsize, int ysize, int zsize)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_a7bf2fb965396150ceb9ad4b0cf8028e6}{Scale}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, float Sx, float Sy, float Sz)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_abcac83e2dba1799bd1390e66eb99588c}{ClipX}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, int lower, int higher)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_a703f35987c5cd356020ff9f14c533785}{ClipY}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, int lower, int higher)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_aac99146f3933fa9c0a8eaf7ce3e4df21}{ClipZ}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, int lower, int higher)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1AdjRel3_a0456454395bece7dec440645697990fa}{Get\+Frame\+Size}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_ac26cd7a06e2f35581314aec714cd4885}{Get\+Frame\+Size}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, int $\ast$sz\+\_\+x, int $\ast$sz\+\_\+y, int $\ast$sz\+\_\+z)
+\item 
+float $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a05e222d27f5dd486c82f3cb63fc1bbd0}{Get\+Distance\+Array}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A)
+\item 
+float $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_ad2f39574c418e308a2cd474246a098cc}{Get\+Distance\+Array\+\_\+mm}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a5352a163c383451ca94661e740ded88a}{Adj\+Voxels}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, int xsize, int ysize)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a50401066ca2894977d98c86da5d0a59b}{Adj\+Voxels}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a80fda2cac0db8f541ebf6792388cefc2}{Adj\+Voxels}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_a500bf2b205e96ed3f6dd928b33af3ce8}{s\+Scene16}} $\ast$scn)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a330180799a9b3338d168af841761ba53}{Adj\+Voxels}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_a9ee12bc034a9f57ff04acec3f876b497}{s\+Scene8}} $\ast$scn)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a9c413ca582abde323fd2b8fa63994a55}{Adj\+Voxels}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$A, \mbox{\hyperlink{namespacegft_a89ea29a550a70ea6e4d25b90966a6263}{s\+Scene}} $\ast$scn)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1AdjRel3_a8b6d470546cd71978e409b999404027b}{Destroy\+Adj\+Vxl}} (\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$$\ast$N)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a81799eb9833bc1ea1ffb1412a598916b}{Spherical\+\_\+mm}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, float r\+\_\+mm)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a79013f1d4c9b245b203275861f636ba6}{Spherical\+Grid\+\_\+mm}} (float dx, float dy, float dz, float r\+\_\+mm, float spacement\+\_\+mm)
+\item 
+\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1AdjRel3_a99ae54e001e788ed43fffa6fb03b0fc4}{Spherical\+Grid\+\_\+mm}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, float r\+\_\+mm, float spacement\+\_\+mm)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a5352a163c383451ca94661e740ded88a}\label{namespacegft_1_1AdjRel3_a5352a163c383451ca94661e740ded88a}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!AdjVoxels@{AdjVoxels}}
+\index{AdjVoxels@{AdjVoxels}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{AdjVoxels()}{AdjVoxels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Adj\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{int}]{xsize,  }\item[{int}]{ysize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a9c413ca582abde323fd2b8fa63994a55}\label{namespacegft_1_1AdjRel3_a9c413ca582abde323fd2b8fa63994a55}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!AdjVoxels@{AdjVoxels}}
+\index{AdjVoxels@{AdjVoxels}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{AdjVoxels()}{AdjVoxels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Adj\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a89ea29a550a70ea6e4d25b90966a6263}{s\+Scene}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a80fda2cac0db8f541ebf6792388cefc2}\label{namespacegft_1_1AdjRel3_a80fda2cac0db8f541ebf6792388cefc2}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!AdjVoxels@{AdjVoxels}}
+\index{AdjVoxels@{AdjVoxels}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{AdjVoxels()}{AdjVoxels()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Adj\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a500bf2b205e96ed3f6dd928b33af3ce8}{s\+Scene16}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a50401066ca2894977d98c86da5d0a59b}\label{namespacegft_1_1AdjRel3_a50401066ca2894977d98c86da5d0a59b}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!AdjVoxels@{AdjVoxels}}
+\index{AdjVoxels@{AdjVoxels}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{AdjVoxels()}{AdjVoxels()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Adj\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a330180799a9b3338d168af841761ba53}\label{namespacegft_1_1AdjRel3_a330180799a9b3338d168af841761ba53}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!AdjVoxels@{AdjVoxels}}
+\index{AdjVoxels@{AdjVoxels}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{AdjVoxels()}{AdjVoxels()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Adj\+Voxels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_a9ee12bc034a9f57ff04acec3f876b497}{s\+Scene8}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_ad5e00ba9d66068711e41ab12a4143e4f}\label{namespacegft_1_1AdjRel3_ad5e00ba9d66068711e41ab12a4143e4f}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Box@{Box}}
+\index{Box@{Box}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Box (\begin{DoxyParamCaption}\item[{int}]{xsize,  }\item[{int}]{ysize,  }\item[{int}]{zsize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_abcac83e2dba1799bd1390e66eb99588c}\label{namespacegft_1_1AdjRel3_abcac83e2dba1799bd1390e66eb99588c}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!ClipX@{ClipX}}
+\index{ClipX@{ClipX}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{ClipX()}{ClipX()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+ClipX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{int}]{lower,  }\item[{int}]{higher }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a703f35987c5cd356020ff9f14c533785}\label{namespacegft_1_1AdjRel3_a703f35987c5cd356020ff9f14c533785}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!ClipY@{ClipY}}
+\index{ClipY@{ClipY}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{ClipY()}{ClipY()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+ClipY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{int}]{lower,  }\item[{int}]{higher }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_aac99146f3933fa9c0a8eaf7ce3e4df21}\label{namespacegft_1_1AdjRel3_aac99146f3933fa9c0a8eaf7ce3e4df21}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!ClipZ@{ClipZ}}
+\index{ClipZ@{ClipZ}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{ClipZ()}{ClipZ()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+ClipZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{int}]{lower,  }\item[{int}]{higher }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a80d4fe443dd8369a3c327f22b47160f0}\label{namespacegft_1_1AdjRel3_a80d4fe443dd8369a3c327f22b47160f0}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a1de7af54c7af8bdaf3e806a1cefeea00}\label{namespacegft_1_1AdjRel3_a1de7af54c7af8bdaf3e806a1cefeea00}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Create@{Create}}
+\index{Create@{Create}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a997f16e56df5eeca34fc80080fbd7f3e}\label{namespacegft_1_1AdjRel3_a997f16e56df5eeca34fc80080fbd7f3e}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a8b6d470546cd71978e409b999404027b}\label{namespacegft_1_1AdjRel3_a8b6d470546cd71978e409b999404027b}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!DestroyAdjVxl@{DestroyAdjVxl}}
+\index{DestroyAdjVxl@{DestroyAdjVxl}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{DestroyAdjVxl()}{DestroyAdjVxl()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+Destroy\+Adj\+Vxl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjVxl}{s\+Adj\+Vxl}} $\ast$$\ast$}]{N }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a1aaf1aaa521c96cbf0cbd801678d6e10}\label{namespacegft_1_1AdjRel3_a1aaf1aaa521c96cbf0cbd801678d6e10}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Ellipsoid@{Ellipsoid}}
+\index{Ellipsoid@{Ellipsoid}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Ellipsoid()}{Ellipsoid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Ellipsoid (\begin{DoxyParamCaption}\item[{float}]{rx,  }\item[{float}]{ry,  }\item[{float}]{rz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a05e222d27f5dd486c82f3cb63fc1bbd0}\label{namespacegft_1_1AdjRel3_a05e222d27f5dd486c82f3cb63fc1bbd0}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!GetDistanceArray@{GetDistanceArray}}
+\index{GetDistanceArray@{GetDistanceArray}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{GetDistanceArray()}{GetDistanceArray()}}
+{\footnotesize\ttfamily float $\ast$ gft\+::\+Adj\+Rel3\+::\+Get\+Distance\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_ad2f39574c418e308a2cd474246a098cc}\label{namespacegft_1_1AdjRel3_ad2f39574c418e308a2cd474246a098cc}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!GetDistanceArray\_mm@{GetDistanceArray\_mm}}
+\index{GetDistanceArray\_mm@{GetDistanceArray\_mm}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{GetDistanceArray\_mm()}{GetDistanceArray\_mm()}}
+{\footnotesize\ttfamily float $\ast$ gft\+::\+Adj\+Rel3\+::\+Get\+Distance\+Array\+\_\+mm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a0456454395bece7dec440645697990fa}\label{namespacegft_1_1AdjRel3_a0456454395bece7dec440645697990fa}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!GetFrameSize@{GetFrameSize}}
+\index{GetFrameSize@{GetFrameSize}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{GetFrameSize()}{GetFrameSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int gft\+::\+Adj\+Rel3\+::\+Get\+Frame\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_ac26cd7a06e2f35581314aec714cd4885}\label{namespacegft_1_1AdjRel3_ac26cd7a06e2f35581314aec714cd4885}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!GetFrameSize@{GetFrameSize}}
+\index{GetFrameSize@{GetFrameSize}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{GetFrameSize()}{GetFrameSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+Get\+Frame\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{int $\ast$}]{sz\+\_\+x,  }\item[{int $\ast$}]{sz\+\_\+y,  }\item[{int $\ast$}]{sz\+\_\+z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a7bf2fb965396150ceb9ad4b0cf8028e6}\label{namespacegft_1_1AdjRel3_a7bf2fb965396150ceb9ad4b0cf8028e6}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Scale@{Scale}}
+\index{Scale@{Scale}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily void gft\+::\+Adj\+Rel3\+::\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$}]{A,  }\item[{float}]{Sx,  }\item[{float}]{Sy,  }\item[{float}]{Sz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a47da3d734d38b7c915170ceaa8866aca}\label{namespacegft_1_1AdjRel3_a47da3d734d38b7c915170ceaa8866aca}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Spheric@{Spheric}}
+\index{Spheric@{Spheric}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Spheric()}{Spheric()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Spheric (\begin{DoxyParamCaption}\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a81799eb9833bc1ea1ffb1412a598916b}\label{namespacegft_1_1AdjRel3_a81799eb9833bc1ea1ffb1412a598916b}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!Spherical\_mm@{Spherical\_mm}}
+\index{Spherical\_mm@{Spherical\_mm}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{Spherical\_mm()}{Spherical\_mm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Spherical\+\_\+mm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{float}]{r\+\_\+mm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a79013f1d4c9b245b203275861f636ba6}\label{namespacegft_1_1AdjRel3_a79013f1d4c9b245b203275861f636ba6}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!SphericalGrid\_mm@{SphericalGrid\_mm}}
+\index{SphericalGrid\_mm@{SphericalGrid\_mm}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{SphericalGrid\_mm()}{SphericalGrid\_mm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Spherical\+Grid\+\_\+mm (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz,  }\item[{float}]{r\+\_\+mm,  }\item[{float}]{spacement\+\_\+mm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_a99ae54e001e788ed43fffa6fb03b0fc4}\label{namespacegft_1_1AdjRel3_a99ae54e001e788ed43fffa6fb03b0fc4}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!SphericalGrid\_mm@{SphericalGrid\_mm}}
+\index{SphericalGrid\_mm@{SphericalGrid\_mm}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{SphericalGrid\_mm()}{SphericalGrid\_mm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Spherical\+Grid\+\_\+mm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{float}]{r\+\_\+mm,  }\item[{float}]{spacement\+\_\+mm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1AdjRel3_af1b2dc8556f7f655d57285767c35b7aa}\label{namespacegft_1_1AdjRel3_af1b2dc8556f7f655d57285767c35b7aa}} 
+\index{gft::AdjRel3@{gft::AdjRel3}!SphericalShell@{SphericalShell}}
+\index{SphericalShell@{SphericalShell}!gft::AdjRel3@{gft::AdjRel3}}
+\doxysubsubsection{\texorpdfstring{SphericalShell()}{SphericalShell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1AdjRel3_1_1sAdjRel3}{s\+Adj\+Rel3}} $\ast$ gft\+::\+Adj\+Rel3\+::\+Spherical\+Shell (\begin{DoxyParamCaption}\item[{float}]{inner\+\_\+radius,  }\item[{float}]{outer\+\_\+radius }\end{DoxyParamCaption})}
+

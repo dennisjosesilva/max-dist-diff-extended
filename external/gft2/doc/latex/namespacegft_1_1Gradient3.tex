@@ -1,0 +1,101 @@
+\hypertarget{namespacegft_1_1Gradient3}{}\doxysection{gft\+::Gradient3 Namespace Reference}
+\label{namespacegft_1_1Gradient3}\index{gft::Gradient3@{gft::Gradient3}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_ae988d83f04e79e963c40c3514d3df21d}{Create}} (int xsize, int ysize, int zsize)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Gradient3_aa6b8ee32a9f7d443016325ec817d3379}{Destroy}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$$\ast$grad)
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_af6ada99b1a8644f7bf70587e5d45af2c}{Rem\+Frame}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$fgrad, int sz)
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_afb05b421b8e2fff088593eda06a1c2c2}{Change\+Orientation\+To\+L\+PS}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad, char $\ast$ori)
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_a5b351e750f7289c977244d5508293784}{Read}} (char $\ast$filename)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Gradient3_ab4a0fb74a77f3554aaee5f3ef6b513d7}{Write}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad, char $\ast$filename)
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_afb95d38b8aa732077dd3e2a9fac53e09}{Spherical}} (\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, float r)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Gradient3_a21d77bab6202982d486573add1c6a94f}{Compute\+Magnitude}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Gradient3_a2d45948247872f679f571ec54b88bbbb}{Maximum\+Mag}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Gradient3_a1755118d6ed0f44b8f0fe6ad8c13f259}{Normalize}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad, int omin, int omax, int nmin, int nmax)
+\item 
+\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Gradient3_ae338b9571b304759ac9322af01143ca8}{Linear\+Interp\+Centr}} (\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$grad, float dx, float dy, float dz)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_afb05b421b8e2fff088593eda06a1c2c2}\label{namespacegft_1_1Gradient3_afb05b421b8e2fff088593eda06a1c2c2}} 
+\index{gft::Gradient3@{gft::Gradient3}!ChangeOrientationToLPS@{ChangeOrientationToLPS}}
+\index{ChangeOrientationToLPS@{ChangeOrientationToLPS}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{ChangeOrientationToLPS()}{ChangeOrientationToLPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ gft\+::\+Gradient3\+::\+Change\+Orientation\+To\+L\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad,  }\item[{char $\ast$}]{ori }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_a21d77bab6202982d486573add1c6a94f}\label{namespacegft_1_1Gradient3_a21d77bab6202982d486573add1c6a94f}} 
+\index{gft::Gradient3@{gft::Gradient3}!ComputeMagnitude@{ComputeMagnitude}}
+\index{ComputeMagnitude@{ComputeMagnitude}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{ComputeMagnitude()}{ComputeMagnitude()}}
+{\footnotesize\ttfamily void gft\+::\+Gradient3\+::\+Compute\+Magnitude (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_ae988d83f04e79e963c40c3514d3df21d}\label{namespacegft_1_1Gradient3_ae988d83f04e79e963c40c3514d3df21d}} 
+\index{gft::Gradient3@{gft::Gradient3}!Create@{Create}}
+\index{Create@{Create}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ gft\+::\+Gradient3\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{xsize,  }\item[{int}]{ysize,  }\item[{int}]{zsize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_aa6b8ee32a9f7d443016325ec817d3379}\label{namespacegft_1_1Gradient3_aa6b8ee32a9f7d443016325ec817d3379}} 
+\index{gft::Gradient3@{gft::Gradient3}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Gradient3\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$$\ast$}]{grad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_ae338b9571b304759ac9322af01143ca8}\label{namespacegft_1_1Gradient3_ae338b9571b304759ac9322af01143ca8}} 
+\index{gft::Gradient3@{gft::Gradient3}!LinearInterpCentr@{LinearInterpCentr}}
+\index{LinearInterpCentr@{LinearInterpCentr}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{LinearInterpCentr()}{LinearInterpCentr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}}$\ast$ gft\+::\+Gradient3\+::\+Linear\+Interp\+Centr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad,  }\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{dz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_a2d45948247872f679f571ec54b88bbbb}\label{namespacegft_1_1Gradient3_a2d45948247872f679f571ec54b88bbbb}} 
+\index{gft::Gradient3@{gft::Gradient3}!MaximumMag@{MaximumMag}}
+\index{MaximumMag@{MaximumMag}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{MaximumMag()}{MaximumMag()}}
+{\footnotesize\ttfamily int gft\+::\+Gradient3\+::\+Maximum\+Mag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_a1755118d6ed0f44b8f0fe6ad8c13f259}\label{namespacegft_1_1Gradient3_a1755118d6ed0f44b8f0fe6ad8c13f259}} 
+\index{gft::Gradient3@{gft::Gradient3}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily void gft\+::\+Gradient3\+::\+Normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad,  }\item[{int}]{omin,  }\item[{int}]{omax,  }\item[{int}]{nmin,  }\item[{int}]{nmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_a5b351e750f7289c977244d5508293784}\label{namespacegft_1_1Gradient3_a5b351e750f7289c977244d5508293784}} 
+\index{gft::Gradient3@{gft::Gradient3}!Read@{Read}}
+\index{Read@{Read}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ gft\+::\+Gradient3\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_af6ada99b1a8644f7bf70587e5d45af2c}\label{namespacegft_1_1Gradient3_af6ada99b1a8644f7bf70587e5d45af2c}} 
+\index{gft::Gradient3@{gft::Gradient3}!RemFrame@{RemFrame}}
+\index{RemFrame@{RemFrame}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{RemFrame()}{RemFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ gft\+::\+Gradient3\+::\+Rem\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{fgrad,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_afb95d38b8aa732077dd3e2a9fac53e09}\label{namespacegft_1_1Gradient3_afb95d38b8aa732077dd3e2a9fac53e09}} 
+\index{gft::Gradient3@{gft::Gradient3}!Spherical@{Spherical}}
+\index{Spherical@{Spherical}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Spherical()}{Spherical()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$ gft\+::\+Gradient3\+::\+Spherical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Gradient3_ab4a0fb74a77f3554aaee5f3ef6b513d7}\label{namespacegft_1_1Gradient3_ab4a0fb74a77f3554aaee5f3ef6b513d7}} 
+\index{gft::Gradient3@{gft::Gradient3}!Write@{Write}}
+\index{Write@{Write}!gft::Gradient3@{gft::Gradient3}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Gradient3\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Gradient3_1_1sGradient3}{s\+Gradient3}} $\ast$}]{grad,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+

@@ -1,0 +1,89 @@
+\hypertarget{gft__image32_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+image32.h File Reference}
+\label{gft__image32_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_image32.h@{/home/pmiranda/programming/lib/gft/include/gft\_image32.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{gft\+::\+Image32\+::s\+Image32}}
+\begin{DoxyCompactList}\small\item\em Structure representing a digital image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Image32\+::s\+Image32 \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7}{gft\+::\+Interpolation\+Type}} \{ \mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7ab9474c89bd8a4eac7a14fb64f0d51071}{gft\+::none}}, 
+\mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7ad90e5e7bf6e276cd00a5720a9227e015}{gft\+::linear}}, 
+\mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7ac8e64e51284f4c57ca0cf4196d43c6cf}{gft\+::cubic}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a3e30c49af613f0b34786a122f6eb3322}{gft\+::\+Image32\+::\+Create}} (int ncols, int nrows)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae1137603e96a4154fc5bc55197b7593f}{gft\+::\+Image32\+::\+Create}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em A constructor using img as a template. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a87ebb9b3ee419fab1d4165662d44459c}{gft\+::\+Image32\+::\+Destroy}} (s\+Image32 $\ast$$\ast$img)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a7a04776ddad089ced8c99895662858a5}{gft\+::\+Image32\+::\+Clone}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a41b934360de4b1311e66209bcaff19f6}{gft\+::\+Image32\+::\+Clone}} (s\+Image32 $\ast$img, Pixel l, Pixel h)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a608699b88fb365f124c1988e4e37f702}{gft\+::\+Image32\+::\+Copy}} (s\+Image32 $\ast$img, s\+Image32 $\ast$sub, Pixel l)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a0f42ef89bf7603f57d0e7b2d9b717927}{gft\+::\+Image32\+::\+Copy}} (s\+Image32 $\ast$img, s\+Image32 $\ast$sub, Pixel l, int bkg)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a5a6881e0e95077b225a4e6e460fb0305}{gft\+::\+Image32\+::\+Copy}} (s\+Image32 $\ast$dest, s\+Image32 $\ast$src)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ac593c71fdf3bec07a8bbc69ef8c8df37}{gft\+::\+Image32\+::\+Add}} (s\+Image32 $\ast$img1, s\+Image32 $\ast$img2)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of two images pixel by pixel. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_add76ffd810337e095fa7ee9dbe745e7a}{gft\+::\+Image32\+::\+Add}} (s\+Image32 $\ast$img, int value)
+\begin{DoxyCompactList}\small\item\em Adds a constant to all pixels in the image. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ad27c7af9e9de67115679fdbb3e2b5618}{gft\+::\+Image32\+::\+Mult}} (s\+Image32 $\ast$img1, s\+Image32 $\ast$img2)
+\begin{DoxyCompactList}\small\item\em Calculates the product of two images pixel by pixel. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a4540b906bf15c283d116a9c52a8518c3}{gft\+::\+Image32\+::\+Read}} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Reads an image from a file on the disc in P\+GM format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aa31dba5c85d91f058b691e429bfa7d4e}{gft\+::\+Image32\+::\+Write}} (s\+Image32 $\ast$img, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Writes an image to a file on the disc in P\+GM format. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae296ee7fa5602a6ce8061fda6c014f43}{gft\+::\+Image32\+::\+Convert\+To\+Nbits}} (s\+Image32 $\ast$img, int N)
+\begin{DoxyCompactList}\small\item\em Changes the amount of gray levels in the image to a given bit depth. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ad3509ebd24893190be3a9f87bc895ec1}{gft\+::\+Image32\+::\+Convert\+To\+Nbits}} (s\+Image32 $\ast$img, int N, bool Imin)
+\begin{DoxyCompactList}\small\item\em Changes the amount of gray levels in the image to a given bit depth. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a0eadab27d946867a4d256cd470193422}{gft\+::\+Image32\+::\+Complement}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em Calculates the image complement by inverting its values (white becomes black, black becomes white). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a77b0c58086a9723d1a2ff627a3a167be}{gft\+::\+Image32\+::\+Get\+Min\+Val}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns the minimum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a776235bcfe55405d2fd91ea917103fb3}{gft\+::\+Image32\+::\+Get\+Max\+Val}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns the maximum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ad72bd381f729093830bbff9b56a68ca2}{gft\+::\+Image32\+::\+Get\+Max\+Val}} (s\+Image32 $\ast$img, int ignoredvalue)
+\begin{DoxyCompactList}\small\item\em Returns the maximum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a1e5160b857c817efdce5a3c00932d087}{gft\+::\+Image32\+::\+Get\+Freq\+Val}} (s\+Image32 $\ast$img, int val)
+\begin{DoxyCompactList}\small\item\em Returns the number of occurrences (frequency) of a given value in an image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a27741dc4e0e4b363dae39f1963027710}{gft\+::\+Image32\+::\+Set}} (s\+Image32 $\ast$img, int value)
+\begin{DoxyCompactList}\small\item\em Fills an image with a given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a73a3532b0983f945d131ea464058b08a}{gft\+::\+Image32\+::\+Set}} (s\+Image32 $\ast$img, int old\+\_\+value, int new\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Replaces a given image value with a new value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacegft_1_1Image32_a8cb81b9ed11e79dc3bdc0504fa0cc3ca}{gft\+::\+Image32\+::\+Is\+Valid\+Pixel}} (s\+Image32 $\ast$img, int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests whether a pixel is valid for a given image. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ac83a535554d7eaf0c15c00aa960b751f}{gft\+::\+Image32\+::\+Threshold}} (s\+Image32 $\ast$img, int L, int H)
+\begin{DoxyCompactList}\small\item\em Calculates the segmentation/binarization by thresholding the image. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_acae9f94ad60e9579efe5e8c3fe6c06fd}{gft\+::\+Image32\+::\+Add\+Frame}} (s\+Image32 $\ast$img, int sz, int value)
+\begin{DoxyCompactList}\small\item\em Adds a frame around an image, with the provided width and fill value. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a73571c8f1576d6572427d248827f2ec5}{gft\+::\+Image32\+::\+Rem\+Frame}} (s\+Image32 $\ast$fimg, int sz)
+\begin{DoxyCompactList}\small\item\em Removes the frame around an image with the given width. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_af7d50fc8040c346f9e280023202a1169}{gft\+::\+Image32\+::\+Scale}} (s\+Image32 $\ast$img, float Sx, float Sy, Interpolation\+Type interpolation)
+\begin{DoxyCompactList}\small\item\em Resizes the image by the horizontal and vertical factors and interpolation method provided. \end{DoxyCompactList}\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa056f8674f210339a3619b1639a582ae}{gft\+::\+Image32\+::\+M\+BB}} (s\+Image32 $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns a subimage by clipping the minimum bounding box with non-\/zero values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a6034f82177017e5e3931843dc59c4898}{gft\+::\+Image32\+::\+M\+BB}} (s\+Image32 $\ast$img, Pixel $\ast$l, Pixel $\ast$h)
+\begin{DoxyCompactList}\small\item\em Calculates the minimum bounding box with non-\/zero values. \end{DoxyCompactList}\end{DoxyCompactItemize}

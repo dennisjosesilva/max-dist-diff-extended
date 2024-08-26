@@ -1,0 +1,976 @@
+\hypertarget{namespacegft_1_1Image32}{}\doxysection{gft\+::Image32 Namespace Reference}
+\label{namespacegft_1_1Image32}\index{gft::Image32@{gft::Image32}}
+
+
+Common definitions and functions to manipulate a grayscale image of 32 bits per pixel.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}}
+\begin{DoxyCompactList}\small\item\em Structure representing a digital image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a44aa5c2791dcebd2486c3cdb1f130437}{Render}} (\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a5da40380457af242e5e73cba9bd30c99}{Draw\+Adj\+Rel}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, int p, int val)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a82d122c0a46549b8f7d8cd6db0038912}{Reg\+Min}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a99acc7c23d972f018ce5d4fa81bf2eb6}{Label\+Bin\+Comp}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ac76c0c0a4c42c3c5c113dd4d67ee66e1}{Get\+Obj\+Border}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a09b3ea905143569dcd317f62b7d9a463}{Get\+Obj\+Borders}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a65aadf627323e8f2779cdfc3cc0ed141}{Get\+Obj\+Borders}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} frame)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae17852d0baeed93f78e1ce2b7d73d887}{Get\+Borders}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a1f1b15f8f465c40804f907b3f9b3ab28}{Label\+Contour}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ad5dc05f30fd601d8e9a9b93559fe6f87}{Label\+Contour}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$contourid)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a6f01046e6fa7f81c31f81ff9d8e745ab}{Mask2\+E\+DT}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, char side, int limit, char sign)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a69c19a7db3678973af57b16f4a8f85bf}{Mask2\+E\+DT}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, char side, int limit, char sign, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$cost, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$root)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a1baad59f395f06c15175150738e744eb}{Multiscaleskeletons}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_aea68ff757fda59d6f3cfd3ae75ae9d58}{Perimeter\+Length}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aadca434e44e44d100adc472875785eb7}{Draw\+Rectangle}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int x1, int y1, int x2, int y2, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_ab24fdb34396b4a5aa12e5007b4ebf257}{Draw\+Line\+D\+DA}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int x1, int y1, int xn, int yn, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aa9ed385e226188a95773de0e50e67275}{Draw\+Circle}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int x1, int y1, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aec3205858a118e0b3ba39c33df6422bf}{Draw\+Triangle}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int xA, int yA, int xB, int yB, int xC, int yC, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a3fb600b76673c7a6228c932bc79ef223}{Draw\+Triangle}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int A, int B, int C, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a9c52dfc25ae90e3b229f95a7e6286050}{Draw\+Line}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int xA, int yA, int xB, int yB, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aaf52ac598d29dc41d419da5c63830649}{Draw\+Line}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int A, int B, float r, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a1612f4df07592e1f68a29efd13eef196}{Draw\+Arrow}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int xA, int yA, int xB, int yB, float r, float w, float h, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a65dd33f213979a13d8d401cb19431b2c}{Draw\+Arrow}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int A, int B, float r, float w, float h, int val)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_add7a3f5b403897a8a2b449cc0b1740eb}{Flood\+Fill}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, int P, int val)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a3ff6f03b9597a7bd1d746f6518b75231}{Dice\+Similarity}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_abe4b982689b311c1f436ee5f2608433c}{Dice\+Similarity}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$trimap, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask, int ignoredval)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_aa2f9f3fefa7ae2605f5b9436e0f2f876}{Jaccard\+Similarity}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a8ccb207dc8b4973f59ae4fbcc57dcdaf}{Jaccard\+Similarity}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$trimap, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask, int ignoredval)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_ae79ae16b13b16d7bc7a75ffe4b9166ef}{Fuzzy\+Jaccard\+Similarity}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$prob1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$prob2, int Pmax1, int Pmax2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a19f097eb52802b3c8bebe6a8519cf7dd}{Error\+Rate\+Within\+Bounding\+Box}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$trimap, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask, int ignoredval, int xmin, int ymin, int xmax, int ymax)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a7bbf087bdf414fb9681bf07747031592}{General\+Balanced\+Jaccard}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_aa33d8912aba238ee6e1f662a4511f625}{General\+Balanced\+Jaccard}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$trimap, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask, int ignoredval)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a3e814c25e35d6002c2170c04ba0f89d3}{Assess\+TP}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ac70e038a7c34f871e3322292e2cb27dc}{Assess\+FN}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ab72839e5b5223313ffbc346cf0b253d9}{Assess\+FP}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ab2f1e801ed25bc7d767a035d47edcccc}{Assess\+TN}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab5656db728cf4b0430acdc6fba984d2b}{Get\+Obj\+Error}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$gtruth, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a6becb60d37ad5b5b89c88bf856588db1}{Get\+Bkg\+Error}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$gtruth, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_ae25a2923372fc39f164bd00f10c3fb83}{Boundary\+Error}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a1df4d49917e7a014e253d01258f88a90}{Boundary\+FP}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+double \mbox{\hyperlink{namespacegft_1_1Image32_a8d09dbd37327a67c04e1d81911d65ef1}{Boundary\+FN}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask2)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_a7c5b851b251d04b9167cce983562140a}{Sharpness}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$prob, int Pmax)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_ac70a825ed7409b0439e0e3ac01a6881d}{Sharpness}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$prob, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$mask, int Pmax)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a209c75fe90f449f23b51ac294afd6615}{Gaussian\+Blur}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, float stddev)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a0ce09a4bf5acf4bdca94277b7738e347}{Gaussian\+Blur}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a1e3d767a6a08a3ba21a651fbae3abf58}{Sobel\+Filter}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a5fb5dbe2dd3176ea7385a00bb89b4810}{Linear\+Filter}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a625dc146d072a741a89dace6062478ec}{s\+Kernel}} $\ast$K)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a23d8551bf1f400b10e22fae959ce48ff}{Image\+Magnitude}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$imgx, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$imgy)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a905bc6c5f8e8efe390e0b8c52895de6d}{Median\+Filter}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a84dfa7834ba1664594ec79903ccc7de5}{Mode\+Filter\+Label}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$label, float r)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae1137603e96a4154fc5bc55197b7593f}{Create}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em A constructor using img as a template. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a3e30c49af613f0b34786a122f6eb3322}{Create}} (int ncols, int nrows)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a87ebb9b3ee419fab1d4165662d44459c}{Destroy}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$$\ast$img)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a7a04776ddad089ced8c99895662858a5}{Clone}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a41b934360de4b1311e66209bcaff19f6}{Clone}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} l, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} h)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a608699b88fb365f124c1988e4e37f702}{Copy}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$sub, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} l)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a0f42ef89bf7603f57d0e7b2d9b717927}{Copy}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$sub, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} l, int bkg)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a5a6881e0e95077b225a4e6e460fb0305}{Copy}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$dest, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$src)
+\begin{DoxyCompactList}\small\item\em Copies the contents of one image to another destination image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ac593c71fdf3bec07a8bbc69ef8c8df37}{Add}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img2)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of two images pixel by pixel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_add76ffd810337e095fa7ee9dbe745e7a}{Add}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int value)
+\begin{DoxyCompactList}\small\item\em Adds a constant to all pixels in the image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ad27c7af9e9de67115679fdbb3e2b5618}{Mult}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img1, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img2)
+\begin{DoxyCompactList}\small\item\em Calculates the product of two images pixel by pixel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a4540b906bf15c283d116a9c52a8518c3}{Read}} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Reads an image from a file on the disc in P\+GM format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_aa31dba5c85d91f058b691e429bfa7d4e}{Write}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Writes an image to a file on the disc in P\+GM format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae296ee7fa5602a6ce8061fda6c014f43}{Convert\+To\+Nbits}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int N)
+\begin{DoxyCompactList}\small\item\em Changes the amount of gray levels in the image to a given bit depth. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ad3509ebd24893190be3a9f87bc895ec1}{Convert\+To\+Nbits}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int N, \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} Imin)
+\begin{DoxyCompactList}\small\item\em Changes the amount of gray levels in the image to a given bit depth. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a0eadab27d946867a4d256cd470193422}{Complement}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em Calculates the image complement by inverting its values (white becomes black, black becomes white). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a77b0c58086a9723d1a2ff627a3a167be}{Get\+Min\+Val}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns the minimum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a776235bcfe55405d2fd91ea917103fb3}{Get\+Max\+Val}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns the maximum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ad72bd381f729093830bbff9b56a68ca2}{Get\+Max\+Val}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int ignoredvalue)
+\begin{DoxyCompactList}\small\item\em Returns the maximum pixel value present in a given image. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_a1e5160b857c817efdce5a3c00932d087}{Get\+Freq\+Val}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int val)
+\begin{DoxyCompactList}\small\item\em Returns the number of occurrences (frequency) of a given value in an image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a27741dc4e0e4b363dae39f1963027710}{Set}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int value)
+\begin{DoxyCompactList}\small\item\em Fills an image with a given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a73a3532b0983f945d131ea464058b08a}{Set}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int old\+\_\+value, int new\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Replaces a given image value with a new value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1Image32_a8cb81b9ed11e79dc3bdc0504fa0cc3ca}{Is\+Valid\+Pixel}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests whether a pixel is valid for a given image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ac83a535554d7eaf0c15c00aa960b751f}{Threshold}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int L, int H)
+\begin{DoxyCompactList}\small\item\em Calculates the segmentation/binarization by thresholding the image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_acae9f94ad60e9579efe5e8c3fe6c06fd}{Add\+Frame}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int sz, int value)
+\begin{DoxyCompactList}\small\item\em Adds a frame around an image, with the provided width and fill value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a73571c8f1576d6572427d248827f2ec5}{Rem\+Frame}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$fimg, int sz)
+\begin{DoxyCompactList}\small\item\em Removes the frame around an image with the given width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a02a2d715cea3ea5c4bfb4e9df5682e22}{Scale\+\_\+linear}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, float Sx, float Sy)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a6a72b06fda04a97ec8e463bb5f23c076}{Scale\+\_\+none}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, float Sx, float Sy)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_af7d50fc8040c346f9e280023202a1169}{Scale}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, float Sx, float Sy, \mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7}{Interpolation\+Type}} interpolation)
+\begin{DoxyCompactList}\small\item\em Resizes the image by the horizontal and vertical factors and interpolation method provided. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa056f8674f210339a3619b1639a582ae}{M\+BB}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\begin{DoxyCompactList}\small\item\em Returns a subimage by clipping the minimum bounding box with non-\/zero values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a6034f82177017e5e3931843dc59c4898}{M\+BB}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} $\ast$l, \mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} $\ast$h)
+\begin{DoxyCompactList}\small\item\em Calculates the minimum bounding box with non-\/zero values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa6c31e7e98c4d5eafcd2b9cd74382d7c}{Clone}} (\mbox{\hyperlink{namespacegft_acc8529a7dd5516c2415d61441af7d16b}{s\+Image32f}} $\ast$img, float multiplier)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_ade12542ae975b928587d22c3bb2d451b}{Max\+Radius\+By\+Erosion}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_a37c736619fe7cbfa762f52a6e36ea95c}{Max\+Obj\+Radius\+By\+Erosion}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Image32_a2c01dd9d17b55e1b936273075ae8ff3f}{Max\+Bkg\+Radius\+By\+Erosion}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a8a3d60b365cde7309cc711c9c30bb640}{Bkg\+Mask\+By\+Erosion}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, float radius)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab5cec6197533f3d980bb7515afa34f7c}{Obj\+Mask\+By\+Erosion}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, float radius)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aba7b1c4f9357d4b503b2c12e5bc5dfc6}{Get\+Markers}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$label, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab7f6dd02fd1663da2f2371c6303d20bc}{Dilate}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa094ab1ffd7b092c9790df7ca316e97c}{Erode}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa910e6ec96a5f014364a698f164eb74e}{Morph\+Grad}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae1a7b06b5137f448799d7f01bd13d9e7}{Erode\+Bin}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$bin, \mbox{\hyperlink{namespacegft_a00890b71e66ba53e434a9e49abfa6455}{s\+Set}} $\ast$$\ast$seed, float radius)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a08eb73905d5fb14dfc1a7856ebd9b2aa}{Sup\+Rec\+\_\+\+Watershed}} (\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$I, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$J, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$L, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$V)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ad626aef7b6841225696c5f41a68f9dd3}{Find\+\_\+}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$R, int p)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a86e5f27f176f2828bfabd7bf78343445}{Area\+Closing}} (\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$I, int T)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a41d697244cf9681af4cb7fb6c827e47d}{Volume\+Closing}} (\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A, \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$I, int T)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_adc3e20cfca1511959903dcaee79ea528}{Close\+Holes}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a2313859308c366401ef0889a38350e99}{Histogram}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a3399ec6e87047892958f0ce67eff250a}{Norm\+Histogram}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img)
+\item 
+\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a2a351608b0d91119ef90d3870aa73d50}{Normalize\+Histogram}} (\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$hist)
+\item 
+\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a6de9249cf0c0c52bd73da7a558f09001}{Remove\+Empty\+Bins}} (\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$hist)
+\item 
+\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab2adf803342c71052f58c59c8b6e4b86}{Linear\+Stretch}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, int omin, int omax, int nmin, int nmax)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_afbed4a17020c6d24d8e84f01ff3cc032}{Linear\+Stretchinplace}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$img, int omin, int omax, int nmin, int nmax)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_ab4c203d4acefe04c57916f951d4caaac}{Draw\+Set}} (\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$img, \mbox{\hyperlink{namespacegft_a00890b71e66ba53e434a9e49abfa6455}{s\+Set}} $\ast$S, int value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Image32_add76ffd810337e095fa7ee9dbe745e7a}\label{namespacegft_1_1Image32_add76ffd810337e095fa7ee9dbe745e7a}} 
+\index{gft::Image32@{gft::Image32}!Add@{Add}}
+\index{Add@{Add}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Adds a constant to all pixels in the image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ac593c71fdf3bec07a8bbc69ef8c8df37}\label{namespacegft_1_1Image32_ac593c71fdf3bec07a8bbc69ef8c8df37}} 
+\index{gft::Image32@{gft::Image32}!Add@{Add}}
+\index{Add@{Add}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum of two images pixel by pixel. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_acae9f94ad60e9579efe5e8c3fe6c06fd}\label{namespacegft_1_1Image32_acae9f94ad60e9579efe5e8c3fe6c06fd}} 
+\index{gft::Image32@{gft::Image32}!AddFrame@{AddFrame}}
+\index{AddFrame@{AddFrame}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AddFrame()}{AddFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Add\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{sz,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Adds a frame around an image, with the provided width and fill value. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a86e5f27f176f2828bfabd7bf78343445}\label{namespacegft_1_1Image32_a86e5f27f176f2828bfabd7bf78343445}} 
+\index{gft::Image32@{gft::Image32}!AreaClosing@{AreaClosing}}
+\index{AreaClosing@{AreaClosing}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AreaClosing()}{AreaClosing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Area\+Closing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{I,  }\item[{int}]{T }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ac70e038a7c34f871e3322292e2cb27dc}\label{namespacegft_1_1Image32_ac70e038a7c34f871e3322292e2cb27dc}} 
+\index{gft::Image32@{gft::Image32}!AssessFN@{AssessFN}}
+\index{AssessFN@{AssessFN}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AssessFN()}{AssessFN()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Assess\+FN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab72839e5b5223313ffbc346cf0b253d9}\label{namespacegft_1_1Image32_ab72839e5b5223313ffbc346cf0b253d9}} 
+\index{gft::Image32@{gft::Image32}!AssessFP@{AssessFP}}
+\index{AssessFP@{AssessFP}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AssessFP()}{AssessFP()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Assess\+FP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab2f1e801ed25bc7d767a035d47edcccc}\label{namespacegft_1_1Image32_ab2f1e801ed25bc7d767a035d47edcccc}} 
+\index{gft::Image32@{gft::Image32}!AssessTN@{AssessTN}}
+\index{AssessTN@{AssessTN}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AssessTN()}{AssessTN()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Assess\+TN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a3e814c25e35d6002c2170c04ba0f89d3}\label{namespacegft_1_1Image32_a3e814c25e35d6002c2170c04ba0f89d3}} 
+\index{gft::Image32@{gft::Image32}!AssessTP@{AssessTP}}
+\index{AssessTP@{AssessTP}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{AssessTP()}{AssessTP()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Assess\+TP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a8a3d60b365cde7309cc711c9c30bb640}\label{namespacegft_1_1Image32_a8a3d60b365cde7309cc711c9c30bb640}} 
+\index{gft::Image32@{gft::Image32}!BkgMaskByErosion@{BkgMaskByErosion}}
+\index{BkgMaskByErosion@{BkgMaskByErosion}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{BkgMaskByErosion()}{BkgMaskByErosion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Bkg\+Mask\+By\+Erosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ae25a2923372fc39f164bd00f10c3fb83}\label{namespacegft_1_1Image32_ae25a2923372fc39f164bd00f10c3fb83}} 
+\index{gft::Image32@{gft::Image32}!BoundaryError@{BoundaryError}}
+\index{BoundaryError@{BoundaryError}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{BoundaryError()}{BoundaryError()}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Boundary\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a8d09dbd37327a67c04e1d81911d65ef1}\label{namespacegft_1_1Image32_a8d09dbd37327a67c04e1d81911d65ef1}} 
+\index{gft::Image32@{gft::Image32}!BoundaryFN@{BoundaryFN}}
+\index{BoundaryFN@{BoundaryFN}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{BoundaryFN()}{BoundaryFN()}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Boundary\+FN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a1df4d49917e7a014e253d01258f88a90}\label{namespacegft_1_1Image32_a1df4d49917e7a014e253d01258f88a90}} 
+\index{gft::Image32@{gft::Image32}!BoundaryFP@{BoundaryFP}}
+\index{BoundaryFP@{BoundaryFP}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{BoundaryFP()}{BoundaryFP()}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Boundary\+FP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a7a04776ddad089ced8c99895662858a5}\label{namespacegft_1_1Image32_a7a04776ddad089ced8c99895662858a5}} 
+\index{gft::Image32@{gft::Image32}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a41b934360de4b1311e66209bcaff19f6}\label{namespacegft_1_1Image32_a41b934360de4b1311e66209bcaff19f6}} 
+\index{gft::Image32@{gft::Image32}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}}}]{l,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}}}]{h }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa6c31e7e98c4d5eafcd2b9cd74382d7c}\label{namespacegft_1_1Image32_aa6c31e7e98c4d5eafcd2b9cd74382d7c}} 
+\index{gft::Image32@{gft::Image32}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_acc8529a7dd5516c2415d61441af7d16b}{s\+Image32f}} $\ast$}]{img,  }\item[{float}]{multiplier }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_adc3e20cfca1511959903dcaee79ea528}\label{namespacegft_1_1Image32_adc3e20cfca1511959903dcaee79ea528}} 
+\index{gft::Image32@{gft::Image32}!CloseHoles@{CloseHoles}}
+\index{CloseHoles@{CloseHoles}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{CloseHoles()}{CloseHoles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Close\+Holes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a0eadab27d946867a4d256cd470193422}\label{namespacegft_1_1Image32_a0eadab27d946867a4d256cd470193422}} 
+\index{gft::Image32@{gft::Image32}!Complement@{Complement}}
+\index{Complement@{Complement}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Complement()}{Complement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Complement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+Calculates the image complement by inverting its values (white becomes black, black becomes white). 
+
+In the complement of a grayscale image, each pixel value is subtracted from the maximum pixel value. The difference is used as the pixel value in the output image. In the output image, dark areas become lighter and light areas become darker. \mbox{\Hypertarget{namespacegft_1_1Image32_ae296ee7fa5602a6ce8061fda6c014f43}\label{namespacegft_1_1Image32_ae296ee7fa5602a6ce8061fda6c014f43}} 
+\index{gft::Image32@{gft::Image32}!ConvertToNbits@{ConvertToNbits}}
+\index{ConvertToNbits@{ConvertToNbits}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ConvertToNbits()}{ConvertToNbits()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Convert\+To\+Nbits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Changes the amount of gray levels in the image to a given bit depth. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ad3509ebd24893190be3a9f87bc895ec1}\label{namespacegft_1_1Image32_ad3509ebd24893190be3a9f87bc895ec1}} 
+\index{gft::Image32@{gft::Image32}!ConvertToNbits@{ConvertToNbits}}
+\index{ConvertToNbits@{ConvertToNbits}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ConvertToNbits()}{ConvertToNbits()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Convert\+To\+Nbits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{N,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{Imin }\end{DoxyParamCaption})}
+
+
+
+Changes the amount of gray levels in the image to a given bit depth. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a5a6881e0e95077b225a4e6e460fb0305}\label{namespacegft_1_1Image32_a5a6881e0e95077b225a4e6e460fb0305}} 
+\index{gft::Image32@{gft::Image32}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{dest,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+Copies the contents of one image to another destination image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a608699b88fb365f124c1988e4e37f702}\label{namespacegft_1_1Image32_a608699b88fb365f124c1988e4e37f702}} 
+\index{gft::Image32@{gft::Image32}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{sub,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Copies the contents of one image to another destination image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a0f42ef89bf7603f57d0e7b2d9b717927}\label{namespacegft_1_1Image32_a0f42ef89bf7603f57d0e7b2d9b717927}} 
+\index{gft::Image32@{gft::Image32}!Copy@{Copy}}
+\index{Copy@{Copy}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{sub,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}}}]{l,  }\item[{int}]{bkg }\end{DoxyParamCaption})}
+
+
+
+Copies the contents of one image to another destination image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a3e30c49af613f0b34786a122f6eb3322}\label{namespacegft_1_1Image32_a3e30c49af613f0b34786a122f6eb3322}} 
+\index{gft::Image32@{gft::Image32}!Create@{Create}}
+\index{Create@{Create}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{ncols,  }\item[{int}]{nrows }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ae1137603e96a4154fc5bc55197b7593f}\label{namespacegft_1_1Image32_ae1137603e96a4154fc5bc55197b7593f}} 
+\index{gft::Image32@{gft::Image32}!Create@{Create}}
+\index{Create@{Create}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+A constructor using img as a template. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a87ebb9b3ee419fab1d4165662d44459c}\label{namespacegft_1_1Image32_a87ebb9b3ee419fab1d4165662d44459c}} 
+\index{gft::Image32@{gft::Image32}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$$\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a3ff6f03b9597a7bd1d746f6518b75231}\label{namespacegft_1_1Image32_a3ff6f03b9597a7bd1d746f6518b75231}} 
+\index{gft::Image32@{gft::Image32}!DiceSimilarity@{DiceSimilarity}}
+\index{DiceSimilarity@{DiceSimilarity}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DiceSimilarity()}{DiceSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Dice\+Similarity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_abe4b982689b311c1f436ee5f2608433c}\label{namespacegft_1_1Image32_abe4b982689b311c1f436ee5f2608433c}} 
+\index{gft::Image32@{gft::Image32}!DiceSimilarity@{DiceSimilarity}}
+\index{DiceSimilarity@{DiceSimilarity}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DiceSimilarity()}{DiceSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Dice\+Similarity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{trimap,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask,  }\item[{int}]{ignoredval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab7f6dd02fd1663da2f2371c6303d20bc}\label{namespacegft_1_1Image32_ab7f6dd02fd1663da2f2371c6303d20bc}} 
+\index{gft::Image32@{gft::Image32}!Dilate@{Dilate}}
+\index{Dilate@{Dilate}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Dilate()}{Dilate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Dilate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a5da40380457af242e5e73cba9bd30c99}\label{namespacegft_1_1Image32_a5da40380457af242e5e73cba9bd30c99}} 
+\index{gft::Image32@{gft::Image32}!DrawAdjRel@{DrawAdjRel}}
+\index{DrawAdjRel@{DrawAdjRel}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawAdjRel()}{DrawAdjRel()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Adj\+Rel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{int}]{p,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a65dd33f213979a13d8d401cb19431b2c}\label{namespacegft_1_1Image32_a65dd33f213979a13d8d401cb19431b2c}} 
+\index{gft::Image32@{gft::Image32}!DrawArrow@{DrawArrow}}
+\index{DrawArrow@{DrawArrow}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawArrow()}{DrawArrow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{A,  }\item[{int}]{B,  }\item[{float}]{r,  }\item[{float}]{w,  }\item[{float}]{h,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a1612f4df07592e1f68a29efd13eef196}\label{namespacegft_1_1Image32_a1612f4df07592e1f68a29efd13eef196}} 
+\index{gft::Image32@{gft::Image32}!DrawArrow@{DrawArrow}}
+\index{DrawArrow@{DrawArrow}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawArrow()}{DrawArrow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Arrow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{xA,  }\item[{int}]{yA,  }\item[{int}]{xB,  }\item[{int}]{yB,  }\item[{float}]{r,  }\item[{float}]{w,  }\item[{float}]{h,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa9ed385e226188a95773de0e50e67275}\label{namespacegft_1_1Image32_aa9ed385e226188a95773de0e50e67275}} 
+\index{gft::Image32@{gft::Image32}!DrawCircle@{DrawCircle}}
+\index{DrawCircle@{DrawCircle}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawCircle()}{DrawCircle()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{float}]{r,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aaf52ac598d29dc41d419da5c63830649}\label{namespacegft_1_1Image32_aaf52ac598d29dc41d419da5c63830649}} 
+\index{gft::Image32@{gft::Image32}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{A,  }\item[{int}]{B,  }\item[{float}]{r,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a9c52dfc25ae90e3b229f95a7e6286050}\label{namespacegft_1_1Image32_a9c52dfc25ae90e3b229f95a7e6286050}} 
+\index{gft::Image32@{gft::Image32}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{xA,  }\item[{int}]{yA,  }\item[{int}]{xB,  }\item[{int}]{yB,  }\item[{float}]{r,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab24fdb34396b4a5aa12e5007b4ebf257}\label{namespacegft_1_1Image32_ab24fdb34396b4a5aa12e5007b4ebf257}} 
+\index{gft::Image32@{gft::Image32}!DrawLineDDA@{DrawLineDDA}}
+\index{DrawLineDDA@{DrawLineDDA}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawLineDDA()}{DrawLineDDA()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Line\+D\+DA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{xn,  }\item[{int}]{yn,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aadca434e44e44d100adc472875785eb7}\label{namespacegft_1_1Image32_aadca434e44e44d100adc472875785eb7}} 
+\index{gft::Image32@{gft::Image32}!DrawRectangle@{DrawRectangle}}
+\index{DrawRectangle@{DrawRectangle}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawRectangle()}{DrawRectangle()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab4c203d4acefe04c57916f951d4caaac}\label{namespacegft_1_1Image32_ab4c203d4acefe04c57916f951d4caaac}} 
+\index{gft::Image32@{gft::Image32}!DrawSet@{DrawSet}}
+\index{DrawSet@{DrawSet}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawSet()}{DrawSet()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a00890b71e66ba53e434a9e49abfa6455}{s\+Set}} $\ast$}]{S,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a3fb600b76673c7a6228c932bc79ef223}\label{namespacegft_1_1Image32_a3fb600b76673c7a6228c932bc79ef223}} 
+\index{gft::Image32@{gft::Image32}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{A,  }\item[{int}]{B,  }\item[{int}]{C,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aec3205858a118e0b3ba39c33df6422bf}\label{namespacegft_1_1Image32_aec3205858a118e0b3ba39c33df6422bf}} 
+\index{gft::Image32@{gft::Image32}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{xA,  }\item[{int}]{yA,  }\item[{int}]{xB,  }\item[{int}]{yB,  }\item[{int}]{xC,  }\item[{int}]{yC,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa094ab1ffd7b092c9790df7ca316e97c}\label{namespacegft_1_1Image32_aa094ab1ffd7b092c9790df7ca316e97c}} 
+\index{gft::Image32@{gft::Image32}!Erode@{Erode}}
+\index{Erode@{Erode}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Erode()}{Erode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Erode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ae1a7b06b5137f448799d7f01bd13d9e7}\label{namespacegft_1_1Image32_ae1a7b06b5137f448799d7f01bd13d9e7}} 
+\index{gft::Image32@{gft::Image32}!ErodeBin@{ErodeBin}}
+\index{ErodeBin@{ErodeBin}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ErodeBin()}{ErodeBin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Erode\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{\mbox{\hyperlink{namespacegft_a00890b71e66ba53e434a9e49abfa6455}{s\+Set}} $\ast$$\ast$}]{seed,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a19f097eb52802b3c8bebe6a8519cf7dd}\label{namespacegft_1_1Image32_a19f097eb52802b3c8bebe6a8519cf7dd}} 
+\index{gft::Image32@{gft::Image32}!ErrorRateWithinBoundingBox@{ErrorRateWithinBoundingBox}}
+\index{ErrorRateWithinBoundingBox@{ErrorRateWithinBoundingBox}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ErrorRateWithinBoundingBox()}{ErrorRateWithinBoundingBox()}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Error\+Rate\+Within\+Bounding\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{trimap,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask,  }\item[{int}]{ignoredval,  }\item[{int}]{xmin,  }\item[{int}]{ymin,  }\item[{int}]{xmax,  }\item[{int}]{ymax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ad626aef7b6841225696c5f41a68f9dd3}\label{namespacegft_1_1Image32_ad626aef7b6841225696c5f41a68f9dd3}} 
+\index{gft::Image32@{gft::Image32}!Find\_@{Find\_}}
+\index{Find\_@{Find\_}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Find\_()}{Find\_()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Find\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{R,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_add7a3f5b403897a8a2b449cc0b1740eb}\label{namespacegft_1_1Image32_add7a3f5b403897a8a2b449cc0b1740eb}} 
+\index{gft::Image32@{gft::Image32}!FloodFill@{FloodFill}}
+\index{FloodFill@{FloodFill}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{FloodFill()}{FloodFill()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Flood\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{int}]{P,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ae79ae16b13b16d7bc7a75ffe4b9166ef}\label{namespacegft_1_1Image32_ae79ae16b13b16d7bc7a75ffe4b9166ef}} 
+\index{gft::Image32@{gft::Image32}!FuzzyJaccardSimilarity@{FuzzyJaccardSimilarity}}
+\index{FuzzyJaccardSimilarity@{FuzzyJaccardSimilarity}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{FuzzyJaccardSimilarity()}{FuzzyJaccardSimilarity()}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Fuzzy\+Jaccard\+Similarity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{prob1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{prob2,  }\item[{int}]{Pmax1,  }\item[{int}]{Pmax2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a0ce09a4bf5acf4bdca94277b7738e347}\label{namespacegft_1_1Image32_a0ce09a4bf5acf4bdca94277b7738e347}} 
+\index{gft::Image32@{gft::Image32}!GaussianBlur@{GaussianBlur}}
+\index{GaussianBlur@{GaussianBlur}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GaussianBlur()}{GaussianBlur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Gaussian\+Blur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a209c75fe90f449f23b51ac294afd6615}\label{namespacegft_1_1Image32_a209c75fe90f449f23b51ac294afd6615}} 
+\index{gft::Image32@{gft::Image32}!GaussianBlur@{GaussianBlur}}
+\index{GaussianBlur@{GaussianBlur}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GaussianBlur()}{GaussianBlur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Gaussian\+Blur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{stddev }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a7bbf087bdf414fb9681bf07747031592}\label{namespacegft_1_1Image32_a7bbf087bdf414fb9681bf07747031592}} 
+\index{gft::Image32@{gft::Image32}!GeneralBalancedJaccard@{GeneralBalancedJaccard}}
+\index{GeneralBalancedJaccard@{GeneralBalancedJaccard}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GeneralBalancedJaccard()}{GeneralBalancedJaccard()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+General\+Balanced\+Jaccard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa33d8912aba238ee6e1f662a4511f625}\label{namespacegft_1_1Image32_aa33d8912aba238ee6e1f662a4511f625}} 
+\index{gft::Image32@{gft::Image32}!GeneralBalancedJaccard@{GeneralBalancedJaccard}}
+\index{GeneralBalancedJaccard@{GeneralBalancedJaccard}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GeneralBalancedJaccard()}{GeneralBalancedJaccard()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+General\+Balanced\+Jaccard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{trimap,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask,  }\item[{int}]{ignoredval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a6becb60d37ad5b5b89c88bf856588db1}\label{namespacegft_1_1Image32_a6becb60d37ad5b5b89c88bf856588db1}} 
+\index{gft::Image32@{gft::Image32}!GetBkgError@{GetBkgError}}
+\index{GetBkgError@{GetBkgError}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetBkgError()}{GetBkgError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Bkg\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{gtruth,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ae17852d0baeed93f78e1ce2b7d73d887}\label{namespacegft_1_1Image32_ae17852d0baeed93f78e1ce2b7d73d887}} 
+\index{gft::Image32@{gft::Image32}!GetBorders@{GetBorders}}
+\index{GetBorders@{GetBorders}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetBorders()}{GetBorders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a1e5160b857c817efdce5a3c00932d087}\label{namespacegft_1_1Image32_a1e5160b857c817efdce5a3c00932d087}} 
+\index{gft::Image32@{gft::Image32}!GetFreqVal@{GetFreqVal}}
+\index{GetFreqVal@{GetFreqVal}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetFreqVal()}{GetFreqVal()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Get\+Freq\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Returns the number of occurrences (frequency) of a given value in an image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aba7b1c4f9357d4b503b2c12e5bc5dfc6}\label{namespacegft_1_1Image32_aba7b1c4f9357d4b503b2c12e5bc5dfc6}} 
+\index{gft::Image32@{gft::Image32}!GetMarkers@{GetMarkers}}
+\index{GetMarkers@{GetMarkers}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetMarkers()}{GetMarkers()}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+Image32\+::\+Get\+Markers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{label,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a776235bcfe55405d2fd91ea917103fb3}\label{namespacegft_1_1Image32_a776235bcfe55405d2fd91ea917103fb3}} 
+\index{gft::Image32@{gft::Image32}!GetMaxVal@{GetMaxVal}}
+\index{GetMaxVal@{GetMaxVal}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetMaxVal()}{GetMaxVal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Get\+Max\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+Returns the maximum pixel value present in a given image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ad72bd381f729093830bbff9b56a68ca2}\label{namespacegft_1_1Image32_ad72bd381f729093830bbff9b56a68ca2}} 
+\index{gft::Image32@{gft::Image32}!GetMaxVal@{GetMaxVal}}
+\index{GetMaxVal@{GetMaxVal}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetMaxVal()}{GetMaxVal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Get\+Max\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{ignoredvalue }\end{DoxyParamCaption})}
+
+
+
+Returns the maximum pixel value present in a given image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a77b0c58086a9723d1a2ff627a3a167be}\label{namespacegft_1_1Image32_a77b0c58086a9723d1a2ff627a3a167be}} 
+\index{gft::Image32@{gft::Image32}!GetMinVal@{GetMinVal}}
+\index{GetMinVal@{GetMinVal}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetMinVal()}{GetMinVal()}}
+{\footnotesize\ttfamily int gft\+::\+Image32\+::\+Get\+Min\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+Returns the minimum pixel value present in a given image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ac76c0c0a4c42c3c5c113dd4d67ee66e1}\label{namespacegft_1_1Image32_ac76c0c0a4c42c3c5c113dd4d67ee66e1}} 
+\index{gft::Image32@{gft::Image32}!GetObjBorder@{GetObjBorder}}
+\index{GetObjBorder@{GetObjBorder}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetObjBorder()}{GetObjBorder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Obj\+Border (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a09b3ea905143569dcd317f62b7d9a463}\label{namespacegft_1_1Image32_a09b3ea905143569dcd317f62b7d9a463}} 
+\index{gft::Image32@{gft::Image32}!GetObjBorders@{GetObjBorders}}
+\index{GetObjBorders@{GetObjBorders}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetObjBorders()}{GetObjBorders()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Obj\+Borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a65aadf627323e8f2779cdfc3cc0ed141}\label{namespacegft_1_1Image32_a65aadf627323e8f2779cdfc3cc0ed141}} 
+\index{gft::Image32@{gft::Image32}!GetObjBorders@{GetObjBorders}}
+\index{GetObjBorders@{GetObjBorders}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetObjBorders()}{GetObjBorders()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Obj\+Borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}}}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab5656db728cf4b0430acdc6fba984d2b}\label{namespacegft_1_1Image32_ab5656db728cf4b0430acdc6fba984d2b}} 
+\index{gft::Image32@{gft::Image32}!GetObjError@{GetObjError}}
+\index{GetObjError@{GetObjError}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{GetObjError()}{GetObjError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Get\+Obj\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{gtruth,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a2313859308c366401ef0889a38350e99}\label{namespacegft_1_1Image32_a2313859308c366401ef0889a38350e99}} 
+\index{gft::Image32@{gft::Image32}!Histogram@{Histogram}}
+\index{Histogram@{Histogram}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Histogram()}{Histogram()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ gft\+::\+Image32\+::\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a23d8551bf1f400b10e22fae959ce48ff}\label{namespacegft_1_1Image32_a23d8551bf1f400b10e22fae959ce48ff}} 
+\index{gft::Image32@{gft::Image32}!ImageMagnitude@{ImageMagnitude}}
+\index{ImageMagnitude@{ImageMagnitude}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ImageMagnitude()}{ImageMagnitude()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Image\+Magnitude (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{imgx,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{imgy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a8cb81b9ed11e79dc3bdc0504fa0cc3ca}\label{namespacegft_1_1Image32_a8cb81b9ed11e79dc3bdc0504fa0cc3ca}} 
+\index{gft::Image32@{gft::Image32}!IsValidPixel@{IsValidPixel}}
+\index{IsValidPixel@{IsValidPixel}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{IsValidPixel()}{IsValidPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Image32\+::\+Is\+Valid\+Pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Tests whether a pixel is valid for a given image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa2f9f3fefa7ae2605f5b9436e0f2f876}\label{namespacegft_1_1Image32_aa2f9f3fefa7ae2605f5b9436e0f2f876}} 
+\index{gft::Image32@{gft::Image32}!JaccardSimilarity@{JaccardSimilarity}}
+\index{JaccardSimilarity@{JaccardSimilarity}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{JaccardSimilarity()}{JaccardSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Jaccard\+Similarity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a8ccb207dc8b4973f59ae4fbcc57dcdaf}\label{namespacegft_1_1Image32_a8ccb207dc8b4973f59ae4fbcc57dcdaf}} 
+\index{gft::Image32@{gft::Image32}!JaccardSimilarity@{JaccardSimilarity}}
+\index{JaccardSimilarity@{JaccardSimilarity}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{JaccardSimilarity()}{JaccardSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double gft\+::\+Image32\+::\+Jaccard\+Similarity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{trimap,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask,  }\item[{int}]{ignoredval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a99acc7c23d972f018ce5d4fa81bf2eb6}\label{namespacegft_1_1Image32_a99acc7c23d972f018ce5d4fa81bf2eb6}} 
+\index{gft::Image32@{gft::Image32}!LabelBinComp@{LabelBinComp}}
+\index{LabelBinComp@{LabelBinComp}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LabelBinComp()}{LabelBinComp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Label\+Bin\+Comp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a1f1b15f8f465c40804f907b3f9b3ab28}\label{namespacegft_1_1Image32_a1f1b15f8f465c40804f907b3f9b3ab28}} 
+\index{gft::Image32@{gft::Image32}!LabelContour@{LabelContour}}
+\index{LabelContour@{LabelContour}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LabelContour()}{LabelContour()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Label\+Contour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ad5dc05f30fd601d8e9a9b93559fe6f87}\label{namespacegft_1_1Image32_ad5dc05f30fd601d8e9a9b93559fe6f87}} 
+\index{gft::Image32@{gft::Image32}!LabelContour@{LabelContour}}
+\index{LabelContour@{LabelContour}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LabelContour()}{LabelContour()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Label\+Contour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{contourid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a5fb5dbe2dd3176ea7385a00bb89b4810}\label{namespacegft_1_1Image32_a5fb5dbe2dd3176ea7385a00bb89b4810}} 
+\index{gft::Image32@{gft::Image32}!LinearFilter@{LinearFilter}}
+\index{LinearFilter@{LinearFilter}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LinearFilter()}{LinearFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Linear\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a625dc146d072a741a89dace6062478ec}{s\+Kernel}} $\ast$}]{K }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab2adf803342c71052f58c59c8b6e4b86}\label{namespacegft_1_1Image32_ab2adf803342c71052f58c59c8b6e4b86}} 
+\index{gft::Image32@{gft::Image32}!LinearStretch@{LinearStretch}}
+\index{LinearStretch@{LinearStretch}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LinearStretch()}{LinearStretch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Linear\+Stretch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{omin,  }\item[{int}]{omax,  }\item[{int}]{nmin,  }\item[{int}]{nmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_afbed4a17020c6d24d8e84f01ff3cc032}\label{namespacegft_1_1Image32_afbed4a17020c6d24d8e84f01ff3cc032}} 
+\index{gft::Image32@{gft::Image32}!LinearStretchinplace@{LinearStretchinplace}}
+\index{LinearStretchinplace@{LinearStretchinplace}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{LinearStretchinplace()}{LinearStretchinplace()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Linear\+Stretchinplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$}]{img,  }\item[{int}]{omin,  }\item[{int}]{omax,  }\item[{int}]{nmin,  }\item[{int}]{nmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a6f01046e6fa7f81c31f81ff9d8e745ab}\label{namespacegft_1_1Image32_a6f01046e6fa7f81c31f81ff9d8e745ab}} 
+\index{gft::Image32@{gft::Image32}!Mask2EDT@{Mask2EDT}}
+\index{Mask2EDT@{Mask2EDT}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Mask2EDT()}{Mask2EDT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Mask2\+E\+DT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{char}]{side,  }\item[{int}]{limit,  }\item[{char}]{sign }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a69c19a7db3678973af57b16f4a8f85bf}\label{namespacegft_1_1Image32_a69c19a7db3678973af57b16f4a8f85bf}} 
+\index{gft::Image32@{gft::Image32}!Mask2EDT@{Mask2EDT}}
+\index{Mask2EDT@{Mask2EDT}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Mask2EDT()}{Mask2EDT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Mask2\+E\+DT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{char}]{side,  }\item[{int}]{limit,  }\item[{char}]{sign,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{cost,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a2c01dd9d17b55e1b936273075ae8ff3f}\label{namespacegft_1_1Image32_a2c01dd9d17b55e1b936273075ae8ff3f}} 
+\index{gft::Image32@{gft::Image32}!MaxBkgRadiusByErosion@{MaxBkgRadiusByErosion}}
+\index{MaxBkgRadiusByErosion@{MaxBkgRadiusByErosion}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MaxBkgRadiusByErosion()}{MaxBkgRadiusByErosion()}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Max\+Bkg\+Radius\+By\+Erosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a37c736619fe7cbfa762f52a6e36ea95c}\label{namespacegft_1_1Image32_a37c736619fe7cbfa762f52a6e36ea95c}} 
+\index{gft::Image32@{gft::Image32}!MaxObjRadiusByErosion@{MaxObjRadiusByErosion}}
+\index{MaxObjRadiusByErosion@{MaxObjRadiusByErosion}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MaxObjRadiusByErosion()}{MaxObjRadiusByErosion()}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Max\+Obj\+Radius\+By\+Erosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ade12542ae975b928587d22c3bb2d451b}\label{namespacegft_1_1Image32_ade12542ae975b928587d22c3bb2d451b}} 
+\index{gft::Image32@{gft::Image32}!MaxRadiusByErosion@{MaxRadiusByErosion}}
+\index{MaxRadiusByErosion@{MaxRadiusByErosion}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MaxRadiusByErosion()}{MaxRadiusByErosion()}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Max\+Radius\+By\+Erosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa056f8674f210339a3619b1639a582ae}\label{namespacegft_1_1Image32_aa056f8674f210339a3619b1639a582ae}} 
+\index{gft::Image32@{gft::Image32}!MBB@{MBB}}
+\index{MBB@{MBB}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MBB()}{MBB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+M\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+Returns a subimage by clipping the minimum bounding box with non-\/zero values. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a6034f82177017e5e3931843dc59c4898}\label{namespacegft_1_1Image32_a6034f82177017e5e3931843dc59c4898}} 
+\index{gft::Image32@{gft::Image32}!MBB@{MBB}}
+\index{MBB@{MBB}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MBB()}{MBB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+M\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} $\ast$}]{l,  }\item[{\mbox{\hyperlink{namespacegft_a363dd1a85fcf4771e356fd7834dc7b97}{Pixel}} $\ast$}]{h }\end{DoxyParamCaption})}
+
+
+
+Calculates the minimum bounding box with non-\/zero values. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a905bc6c5f8e8efe390e0b8c52895de6d}\label{namespacegft_1_1Image32_a905bc6c5f8e8efe390e0b8c52895de6d}} 
+\index{gft::Image32@{gft::Image32}!MedianFilter@{MedianFilter}}
+\index{MedianFilter@{MedianFilter}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MedianFilter()}{MedianFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Median\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a84dfa7834ba1664594ec79903ccc7de5}\label{namespacegft_1_1Image32_a84dfa7834ba1664594ec79903ccc7de5}} 
+\index{gft::Image32@{gft::Image32}!ModeFilterLabel@{ModeFilterLabel}}
+\index{ModeFilterLabel@{ModeFilterLabel}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ModeFilterLabel()}{ModeFilterLabel()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Mode\+Filter\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{label,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa910e6ec96a5f014364a698f164eb74e}\label{namespacegft_1_1Image32_aa910e6ec96a5f014364a698f164eb74e}} 
+\index{gft::Image32@{gft::Image32}!MorphGrad@{MorphGrad}}
+\index{MorphGrad@{MorphGrad}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{MorphGrad()}{MorphGrad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Morph\+Grad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ad27c7af9e9de67115679fdbb3e2b5618}\label{namespacegft_1_1Image32_ad27c7af9e9de67115679fdbb3e2b5618}} 
+\index{gft::Image32@{gft::Image32}!Mult@{Mult}}
+\index{Mult@{Mult}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Mult()}{Mult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img1,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the product of two images pixel by pixel. 
+
+Gives an image in which each pixel is the product of the corresponding pixels in img1 and img2. \mbox{\Hypertarget{namespacegft_1_1Image32_a1baad59f395f06c15175150738e744eb}\label{namespacegft_1_1Image32_a1baad59f395f06c15175150738e744eb}} 
+\index{gft::Image32@{gft::Image32}!Multiscaleskeletons@{Multiscaleskeletons}}
+\index{Multiscaleskeletons@{Multiscaleskeletons}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Multiscaleskeletons()}{Multiscaleskeletons()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Multiscaleskeletons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a2a351608b0d91119ef90d3870aa73d50}\label{namespacegft_1_1Image32_a2a351608b0d91119ef90d3870aa73d50}} 
+\index{gft::Image32@{gft::Image32}!NormalizeHistogram@{NormalizeHistogram}}
+\index{NormalizeHistogram@{NormalizeHistogram}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{NormalizeHistogram()}{NormalizeHistogram()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ gft\+::\+Image32\+::\+Normalize\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$}]{hist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a3399ec6e87047892958f0ce67eff250a}\label{namespacegft_1_1Image32_a3399ec6e87047892958f0ce67eff250a}} 
+\index{gft::Image32@{gft::Image32}!NormHistogram@{NormHistogram}}
+\index{NormHistogram@{NormHistogram}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{NormHistogram()}{NormHistogram()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ gft\+::\+Image32\+::\+Norm\+Histogram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ab5cec6197533f3d980bb7515afa34f7c}\label{namespacegft_1_1Image32_ab5cec6197533f3d980bb7515afa34f7c}} 
+\index{gft::Image32@{gft::Image32}!ObjMaskByErosion@{ObjMaskByErosion}}
+\index{ObjMaskByErosion@{ObjMaskByErosion}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{ObjMaskByErosion()}{ObjMaskByErosion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Obj\+Mask\+By\+Erosion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aea68ff757fda59d6f3cfd3ae75ae9d58}\label{namespacegft_1_1Image32_aea68ff757fda59d6f3cfd3ae75ae9d58}} 
+\index{gft::Image32@{gft::Image32}!PerimeterLength@{PerimeterLength}}
+\index{PerimeterLength@{PerimeterLength}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{PerimeterLength()}{PerimeterLength()}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Perimeter\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{bin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a4540b906bf15c283d116a9c52a8518c3}\label{namespacegft_1_1Image32_a4540b906bf15c283d116a9c52a8518c3}} 
+\index{gft::Image32@{gft::Image32}!Read@{Read}}
+\index{Read@{Read}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Reads an image from a file on the disc in P\+GM format. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a82d122c0a46549b8f7d8cd6db0038912}\label{namespacegft_1_1Image32_a82d122c0a46549b8f7d8cd6db0038912}} 
+\index{gft::Image32@{gft::Image32}!RegMin@{RegMin}}
+\index{RegMin@{RegMin}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{RegMin()}{RegMin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Reg\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a73571c8f1576d6572427d248827f2ec5}\label{namespacegft_1_1Image32_a73571c8f1576d6572427d248827f2ec5}} 
+\index{gft::Image32@{gft::Image32}!RemFrame@{RemFrame}}
+\index{RemFrame@{RemFrame}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{RemFrame()}{RemFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Rem\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{fimg,  }\item[{int}]{sz }\end{DoxyParamCaption})}
+
+
+
+Removes the frame around an image with the given width. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a6de9249cf0c0c52bd73da7a558f09001}\label{namespacegft_1_1Image32_a6de9249cf0c0c52bd73da7a558f09001}} 
+\index{gft::Image32@{gft::Image32}!RemoveEmptyBins@{RemoveEmptyBins}}
+\index{RemoveEmptyBins@{RemoveEmptyBins}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{RemoveEmptyBins()}{RemoveEmptyBins()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$ gft\+::\+Image32\+::\+Remove\+Empty\+Bins (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a9c087573215425f84746bab4dc7d7298}{s\+Curve}} $\ast$}]{hist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a44aa5c2791dcebd2486c3cdb1f130437}\label{namespacegft_1_1Image32_a44aa5c2791dcebd2486c3cdb1f130437}} 
+\index{gft::Image32@{gft::Image32}!Render@{Render}}
+\index{Render@{Render}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_af7d50fc8040c346f9e280023202a1169}\label{namespacegft_1_1Image32_af7d50fc8040c346f9e280023202a1169}} 
+\index{gft::Image32@{gft::Image32}!Scale@{Scale}}
+\index{Scale@{Scale}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{Sx,  }\item[{float}]{Sy,  }\item[{\mbox{\hyperlink{namespacegft_a40f730d6f0e9e581acf4ee3e1d6fdef7}{Interpolation\+Type}}}]{interpolation }\end{DoxyParamCaption})}
+
+
+
+Resizes the image by the horizontal and vertical factors and interpolation method provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sx} & The horizontal resize factor. \\
+\hline
+{\em Sy} & The vertical resize factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacegft_1_1Image32_a02a2d715cea3ea5c4bfb4e9df5682e22}\label{namespacegft_1_1Image32_a02a2d715cea3ea5c4bfb4e9df5682e22}} 
+\index{gft::Image32@{gft::Image32}!Scale\_linear@{Scale\_linear}}
+\index{Scale\_linear@{Scale\_linear}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Scale\_linear()}{Scale\_linear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}}$\ast$ gft\+::\+Image32\+::\+Scale\+\_\+linear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{Sx,  }\item[{float}]{Sy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a6a72b06fda04a97ec8e463bb5f23c076}\label{namespacegft_1_1Image32_a6a72b06fda04a97ec8e463bb5f23c076}} 
+\index{gft::Image32@{gft::Image32}!Scale\_none@{Scale\_none}}
+\index{Scale\_none@{Scale\_none}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Scale\_none()}{Scale\_none()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}}$\ast$ gft\+::\+Image32\+::\+Scale\+\_\+none (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{Sx,  }\item[{float}]{Sy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a73a3532b0983f945d131ea464058b08a}\label{namespacegft_1_1Image32_a73a3532b0983f945d131ea464058b08a}} 
+\index{gft::Image32@{gft::Image32}!Set@{Set}}
+\index{Set@{Set}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{old\+\_\+value,  }\item[{int}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Replaces a given image value with a new value. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a27741dc4e0e4b363dae39f1963027710}\label{namespacegft_1_1Image32_a27741dc4e0e4b363dae39f1963027710}} 
+\index{gft::Image32@{gft::Image32}!Set@{Set}}
+\index{Set@{Set}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Fills an image with a given value. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a7c5b851b251d04b9167cce983562140a}\label{namespacegft_1_1Image32_a7c5b851b251d04b9167cce983562140a}} 
+\index{gft::Image32@{gft::Image32}!Sharpness@{Sharpness}}
+\index{Sharpness@{Sharpness}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Sharpness()}{Sharpness()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Sharpness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{prob,  }\item[{int}]{Pmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ac70a825ed7409b0439e0e3ac01a6881d}\label{namespacegft_1_1Image32_ac70a825ed7409b0439e0e3ac01a6881d}} 
+\index{gft::Image32@{gft::Image32}!Sharpness@{Sharpness}}
+\index{Sharpness@{Sharpness}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Sharpness()}{Sharpness()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Image32\+::\+Sharpness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{prob,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{mask,  }\item[{int}]{Pmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a1e3d767a6a08a3ba21a651fbae3abf58}\label{namespacegft_1_1Image32_a1e3d767a6a08a3ba21a651fbae3abf58}} 
+\index{gft::Image32@{gft::Image32}!SobelFilter@{SobelFilter}}
+\index{SobelFilter@{SobelFilter}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{SobelFilter()}{SobelFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Sobel\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a08eb73905d5fb14dfc1a7856ebd9b2aa}\label{namespacegft_1_1Image32_a08eb73905d5fb14dfc1a7856ebd9b2aa}} 
+\index{gft::Image32@{gft::Image32}!SupRec\_Watershed@{SupRec\_Watershed}}
+\index{SupRec\_Watershed@{SupRec\_Watershed}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{SupRec\_Watershed()}{SupRec\_Watershed()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Sup\+Rec\+\_\+\+Watershed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{I,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{J,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{L,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{V }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_ac83a535554d7eaf0c15c00aa960b751f}\label{namespacegft_1_1Image32_ac83a535554d7eaf0c15c00aa960b751f}} 
+\index{gft::Image32@{gft::Image32}!Threshold@{Threshold}}
+\index{Threshold@{Threshold}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Threshold()}{Threshold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{int}]{L,  }\item[{int}]{H }\end{DoxyParamCaption})}
+
+
+
+Calculates the segmentation/binarization by thresholding the image. 
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_a41d697244cf9681af4cb7fb6c827e47d}\label{namespacegft_1_1Image32_a41d697244cf9681af4cb7fb6c827e47d}} 
+\index{gft::Image32@{gft::Image32}!VolumeClosing@{VolumeClosing}}
+\index{VolumeClosing@{VolumeClosing}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{VolumeClosing()}{VolumeClosing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$ gft\+::\+Image32\+::\+Volume\+Closing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{I,  }\item[{int}]{T }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Image32_aa31dba5c85d91f058b691e429bfa7d4e}\label{namespacegft_1_1Image32_aa31dba5c85d91f058b691e429bfa7d4e}} 
+\index{gft::Image32@{gft::Image32}!Write@{Write}}
+\index{Write@{Write}!gft::Image32@{gft::Image32}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void gft\+::\+Image32\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Image32_1_1sImage32}{s\+Image32}} $\ast$}]{img,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Writes an image to a file on the disc in P\+GM format. 
+

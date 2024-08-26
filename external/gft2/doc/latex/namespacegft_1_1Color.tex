@@ -1,0 +1,195 @@
+\hypertarget{namespacegft_1_1Color}{}\doxysection{gft\+::Color Namespace Reference}
+\label{namespacegft_1_1Color}\index{gft::Color@{gft::Color}}
+
+
+Common definitions and functions to manipulate color spaces.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Color_1_1sColorHSV}{s\+Color\+H\+SV}}
+\begin{DoxyCompactList}\small\item\em Structure representing a color in H\+SV space. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgft_1_1Color_1_1sColorRGB}{s\+Color\+R\+GB}}
+\begin{DoxyCompactList}\small\item\em Structure representing a color in R\+GB space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a19ef9035b82efa1054a288eb74ad31b2}{R\+G\+B2\+Y\+Cb\+Cr}} (int v)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to Y\+Cb\+Cr color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_ac4657f5e13a1085573ed19bcd20c0ed6}{Y\+Cb\+Cr2\+R\+GB}} (int v)
+\begin{DoxyCompactList}\small\item\em Converts the color from the Y\+Cb\+Cr color space to R\+GB color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a41b5a3a9b4d326bee9a05ad926ab4550}{Triplet}} (int a, int b, int c)
+\begin{DoxyCompactList}\small\item\em Converts a color to hexadecimal format (a hex triplet). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacegft_1_1Color_ae7c8792c126c210858319973714665ec}{f}} (const double \&t)
+\item 
+float \mbox{\hyperlink{namespacegft_1_1Color_aa0ab1533752e9e96d22a2a57aebc9b55}{f}} (const float \&t)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Color_aa9a8c47dbdc07143c9df5c5b367307f5}{R\+G\+B2\+Lab}} (const int \&R, const int \&G, const int \&B, double \&l, double \&a, double \&b)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Color_a85ecf1ebc7cb4706563a265faf877ccc}{R\+G\+B2\+Lab}} (const int \&R, const int \&G, const int \&B, float \&l, float \&a, float \&b)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Color_1_1sColorHSV}{s\+Color\+H\+SV}} \mbox{\hyperlink{namespacegft_1_1Color_addc3980bbdeb2c5d8b3917ed3028f074}{R\+G\+B2\+H\+SV}} (\mbox{\hyperlink{structgft_1_1Color_1_1sColorRGB}{s\+Color\+R\+GB}} rgb)
+\begin{DoxyCompactList}\small\item\em Converts the color from the R\+GB color space to H\+SV color space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1Color_1_1sColorRGB}{s\+Color\+R\+GB}} \mbox{\hyperlink{namespacegft_1_1Color_a89d88de980728c9f4573051ddc81ca66}{H\+S\+V2\+R\+GB}} (\mbox{\hyperlink{structgft_1_1Color_1_1sColorHSV}{s\+Color\+H\+SV}} hsv)
+\begin{DoxyCompactList}\small\item\em Converts the color from the H\+SV color space to R\+GB color space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_ae1dbc17ee7768e9aab95ec17344ec48f}{Random\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Generates a random color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a612de38492398daab8686cd0923e34b5}{Merge\+R\+GB}} (int a, int b, float ratio)
+\begin{DoxyCompactList}\small\item\em Merges two colors in R\+G\+B-\/space using (1-\/ratio) of a and ratio of b. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a349d1aeaabdb98ddb5a23e816ab5e049}{Inverse}} (int c)
+\begin{DoxyCompactList}\small\item\em Inverts the given color, where red is reversed to cyan, green is reversed to magenta and blue is reversed to yellow, and vice versa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_aab204b9b801a3163499a8c6bb8885168}{Channel0}} (int c)
+\begin{DoxyCompactList}\small\item\em Gets the first channel of a given color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_ac98c416a0c5c0659643adb364665675a}{Channel1}} (int c)
+\begin{DoxyCompactList}\small\item\em Gets the second channel of a given color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Color_a190ee905bd79aea11974767c8ad0ae0e}{Channel2}} (int c)
+\begin{DoxyCompactList}\small\item\em Gets the third channel of a given color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common definitions and functions to manipulate color spaces. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1Color_aab204b9b801a3163499a8c6bb8885168}\label{namespacegft_1_1Color_aab204b9b801a3163499a8c6bb8885168}} 
+\index{gft::Color@{gft::Color}!Channel0@{Channel0}}
+\index{Channel0@{Channel0}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{Channel0()}{Channel0()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Channel0 (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the first channel of a given color. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_ac98c416a0c5c0659643adb364665675a}\label{namespacegft_1_1Color_ac98c416a0c5c0659643adb364665675a}} 
+\index{gft::Color@{gft::Color}!Channel1@{Channel1}}
+\index{Channel1@{Channel1}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{Channel1()}{Channel1()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Channel1 (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the second channel of a given color. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a190ee905bd79aea11974767c8ad0ae0e}\label{namespacegft_1_1Color_a190ee905bd79aea11974767c8ad0ae0e}} 
+\index{gft::Color@{gft::Color}!Channel2@{Channel2}}
+\index{Channel2@{Channel2}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{Channel2()}{Channel2()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Channel2 (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the third channel of a given color. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_ae7c8792c126c210858319973714665ec}\label{namespacegft_1_1Color_ae7c8792c126c210858319973714665ec}} 
+\index{gft::Color@{gft::Color}!f@{f}}
+\index{f@{f}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{f()}{f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double gft\+::\+Color\+::f (\begin{DoxyParamCaption}\item[{const double \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Color_aa0ab1533752e9e96d22a2a57aebc9b55}\label{namespacegft_1_1Color_aa0ab1533752e9e96d22a2a57aebc9b55}} 
+\index{gft::Color@{gft::Color}!f@{f}}
+\index{f@{f}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{f()}{f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float gft\+::\+Color\+::f (\begin{DoxyParamCaption}\item[{const float \&}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a89d88de980728c9f4573051ddc81ca66}\label{namespacegft_1_1Color_a89d88de980728c9f4573051ddc81ca66}} 
+\index{gft::Color@{gft::Color}!HSV2RGB@{HSV2RGB}}
+\index{HSV2RGB@{HSV2RGB}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{HSV2RGB()}{HSV2RGB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Color_1_1sColorRGB}{s\+Color\+R\+GB}} gft\+::\+Color\+::\+H\+S\+V2\+R\+GB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Color_1_1sColorHSV}{s\+Color\+H\+SV}}}]{hsv }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the H\+SV color space to R\+GB color space. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a349d1aeaabdb98ddb5a23e816ab5e049}\label{namespacegft_1_1Color_a349d1aeaabdb98ddb5a23e816ab5e049}} 
+\index{gft::Color@{gft::Color}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{Inverse()}{Inverse()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Inverse (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Inverts the given color, where red is reversed to cyan, green is reversed to magenta and blue is reversed to yellow, and vice versa. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a612de38492398daab8686cd0923e34b5}\label{namespacegft_1_1Color_a612de38492398daab8686cd0923e34b5}} 
+\index{gft::Color@{gft::Color}!MergeRGB@{MergeRGB}}
+\index{MergeRGB@{MergeRGB}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{MergeRGB()}{MergeRGB()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Merge\+R\+GB (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{float}]{ratio }\end{DoxyParamCaption})}
+
+
+
+Merges two colors in R\+G\+B-\/space using (1-\/ratio) of a and ratio of b. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_ae1dbc17ee7768e9aab95ec17344ec48f}\label{namespacegft_1_1Color_ae1dbc17ee7768e9aab95ec17344ec48f}} 
+\index{gft::Color@{gft::Color}!RandomColor@{RandomColor}}
+\index{RandomColor@{RandomColor}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{RandomColor()}{RandomColor()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Random\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates a random color. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_addc3980bbdeb2c5d8b3917ed3028f074}\label{namespacegft_1_1Color_addc3980bbdeb2c5d8b3917ed3028f074}} 
+\index{gft::Color@{gft::Color}!RGB2HSV@{RGB2HSV}}
+\index{RGB2HSV@{RGB2HSV}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{RGB2HSV()}{RGB2HSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1Color_1_1sColorHSV}{s\+Color\+H\+SV}} gft\+::\+Color\+::\+R\+G\+B2\+H\+SV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1Color_1_1sColorRGB}{s\+Color\+R\+GB}}}]{rgb }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the R\+GB color space to H\+SV color space. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_aa9a8c47dbdc07143c9df5c5b367307f5}\label{namespacegft_1_1Color_aa9a8c47dbdc07143c9df5c5b367307f5}} 
+\index{gft::Color@{gft::Color}!RGB2Lab@{RGB2Lab}}
+\index{RGB2Lab@{RGB2Lab}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{RGB2Lab()}{RGB2Lab()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Color\+::\+R\+G\+B2\+Lab (\begin{DoxyParamCaption}\item[{const int \&}]{R,  }\item[{const int \&}]{G,  }\item[{const int \&}]{B,  }\item[{double \&}]{l,  }\item[{double \&}]{a,  }\item[{double \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a85ecf1ebc7cb4706563a265faf877ccc}\label{namespacegft_1_1Color_a85ecf1ebc7cb4706563a265faf877ccc}} 
+\index{gft::Color@{gft::Color}!RGB2Lab@{RGB2Lab}}
+\index{RGB2Lab@{RGB2Lab}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{RGB2Lab()}{RGB2Lab()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Color\+::\+R\+G\+B2\+Lab (\begin{DoxyParamCaption}\item[{const int \&}]{R,  }\item[{const int \&}]{G,  }\item[{const int \&}]{B,  }\item[{float \&}]{l,  }\item[{float \&}]{a,  }\item[{float \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the R\+GB color space to C\+I\+E\+L\+AB color space. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a19ef9035b82efa1054a288eb74ad31b2}\label{namespacegft_1_1Color_a19ef9035b82efa1054a288eb74ad31b2}} 
+\index{gft::Color@{gft::Color}!RGB2YCbCr@{RGB2YCbCr}}
+\index{RGB2YCbCr@{RGB2YCbCr}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{RGB2YCbCr()}{RGB2YCbCr()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+R\+G\+B2\+Y\+Cb\+Cr (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the R\+GB color space to Y\+Cb\+Cr color space. 
+
+\mbox{\Hypertarget{namespacegft_1_1Color_a41b5a3a9b4d326bee9a05ad926ab4550}\label{namespacegft_1_1Color_a41b5a3a9b4d326bee9a05ad926ab4550}} 
+\index{gft::Color@{gft::Color}!Triplet@{Triplet}}
+\index{Triplet@{Triplet}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{Triplet()}{Triplet()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Triplet (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Converts a color to hexadecimal format (a hex triplet). 
+
+The hex triplet is formed by concatenating three bytes of color channels (24-\/bit color scheme). A hex triplet corresponds to a six-\/digit hexadecimal number. \mbox{\Hypertarget{namespacegft_1_1Color_ac4657f5e13a1085573ed19bcd20c0ed6}\label{namespacegft_1_1Color_ac4657f5e13a1085573ed19bcd20c0ed6}} 
+\index{gft::Color@{gft::Color}!YCbCr2RGB@{YCbCr2RGB}}
+\index{YCbCr2RGB@{YCbCr2RGB}!gft::Color@{gft::Color}}
+\doxysubsubsection{\texorpdfstring{YCbCr2RGB()}{YCbCr2RGB()}}
+{\footnotesize\ttfamily int gft\+::\+Color\+::\+Y\+Cb\+Cr2\+R\+GB (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Converts the color from the Y\+Cb\+Cr color space to R\+GB color space. 
+

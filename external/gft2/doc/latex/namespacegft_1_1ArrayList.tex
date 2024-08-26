@@ -1,0 +1,93 @@
+\hypertarget{namespacegft_1_1ArrayList}{}\doxysection{gft\+::Array\+List Namespace Reference}
+\label{namespacegft_1_1ArrayList}\index{gft::ArrayList@{gft::ArrayList}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a1f365e7ad22e93316f13c2ab769b7bc4}{myfree}} (void $\ast$$\ast$mem)
+\item 
+\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ArrayList_a8bde5c54ffd9cf062e3fc5010fb9b9b3}{Create}} (int cap)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a6da7fd7ac62d473068f2b2ae0e9ab403}{Destroy}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$$\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a6d6fe9ce40cfea5a54e95ceadcd13adb}{Set\+Clean\+Func}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, void($\ast$clean)(void $\ast$$\ast$))
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a2ed15d1e51a75216db9259112b0378ee}{Add\+Element}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, void $\ast$elem)
+\item 
+void $\ast$ \mbox{\hyperlink{namespacegft_1_1ArrayList_aaf3081c485fa58d43d2d6d5a94b89d7e}{Get\+Element}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, int index)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a8f05865aaae38c01e17b684dd5b5976b}{Del\+Element}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, int index)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_aa9a390adb95971e27e14885159194903}{Del\+Element}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, void $\ast$$\ast$elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_ad4eff99d8c449d6abbfa7ae1027cc1f4}{Resize}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A, int n)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ArrayList_a6d491ef7511f9ebb32714a1d4e51a009}{Trim2\+Size}} (\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$A)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a2ed15d1e51a75216db9259112b0378ee}\label{namespacegft_1_1ArrayList_a2ed15d1e51a75216db9259112b0378ee}} 
+\index{gft::ArrayList@{gft::ArrayList}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Add\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{void $\ast$}]{elem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a8bde5c54ffd9cf062e3fc5010fb9b9b3}\label{namespacegft_1_1ArrayList_a8bde5c54ffd9cf062e3fc5010fb9b9b3}} 
+\index{gft::ArrayList@{gft::ArrayList}!Create@{Create}}
+\index{Create@{Create}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$ gft\+::\+Array\+List\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a8f05865aaae38c01e17b684dd5b5976b}\label{namespacegft_1_1ArrayList_a8f05865aaae38c01e17b684dd5b5976b}} 
+\index{gft::ArrayList@{gft::ArrayList}!DelElement@{DelElement}}
+\index{DelElement@{DelElement}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{DelElement()}{DelElement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Del\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_aa9a390adb95971e27e14885159194903}\label{namespacegft_1_1ArrayList_aa9a390adb95971e27e14885159194903}} 
+\index{gft::ArrayList@{gft::ArrayList}!DelElement@{DelElement}}
+\index{DelElement@{DelElement}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{DelElement()}{DelElement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Del\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{void $\ast$$\ast$}]{elem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a6da7fd7ac62d473068f2b2ae0e9ab403}\label{namespacegft_1_1ArrayList_a6da7fd7ac62d473068f2b2ae0e9ab403}} 
+\index{gft::ArrayList@{gft::ArrayList}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$$\ast$}]{A }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_aaf3081c485fa58d43d2d6d5a94b89d7e}\label{namespacegft_1_1ArrayList_aaf3081c485fa58d43d2d6d5a94b89d7e}} 
+\index{gft::ArrayList@{gft::ArrayList}!GetElement@{GetElement}}
+\index{GetElement@{GetElement}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{GetElement()}{GetElement()}}
+{\footnotesize\ttfamily void $\ast$ gft\+::\+Array\+List\+::\+Get\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a1f365e7ad22e93316f13c2ab769b7bc4}\label{namespacegft_1_1ArrayList_a1f365e7ad22e93316f13c2ab769b7bc4}} 
+\index{gft::ArrayList@{gft::ArrayList}!myfree@{myfree}}
+\index{myfree@{myfree}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{myfree()}{myfree()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::myfree (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{mem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_ad4eff99d8c449d6abbfa7ae1027cc1f4}\label{namespacegft_1_1ArrayList_ad4eff99d8c449d6abbfa7ae1027cc1f4}} 
+\index{gft::ArrayList@{gft::ArrayList}!Resize@{Resize}}
+\index{Resize@{Resize}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a6d6fe9ce40cfea5a54e95ceadcd13adb}\label{namespacegft_1_1ArrayList_a6d6fe9ce40cfea5a54e95ceadcd13adb}} 
+\index{gft::ArrayList@{gft::ArrayList}!SetCleanFunc@{SetCleanFunc}}
+\index{SetCleanFunc@{SetCleanFunc}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{SetCleanFunc()}{SetCleanFunc()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Set\+Clean\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A,  }\item[{void($\ast$)(void $\ast$$\ast$)}]{clean }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ArrayList_a6d491ef7511f9ebb32714a1d4e51a009}\label{namespacegft_1_1ArrayList_a6d491ef7511f9ebb32714a1d4e51a009}} 
+\index{gft::ArrayList@{gft::ArrayList}!Trim2Size@{Trim2Size}}
+\index{Trim2Size@{Trim2Size}!gft::ArrayList@{gft::ArrayList}}
+\doxysubsubsection{\texorpdfstring{Trim2Size()}{Trim2Size()}}
+{\footnotesize\ttfamily void gft\+::\+Array\+List\+::\+Trim2\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ArrayList_1_1sArrayList}{s\+Array\+List}} $\ast$}]{A }\end{DoxyParamCaption})}
+

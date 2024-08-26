@@ -1,0 +1,97 @@
+\hypertarget{gft__gpqueue__by__Falcao_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+gpqueue\+\_\+by\+\_\+\+Falcao.h File Reference}
+\label{gft__gpqueue__by__Falcao_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_gpqueue\_by\_Falcao.h@{/home/pmiranda/programming/lib/gft/include/gft\_gpqueue\_by\_Falcao.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1GQueue_1_1sGQNode}{gft\+::\+G\+Queue\+::s\+G\+Q\+Node}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1GQueue_1_1sGDoublyLinkedLists}{gft\+::\+G\+Queue\+::s\+G\+Doubly\+Linked\+Lists}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1GQueue_1_1sGCircularQueue}{gft\+::\+G\+Queue\+::s\+G\+Circular\+Queue}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1GQueue_1_1sGQueue}{gft\+::\+G\+Queue\+::s\+G\+Queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1GQueue}{gft\+::\+G\+Queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gft__gpqueue__by__Falcao_8h_ae6be43e86a075f1cec470ab1ec1fe3c3}{M\+I\+N\+V\+A\+L\+UE}}~0 /$\ast$ define queue to remove node with minimum value $\ast$/
+\item 
+\#define \mbox{\hyperlink{gft__gpqueue__by__Falcao_8h_a28c7f4454d27d9a294ebe7eb12a54e8c}{M\+A\+X\+V\+A\+L\+UE}}~1 /$\ast$ define queue to remove node with maximum value $\ast$/
+\item 
+\#define \mbox{\hyperlink{gft__gpqueue__by__Falcao_8h_aac52dfa23b938e9e6ba6ff41fd6a4060}{F\+I\+F\+O\+B\+R\+E\+AK}}~0  /$\ast$ define queue to solve ambiguity by F\+I\+FO $\ast$/
+\item 
+\#define \mbox{\hyperlink{gft__gpqueue__by__Falcao_8h_aaef74316f7685e3d445ec8e8cad0200f}{L\+I\+F\+O\+B\+R\+E\+AK}}~1  /$\ast$ define queue to solve ambiguity by L\+I\+FO $\ast$/
+\item 
+\#define \mbox{\hyperlink{gft__gpqueue__by__Falcao_8h_a9f12590b1545ba583963c2544d8a3bca}{Q\+S\+I\+ZE}}~32768
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef G\+Queue\+::s\+G\+Queue \mbox{\hyperlink{namespacegft_ac5e9b22e01e53271529137086294e2b6}{gft\+::s\+G\+Queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+G\+Queue $\ast$ \mbox{\hyperlink{namespacegft_1_1GQueue_a73711a212a64f38b4d1e296a0ef01069}{gft\+::\+G\+Queue\+::\+Create}} (int nbuckets, int nelems, int $\ast$value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_a6f26fbc732ce6f87204d72e4e7e5281a}{gft\+::\+G\+Queue\+::\+Destroy}} (s\+G\+Queue $\ast$$\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_abcc3d3cbae585abbddd7553569e0d2c7}{gft\+::\+G\+Queue\+::\+Reset}} (s\+G\+Queue $\ast$Q)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1GQueue_a6307a4aeed4666476163bdde0bd4fb5a}{gft\+::\+G\+Queue\+::\+Is\+Empty}} (s\+G\+Queue $\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_aa9838440c57207678f3a91dc4c838c22}{gft\+::\+G\+Queue\+::\+Insert}} (s\+G\+Queue $\ast$$\ast$Q, int elem)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1GQueue_aa2034aad1fedf7908ba6605396b2091e}{gft\+::\+G\+Queue\+::\+Remove}} (s\+G\+Queue $\ast$Q)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_ad6f9a19185dc57e23dff74e7f98cb9e9}{gft\+::\+G\+Queue\+::\+Remove\+Elem}} (s\+G\+Queue $\ast$Q, int elem)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_aa641cc0acd4e9a352553197e51077b2f}{gft\+::\+G\+Queue\+::\+Update}} (s\+G\+Queue $\ast$$\ast$Q, int elem, int newvalue)
+\item 
+s\+G\+Queue $\ast$ \mbox{\hyperlink{namespacegft_1_1GQueue_a534f24ccdfa8d224b6037326d8597b26}{gft\+::\+G\+Queue\+::\+Grow}} (s\+G\+Queue $\ast$$\ast$Q, int nbuckets)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_a1411466901c1d407db7020c99b042a8e}{gft\+::\+G\+Queue\+::\+Set\+Tie\+Break}} (s\+G\+Queue $\ast$Q, char tiebreak)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1GQueue_a20cbfcf08c825cdfca6658b563166b86}{gft\+::\+G\+Queue\+::\+Set\+Removal\+Policy}} (s\+G\+Queue $\ast$Q, char policy)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gft__gpqueue__by__Falcao_8h_aac52dfa23b938e9e6ba6ff41fd6a4060}\label{gft__gpqueue__by__Falcao_8h_aac52dfa23b938e9e6ba6ff41fd6a4060}} 
+\index{gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}!FIFOBREAK@{FIFOBREAK}}
+\index{FIFOBREAK@{FIFOBREAK}!gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}}
+\doxysubsubsection{\texorpdfstring{FIFOBREAK}{FIFOBREAK}}
+{\footnotesize\ttfamily \#define F\+I\+F\+O\+B\+R\+E\+AK~0  /$\ast$ define queue to solve ambiguity by F\+I\+FO $\ast$/}
+
+\mbox{\Hypertarget{gft__gpqueue__by__Falcao_8h_aaef74316f7685e3d445ec8e8cad0200f}\label{gft__gpqueue__by__Falcao_8h_aaef74316f7685e3d445ec8e8cad0200f}} 
+\index{gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}!LIFOBREAK@{LIFOBREAK}}
+\index{LIFOBREAK@{LIFOBREAK}!gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}}
+\doxysubsubsection{\texorpdfstring{LIFOBREAK}{LIFOBREAK}}
+{\footnotesize\ttfamily \#define L\+I\+F\+O\+B\+R\+E\+AK~1  /$\ast$ define queue to solve ambiguity by L\+I\+FO $\ast$/}
+
+\mbox{\Hypertarget{gft__gpqueue__by__Falcao_8h_a28c7f4454d27d9a294ebe7eb12a54e8c}\label{gft__gpqueue__by__Falcao_8h_a28c7f4454d27d9a294ebe7eb12a54e8c}} 
+\index{gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}!MAXVALUE@{MAXVALUE}}
+\index{MAXVALUE@{MAXVALUE}!gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}}
+\doxysubsubsection{\texorpdfstring{MAXVALUE}{MAXVALUE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+V\+A\+L\+UE~1 /$\ast$ define queue to remove node with maximum value $\ast$/}
+
+\mbox{\Hypertarget{gft__gpqueue__by__Falcao_8h_ae6be43e86a075f1cec470ab1ec1fe3c3}\label{gft__gpqueue__by__Falcao_8h_ae6be43e86a075f1cec470ab1ec1fe3c3}} 
+\index{gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}!MINVALUE@{MINVALUE}}
+\index{MINVALUE@{MINVALUE}!gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}}
+\doxysubsubsection{\texorpdfstring{MINVALUE}{MINVALUE}}
+{\footnotesize\ttfamily \#define M\+I\+N\+V\+A\+L\+UE~0 /$\ast$ define queue to remove node with minimum value $\ast$/}
+
+\mbox{\Hypertarget{gft__gpqueue__by__Falcao_8h_a9f12590b1545ba583963c2544d8a3bca}\label{gft__gpqueue__by__Falcao_8h_a9f12590b1545ba583963c2544d8a3bca}} 
+\index{gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}!QSIZE@{QSIZE}}
+\index{QSIZE@{QSIZE}!gft\_gpqueue\_by\_Falcao.h@{gft\_gpqueue\_by\_Falcao.h}}
+\doxysubsubsection{\texorpdfstring{QSIZE}{QSIZE}}
+{\footnotesize\ttfamily \#define Q\+S\+I\+ZE~32768}
+
