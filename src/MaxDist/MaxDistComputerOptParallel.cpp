@@ -166,6 +166,7 @@ std::vector<MaxDistComputerOptParallel::uint32>
   gft::PQueue32::Destroy(&Q_edt);
   gft::Image32::Destroy(&bin);
   gft::AdjRel::Destroy(&A8);
+  
 
   return maxDist;
 }

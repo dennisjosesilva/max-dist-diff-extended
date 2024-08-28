@@ -40,7 +40,7 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
   using morphotree::InfAdjacency4C;
 
   // define useful images
-  std::vector<uint32> maxDist{tree.numberOfNodes(), 0};
+  std::vector<uint32> maxDist(tree.numberOfNodes(), 0);
   std::array<std::vector<NodePtr>, 256> levelToNodes = extractLevelMap(tree);
 
   std::vector<int> stack(domain_.numberOfPoints());
@@ -61,7 +61,7 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
   gft::sPQueue32 *Q_edt = gft::PQueue32::Create(nb, bin->n, cost->data);
 
   // define variables for incremental contour
-  std::unordered_map<uint32, std::unordered_set<uint32>> contours;
+  std::unordered_map<uint32, std::vector<uint32>> contours;
   std::vector<int> f_eroded = erodeParallel(domain_, f_, SE::UnitCross);
 
   // process the level sets from 255 down to 0
@@ -75,20 +75,20 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
     // So, we have to process them
     for (NodePtr node: nodes) {
       // process node 
-      contours.insert({node->id(), std::unordered_set<uint32>()});
+      contours.insert({node->id(), std::vector<uint32>()});
 
       // remove contour pixels of the node
       std::vector<uint32> toRemove;
 
       // define Ncontour which will be processed
-      std::unordered_set<uint32> &Ncontour = contours[node->id()];
+      std::vector<uint32> &Ncontour = contours[node->id()];
 
       // reuse children pixels and collect pixels which need
       // to be removed in the DIFT
       for (NodePtr c : node->children()) {
         for (uint32 pidx : contours[c->id()]) {
           if (f_eroded[pidx] < static_cast<int>(node->level()))
-            Ncontour.insert(pidx);
+            Ncontour.push_back(pidx);
           else
             toRemove.push_back(pidx);
         }
@@ -107,7 +107,7 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
         if (f_eroded[pidx] < static_cast<int>(node->level())) {
           // pidx us a contour pixel
           // add it to contour
-          Ncontour.insert(pidx);
+          Ncontour.push_back(pidx);
 
           // setting up for the differential ift
           root->data[pidx] = pidx;
@@ -147,7 +147,7 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
 
     // compute the max dist attribute for each node
     for (NodePtr node : nodes) {
-      const std::unordered_set<uint32> &Ncontour = contours[node->id()];
+      const std::vector<uint32> &Ncontour = contours[node->id()];
       uint32 maxDistValue = 0;
 
       // search for maximum distance of N on its contour
@@ -159,7 +159,6 @@ std::vector<MaxDistComputerOpt2::uint32> MaxDistComputerOpt2::computeAttribute(
       maxDist[node->id()] = maxDistValue;
     }
   }
-
 
   // Clean up memory
   gft::Image32::Destroy(&cost);
@@ -210,7 +209,7 @@ void MaxDistComputerOpt2::insertNeighborsPQueue(
           Q->L.elem[qidx].color != GRAY) {
             Q->L.elem[qidx].color = WHITE;
             gft::PQueue32::FastInsertElem(Q, qidx);
-          }
+      }
     }
   }
 }
