@@ -21,6 +21,7 @@ endif()
 
 include_directories(
   "${CMAKE_CURRENT_SOURCE_DIR}/external/gft/include"
+  "${CMAKE_CURRENT_SOURCE_DIR}/external/gft2/include"
   "${CMAKE_CURRENT_SOURCE_DIR}/external/morphotree/include"
   "${CMAKE_CURRENT_SOURCE_DIR}/external/stb"
   "${CMAKE_CURRENT_SOURCE_DIR}/include")
@@ -249,6 +250,23 @@ add_executable(check_diff_edt_opt_parallel
 target_link_libraries(check_diff_edt_opt_parallel
   morphotree
   gft
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+
+# max_dist_opt2 checking
+add_executable(check_diff_edt_opt2
+  src/Apps/Checking/check_diff_edt_opt2.cpp
+  src/Morphology/Adjacency.cpp
+  src/Morphology/ErosionParallel.cpp  
+  src/MaxDist/edt_diff2.cpp
+  src/MaxDist/edt_diff.cpp
+  src/MaxDist/MaxDistComputerOpt2.cpp
+  src/MaxDist/MaxDistComputer.cpp)
+
+target_link_libraries(check_diff_edt_opt2
+  morphotree
+  gft2
   Threads::Threads
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
