@@ -271,6 +271,23 @@ target_link_libraries(check_diff_edt_opt2
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
 
+# check_exact_edt 
+add_executable(check_exact_edt
+  src/Apps/Checking/check_exact_edt.cpp
+  src/Morphology/Adjacency.cpp
+  src/Morphology/ErosionParallel.cpp    
+  src/MaxDist/edt_diff.cpp
+  src/MaxDist/ExactMaxDistComputer.cpp
+  src/MaxDist/MaxDistComputer.cpp)
+
+target_link_libraries(check_exact_edt
+  morphotree
+  gft
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+
+
 find_package(CUDA)
 if(CUDA_FOUND)
   enable_language(CUDA)
