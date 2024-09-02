@@ -20,11 +20,9 @@ void treeRemoval2(
   for(morphotree::uint32 pidx : toRemove){
     p = static_cast<int>(pidx);
 
-    //printf("R[%d] = %d\n", i, p);
-
     cost->data[p] = INT_MAX;
-    pred->data[p] = NIL;
-    root->data[p] = p;
+    // pred->data[p] = NIL;
+    // root->data[p] = p;
     Q->L.elem[p].color = WHITE;    
     top++;
     stack[top] = p;
@@ -40,7 +38,7 @@ void treeRemoval2(
       if(p == pred->data[q]){
         cost->data[q] = INT_MAX;
         pred->data[q] = NIL;
-        root->data[q] = q;
+        // root->data[q] = q;
         Q->L.elem[q].color = WHITE;
         //path.push(q);
         top++;
@@ -60,10 +58,8 @@ void treeRemoval2(
   }
 }
 
-void removeSubTree2(int q_in,
-		   gft::sImage32 *bin,
-		   gft::sPQueue32 *Q,
-		   gft::sImage32 *root,
+void removeSubTree2(int q_in,		   
+		   gft::sPQueue32 *Q,		   
 		   gft::sImage32 *pred,
 		   gft::sImage32 *cost,
 		   gft::sAdjPxl *N){
@@ -82,27 +78,22 @@ void removeSubTree2(int q_in,
       //gft::PQueue32::RemoveElem(Q, p);
     Q->L.elem[p].color = WHITE;
     cost->data[p] = INT_MAX;
-    root->data[p] = p;
     pred->data[p] = NIL;
     
     for (i=1; i < N->n; i++){
       q = p + N->dp[i];
-   
+      
       if (p == pred->data[q])
-	path.push(q);
-      else if(bin->data[q] > 0 &&
-	      Q->L.elem[q].color != GRAY &&
-	      cost->data[q] != INT_MAX)
-	frontier_path.push(q);
+        path.push(q);
+      else if(Q->L.elem[q].color != GRAY && cost->data[q] != INT_MAX)
+        frontier_path.push(q);
     }
   }
   
   while(!frontier_path.empty()){
     p = frontier_path.front();
     frontier_path.pop();
-    if(bin->data[p] > 0 &&
-       cost->data[p] != INT_MAX &&
-       Q->L.elem[p].color != GRAY){
+    if(cost->data[p] != INT_MAX && Q->L.elem[p].color != GRAY) {
       Q->L.elem[p].color = WHITE;
       //gft::PQueue32::InsertElem(&Q, p);
       gft::PQueue32::FastInsertElem(Q, p);
@@ -182,7 +173,7 @@ void EDT_DIFF2(gft::sPQueue32 *Q,
 	else if(pred->data[q] == p){
 	  if(tmp > cost->data[q] ||
 	     root->data[p] != root->data[q]){
-	    removeSubTree2(q, bin, Q, root, pred, cost, N);
+	    removeSubTree2(q, Q, pred, cost, N);
 	    break;
 	  }
 	}

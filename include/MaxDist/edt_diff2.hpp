@@ -17,9 +17,7 @@ void treeRemoval2(
   gft::sAdjPxl *N);
 
 void removeSubTree2(int q_in,
-  gft::sImage32 *bin,
   gft::sPQueue32 *Q,
-  gft::sImage32 *root,
   gft::sImage32 *pred,
   gft::sImage32 *cost,
   gft::sAdjPxl *N);
