@@ -24,7 +24,7 @@ done
 
 
 Define the directory name 
-DIR="csv2/non_diff/$REL"
+DIR="csv2/diff_max_dist_opt2/$REL"
 
 # Check if the directory exists
 if [ -d "$DIR" ]; then 
@@ -33,13 +33,13 @@ if [ -d "$DIR" ]; then
 fi 
 
 # Create the directory
-mkdir "$DIR"
+mkdir -p "$DIR"
 echo "Directory $DIR created"
 
 # Run experiments
-python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_1.csv" -p "../build/non_diff_max_dist_runtime"
+python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_1.csv" -p "../build/diff_max_dist_opt2_runtime"
 sleep 2
-python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_2.csv" -p "../build/non_diff_max_dist_runtime"
+python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_2.csv" -p "../build/diff_max_dist_opt2_runtime"
 sleep 2
-python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_3.csv" -p "../build/non_diff_max_dist_runtime"
+python gen_csv2.py -i "../runtime-dataset/dataset-icdar/$REL/validation" -o "$DIR/runtime_3.csv" -p "../build/diff_max_dist_opt2_runtime"
 

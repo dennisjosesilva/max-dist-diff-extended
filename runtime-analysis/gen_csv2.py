@@ -4,6 +4,8 @@ import re
 import time 
 import pandas as pd 
 
+from tqdm import tqdm
+
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 def main(PROGRAM="../build/diff_max_dist_runtime",
@@ -88,7 +90,7 @@ def main(PROGRAM="../build/diff_max_dist_runtime",
   npixels = []
   runtime = []
 
-  for pcall in RUNTIME_PROGRAM_CALLS:
+  for pcall in tqdm(RUNTIME_PROGRAM_CALLS):
     run_data = pcall.run_program()
     images.append(pcall.image)
     nnodes.append(run_data["nnodes"])
