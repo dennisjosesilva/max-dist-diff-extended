@@ -1,0 +1,89 @@
+\hypertarget{gft__graph_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+graph.cpp File Reference}
+\label{gft__graph_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_graph.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_graph.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+graph.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Graph}{gft\+::\+Graph}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a generic graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a272f7e63d4781fefce61826a3de83df1}{gft\+::\+Graph\+::\+Create}} (int nnodes, int outdegree, int $\ast$Wnodes)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a20a46b600a0312493990c04c2abf739b}{gft\+::\+Graph\+::\+Clone}} (s\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a0eea77de6a8bf8bee7fad8a1ae2c493d}{gft\+::\+Graph\+::\+Clone}} (s\+Image\+Graph $\ast$sg)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_af00144e2e8d89f95c49ce35278cc9cba}{gft\+::\+Graph\+::\+Transpose}} (s\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Computes the transpose of a directed graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a1424723b4324c4c28473a44475877946}{gft\+::\+Graph\+::\+Destroy}} (s\+Graph $\ast$$\ast$graph)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_aeee8840d87c366d6f96c1d15e03238a8}{gft\+::\+Graph\+::\+Get\+Number\+Of\+Arcs}} (s\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Returns the total number of arcs in the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_adda5be1319dacad7e7cebce5290c714a}{gft\+::\+Graph\+::\+Get\+Arc\+Weight}} (s\+Graph $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Returns the weight of the arc (src, dest) in the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a96417df73ce75882bfd9c7aa3a52989a}{gft\+::\+Graph\+::\+Get\+Arc\+Index}} (s\+Graph $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Returns the index of a given arc (src, dest) in the adjacency list of src. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a39a6788d49e786706d6c812538d6a6db}{gft\+::\+Graph\+::\+Add\+Edge}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an edge to an undirected graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a3e3a06475b1a4a9ee3119c711ad90c74}{gft\+::\+Graph\+::\+Add\+Directed\+Edge}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an arc to a directed graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a1a974738e405ef1130a6cd15134898f8}{gft\+::\+Graph\+::\+Update\+Edge}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an edge of the undirected graph. The edge is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aebd1b27647c6eb3a1396da01691c7a44}{gft\+::\+Graph\+::\+Update\+Directed\+Edge}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an arc of the graph. The arc is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_ac5a36dd01f1f5f0ddb36f44090824d4d}{gft\+::\+Graph\+::\+Update\+Directed\+Edge\+If\+Higher}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Updates the weight of an arc of the graph only if the new value is higher. The arc is created if it does not exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a75f44fac1fd983ba9603c35301760a54}{gft\+::\+Graph\+::\+Add\+Directed\+Edge\+If\+Nonexistent}} (s\+Graph $\ast$graph, int src, int dest, int w)
+\begin{DoxyCompactList}\small\item\em Adds an arc to a directed graph only if it is an unrepeated arc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a2e12c34e9b3d1d184509834cfa40c754}{gft\+::\+Graph\+::\+Remove\+Edge}} (s\+Graph $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Removes an edge from the undirected graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_ad8942999644c55262929948f4d08e111}{gft\+::\+Graph\+::\+Remove\+Directed\+Edge}} (s\+Graph $\ast$graph, int src, int dest)
+\begin{DoxyCompactList}\small\item\em Removes an arc from the graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a9d58e276c7bf78744c3abefe12d73acf}{gft\+::\+Graph\+::\+Get\+Maximum\+Arc}} (s\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Returns the value of the highest arc weight of the graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aac002ec9ff9ec5f12e6b4604321d29c4}{gft\+::\+Graph\+::\+Change\+Weight}} (s\+Graph $\ast$graph, int old\+\_\+val, int new\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Replaces a given arc weight with a new value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a8576123bb6d3407ec0649dcbb9594830}{gft\+::\+Graph\+::\+Pow}} (s\+Graph $\ast$graph, int power, int max)
+\begin{DoxyCompactList}\small\item\em Applies an increasing transformation to the arc weights to enhance their differences. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a93be76a0f122f9607e4d8f70ebd2ead5}{gft\+::\+Graph\+::\+Tarjan\+\_\+aux}} (s\+Graph $\ast$graph, int $\ast$index, int $\ast$lowlink, int $\ast$label, int i, int id, int $\ast$lb)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a6a5cd350206d6db42925e9e6c483fcda}{gft\+::\+Graph\+::\+Tarjan}} (s\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a9c83f37c96a8cd1b2df804b9eddb6aa5}{gft\+::\+Graph\+::\+Tarjan}} (s\+Graph $\ast$graph, int p)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_af7673f91399ae7a7b417bc8df87f9c06}{gft\+::\+Graph\+::\+Tarjan}} (s\+Graph $\ast$graph, int $\ast$V, int n)
+\begin{DoxyCompactList}\small\item\em Computes the Tarjan\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a889112da0e6fbb580a3d1066d6abdd01}{gft\+::\+Graph\+::\+Change\+Type}} (s\+Graph $\ast$graph, int type)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a5cab6cbf014d198072188de1044b587a}{gft\+::\+Graph\+::\+Hedgehog\+Digraph}} (s\+Graph $\ast$graph, s\+Image32 $\ast$cost, float theta, float r)
+\begin{DoxyCompactList}\small\item\em Adds/updates the arc weights to incorporate the Hedgehog shape constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a9da34653d40a056baca227fc09aae5b8}{gft\+::\+Graph\+::\+Local\+Band\+Reduction}} (s\+Graph $\ast$$\ast$graph, s\+Image32 $\ast$cost, int delta)
+\begin{DoxyCompactList}\small\item\em Computes the transitive reduction of a D\+AG representing the Local Band constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_aec12baef9677806c6726c08f42f77f3e}{gft\+::\+Graph\+::\+Local\+Band\+Constraint}} (s\+Graph $\ast$graph, s\+Image32 $\ast$cost, int delta, float r)
+\begin{DoxyCompactList}\small\item\em Adds/updates the arc weights to incorporate the Local Band shape constraint. \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_ad33bfcbef33276480328ef15ab44b0a1}{gft\+::\+Graph\+::\+R\+AG}} (s\+C\+Image $\ast$cimg, s\+Image32 $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a4d2d0889bd1ab8c270769bd48d263f16}{gft\+::\+Graph\+::\+R\+AG}} (s\+C\+Image $\ast$cimg, s\+Image32 $\ast$label, int c1, int c2, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a2c52e322800f6937fff8247faa5f8954}{gft\+::\+Graph\+::\+R\+A\+G\+\_\+lab}} (s\+C\+Image $\ast$cimg, s\+Image32 $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a3ac00f2b1d2f8d860e395a1e71f722ae}{gft\+::\+Graph\+::\+R\+A\+G\+\_\+lab\+\_\+3}} (s\+C\+Image $\ast$cimg, s\+Image32 $\ast$label, int c1, int c2, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a7fa3c09036b2c22a7ad28ee66666817f}{gft\+::\+Graph\+::\+R\+AG}} (s\+Image32 $\ast$img, s\+Image32 $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aeeccffac6856a1a2822ca007b9f4c3ca}{gft\+::\+Graph\+::\+R\+AG}} (s\+Image32 $\ast$img, s\+Image32 $\ast$label, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aecb33bbc3a2b18d70ad1788ff62a9f50}{gft\+::\+Graph\+::\+R\+AG}} (s\+Image32 $\ast$img, s\+Image32 $\ast$label, float polarity, float curvature\+\_\+R)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a3c74062a7869f9f30d59cbef8fac3dd7}{gft\+::\+Graph\+::\+R\+AG}} (s\+Scene32 $\ast$scn, s\+Scene32 $\ast$label)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a8218e49f4a54487ad40e10640b91a2eb}{gft\+::\+Graph\+::\+R\+AG}} (s\+Scene32 $\ast$scn, s\+Scene32 $\ast$label, float polarity)
+\begin{DoxyCompactList}\small\item\em Computes a Region Adjacency \mbox{\hyperlink{namespacegft_1_1Graph}{Graph}} (R\+AG). \end{DoxyCompactList}\item 
+s\+C\+Image $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aef9e31f38910046add408901646b7415}{gft\+::\+Graph\+::\+Draw\+R\+AG}} (s\+Graph $\ast$G, s\+Image32 $\ast$label, float r, float w, float h)
+\begin{DoxyCompactList}\small\item\em Generates a drawing for viewing a provided R\+AG. \end{DoxyCompactList}\item 
+s\+Graph $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aa70a444158d54c9134d926e9daa44d66}{gft\+::\+Graph\+::\+Split}} (s\+Graph $\ast$$\ast$G, int $\ast$label, int lb)
+\begin{DoxyCompactList}\small\item\em Splits the graph into two graphs according to a labeling provided. \end{DoxyCompactList}\end{DoxyCompactItemize}

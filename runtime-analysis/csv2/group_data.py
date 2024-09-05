@@ -41,4 +41,16 @@ def main(RESOLUTION="1920x1080"):
 
   df.to_csv(f"mean_runtime_{RESOLUTION}.csv", sep=";")
 
-main()
+
+
+parser = ArgumentParser(description="Generate mean runtime data",
+                        formatter_class=ArgumentDefaultsHelpFormatter)
+
+parser.add_argument("-r", "--resolution", 
+                    choices=["1920x1080", "960x540", "480x270", "240x135", "120x68"],
+                    default="1920x1080")
+
+args = parser.parse_args()
+
+
+main(RESOLUTION=args.resolution)

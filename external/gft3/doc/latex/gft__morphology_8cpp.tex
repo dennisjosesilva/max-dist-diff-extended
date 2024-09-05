@@ -1,0 +1,31 @@
+\hypertarget{gft__morphology_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+morphology.cpp File Reference}
+\label{gft__morphology_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_morphology.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_morphology.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+morphology.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ab7f6dd02fd1663da2f2371c6303d20bc}{gft\+::\+Image32\+::\+Dilate}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa094ab1ffd7b092c9790df7ca316e97c}{gft\+::\+Image32\+::\+Erode}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_aa910e6ec96a5f014364a698f164eb74e}{gft\+::\+Image32\+::\+Morph\+Grad}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_ae1a7b06b5137f448799d7f01bd13d9e7}{gft\+::\+Image32\+::\+Erode\+Bin}} (s\+Image32 $\ast$bin, s\+Set $\ast$$\ast$seed, float radius)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a08eb73905d5fb14dfc1a7856ebd9b2aa}{gft\+::\+Image32\+::\+Sup\+Rec\+\_\+\+Watershed}} (s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$I, s\+Image32 $\ast$J, s\+Image32 $\ast$L, s\+Image32 $\ast$V)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Image32_ad626aef7b6841225696c5f41a68f9dd3}{gft\+::\+Image32\+::\+Find\+\_\+}} (s\+Image32 $\ast$R, int p)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a86e5f27f176f2828bfabd7bf78343445}{gft\+::\+Image32\+::\+Area\+Closing}} (s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$I, int T)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a41d697244cf9681af4cb7fb6c827e47d}{gft\+::\+Image32\+::\+Volume\+Closing}} (s\+Adj\+Rel $\ast$A, s\+Image32 $\ast$I, int T)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_adc3e20cfca1511959903dcaee79ea528}{gft\+::\+Image32\+::\+Close\+Holes}} (s\+Image32 $\ast$img)
+\end{DoxyCompactItemize}

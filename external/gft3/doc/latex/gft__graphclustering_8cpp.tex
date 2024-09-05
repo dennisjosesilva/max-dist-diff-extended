@@ -1,0 +1,53 @@
+\hypertarget{gft__graphclustering_8cpp}{}\doxysection{/home/pmiranda/programming/lib/gft/src/gft\+\_\+graphclustering.cpp File Reference}
+\label{gft__graphclustering_8cpp}\index{/home/pmiranda/programming/lib/gft/src/gft\_graphclustering.cpp@{/home/pmiranda/programming/lib/gft/src/gft\_graphclustering.cpp}}
+{\ttfamily \#include \char`\"{}gft\+\_\+graphclustering.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Graph_1_1__Arc}{gft\+::\+Graph\+::\+\_\+\+Arc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Graph}{gft\+::\+Graph}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a generic graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgft_1_1Graph_1_1__Arc}{gft\+::\+Graph\+::\+\_\+\+Arc}} \mbox{\hyperlink{namespacegft_1_1Graph_a17347266af75e9831568a651ad12789d}{gft\+::\+Graph\+::\+Arc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a313d17083d4ea346ad4eacd8e7da2aab}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+M\+ST}} (s\+Graph $\ast$G, int c)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a8366a929ca1c037880741e48244a469d}{gft\+::\+Graph\+::\+Get\+Node\+Index}} (s\+Graph $\ast$G, int id)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_a1efea0aafe1710d1bb9c943b8dbe79dc}{gft\+::\+Graph\+::\+Compute\+D\+C\+Csize}} (s\+Graph $\ast$G, int energy, int p)
+\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aabe8d45713472722657182510f819323}{gft\+::\+Graph\+::\+Compute\+Enegy\+Map\+\_\+\+U\+O\+I\+FT}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{gft\+::s\+Image32}} $\ast$spixels, s\+Graph $\ast$G)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a1fe9cad6a1985701b9aa6abbfc3ecbf1}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+FT}} (s\+Graph $\ast$G, int c)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_adf2637bc64a575694195da23458be211}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2}} (s\+Graph $\ast$G, int c)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a5d656f318f796b52e4881788e633c626}{gft\+::\+Graph\+::\+I\+F\+T\+\_\+fw\+T\+\_\+dcc}} (s\+Graph $\ast$graph, s\+Graph $\ast$graphT, int $\ast$S, int $\ast$label, int $\ast$cost)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_aa282b09f02885bf0959ee7586c8106e6}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+3}} (s\+Graph $\ast$G, int c)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a6a440099b8093f323a0f0731d8f0a2ea}{gft\+::\+Graph\+::\+Find\+Merger}} (s\+Merge\+History $\ast$MH, int s, s\+Graph $\ast$G, int $\ast$oift\+\_\+label, int energy)
+\item 
+s\+Merge\+History $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a309990ab60d8d14161d964040046e678}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+F\+T\+\_\+2}} (s\+Graph $\ast$G)
+\item 
+s\+Merge\+History $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_a14a01e9e0288e9b70ff4931fa1359813}{gft\+::\+Graph\+::\+Divisive\+Clustering\+By\+O\+I\+FT}} (s\+Graph $\ast$G)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a840102c2294407be8adec39fb3057245}{gft\+::\+Graph\+::\+Write\+Merge\+History}} (s\+Merge\+History $\ast$MH, int n, char $\ast$file)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Graph_a06031bf28bd661c252dc71a38aea3dd5}{gft\+::\+Graph\+::\+Union}} (int $\ast$R, int $\ast$rp, int rq, int $\ast$N)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1Graph_ab1625af4fd362e36cbe9c4c16244e46f}{gft\+::\+Graph\+::\+Find}} (int $\ast$R, int p)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1Graph_acfaa8cd1a4f69ace40c8c13a7c157f11}{gft\+::\+Graph\+::\+Clustering\+By\+M\+S\+T2}} (s\+Graph $\ast$G, float k)
+\end{DoxyCompactItemize}

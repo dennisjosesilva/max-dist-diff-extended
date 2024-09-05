@@ -1,0 +1,71 @@
+\hypertarget{gft__filtering_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+filtering.h File Reference}
+\label{gft__filtering_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_filtering.h@{/home/pmiranda/programming/lib/gft/include/gft\_filtering.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+image32.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+adjrel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+cimage32f.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Kernel_1_1sKernel}{gft\+::\+Kernel\+::s\+Kernel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Kernel}{gft\+::\+Kernel}}
+\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32}{gft\+::\+Image32}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a grayscale image of 32 bits per pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1CImage}{gft\+::\+C\+Image}}
+\begin{DoxyCompactList}\small\item\em Common definitions and functions to manipulate a color image, providing three samples (color channels) for each pixel. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1CImage32f}{gft\+::\+C\+Image32f}}
+\item 
+ \mbox{\hyperlink{namespacegft_1_1Image32f}{gft\+::\+Image32f}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Kernel\+::s\+Kernel \mbox{\hyperlink{namespacegft_a625dc146d072a741a89dace6062478ec}{gft\+::s\+Kernel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+s\+Kernel $\ast$ \mbox{\hyperlink{namespacegft_1_1Kernel_a0cc9c3fd08316b7d5e45493b5dd88241}{gft\+::\+Kernel\+::\+Make}} (char $\ast$coefs)
+\item 
+s\+Kernel $\ast$ \mbox{\hyperlink{namespacegft_1_1Kernel_a45fc4da833a8fc97718a9b471ec91eb1}{gft\+::\+Kernel\+::\+Create}} (s\+Adj\+Rel $\ast$A)
+\item 
+s\+Kernel $\ast$ \mbox{\hyperlink{namespacegft_1_1Kernel_aa4e1fe3c2867fea21fce13b06eddf2fa}{gft\+::\+Kernel\+::\+Clone}} (s\+Kernel $\ast$K)
+\item 
+s\+Kernel $\ast$ \mbox{\hyperlink{namespacegft_1_1Kernel_afd10602c56cb47f161c952810612f6c2}{gft\+::\+Kernel\+::\+Normalize}} (s\+Kernel $\ast$K)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Kernel_a0e09a9a18ffe653841ca7eb647651d09}{gft\+::\+Kernel\+::\+Destroy}} (s\+Kernel $\ast$$\ast$K)
+\item 
+s\+Kernel $\ast$ \mbox{\hyperlink{namespacegft_1_1Kernel_a652c049761a5718d217326a87f6117bf}{gft\+::\+Kernel\+::\+Gaussian}} (s\+Adj\+Rel $\ast$A, float stddev)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a209c75fe90f449f23b51ac294afd6615}{gft\+::\+Image32\+::\+Gaussian\+Blur}} (s\+Image32 $\ast$img, float stddev)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a0ce09a4bf5acf4bdca94277b7738e347}{gft\+::\+Image32\+::\+Gaussian\+Blur}} (s\+Image32 $\ast$img)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a1e3d767a6a08a3ba21a651fbae3abf58}{gft\+::\+Image32\+::\+Sobel\+Filter}} (s\+Image32 $\ast$img)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a5fb5dbe2dd3176ea7385a00bb89b4810}{gft\+::\+Image32\+::\+Linear\+Filter}} (s\+Image32 $\ast$img, s\+Kernel $\ast$K)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a23d8551bf1f400b10e22fae959ce48ff}{gft\+::\+Image32\+::\+Image\+Magnitude}} (s\+Image32 $\ast$imgx, s\+Image32 $\ast$imgy)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32_a905bc6c5f8e8efe390e0b8c52895de6d}{gft\+::\+Image32\+::\+Median\+Filter}} (s\+Image32 $\ast$img, s\+Adj\+Rel $\ast$A)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Image32_a84dfa7834ba1664594ec79903ccc7de5}{gft\+::\+Image32\+::\+Mode\+Filter\+Label}} (s\+Image32 $\ast$label, float r)
+\item 
+s\+Image32 $\ast$ \mbox{\hyperlink{namespacegft_1_1CImage_afb4bdb9824d01adae331a6e57e150584}{gft\+::\+C\+Image\+::\+Sobel\+Filter}} (s\+C\+Image $\ast$cimg)
+\item 
+s\+Image32f $\ast$ \mbox{\hyperlink{namespacegft_1_1CImage32f_a3dfda458ad2b4d9492580d41b0cc2737}{gft\+::\+C\+Image32f\+::\+Sobel\+Filter}} (s\+C\+Image32f $\ast$cimg)
+\item 
+s\+Image32f $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32f_a3fb6a9312d404770144ed1901d66cd70}{gft\+::\+Image32f\+::\+Sobel\+Filter}} (s\+Image32f $\ast$img)
+\item 
+s\+Image32f $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32f_a6ade9d226d61119d64182efa9643fb45}{gft\+::\+Image32f\+::\+Linear\+Filter}} (s\+Image32f $\ast$img, s\+Kernel $\ast$K)
+\item 
+s\+Image32f $\ast$ \mbox{\hyperlink{namespacegft_1_1Image32f_aa40231829f0f58ec5fb689cf87fcfe6b}{gft\+::\+Image32f\+::\+Image\+Magnitude}} (s\+Image32f $\ast$imgx, s\+Image32f $\ast$imgy)
+\end{DoxyCompactItemize}

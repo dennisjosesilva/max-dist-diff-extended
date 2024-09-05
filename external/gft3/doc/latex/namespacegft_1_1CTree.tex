@@ -1,0 +1,95 @@
+\hypertarget{namespacegft_1_1CTree}{}\doxysection{gft\+::C\+Tree Namespace Reference}
+\label{namespacegft_1_1CTree}\index{gft::CTree@{gft::CTree}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}}
+\item 
+struct \mbox{\hyperlink{structgft_1_1CTree_1_1sCTreeNode}{s\+C\+Tree\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ \mbox{\hyperlink{namespacegft_1_1CTree_ac1cf8df675ba24c2840b5616e372fb1f}{Create}} (int size)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CTree_a8710cc1f67ce22013a69cccb2307b279}{Destroy}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$$\ast$ct)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CTree_a635326bb10f7d9971d502f1d3f7d8634}{Print}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct)
+\item 
+int \mbox{\hyperlink{namespacegft_1_1CTree_ab8d2fbcce13908b33a03edb38ea7522d}{Get\+Node\+Index}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct, \mbox{\hyperlink{structgft_1_1CTree_1_1sCTreeNode}{s\+C\+Tree\+Node}} $\ast$node)
+\item 
+\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ \mbox{\hyperlink{namespacegft_1_1CTree_a9fe794450be9937689d47312395aac58}{Edge\+Based\+Min\+Tree}} (\mbox{\hyperlink{namespacegft_aa8eb7d476a8fc08d90869717744de780}{s\+Graph}} $\ast$graph, int Lmin)
+\item 
+\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ \mbox{\hyperlink{namespacegft_1_1CTree_afe90d0f7a1daa4fd6e2f323ba41e15bf}{Edge\+Based\+Min\+Tree}} (\mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$graph, int Lmin)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CTree_a233b55de0b72cad97787ad49b126cde8}{Compute\+Height}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CTree_a6f5a6e468a357197908c40f56662e756}{Compute\+Area}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct, int $\ast$\mbox{\hyperlink{namespacegft_a6aa6e668416d4a6eac7f514d119a71dda360de0bb92d3123819ee80bde32eca2e}{area}})
+\item 
+void \mbox{\hyperlink{namespacegft_1_1CTree_a1c33a27051b0dfe82660b010594dc41c}{Compute\+Volume}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct)
+\item 
+int $\ast$ \mbox{\hyperlink{namespacegft_1_1CTree_a11fd1b80d3ff99728a62ede9a85f88ba}{Compute\+Extinction\+Value}} (\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ct, \mbox{\hyperlink{namespacegft_a6aa6e668416d4a6eac7f514d119a71dd}{Attribute\+Type}} type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1CTree_a6f5a6e468a357197908c40f56662e756}\label{namespacegft_1_1CTree_a6f5a6e468a357197908c40f56662e756}} 
+\index{gft::CTree@{gft::CTree}!ComputeArea@{ComputeArea}}
+\index{ComputeArea@{ComputeArea}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{ComputeArea()}{ComputeArea()}}
+{\footnotesize\ttfamily void gft\+::\+C\+Tree\+::\+Compute\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct,  }\item[{int $\ast$}]{area }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a11fd1b80d3ff99728a62ede9a85f88ba}\label{namespacegft_1_1CTree_a11fd1b80d3ff99728a62ede9a85f88ba}} 
+\index{gft::CTree@{gft::CTree}!ComputeExtinctionValue@{ComputeExtinctionValue}}
+\index{ComputeExtinctionValue@{ComputeExtinctionValue}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{ComputeExtinctionValue()}{ComputeExtinctionValue()}}
+{\footnotesize\ttfamily int $\ast$ gft\+::\+C\+Tree\+::\+Compute\+Extinction\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct,  }\item[{\mbox{\hyperlink{namespacegft_a6aa6e668416d4a6eac7f514d119a71dd}{Attribute\+Type}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a233b55de0b72cad97787ad49b126cde8}\label{namespacegft_1_1CTree_a233b55de0b72cad97787ad49b126cde8}} 
+\index{gft::CTree@{gft::CTree}!ComputeHeight@{ComputeHeight}}
+\index{ComputeHeight@{ComputeHeight}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{ComputeHeight()}{ComputeHeight()}}
+{\footnotesize\ttfamily void gft\+::\+C\+Tree\+::\+Compute\+Height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a1c33a27051b0dfe82660b010594dc41c}\label{namespacegft_1_1CTree_a1c33a27051b0dfe82660b010594dc41c}} 
+\index{gft::CTree@{gft::CTree}!ComputeVolume@{ComputeVolume}}
+\index{ComputeVolume@{ComputeVolume}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{ComputeVolume()}{ComputeVolume()}}
+{\footnotesize\ttfamily void gft\+::\+C\+Tree\+::\+Compute\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_ac1cf8df675ba24c2840b5616e372fb1f}\label{namespacegft_1_1CTree_ac1cf8df675ba24c2840b5616e372fb1f}} 
+\index{gft::CTree@{gft::CTree}!Create@{Create}}
+\index{Create@{Create}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ gft\+::\+C\+Tree\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a8710cc1f67ce22013a69cccb2307b279}\label{namespacegft_1_1CTree_a8710cc1f67ce22013a69cccb2307b279}} 
+\index{gft::CTree@{gft::CTree}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+C\+Tree\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$$\ast$}]{ct }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a9fe794450be9937689d47312395aac58}\label{namespacegft_1_1CTree_a9fe794450be9937689d47312395aac58}} 
+\index{gft::CTree@{gft::CTree}!EdgeBasedMinTree@{EdgeBasedMinTree}}
+\index{EdgeBasedMinTree@{EdgeBasedMinTree}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{EdgeBasedMinTree()}{EdgeBasedMinTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ gft\+::\+C\+Tree\+::\+Edge\+Based\+Min\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aa8eb7d476a8fc08d90869717744de780}{s\+Graph}} $\ast$}]{graph,  }\item[{int}]{Lmin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_afe90d0f7a1daa4fd6e2f323ba41e15bf}\label{namespacegft_1_1CTree_afe90d0f7a1daa4fd6e2f323ba41e15bf}} 
+\index{gft::CTree@{gft::CTree}!EdgeBasedMinTree@{EdgeBasedMinTree}}
+\index{EdgeBasedMinTree@{EdgeBasedMinTree}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{EdgeBasedMinTree()}{EdgeBasedMinTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$ gft\+::\+C\+Tree\+::\+Edge\+Based\+Min\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$}]{graph,  }\item[{int}]{Lmin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_ab8d2fbcce13908b33a03edb38ea7522d}\label{namespacegft_1_1CTree_ab8d2fbcce13908b33a03edb38ea7522d}} 
+\index{gft::CTree@{gft::CTree}!GetNodeIndex@{GetNodeIndex}}
+\index{GetNodeIndex@{GetNodeIndex}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{GetNodeIndex()}{GetNodeIndex()}}
+{\footnotesize\ttfamily int gft\+::\+C\+Tree\+::\+Get\+Node\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct,  }\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTreeNode}{s\+C\+Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1CTree_a635326bb10f7d9971d502f1d3f7d8634}\label{namespacegft_1_1CTree_a635326bb10f7d9971d502f1d3f7d8634}} 
+\index{gft::CTree@{gft::CTree}!Print@{Print}}
+\index{Print@{Print}!gft::CTree@{gft::CTree}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void gft\+::\+C\+Tree\+::\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1CTree_1_1sCTree}{s\+C\+Tree}} $\ast$}]{ct }\end{DoxyParamCaption})}
+

@@ -1,0 +1,93 @@
+\hypertarget{namespacegft_1_1LayeredGraph}{}\doxysection{gft\+::Layered\+Graph Namespace Reference}
+\label{namespacegft_1_1LayeredGraph}\index{gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1LayeredGraph_adec070c2c62d23c843485c7d4fea46a0}{Create}} (int nlayers, int nnodesperlayer)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a3517b51300eb400e63b788721fd1f97d}{Destroy}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$$\ast$lg)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_ae32fe5cf9b756b9fa1d01208def0a3e1}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, \mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$sg, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a45f20895323b714267f2a6d57e033fb0}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, int ncols, float w, float r)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_aae33c39ec7f0703fec69719065a1748a}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$sw, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a6d593459fdc4c4e0f4d969fb404f22c1}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$sw, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, int pol, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a22ccc2a5f578c163223c76f66a4c7bd8}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, \mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$scn, float w, float r)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a23bec478de9a51c096976d52ca7d340d}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, \mbox{\hyperlink{namespacegft_aa8eb7d476a8fc08d90869717744de780}{s\+Graph}} $\ast$g, int l)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a876bbfa753617358e6567753c47b719c}{Set\+Arcs}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, int l\+\_\+orig, int l\+\_\+dest, float w)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1LayeredGraph_a6257e11f8b888f6bb7c73136865cc8e3}{Transpose\+Layer}} (\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$lg, int l)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_adec070c2c62d23c843485c7d4fea46a0}\label{namespacegft_1_1LayeredGraph_adec070c2c62d23c843485c7d4fea46a0}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!Create@{Create}}
+\index{Create@{Create}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$ gft\+::\+Layered\+Graph\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{nlayers,  }\item[{int}]{nnodesperlayer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a3517b51300eb400e63b788721fd1f97d}\label{namespacegft_1_1LayeredGraph_a3517b51300eb400e63b788721fd1f97d}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$$\ast$}]{lg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a876bbfa753617358e6567753c47b719c}\label{namespacegft_1_1LayeredGraph_a876bbfa753617358e6567753c47b719c}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{int}]{l\+\_\+orig,  }\item[{int}]{l\+\_\+dest,  }\item[{float}]{w }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a45f20895323b714267f2a6d57e033fb0}\label{namespacegft_1_1LayeredGraph_a45f20895323b714267f2a6d57e033fb0}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{int}]{l\+\_\+orig,  }\item[{int}]{l\+\_\+dest,  }\item[{int}]{ncols,  }\item[{float}]{w,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a22ccc2a5f578c163223c76f66a4c7bd8}\label{namespacegft_1_1LayeredGraph_a22ccc2a5f578c163223c76f66a4c7bd8}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{int}]{l\+\_\+orig,  }\item[{int}]{l\+\_\+dest,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{float}]{w,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a23bec478de9a51c096976d52ca7d340d}\label{namespacegft_1_1LayeredGraph_a23bec478de9a51c096976d52ca7d340d}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{\mbox{\hyperlink{namespacegft_aa8eb7d476a8fc08d90869717744de780}{s\+Graph}} $\ast$}]{g,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_ae32fe5cf9b756b9fa1d01208def0a3e1}\label{namespacegft_1_1LayeredGraph_ae32fe5cf9b756b9fa1d01208def0a3e1}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{\mbox{\hyperlink{namespacegft_a6cac92130d359f8f91c40286620d2a27}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_aae33c39ec7f0703fec69719065a1748a}\label{namespacegft_1_1LayeredGraph_aae33c39ec7f0703fec69719065a1748a}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{sw,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a6d593459fdc4c4e0f4d969fb404f22c1}\label{namespacegft_1_1LayeredGraph_a6d593459fdc4c4e0f4d969fb404f22c1}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!SetArcs@{SetArcs}}
+\index{SetArcs@{SetArcs}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{SetArcs()}{SetArcs()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Set\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{sw,  }\item[{\mbox{\hyperlink{namespacegft_ab8a19bd1503ee74454b8deb54222c0b0}{s\+Scene32}} $\ast$}]{scn,  }\item[{int}]{pol,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1LayeredGraph_a6257e11f8b888f6bb7c73136865cc8e3}\label{namespacegft_1_1LayeredGraph_a6257e11f8b888f6bb7c73136865cc8e3}} 
+\index{gft::LayeredGraph@{gft::LayeredGraph}!TransposeLayer@{TransposeLayer}}
+\index{TransposeLayer@{TransposeLayer}!gft::LayeredGraph@{gft::LayeredGraph}}
+\doxysubsubsection{\texorpdfstring{TransposeLayer()}{TransposeLayer()}}
+{\footnotesize\ttfamily void gft\+::\+Layered\+Graph\+::\+Transpose\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1LayeredGraph_1_1sLayeredGraph}{s\+Layered\+Graph}} $\ast$}]{lg,  }\item[{int}]{l }\end{DoxyParamCaption})}
+

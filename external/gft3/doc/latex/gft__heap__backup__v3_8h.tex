@@ -1,0 +1,85 @@
+\hypertarget{gft__heap__backup__v3_8h}{}\doxysection{/home/pmiranda/programming/lib/gft/include/gft\+\_\+heap\+\_\+backup\+\_\+v3.h File Reference}
+\label{gft__heap__backup__v3_8h}\index{/home/pmiranda/programming/lib/gft/include/gft\_heap\_backup\_v3.h@{/home/pmiranda/programming/lib/gft/include/gft\_heap\_backup\_v3.h}}
+{\ttfamily \#include \char`\"{}gft\+\_\+common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gft\+\_\+gpqueue\+\_\+by\+\_\+\+Falcao.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1Heap_1_1__heap}{gft\+::\+Heap\+::\+\_\+heap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegft}{gft}}
+\begin{DoxyCompactList}\small\item\em Base namespace for common definitions and prototypes. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacegft_1_1Heap}{gft\+::\+Heap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gft__heap__backup__v3_8h_ae55aa7388624717f1e2e1f26683f5485}{H\+E\+A\+P\+\_\+\+D\+AD}}(i)~(i/2)
+\item 
+\#define \mbox{\hyperlink{gft__heap__backup__v3_8h_acc11039f06094db779071e41d4efb325}{H\+E\+A\+P\+\_\+\+L\+E\+F\+T\+S\+ON}}(i)~(2 $\ast$ i)
+\item 
+\#define \mbox{\hyperlink{gft__heap__backup__v3_8h_a1598aa61dfb849adfeba3a43333f2340}{H\+E\+A\+P\+\_\+\+R\+I\+G\+H\+T\+S\+ON}}(i)~(2 $\ast$ i + 1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_abff765913421a49ddc225dab176e0e63}{gft\+::\+Heap\+::\+Is\+Full}} (Heap $\ast$H)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_a2ff888b905d6d284dc027ea5ba8e8c1e}{gft\+::\+Heap\+::\+Is\+Empty}} (Heap $\ast$H)
+\item 
+Heap $\ast$ \mbox{\hyperlink{namespacegft_1_1Heap_ad3bfd6056fda32443ab682c3e8a2f489}{gft\+::\+Heap\+::\+Create\+\_\+\+Max\+Policy}} (int n, float $\ast$$\ast$cost)
+\item 
+Heap $\ast$ \mbox{\hyperlink{namespacegft_1_1Heap_aef60f4637724df2cd4962396dcaba4a5}{gft\+::\+Heap\+::\+Create\+\_\+\+Min\+Policy}} (int n, float $\ast$$\ast$cost)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_a469ebad46a0e799ab1ea1ea2fba31085}{gft\+::\+Heap\+::\+Destroy}} (Heap $\ast$$\ast$H)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_a9cceb70aed06a2937b3b2baf80c076f3}{gft\+::\+Heap\+::\+Insert\+\_\+\+Max\+Policy}} (Heap $\ast$H, int pixel)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_ad07fd23785e017af9b06e8d5002bef52}{gft\+::\+Heap\+::\+Insert\+\_\+\+Min\+Policy}} (Heap $\ast$H, int pixel)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_aa8d3a718c1073da9a7e76fe732b757dd}{gft\+::\+Heap\+::\+Remove\+\_\+\+Max\+Policy}} (Heap $\ast$H, int $\ast$pixel)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_a9a1651df6309c9778c2c0237a9eff29b}{gft\+::\+Heap\+::\+Remove\+\_\+\+Min\+Policy}} (Heap $\ast$H, int $\ast$pixel)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_a332b28a6d21aa05ccd9e5153690497df}{gft\+::\+Heap\+::\+Update\+\_\+\+Max\+Policy}} (Heap $\ast$H, int p, float value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_add0411cd19d3e24e6f35aed46e7379f3}{gft\+::\+Heap\+::\+Update\+\_\+\+Min\+Policy}} (Heap $\ast$H, int p, float value)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_a28c0c5a88751bf086566f612b6b5ce18}{gft\+::\+Heap\+::\+Go\+Up\+\_\+\+Max\+Policy}} (Heap $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_aeaf072d2b86c453340242758fb9d59ac}{gft\+::\+Heap\+::\+Go\+Up\+\_\+\+Min\+Policy}} (Heap $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_acb627522f25451d560a1d656ef79c5e5}{gft\+::\+Heap\+::\+Go\+Down\+\_\+\+Max\+Policy}} (Heap $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_af097ab4b85e7ecaea739a4a61914121d}{gft\+::\+Heap\+::\+Go\+Down\+\_\+\+Min\+Policy}} (Heap $\ast$H, int i)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1Heap_a44430a3dbf4fd4095f5f8e68929832d3}{gft\+::\+Heap\+::\+Reset}} (Heap $\ast$H)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_ad9ffdd411284f0418209f65406dcb576}{gft\+::\+Heap\+::\+Delete\+\_\+\+Max\+Policy}} (Heap $\ast$H, int pixel)
+\item 
+char \mbox{\hyperlink{namespacegft_1_1Heap_a33b3504c967e02fe0582da8ba61a07fe}{gft\+::\+Heap\+::\+Delete\+\_\+\+Min\+Policy}} (Heap $\ast$H, int pixel)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gft__heap__backup__v3_8h_ae55aa7388624717f1e2e1f26683f5485}\label{gft__heap__backup__v3_8h_ae55aa7388624717f1e2e1f26683f5485}} 
+\index{gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}!HEAP\_DAD@{HEAP\_DAD}}
+\index{HEAP\_DAD@{HEAP\_DAD}!gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}}
+\doxysubsubsection{\texorpdfstring{HEAP\_DAD}{HEAP\_DAD}}
+{\footnotesize\ttfamily \#define H\+E\+A\+P\+\_\+\+D\+AD(\begin{DoxyParamCaption}\item[{}]{i }\end{DoxyParamCaption})~(i/2)}
+
+\mbox{\Hypertarget{gft__heap__backup__v3_8h_acc11039f06094db779071e41d4efb325}\label{gft__heap__backup__v3_8h_acc11039f06094db779071e41d4efb325}} 
+\index{gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}!HEAP\_LEFTSON@{HEAP\_LEFTSON}}
+\index{HEAP\_LEFTSON@{HEAP\_LEFTSON}!gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}}
+\doxysubsubsection{\texorpdfstring{HEAP\_LEFTSON}{HEAP\_LEFTSON}}
+{\footnotesize\ttfamily \#define H\+E\+A\+P\+\_\+\+L\+E\+F\+T\+S\+ON(\begin{DoxyParamCaption}\item[{}]{i }\end{DoxyParamCaption})~(2 $\ast$ i)}
+
+\mbox{\Hypertarget{gft__heap__backup__v3_8h_a1598aa61dfb849adfeba3a43333f2340}\label{gft__heap__backup__v3_8h_a1598aa61dfb849adfeba3a43333f2340}} 
+\index{gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}!HEAP\_RIGHTSON@{HEAP\_RIGHTSON}}
+\index{HEAP\_RIGHTSON@{HEAP\_RIGHTSON}!gft\_heap\_backup\_v3.h@{gft\_heap\_backup\_v3.h}}
+\doxysubsubsection{\texorpdfstring{HEAP\_RIGHTSON}{HEAP\_RIGHTSON}}
+{\footnotesize\ttfamily \#define H\+E\+A\+P\+\_\+\+R\+I\+G\+H\+T\+S\+ON(\begin{DoxyParamCaption}\item[{}]{i }\end{DoxyParamCaption})~(2 $\ast$ i + 1)}
+

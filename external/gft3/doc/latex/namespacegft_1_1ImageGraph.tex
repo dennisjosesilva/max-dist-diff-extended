@@ -1,0 +1,399 @@
+\hypertarget{namespacegft_1_1ImageGraph}{}\doxysection{gft\+::Image\+Graph Namespace Reference}
+\label{namespacegft_1_1ImageGraph}\index{gft::ImageGraph@{gft::ImageGraph}}
+
+
+Common definitions and functions to manipulate a sparse graph of an image.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}}
+\begin{DoxyCompactList}\small\item\em Structure representing a sparse graph of an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a8690d2d0b682192d56a8c80ab8b45c96}{By\+Euclidean\+Distance}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, float r)
+\begin{DoxyCompactList}\small\item\em Defines an image graph where the arc weights between neighboring pixels p and q are computed as $\vert$I(p) -\/ I(q)$\vert$+1, where I(p) is the image intensity at pixel p. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a1a93a3b679299105a54d3859851fffb3}{By\+Euclidean\+Distance}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, float r)
+\begin{DoxyCompactList}\small\item\em Defines an image graph where the arc weights between neighboring pixels p and q are computed as the Euclidean distance (L2 norm), between the color vectors I(p) and I(q), plus one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a03403136e6ff3ee9a1b5b386521722fe}{By\+Euclidean\+Distance}} (\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$cimg, float r)
+\begin{DoxyCompactList}\small\item\em Defines an image graph where the arc weights between neighboring pixels p and q are computed as the Euclidean distance (L2 norm), between the color vectors I(p) and I(q), plus one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a970ce54f8a71ec3590e199572bcc1ddf}{By\+Acc\+Abs\+Diff}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, float r, float R)
+\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a983f4463a568d647a0551e1366bcc1be}{By\+Acc\+Abs\+Diff}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, float r, float R)
+\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_acfed0f2fe780c4d73e95f06b6bd5215e}{By\+Weight\+Image}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$W, float r)
+\begin{DoxyCompactList}\small\item\em Defines an image graph where the arc weights between neighboring pixels p and q are computed as W(p) + W(q)+1, where W is an image of weights in pixel resolution. W(p) is usually calculated as the magnitude of the gradient at pixel p. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_ad3a072e6a54984771242f155bc0d0a38}{By\+Homogeneity\+Affinity}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, float r)
+\begin{DoxyCompactList}\small\item\em Corresponds to the dual C\+A\+P\+A\+C\+I\+TY version of function \textquotesingle{}By\+Euclidean\+Distance\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_acab2a16334face18667eab67f527196e}{By\+Homogeneity\+Affinity}} (\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$cimg, float r)
+\begin{DoxyCompactList}\small\item\em Corresponds to the dual C\+A\+P\+A\+C\+I\+TY version of function \textquotesingle{}By\+Euclidean\+Distance\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_ae1363f2f1067f8a9ec8518760d15c760}{Weighted\+Mean}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$G1, \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$G2, float w2)
+\begin{DoxyCompactList}\small\item\em Computes the weighted arithmetic mean of the corresponding arcs of two graphs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a92366cc1712d56c43693bd1eed22edd1}{By\+Level}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$obj, int T, float r, int Wmax)
+\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a47e5b12601f01819375f3dd822ab12e3}{By\+Exclusion}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$Pobj, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$Pbkg, float r, int Pmax)
+\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_af9bb050e32de6514e71acaab2c1adeb8}{By\+Exclusion}} (\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$Pobj, float r, int Pmax)
+\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a454ce42778cf50abb008d015dc5140d9}{Linear\+Stretch}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int f1, int f2, int g1, int g2)
+\begin{DoxyCompactList}\small\item\em Performs contrast enhancement by linear stretch of the arc weights. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a7dbb436f12cf69c153e7d811a362d454}{Saliency\+Map}} (char mergehistory\mbox{[}$\,$\mbox{]}, int ncols, int nrows)
+\begin{DoxyCompactList}\small\item\em Computes the saliency map of a hierarchy in a given file containing the history of pixel mergers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacegft_1_1ImageGraph_a782165f541f6e4669d8f64fde7f0be5d}{Get\+Arc\+Index}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$g, int p, int q)
+\begin{DoxyCompactList}\small\item\em Returns the index of a given arc (p, q) in the adjacency list of p. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a5dc60f50335cf1a6248cb7daf77aca49}{Create}} (int ncols, int nrows, \mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$A)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a443acd1dde1bd685a1438682ca93ac41}{Destroy}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$$\ast$g)
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_ab0938041bea01fb9779e7b1ab1b83ec6}{Clone}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_ac7ff038c0d7a7ca2220ce2a294421621}{Read\+From\+Txt}} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Reads an image graph from a txt file on the disc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_aaba10d1ded119f5c4f5468fb1795097b}{Write2\+Txt}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Writes an image graph to a txt file on the disc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_af56a59914544b25beb399fb50dd2ab2e}{Arc\+Weight\+Image}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg)
+\begin{DoxyCompactList}\small\item\em Generates an image for the approximate visualization of a graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a05535624cc75b912af77765f7ff3bd24}{Khalimsky\+Grid}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg)
+\begin{DoxyCompactList}\small\item\em Computes the Khalimsky grid of a saliency map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ \mbox{\hyperlink{namespacegft_1_1ImageGraph_a424d99ba77770e61253b7aa19c1c611e}{Label\+Connected\+Component}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int wmin, int wmax)
+\begin{DoxyCompactList}\small\item\em Labels the connected components of an undirected graph considering only the edges with weights in the range \mbox{[}wmin, wmax\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a07ec3cc49235ed32e491ff9b8eec43fd}{Orient2\+Digraph}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$img, float per)
+\begin{DoxyCompactList}\small\item\em Updates the weights of the arcs to incorporate the boundary polarity constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a6138debf38e5d19968f6b2c2072ee7ac}{Transpose}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg)
+\begin{DoxyCompactList}\small\item\em Computes the transpose of a directed graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_aff288909b814900e31463fb195791ba1}{Orient2\+Digraph\+Inner}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$P\+\_\+sum)
+\begin{DoxyCompactList}\small\item\em Updates the weights of the arcs to incorporate the Geodesic Star Convexity constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a328116926c0fc11af228f529ddebbb97}{Orient2\+Digraph\+Outer}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$P\+\_\+sum)
+\begin{DoxyCompactList}\small\item\em Updates the weights of the arcs to incorporate the Geodesic Star Convexity constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a61b695f66c46fe520051b55fe276c2de}{Change\+Type}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int type)
+\begin{DoxyCompactList}\small\item\em Changes the type of arc weights to D\+I\+S\+S\+I\+M\+I\+L\+A\+R\+I\+TY or C\+A\+P\+A\+C\+I\+TY. By changing the type, the arc weights are complemented/inverted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_a8a0e31932f3773278a9905417a89ac19}{Change\+Weight}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int old\+\_\+val, int new\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Replaces a given arc weight with a new value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_ac7da5d1f20c15706338feaf0d5810302}{Pow}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int power, int max)
+\begin{DoxyCompactList}\small\item\em Applies an increasing transformation to the arc weights to enhance their differences. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_aba80976bff68b52d7f3e926819ea57a9}{Convert2\+Hedgehog\+Digraph}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$cost, float theta)
+\begin{DoxyCompactList}\small\item\em Updates the arc weights to incorporate the Hedgehog shape constraint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacegft_1_1ImageGraph_aae4e16150f2584345614f29bc2ff325b}{Compute\+Min\+Max\+Arcs}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg, int $\ast$min, int $\ast$max)
+\begin{DoxyCompactList}\small\item\em Returns the values of the lowest and highest arc weight of the graph. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} \mbox{\hyperlink{namespacegft_1_1ImageGraph_a9b024f1fcfb692bcff7c3b6806ba8ce8}{Is\+Undirected\+Graph}} (\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$sg)
+\begin{DoxyCompactList}\small\item\em Tests if the graph is an undirected graph. That is, it is a symmetric digraph and w(p, q) = w(q, p) for all arcs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common definitions and functions to manipulate a sparse graph of an image. 
+
+The data structure assumes that the arcs are defined by an adjacency relation invariant to translation. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_af56a59914544b25beb399fb50dd2ab2e}\label{namespacegft_1_1ImageGraph_af56a59914544b25beb399fb50dd2ab2e}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ArcWeightImage@{ArcWeightImage}}
+\index{ArcWeightImage@{ArcWeightImage}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ArcWeightImage()}{ArcWeightImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Image\+Graph\+::\+Arc\+Weight\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+Generates an image for the approximate visualization of a graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a983f4463a568d647a0551e1366bcc1be}\label{namespacegft_1_1ImageGraph_a983f4463a568d647a0551e1366bcc1be}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByAccAbsDiff@{ByAccAbsDiff}}
+\index{ByAccAbsDiff@{ByAccAbsDiff}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByAccAbsDiff()}{ByAccAbsDiff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Acc\+Abs\+Diff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{float}]{r,  }\item[{float}]{R }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a970ce54f8a71ec3590e199572bcc1ddf}\label{namespacegft_1_1ImageGraph_a970ce54f8a71ec3590e199572bcc1ddf}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByAccAbsDiff@{ByAccAbsDiff}}
+\index{ByAccAbsDiff@{ByAccAbsDiff}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByAccAbsDiff()}{ByAccAbsDiff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Acc\+Abs\+Diff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{r,  }\item[{float}]{R }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a1a93a3b679299105a54d3859851fffb3}\label{namespacegft_1_1ImageGraph_a1a93a3b679299105a54d3859851fffb3}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByEuclideanDistance@{ByEuclideanDistance}}
+\index{ByEuclideanDistance@{ByEuclideanDistance}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByEuclideanDistance()}{ByEuclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Euclidean\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Defines an image graph where the arc weights between neighboring pixels p and q are computed as the Euclidean distance (L2 norm), between the color vectors I(p) and I(q), plus one. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a03403136e6ff3ee9a1b5b386521722fe}\label{namespacegft_1_1ImageGraph_a03403136e6ff3ee9a1b5b386521722fe}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByEuclideanDistance@{ByEuclideanDistance}}
+\index{ByEuclideanDistance@{ByEuclideanDistance}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByEuclideanDistance()}{ByEuclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Euclidean\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_ab419ec5ca5157565c72a73b8dd41c3ac}{s\+C\+Image32f}} $\ast$}]{cimg,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Defines an image graph where the arc weights between neighboring pixels p and q are computed as the Euclidean distance (L2 norm), between the color vectors I(p) and I(q), plus one. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a8690d2d0b682192d56a8c80ab8b45c96}\label{namespacegft_1_1ImageGraph_a8690d2d0b682192d56a8c80ab8b45c96}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByEuclideanDistance@{ByEuclideanDistance}}
+\index{ByEuclideanDistance@{ByEuclideanDistance}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByEuclideanDistance()}{ByEuclideanDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Euclidean\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Defines an image graph where the arc weights between neighboring pixels p and q are computed as $\vert$I(p) -\/ I(q)$\vert$+1, where I(p) is the image intensity at pixel p. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_af9bb050e32de6514e71acaab2c1adeb8}\label{namespacegft_1_1ImageGraph_af9bb050e32de6514e71acaab2c1adeb8}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByExclusion@{ByExclusion}}
+\index{ByExclusion@{ByExclusion}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByExclusion()}{ByExclusion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Exclusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{Pobj,  }\item[{float}]{r,  }\item[{int}]{Pmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a47e5b12601f01819375f3dd822ab12e3}\label{namespacegft_1_1ImageGraph_a47e5b12601f01819375f3dd822ab12e3}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByExclusion@{ByExclusion}}
+\index{ByExclusion@{ByExclusion}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByExclusion()}{ByExclusion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Exclusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{Pobj,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{Pbkg,  }\item[{float}]{r,  }\item[{int}]{Pmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_acab2a16334face18667eab67f527196e}\label{namespacegft_1_1ImageGraph_acab2a16334face18667eab67f527196e}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByHomogeneityAffinity@{ByHomogeneityAffinity}}
+\index{ByHomogeneityAffinity@{ByHomogeneityAffinity}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByHomogeneityAffinity()}{ByHomogeneityAffinity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Homogeneity\+Affinity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_a8976e8551427ab18fbb54b116df6b1a8}{s\+C\+Image}} $\ast$}]{cimg,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Corresponds to the dual C\+A\+P\+A\+C\+I\+TY version of function \textquotesingle{}By\+Euclidean\+Distance\textquotesingle{}. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_ad3a072e6a54984771242f155bc0d0a38}\label{namespacegft_1_1ImageGraph_ad3a072e6a54984771242f155bc0d0a38}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByHomogeneityAffinity@{ByHomogeneityAffinity}}
+\index{ByHomogeneityAffinity@{ByHomogeneityAffinity}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByHomogeneityAffinity()}{ByHomogeneityAffinity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Homogeneity\+Affinity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Corresponds to the dual C\+A\+P\+A\+C\+I\+TY version of function \textquotesingle{}By\+Euclidean\+Distance\textquotesingle{}. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a92366cc1712d56c43693bd1eed22edd1}\label{namespacegft_1_1ImageGraph_a92366cc1712d56c43693bd1eed22edd1}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByLevel@{ByLevel}}
+\index{ByLevel@{ByLevel}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByLevel()}{ByLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{obj,  }\item[{int}]{T,  }\item[{float}]{r,  }\item[{int}]{Wmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_acfed0f2fe780c4d73e95f06b6bd5215e}\label{namespacegft_1_1ImageGraph_acfed0f2fe780c4d73e95f06b6bd5215e}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ByWeightImage@{ByWeightImage}}
+\index{ByWeightImage@{ByWeightImage}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ByWeightImage()}{ByWeightImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+By\+Weight\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{W,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Defines an image graph where the arc weights between neighboring pixels p and q are computed as W(p) + W(q)+1, where W is an image of weights in pixel resolution. W(p) is usually calculated as the magnitude of the gradient at pixel p. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a61b695f66c46fe520051b55fe276c2de}\label{namespacegft_1_1ImageGraph_a61b695f66c46fe520051b55fe276c2de}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ChangeType@{ChangeType}}
+\index{ChangeType@{ChangeType}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ChangeType()}{ChangeType()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Change\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Changes the type of arc weights to D\+I\+S\+S\+I\+M\+I\+L\+A\+R\+I\+TY or C\+A\+P\+A\+C\+I\+TY. By changing the type, the arc weights are complemented/inverted. 
+
+The arc weights may represent a D\+I\+S\+S\+I\+M\+I\+L\+A\+R\+I\+TY or a C\+A\+P\+A\+C\+I\+TY between neighboring pixels, as generally used by the path-\/cost functions of Image Foresting Transform or by the min-\/cut/max-\/flow algorithm, respectively. \mbox{\Hypertarget{namespacegft_1_1ImageGraph_a8a0e31932f3773278a9905417a89ac19}\label{namespacegft_1_1ImageGraph_a8a0e31932f3773278a9905417a89ac19}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ChangeWeight@{ChangeWeight}}
+\index{ChangeWeight@{ChangeWeight}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ChangeWeight()}{ChangeWeight()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Change\+Weight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{old\+\_\+val,  }\item[{int}]{new\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+Replaces a given arc weight with a new value. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_ab0938041bea01fb9779e7b1ab1b83ec6}\label{namespacegft_1_1ImageGraph_ab0938041bea01fb9779e7b1ab1b83ec6}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Clone@{Clone}}
+\index{Clone@{Clone}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+Clone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+A copy constructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_aae4e16150f2584345614f29bc2ff325b}\label{namespacegft_1_1ImageGraph_aae4e16150f2584345614f29bc2ff325b}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ComputeMinMaxArcs@{ComputeMinMaxArcs}}
+\index{ComputeMinMaxArcs@{ComputeMinMaxArcs}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ComputeMinMaxArcs()}{ComputeMinMaxArcs()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Compute\+Min\+Max\+Arcs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int $\ast$}]{min,  }\item[{int $\ast$}]{max }\end{DoxyParamCaption})}
+
+
+
+Returns the values of the lowest and highest arc weight of the graph. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_aba80976bff68b52d7f3e926819ea57a9}\label{namespacegft_1_1ImageGraph_aba80976bff68b52d7f3e926819ea57a9}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Convert2HedgehogDigraph@{Convert2HedgehogDigraph}}
+\index{Convert2HedgehogDigraph@{Convert2HedgehogDigraph}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Convert2HedgehogDigraph()}{Convert2HedgehogDigraph()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Convert2\+Hedgehog\+Digraph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{cost,  }\item[{float}]{theta }\end{DoxyParamCaption})}
+
+
+
+Updates the arc weights to incorporate the Hedgehog shape constraint. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a5dc60f50335cf1a6248cb7daf77aca49}\label{namespacegft_1_1ImageGraph_a5dc60f50335cf1a6248cb7daf77aca49}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Create@{Create}}
+\index{Create@{Create}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+Create (\begin{DoxyParamCaption}\item[{int}]{ncols,  }\item[{int}]{nrows,  }\item[{\mbox{\hyperlink{namespacegft_a690fa55f8337dd559416933cd24bd7a5}{s\+Adj\+Rel}} $\ast$}]{A }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A utility function that creates an image graph of \textquotesingle{}ncols$\ast$nrows\textquotesingle{} vertices. \mbox{\Hypertarget{namespacegft_1_1ImageGraph_a443acd1dde1bd685a1438682ca93ac41}\label{namespacegft_1_1ImageGraph_a443acd1dde1bd685a1438682ca93ac41}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$$\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a782165f541f6e4669d8f64fde7f0be5d}\label{namespacegft_1_1ImageGraph_a782165f541f6e4669d8f64fde7f0be5d}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!GetArcIndex@{GetArcIndex}}
+\index{GetArcIndex@{GetArcIndex}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{GetArcIndex()}{GetArcIndex()}}
+{\footnotesize\ttfamily int gft\+::\+Image\+Graph\+::\+Get\+Arc\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{g,  }\item[{int}]{p,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+
+
+Returns the index of a given arc (p, q) in the adjacency list of p. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a9b024f1fcfb692bcff7c3b6806ba8ce8}\label{namespacegft_1_1ImageGraph_a9b024f1fcfb692bcff7c3b6806ba8ce8}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!IsUndirectedGraph@{IsUndirectedGraph}}
+\index{IsUndirectedGraph@{IsUndirectedGraph}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{IsUndirectedGraph()}{IsUndirectedGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_af01201e71d26f078d5eb9a4e41a6ffe2}{bool}} gft\+::\+Image\+Graph\+::\+Is\+Undirected\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+Tests if the graph is an undirected graph. That is, it is a symmetric digraph and w(p, q) = w(q, p) for all arcs. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a05535624cc75b912af77765f7ff3bd24}\label{namespacegft_1_1ImageGraph_a05535624cc75b912af77765f7ff3bd24}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!KhalimskyGrid@{KhalimskyGrid}}
+\index{KhalimskyGrid@{KhalimskyGrid}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{KhalimskyGrid()}{KhalimskyGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Image\+Graph\+::\+Khalimsky\+Grid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+Computes the Khalimsky grid of a saliency map. 
+
+A saliency map can be visualized through Khalimsky grids, only when its image graph is given by the 4-\/adjacency relation. \mbox{\Hypertarget{namespacegft_1_1ImageGraph_a424d99ba77770e61253b7aa19c1c611e}\label{namespacegft_1_1ImageGraph_a424d99ba77770e61253b7aa19c1c611e}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!LabelConnectedComponent@{LabelConnectedComponent}}
+\index{LabelConnectedComponent@{LabelConnectedComponent}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{LabelConnectedComponent()}{LabelConnectedComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$ gft\+::\+Image\+Graph\+::\+Label\+Connected\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{wmin,  }\item[{int}]{wmax }\end{DoxyParamCaption})}
+
+
+
+Labels the connected components of an undirected graph considering only the edges with weights in the range \mbox{[}wmin, wmax\mbox{]}. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a454ce42778cf50abb008d015dc5140d9}\label{namespacegft_1_1ImageGraph_a454ce42778cf50abb008d015dc5140d9}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!LinearStretch@{LinearStretch}}
+\index{LinearStretch@{LinearStretch}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{LinearStretch()}{LinearStretch()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Linear\+Stretch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{f1,  }\item[{int}]{f2,  }\item[{int}]{g1,  }\item[{int}]{g2 }\end{DoxyParamCaption})}
+
+
+
+Performs contrast enhancement by linear stretch of the arc weights. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a07ec3cc49235ed32e491ff9b8eec43fd}\label{namespacegft_1_1ImageGraph_a07ec3cc49235ed32e491ff9b8eec43fd}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Orient2Digraph@{Orient2Digraph}}
+\index{Orient2Digraph@{Orient2Digraph}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Orient2Digraph()}{Orient2Digraph()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Orient2\+Digraph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{img,  }\item[{float}]{per }\end{DoxyParamCaption})}
+
+
+
+Updates the weights of the arcs to incorporate the boundary polarity constraint. 
+
+It is usually used before computing the O\+I\+FT (Oriented Image Foresting Transform). \mbox{\Hypertarget{namespacegft_1_1ImageGraph_aff288909b814900e31463fb195791ba1}\label{namespacegft_1_1ImageGraph_aff288909b814900e31463fb195791ba1}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Orient2DigraphInner@{Orient2DigraphInner}}
+\index{Orient2DigraphInner@{Orient2DigraphInner}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Orient2DigraphInner()}{Orient2DigraphInner()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Orient2\+Digraph\+Inner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{P\+\_\+sum }\end{DoxyParamCaption})}
+
+
+
+Updates the weights of the arcs to incorporate the Geodesic Star Convexity constraint. 
+
+It is usually used before computing the O\+I\+FT (Oriented Image Foresting Transform). \mbox{\Hypertarget{namespacegft_1_1ImageGraph_a328116926c0fc11af228f529ddebbb97}\label{namespacegft_1_1ImageGraph_a328116926c0fc11af228f529ddebbb97}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Orient2DigraphOuter@{Orient2DigraphOuter}}
+\index{Orient2DigraphOuter@{Orient2DigraphOuter}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Orient2DigraphOuter()}{Orient2DigraphOuter()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Orient2\+Digraph\+Outer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{\mbox{\hyperlink{namespacegft_aafba864394cc4eac478c28185ec4bd4d}{s\+Image32}} $\ast$}]{P\+\_\+sum }\end{DoxyParamCaption})}
+
+
+
+Updates the weights of the arcs to incorporate the Geodesic Star Convexity constraint. 
+
+It is usually used before computing the O\+I\+FT (Oriented Image Foresting Transform). \mbox{\Hypertarget{namespacegft_1_1ImageGraph_ac7da5d1f20c15706338feaf0d5810302}\label{namespacegft_1_1ImageGraph_ac7da5d1f20c15706338feaf0d5810302}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Pow@{Pow}}
+\index{Pow@{Pow}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Pow()}{Pow()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{int}]{power,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Applies an increasing transformation to the arc weights to enhance their differences. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_ac7ff038c0d7a7ca2220ce2a294421621}\label{namespacegft_1_1ImageGraph_ac7ff038c0d7a7ca2220ce2a294421621}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!ReadFromTxt@{ReadFromTxt}}
+\index{ReadFromTxt@{ReadFromTxt}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{ReadFromTxt()}{ReadFromTxt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+Read\+From\+Txt (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Reads an image graph from a txt file on the disc. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a7dbb436f12cf69c153e7d811a362d454}\label{namespacegft_1_1ImageGraph_a7dbb436f12cf69c153e7d811a362d454}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!SaliencyMap@{SaliencyMap}}
+\index{SaliencyMap@{SaliencyMap}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{SaliencyMap()}{SaliencyMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+Saliency\+Map (\begin{DoxyParamCaption}\item[{char}]{mergehistory\mbox{[}$\,$\mbox{]},  }\item[{int}]{ncols,  }\item[{int}]{nrows }\end{DoxyParamCaption})}
+
+
+
+Computes the saliency map of a hierarchy in a given file containing the history of pixel mergers. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_a6138debf38e5d19968f6b2c2072ee7ac}\label{namespacegft_1_1ImageGraph_a6138debf38e5d19968f6b2c2072ee7ac}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Transpose()}{Transpose()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg }\end{DoxyParamCaption})}
+
+
+
+Computes the transpose of a directed graph. 
+
+Transpose of a directed graph G is another directed graph on the same set of vertices with all of the arcs reversed compared to the orientation of the corresponding arcs in G. That is, if G contains an arc (u, v) with weight w(u, v)=k then its transpose G\textquotesingle{} contains an arc (v, u) with weight w\textquotesingle{}(v, u)=k and vice versa. \mbox{\Hypertarget{namespacegft_1_1ImageGraph_ae1363f2f1067f8a9ec8518760d15c760}\label{namespacegft_1_1ImageGraph_ae1363f2f1067f8a9ec8518760d15c760}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!WeightedMean@{WeightedMean}}
+\index{WeightedMean@{WeightedMean}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{WeightedMean()}{WeightedMean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$ gft\+::\+Image\+Graph\+::\+Weighted\+Mean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{G1,  }\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{G2,  }\item[{float}]{w2 }\end{DoxyParamCaption})}
+
+
+
+Computes the weighted arithmetic mean of the corresponding arcs of two graphs. 
+
+\mbox{\Hypertarget{namespacegft_1_1ImageGraph_aaba10d1ded119f5c4f5468fb1795097b}\label{namespacegft_1_1ImageGraph_aaba10d1ded119f5c4f5468fb1795097b}} 
+\index{gft::ImageGraph@{gft::ImageGraph}!Write2Txt@{Write2Txt}}
+\index{Write2Txt@{Write2Txt}!gft::ImageGraph@{gft::ImageGraph}}
+\doxysubsubsection{\texorpdfstring{Write2Txt()}{Write2Txt()}}
+{\footnotesize\ttfamily void gft\+::\+Image\+Graph\+::\+Write2\+Txt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgft_1_1ImageGraph_1_1sImageGraph}{s\+Image\+Graph}} $\ast$}]{sg,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Writes an image graph to a txt file on the disc. 
+
