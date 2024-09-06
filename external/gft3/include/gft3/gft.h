@@ -1,6 +1,6 @@
 
-#ifndef _GFT_H_
-#define _GFT_H_
+#ifndef _GFT_3_H_
+#define _GFT_3_H_
 
 #include "gft3/gft_common.h"
 #include "gft3/gft_adjrel.h"

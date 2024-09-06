@@ -4,6 +4,8 @@
 #include <vector>
 #include <morphotree/core/alias.hpp>
 
+#include <MaxDist/edt_diff2.hpp>
+
 
 void treeRemoval2(
   const std::vector<morphotree::uint32> &toRemove,
