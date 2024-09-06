@@ -1,0 +1,5 @@
+;image;nnodes;width;height;npixels;runtime
+0;lena.pgm;31643;512;512;262144;574
+1;camera.pgm;10885;256;256;65536;72
+2;barb.pgm;40496;512;512;262144;546
+3;bird.pgm;5082;256;256;65536;85
