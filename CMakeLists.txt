@@ -345,6 +345,25 @@ target_link_libraries(exact_max_dist_runtime
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
 
+# -------------------------------------------------------
+# diff_max_dist_opt3_runtime
+#--------------------------------------------------------
+add_executable(diff_max_dist_opt3_runtime
+  src/Apps/Runtime/diff_max_dist_opt3_runtime.cpp
+  src/Morphology/Adjacency.cpp
+  src/Morphology/ErosionParallel.cpp    
+  src/MaxDist/edt_diff3.cpp
+  src/MaxDist/MaxDistComputerOpt3.cpp)
+
+target_link_libraries(diff_max_dist_opt3_runtime
+  morphotree
+  gft3
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+
+
+
 
 find_package(CUDA)
 if(CUDA_FOUND)
