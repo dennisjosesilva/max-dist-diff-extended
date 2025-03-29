@@ -65,6 +65,11 @@ namespace morphotree
 
     NodePtr copy() const;
 
+    int getTimePostOrder() { return this->timePostOrder; }
+    void setTimePostOrder(int time) { this->timePostOrder = time; } 
+    int getTimePreOrder() { return this->timePreOrder; }
+    void setTimePreOrder(int time) { this->timePreOrder = time; }
+
   private:
     void reconstruct(std::vector<uint32> &pixels, const NodePtr node) const; 
     void reconstructGrey(NodePtr node, const Box &domain, 
@@ -78,6 +83,9 @@ namespace morphotree
     std::vector<uint32> cnps_;
     NodePtr parent_;
     std::list<NodePtr> children_;
+
+    uint32 timePostOrder;
+    uint32 timePreOrder;
   };
 
   template<class WeightType>
@@ -110,6 +118,11 @@ namespace morphotree
 
     void tranverse(std::function<void(const NodePtr node)> visit) const;
 
+    void tranverse(NodePtr root, 
+                      std::function<void(NodePtr)> preProcessing,
+                      std::function<void(NodePtr, NodePtr)> mergeChildren,
+                      std::function<void(NodePtr)> postProcessing ) const;
+
     std::vector<WeightType> reconstructImage() const;
     std::vector<WeightType> reconstructImage(std::function<bool(const NodePtr)> keep) const;
 
@@ -132,6 +145,12 @@ namespace morphotree
     inline MorphoTreeType type() const { return type_; }
 
     static const uint32 UndefinedIndex;
+
+
+    bool isAncestor(NodePtr u, NodePtr v) const;
+    bool isDescendant(NodePtr u, NodePtr v) const;
+    bool isStrictAncestor(NodePtr u, NodePtr v) const;
+    bool isStrictDescendant(NodePtr u, NodePtr v) const;
 
   private:
     void performDirectFilter(MorphologicalTree<WeightType> &tree, std::function<bool(const NodePtr)> keep) const;
@@ -306,6 +325,21 @@ namespace morphotree
         nodes_[cmap_[i]]->appendCNP(i);
       }
     }
+
+
+    int timer = 0;
+    tranverse(root,
+      [&timer](NodePtr node) -> void { // pre-processing
+        node->setTimePreOrder(timer++);
+      },
+      [](NodePtr parent, NodePtr child) -> void { // merge-processing
+        
+      },
+      [&timer](NodePtr node) -> void { // post-processing
+        node->setTimePostOrder(timer++);
+      }
+    );
+
   }
 
   template<typename WeightType>
@@ -356,6 +390,46 @@ namespace morphotree
       visit(nodes_[nodes_.size() - i]);
     }
   }
+
+  template<class WeightType>
+  void MorphologicalTree<WeightType>::tranverse(NodePtr root, 
+                                                std::function<void(NodePtr)> preProcessing, 
+                                                std::function<void(NodePtr, NodePtr)> mergeChildren, 
+                                                std::function<void(NodePtr)> postProcessing ) const{
+    
+		preProcessing(root);
+		for(NodePtr child: root->children()){
+			tranverse(child, preProcessing, mergeChildren, postProcessing);
+			mergeChildren(root, child);
+		}
+		postProcessing(root);
+
+  }
+
+  template<class WeightType>
+  bool MorphologicalTree<WeightType>::isAncestor(NodePtr u, NodePtr v) const{
+    return u->getTimePreOrder() <= v->getTimePreOrder() && u->getTimePostOrder() >= v->getTimePostOrder();
+  }
+
+  template<class WeightType>
+  bool MorphologicalTree<WeightType>::isDescendant(NodePtr u, NodePtr v) const{
+    return v->getTimePreOrder() <= u->getTimePreOrder() && v->getTimePostOrder() >= u->getTimePostOrder();
+  }
+  
+  template<class WeightType>
+  bool MorphologicalTree<WeightType>::isStrictAncestor(NodePtr u, NodePtr v) const{
+    return u != v &&
+          u->getTimePreOrder() <= v->getTimePreOrder() &&
+          u->getTimePostOrder() >= v->getTimePostOrder();
+  }
+  
+  template<class WeightType>
+  bool MorphologicalTree<WeightType>::isStrictDescendant(NodePtr u, NodePtr v) const{
+    return u != v &&
+          v->getTimePreOrder() <= u->getTimePreOrder() &&
+          v->getTimePostOrder() >= u->getTimePostOrder();
+  }
+
 
   template<class WeightType> 
   MorphologicalTree<WeightType> buildMaxTree(const std::vector<WeightType> &f,
