@@ -65,10 +65,10 @@ namespace morphotree
 
     NodePtr copy() const;
 
-    int getTimePostOrder() { return this->timePostOrder; }
-    void setTimePostOrder(int time) { this->timePostOrder = time; } 
-    int getTimePreOrder() { return this->timePreOrder; }
-    void setTimePreOrder(int time) { this->timePreOrder = time; }
+    int getTimePostOrder() { return this->timePostOrder_; }
+    void setTimePostOrder(int time) { this->timePostOrder_ = time; } 
+    int getTimePreOrder() { return this->timePreOrder_; }
+    void setTimePreOrder(int time) { this->timePreOrder_ = time; }
 
   private:
     void reconstruct(std::vector<uint32> &pixels, const NodePtr node) const; 
@@ -84,8 +84,9 @@ namespace morphotree
     NodePtr parent_;
     std::list<NodePtr> children_;
 
-    uint32 timePostOrder;
-    uint32 timePreOrder;
+    uint32 timePostOrder_;
+    uint32 timePreOrder_;
+    
   };
 
   template<class WeightType>
@@ -151,7 +152,9 @@ namespace morphotree
     bool isDescendant(NodePtr u, NodePtr v) const;
     bool isStrictAncestor(NodePtr u, NodePtr v) const;
     bool isStrictDescendant(NodePtr u, NodePtr v) const;
-
+    uint32 depth() const { return depth_; }
+    void initializeAttributes();
+    
   private:
     void performDirectFilter(MorphologicalTree<WeightType> &tree, std::function<bool(const NodePtr)> keep) const;
     
@@ -160,6 +163,7 @@ namespace morphotree
     std::vector<uint32> cmap_;
     NodePtr root_;
     MorphoTreeType type_;
+    uint32 depth_;
   };
 
   template<class WeightType> 
@@ -272,6 +276,7 @@ namespace morphotree
     :cmap_{cmap}, nodes_{nodes}, type_{type}
   {
     root_ = nodes_[0];
+    initializeAttributes();
   }
 
   template<class WeightType>
@@ -325,21 +330,31 @@ namespace morphotree
         nodes_[cmap_[i]]->appendCNP(i);
       }
     }
+    
+    initializeAttributes();
 
+  }
 
+  template<typename WeightType>
+  void MorphologicalTree<WeightType>::initializeAttributes(){
     int timer = 0;
-    tranverse(root,
-      [&timer](NodePtr node) -> void { // pre-processing
+    int maxDepth = 0;
+    std::vector<int> depth(numberOfNodes(), 0);
+    tranverse(root_,
+      [&timer, &depth](NodePtr node) -> void { // pre-processing
         node->setTimePreOrder(timer++);
+        depth[node->id()] =  node->parent() == nullptr ? 0 : depth[node->parent()->id()] + 1;
+
       },
       [](NodePtr parent, NodePtr child) -> void { // merge-processing
         
       },
-      [&timer](NodePtr node) -> void { // post-processing
+      [&timer, &maxDepth, &depth](NodePtr node) -> void { // post-processing
         node->setTimePostOrder(timer++);
+        maxDepth = std::max(maxDepth, depth[node->id()]);
       }
     );
-
+    this->depth_ = maxDepth;
   }
 
   template<typename WeightType>
