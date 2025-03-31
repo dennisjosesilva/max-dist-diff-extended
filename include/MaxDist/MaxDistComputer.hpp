@@ -22,6 +22,8 @@ public:
 
 private:
   std::array<std::vector<NodePtr>, 256> extractLevelMap(const MTree &tree) const;
+  void extractDepthMap(NodePtr node, int depth, std::vector<std::vector<NodePtr>>& nodesByDepth) const;
+
   gft::sImage32 *createGFTImage() const;
   void initPredAndRoot(gft::sImage32 *pred, gft::sImage32 *root) const;
 

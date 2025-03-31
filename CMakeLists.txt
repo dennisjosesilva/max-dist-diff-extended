@@ -67,6 +67,19 @@ target_link_libraries(extinction_filter_max_dist
   ZLIB::ZLIB
   OpenMP::OpenMP_CXX)
 
+# Extinction filters
+add_executable(direct_filter_max_dist 
+  src/MaxDist/edt_diff.cpp
+  src/Apps/Filters/direct_filter_max_dist.cpp
+  src/MaxDist/MaxDistComputer.cpp)
+
+target_link_libraries(direct_filter_max_dist
+  morphotree
+  gft 
+  Threads::Threads
+  ZLIB::ZLIB
+  OpenMP::OpenMP_CXX)
+
 add_executable(extinction_filter_area 
   src/Apps/Filters/extinction_filter_area.cpp
   src/MaxDist/edt_diff.cpp

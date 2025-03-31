@@ -343,8 +343,11 @@ namespace morphotree
     tranverse(root_,
       [&timer, &depth](NodePtr node) -> void { // pre-processing
         node->setTimePreOrder(timer++);
-        depth[node->id()] =  node->parent() == nullptr ? 0 : depth[node->parent()->id()] + 1;
-
+        if(node->parent() != nullptr){
+          depth[node->id()] = depth[node->parent()->id()] + 1;  
+        }else{
+          depth[node->id()] =  0;  
+        }
       },
       [](NodePtr parent, NodePtr child) -> void { // merge-processing
         

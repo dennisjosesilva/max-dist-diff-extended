@@ -41,7 +41,11 @@ std::vector<MaxDistComputer::uint32> MaxDistComputer::computeAttribute(
 
   // define useful images 
   std::vector<uint32> maxDist(tree.numberOfNodes(), 0); 
-  std::array<std::vector<NodePtr>, 256> levelToNodes = extractLevelMap(tree);
+  
+  //CHANGE: std::array<std::vector<NodePtr>, 256> levelToNodes = extractLevelMap(tree);
+  
+  std::vector<std::vector<NodePtr>> nodesByDepth(tree.depth() + 1);
+  extractDepthMap(tree.root(), 0, nodesByDepth);
   
   gft::sImage32 *bin = gft::Image32::Create(domain_.width(), domain_.height());
   gft::sImage32 *root = gft::Image32::Create(domain_.width(), domain_.height());
@@ -64,9 +68,11 @@ std::vector<MaxDistComputer::uint32> MaxDistComputer::computeAttribute(
   std::vector<uint8> ncount(domain_.numberOfPoints());
   
   // process the level sets from 255 down to 0
-  for (int level=255; level >= 0; level--) {    
+  //for (int level=255; level >= 0; level--) {    
+  for(int depth= tree.depth(); depth >= 0; depth--){
     // skip level that does not contain nodes
-    const std::vector<NodePtr> nodes = levelToNodes[level];
+    //const std::vector<NodePtr> nodes = levelToNodes[level];
+    const std::vector<NodePtr> nodes = nodesByDepth[depth];
     if (nodes.empty())
       continue;
 
@@ -125,7 +131,8 @@ std::vector<MaxDistComputer::uint32> MaxDistComputer::computeAttribute(
           I32Point q = p + offset;
           uint32 qidx = domain_.contains(q) ? domain_.pointToIndex(q) : Box::UndefinedIndex;
 
-          if (qidx == Box::UndefinedIndex || f_[pidx] > f_[qidx]) {
+          //CHANGE: if (qidx == Box::UndefinedIndex || f_[pidx] > f_[qidx]) {
+          if (qidx == Box::UndefinedIndex || tree.isStrictDescendant(tree.smallComponent(pidx), tree.smallComponent(qidx)) ) {
             // qidx is background neighbour, thus count it.
             ncount[pidx]++;
           }
@@ -207,6 +214,14 @@ std::array<std::vector<MaxDistComputer::NodePtr>, 256>
 
   return levelToNodes;
 }
+
+void MaxDistComputer::extractDepthMap(NodePtr node, int depth, std::vector<std::vector<NodePtr>>& nodesByDepth) const{
+    nodesByDepth[depth].push_back(node);
+    for (NodePtr child : node->children()) {
+      extractDepthMap(child, depth + 1, nodesByDepth);
+    }
+}
+
 
 gft::sImage32 *MaxDistComputer::createGFTImage() const
 {
